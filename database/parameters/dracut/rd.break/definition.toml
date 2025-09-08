@@ -1,0 +1,9 @@
+# database/parameters/dracut/break/definition.toml
+name = "rd.break"
+processor = "dracut"
+
+[syntax]
+type = "enum"
+format = "[<breakpoint>]"
+choices = ["cmdline", "pre-udev", "pre-trigger", "initqueue", "pre-mount", "mount", "pre-pivot", "cleanup"]
+allow_empty = true  # rd.break with no value is valid

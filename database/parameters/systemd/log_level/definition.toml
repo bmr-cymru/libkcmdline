@@ -1,0 +1,9 @@
+# database/parameters/systemd/log_level/definition.toml
+name = "systemd.log_level"
+processor = "systemd"
+description = "Set systemd log level"
+
+[syntax]
+type = "enum"  # Uses common EnumValidator
+format = "<level>"
+choices = ["emerg", "alert", "crit", "err", "warning", "notice", "info", "debug"]

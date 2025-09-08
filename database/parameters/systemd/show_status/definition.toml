@@ -1,0 +1,8 @@
+# database/parameters/systemd/show_status/definition.toml
+name = "systemd.show_status"
+processor = "systemd"
+
+[syntax]
+type = "enum"
+format = "true|false|auto"
+choices = ["true", "false", "auto", "1", "0"]
