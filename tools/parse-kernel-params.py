@@ -5,9 +5,29 @@ from typing import Dict, List
 from os.path import basename
 from pathlib import Path
 from os import makedirs
+import logging
 import string
 import toml
 import sys
+
+log = logging.getLogger("__name__")
+
+def _log_debug_harder(*args, **kwargs):
+    if _DEBUG_HARDER:
+        _log_debug(*args, **kwargs)
+
+
+_log_debug = log.debug
+_log_info = log.info
+_log_warn = log.warning
+
+formatter = logging.Formatter("%(levelname)s - %(message)s")
+console_handler = logging.StreamHandler()
+console_handler.setLevel(logging.INFO)
+console_handler.setFormatter(formatter)
+log.addHandler(console_handler)
+
+_DEBUG_HARDER = False
 
 
 @dataclass
@@ -37,6 +57,7 @@ def parse_values(values: str) -> List[str]:
 
 
 def process_kernel_parameters(kernel_params: Path, outdir: Path):
+    _log_info("Proccessing path: %s outdir=%s", kernel_params, outdir)
     param_chars = string.ascii_letters + string.digits
     params = {}
     line_count = 0
@@ -47,6 +68,13 @@ def process_kernel_parameters(kernel_params: Path, outdir: Path):
         while line := fp.readline():
             line_count += 1
 
+            _log_debug_harder(
+                "processing line %d: %s, %s, %s",
+                line_count,
+                param,
+                subparam,
+                format_line
+            )
 
             if line == "\n" and (param or subparam):
                 if subparam:
@@ -56,6 +84,16 @@ def process_kernel_parameters(kernel_params: Path, outdir: Path):
 
             if line.startswith("\t") and line[1] in param_chars:
                 # Complete any open sub-param before completing parma
+                if subparam:
+                    _log_debug(
+                        "[%04d] Completing SUB-parameter %s (desc=%s, flags=%s, fmt=%s, values=%s)",
+                        line_count,
+                        subparam.name,
+                        subparam.desc,
+                        subparam.flags,
+                        subparam.fmt,
+                        subparam.values,
+                    )
                     param.subparams[subparam.name] = subparam
                     subparam = None
                 # Complete last Param object.
@@ -64,6 +102,14 @@ def process_kernel_parameters(kernel_params: Path, outdir: Path):
                         param.fmt = "flag"
                     elif not param.fmt and param.subparams:
                         param.fmt = "complex"
+                    _log_debug(
+                        "[%04d] Completing PARAMETER %s (flags=%s, fmt=%s, values=%s)",
+                        line_count,
+                        param.name,
+                        param.flags,
+                        param.fmt,
+                        param.values,
+                    )
                     params[param.name] = param
                     param = None
                 # New parameter: get name, maybe fmt, flags and desc
@@ -81,11 +127,28 @@ def process_kernel_parameters(kernel_params: Path, outdir: Path):
                         name_parts[1] if len(name_parts) == 2 and name_parts[1] else ""
                     )
                 desc = parts[2].strip() if len(parts) > 2 else ""
+                _log_debug(
+                    "[%04d] New PARAMETER: %s, flags=%s, desc=%s, fmt=%s",
+                    line_count,
+                    name if f"{name}=" not in line else f"{name}=",
+                    flags,
+                    desc,
+                    fmt,
+                )
                 param = Param(name=name, flags=flags, desc=desc, fmt=fmt)
 
             if param and line.startswith("\t\t") and line[2] in param_chars:
                 line = line.removeprefix("\t\t\t").rstrip()
                 if subparam:
+                    _log_debug(
+                        "[%04d] Completing SUB-parameter %s (desc=%s, flags=%s, fmt=%s, values=%s)",
+                        line_count,
+                        subparam.name,
+                        subparam.desc,
+                        subparam.flags,
+                        subparam.fmt,
+                        subparam.values,
+                    )
                     param.subparams[subparam.name] = subparam
                     subparam = None
                 # New parameter: get name, maybe fmt, flags and desc
@@ -104,14 +167,34 @@ def process_kernel_parameters(kernel_params: Path, outdir: Path):
                     else ""
                 )
                 desc = " ".join(parts[1:]).strip() if len(parts) > 2 else ""
+                _log_debug(
+                    "[%04d] New SUB-parameter: %s, flags=%s, desc=%s, fmt=%s",
+                    line_count,
+                    name,
+                    flags,
+                    desc,
+                    fmt,
+                )
                 subparam = Param(name=name, flags=flags, desc=desc, fmt=fmt)
 
             if param and subparam and line.startswith("\t\t\t\t"):
                 line = line.removeprefix("\t\t\t\t").rstrip()
+                _log_debug(
+                    "[%04d] Continuing description for SUBparam %s: %s",
+                    line_count,
+                    subparam.name,
+                    line,
+                )
                 subparam.desc += "\n" + line
 
             if param and subparam and line.startswith("\t\t\t"):
                 line = line.removeprefix("\t\t\t").rstrip()
+                _log_debug(
+                    "[%04d] Continuing description for SUBparam %s: %s",
+                    line_count,
+                    subparam.name,
+                    line,
+                )
                 subparam.desc += "\n" + line
 
             if param and line.startswith("\t\t\t"):
@@ -122,6 +205,11 @@ def process_kernel_parameters(kernel_params: Path, outdir: Path):
                     if line.startswith("Format: "):
                         line = line.removeprefix("Format: ")
                         if "{" not in line and "}" not in line and format_line is None:
+                            _log_debug(
+                                "[%04d] Found in-line format descroption: %s",
+                                line_count,
+                                line,
+                            )
                             param.fmt = line
                             continue
 
@@ -133,7 +221,15 @@ def process_kernel_parameters(kernel_params: Path, outdir: Path):
                 ):
                     param.values = parse_values(line)
                     param.fmt = "enum"
+                    _log_debug(
+                        "[%04d] Handling one-line enum block {...} %s",
+                        line_count,
+                        param.values,
+                    )
                 elif line.startswith("{") and ("|" in line or "," in line):
+                    _log_debug(
+                        "[%04d] Entering Format enum block {...: %s", line_count, line
+                    )
                     format_line = line
                 elif (
                     format_line and ("|" in line or "," in line) and line.endswith("}")
@@ -141,12 +237,31 @@ def process_kernel_parameters(kernel_params: Path, outdir: Path):
                     format_line += line
                     param.values = parse_values(format_line)
                     param.fmt = "enum"
+                    _log_debug(
+                        "[%04d] Exiting Format enum block ...} %s",
+                        line_count,
+                        param.values,
+                    )
                     format_line = None
                 elif format_line and ("|" in line or "," in line):
+                    _log_debug(
+                        "[%04d] Continuing Format enum block ..[|,].. %s",
+                        line_count,
+                        line,
+                    )
                     format_line += line
                 elif line.startswith("{") and line.endswith("}"):
+                    _log_debug(
+                        "[%04d] Handling non-enum format line: %s", line_count, line
+                    )
                     param.fmt = line.strip("{}")
                 else:
+                    _log_debug(
+                        "[%04d] Continuing description for param %s: %s",
+                        line_count,
+                        param.name,
+                        line,
+                    )
                     param.desc += "\n" + line.lstrip()
     return params
 
@@ -198,6 +313,18 @@ def main() -> int:
         action="store_true",
         help="Dump parameter definitions to stdout",
     )
+    parser.add_argument(
+        "--verbose",
+        "-v",
+        action="store_true",
+        help="Enable debug logging",
+    )
+    parser.add_argument(
+        "--debug-harder",
+        "-d",
+        action="store_true",
+        help="Enable debug logging",
+    )
     args = parser.parse_args()
 
     params = args.parameters.expanduser()
@@ -206,6 +333,14 @@ def main() -> int:
 
     assert params.exists()
     assert outdir.exists()
+
+    if args.debug_harder:
+        global _DEBUG_HARDER
+        _DEBUG_HARDER = True
+
+    if args.verbose:
+        log.setLevel(logging.DEBUG)
+        console_handler.setLevel(logging.DEBUG)
 
     params = process_kernel_parameters(params, outdir)
     if args.dump_parameters:
