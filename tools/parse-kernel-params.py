@@ -1,13 +1,13 @@
 #!/usr/bin/python3
+from tomlkit import comment, document, nl, string as tkstring, table
 from dataclasses import dataclass, field
 from argparse import ArgumentParser
+from os import makedirs, fdatasync
 from typing import Dict, List
 from os.path import basename
 from pathlib import Path
-from os import makedirs
 import logging
 import string
-import toml
 import sys
 
 log = logging.getLogger("__name__")
@@ -28,6 +28,8 @@ console_handler.setFormatter(formatter)
 log.addHandler(console_handler)
 
 _DEBUG_HARDER = False
+
+_DB_TOP_DIR = Path("parameters/kernel")
 
 
 @dataclass
@@ -56,8 +58,8 @@ def parse_values(values: str) -> List[str]:
     return list(map(lambda x: x.strip("\t \"'"), values.strip("{}").split(sep)))
 
 
-def process_kernel_parameters(kernel_params: Path, outdir: Path):
-    _log_info("Proccessing path: %s outdir=%s", kernel_params, outdir)
+def process_kernel_parameters(kernel_params: Path):
+    _log_info("Proccessing path: %s", kernel_params)
     param_chars = string.ascii_letters + string.digits
     params = {}
     line_count = 0
@@ -85,6 +87,8 @@ def process_kernel_parameters(kernel_params: Path, outdir: Path):
             if line.startswith("\t") and line[1] in param_chars:
                 # Complete any open sub-param before completing parma
                 if subparam:
+                    if subparam.desc.startswith("\n"):
+                        subparam.desc = subparam.desc.lstrip("\n")
                     _log_debug(
                         "[%04d] Completing SUB-parameter %s (desc=%s, flags=%s, fmt=%s, values=%s)",
                         line_count,
@@ -102,6 +106,8 @@ def process_kernel_parameters(kernel_params: Path, outdir: Path):
                         param.fmt = "flag"
                     elif not param.fmt and param.subparams:
                         param.fmt = "complex"
+                    if param.desc.startswith("\n"):
+                        param.desc = param.desc.lstrip("\n")
                     _log_debug(
                         "[%04d] Completing PARAMETER %s (flags=%s, fmt=%s, values=%s)",
                         line_count,
@@ -140,6 +146,8 @@ def process_kernel_parameters(kernel_params: Path, outdir: Path):
             if param and line.startswith("\t\t") and line[2] in param_chars:
                 line = line.removeprefix("\t\t\t").rstrip()
                 if subparam:
+                    if subparam.desc.startswith("\n"):
+                        subparam.desc = subparam.desc.lstrip("\n")
                     _log_debug(
                         "[%04d] Completing SUB-parameter %s (desc=%s, flags=%s, fmt=%s, values=%s)",
                         line_count,
@@ -265,6 +273,42 @@ def process_kernel_parameters(kernel_params: Path, outdir: Path):
                     param.desc += "\n" + line.lstrip()
     return params
 
+def write_kernel_parameter(param: Param, db_dir: Path):
+    param_dir = db_dir / param.name
+    makedirs(param_dir, exist_ok=True)
+    param_file = param_dir / "definition.toml"
+
+    if param_file.exists():
+        param_file.unlink()
+
+    doc = document()
+    doc.add(comment("This is a libKCmdline definition document."))
+    doc.add(nl())
+    doc.add("title", f"{param.name} - definition.toml")
+    doc.add("name", param.name)
+    doc.add("processor", "kernel")
+    doc.add("description", tkstring(param.desc, literal=True, multiline=True))
+    syntax = table()
+    syntax.add("type", param.fmt)
+    syntax.add("format", param.fmt)  # FIXME
+    syntax.add("choices", param.values)
+    syntax.add("allow_empty", True)  # FIXME
+    doc.add("syntax", syntax)
+
+    with open(param_dir / "definition.toml", "w", encoding="utf8") as fd:
+        fd.write(doc.as_string())
+        fd.flush()
+        fdatasync(fd.fileno())
+    for (subname, subparam) in param.subparams.items():
+        _log_debug("Writing subparameter '%s'", subname)
+        write_kernel_parameter(subparam, param_dir)
+
+
+def write_kernel_parameters(params: List[Param], db_dir: Path):
+    for (name, param) in params.items():
+        _log_debug("Writing parameter '%s'", name)
+        write_kernel_parameter(param, db_dir)
+
 
 def dump_kernel_parameter(param: Param):
     print(f"  Name: {param.name}")
@@ -328,10 +372,11 @@ def main() -> int:
 
     params = args.parameters.expanduser()
     outdir = args.outdir.expanduser()
-    makedirs(outdir, exist_ok=True)
+    db_dir = outdir / _DB_TOP_DIR
+    makedirs(db_dir, exist_ok=True)
 
     assert params.exists()
-    assert outdir.exists()
+    assert db_dir.exists()
 
     if args.debug_harder:
         global _DEBUG_HARDER
@@ -341,10 +386,16 @@ def main() -> int:
         log.setLevel(logging.DEBUG)
         console_handler.setLevel(logging.DEBUG)
 
-    params = process_kernel_parameters(params, outdir)
+    params = process_kernel_parameters(params)
     if args.dump_parameters:
         dump_kernel_parameters(params)
 
+    write_kernel_parameters(params, db_dir)
+
+    print(params["pci"].name)
+    print(params["pci"].fmt)
+    print(f"**{params["pci"].desc}**")
+    print(params["pci"].values)
 
 if __name__ == "__main__":
     main()
