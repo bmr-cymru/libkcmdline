@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "hpmmiosize - definition.toml"
+name = "hpmmiosize"
+processor = "kernel"
+description = '''The fixed amount of bus space which is
+reserved for hotplug bridge's MMIO window.
+Default size is 2 megabytes.'''
+
+[syntax]
+type = "nn[KMG]"
+format = "nn[KMG]"
+choices = []
+allow_empty = true

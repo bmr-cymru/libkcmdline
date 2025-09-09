@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "bfsort - definition.toml"
+name = "bfsort"
+processor = "kernel"
+description = '''Sort PCI devices into breadth-first order.
+This sorting is done to get a device
+order compatible with older (<= 2.4) kernels.'''
+
+[syntax]
+type = ""
+format = ""
+choices = []
+allow_empty = true

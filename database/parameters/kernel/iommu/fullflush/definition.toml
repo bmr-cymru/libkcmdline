@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "fullflush - definition.toml"
+name = "fullflush"
+processor = "kernel"
+description = '''Flush IOMMU on each allocation (default).
+'''
+
+[syntax]
+type = ""
+format = ""
+choices = []
+allow_empty = true

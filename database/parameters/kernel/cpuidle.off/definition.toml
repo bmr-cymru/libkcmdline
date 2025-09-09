@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "cpuidle.off - definition.toml"
+name = "cpuidle.off"
+processor = "kernel"
+description = '''disable the cpuidle sub-system
+'''
+
+[syntax]
+type = "1"
+format = "1"
+choices = []
+allow_empty = true

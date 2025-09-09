@@ -1,0 +1,12 @@
+# This is a libKCmdline definition document.
+
+title = "sm_off - definition.toml"
+name = "sm_off"
+processor = "kernel"
+description = '''Disallow use of the Intel IOMMU scalable mode.'''
+
+[syntax]
+type = ""
+format = ""
+choices = []
+allow_empty = true

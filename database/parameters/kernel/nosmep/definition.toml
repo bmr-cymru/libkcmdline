@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "nosmep - definition.toml"
+name = "nosmep"
+processor = "kernel"
+description = '''Disable SMEP (Supervisor Mode Execution Prevention)
+even if it is supported by processor.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "nmi_backtrace.backtrace_idle - definition.toml"
+name = "nmi_backtrace.backtrace_idle"
+processor = "kernel"
+description = '''Dump stacks even of idle CPUs in response to an
+NMI stack-backtrace request.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

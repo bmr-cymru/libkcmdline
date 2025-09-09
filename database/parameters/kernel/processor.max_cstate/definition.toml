@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "processor.max_cstate - definition.toml"
+name = "processor.max_cstate"
+processor = "kernel"
+description = '''Limit processor to maximum C-state
+max_cstate=9 overrides any DMI blacklist limit.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

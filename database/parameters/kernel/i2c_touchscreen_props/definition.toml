@@ -1,0 +1,30 @@
+# This is a libKCmdline definition document.
+
+title = "i2c_touchscreen_props - definition.toml"
+name = "i2c_touchscreen_props"
+processor = "kernel"
+description = '''Set device-properties for ACPI-enumerated I2C-attached
+mounted touchscreens. If you need this option please
+submit a drivers/platform/x86/touchscreen_dmi.c patch
+adding a DMI quirk for this.
+
+Format:
+<ACPI_HW_ID>:<prop_name>=<val>[:prop_name=val][:...]
+Where <val> is one of:
+Omit "=<val>" entirely	Set a boolean device-property
+Unsigned number		Set a u32 device-property
+Anything else		Set a string device-property
+
+Examples (split over multiple lines):
+i2c_touchscreen_props=GDIX1001:touchscreen-inverted-x:
+touchscreen-inverted-y
+
+i2c_touchscreen_props=MSSL1680:touchscreen-size-x=1920:
+touchscreen-size-y=1080:touchscreen-inverted-y:
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

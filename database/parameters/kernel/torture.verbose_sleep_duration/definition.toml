@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "torture.verbose_sleep_duration - definition.toml"
+name = "torture.verbose_sleep_duration"
+processor = "kernel"
+description = '''Duration of each verbose-printk() sleep in jiffies.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

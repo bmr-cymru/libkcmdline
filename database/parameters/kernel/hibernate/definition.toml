@@ -1,0 +1,12 @@
+# This is a libKCmdline definition document.
+
+title = "hibernate - definition.toml"
+name = "hibernate"
+processor = "kernel"
+description = ''''''
+
+[syntax]
+type = "complex"
+format = "complex"
+choices = []
+allow_empty = true

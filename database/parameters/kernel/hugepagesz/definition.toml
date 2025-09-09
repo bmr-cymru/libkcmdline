@@ -1,0 +1,19 @@
+# This is a libKCmdline definition document.
+
+title = "hugepagesz - definition.toml"
+name = "hugepagesz"
+processor = "kernel"
+description = '''used in conjunction with hugepages (above) to
+allocate huge pages of a specific size at boot. The
+pair hugepagesz=X hugepages=Y can be specified once
+for each supported huge page size. Huge page sizes
+are architecture dependent. See also
+Documentation/admin-guide/mm/hugetlbpage.rst.
+size[KMG]
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

@@ -1,0 +1,18 @@
+# This is a libKCmdline definition document.
+
+title = "percpu_alloc - definition.toml"
+name = "percpu_alloc"
+processor = "kernel"
+description = '''Select which percpu first chunk allocator to use.
+Currently supported values are "embed" and "page".
+Archs may support subset or none of the	selections.
+See comments in mm/percpu.c for details on each
+allocator.  This parameter is primarily	for debugging
+and performance comparison.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

@@ -1,0 +1,12 @@
+# This is a libKCmdline definition document.
+
+title = "ttyS<n>[,options] - definition.toml"
+name = "ttyS<n>[,options]"
+processor = "kernel"
+description = ''''''
+
+[syntax]
+type = ""
+format = ""
+choices = []
+allow_empty = true

@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "rcutorture.fwd_progress_holdoff - definition.toml"
+name = "rcutorture.fwd_progress_holdoff"
+processor = "kernel"
+description = '''Number of seconds to wait between successive
+forward-progress tests.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

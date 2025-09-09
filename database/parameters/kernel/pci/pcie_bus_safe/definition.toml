@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "pcie_bus_safe - definition.toml"
+name = "pcie_bus_safe"
+processor = "kernel"
+description = '''Set every device's MPS to the largest value
+supported by all devices below the root complex.'''
+
+[syntax]
+type = ""
+format = ""
+choices = []
+allow_empty = true

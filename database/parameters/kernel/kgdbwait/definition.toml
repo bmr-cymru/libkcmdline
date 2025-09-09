@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "kgdbwait - definition.toml"
+name = "kgdbwait"
+processor = "kernel"
+description = '''Stop kernel execution and enter the
+kernel debugger at the earliest opportunity.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

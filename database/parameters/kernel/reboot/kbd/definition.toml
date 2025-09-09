@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "kbd - definition.toml"
+name = "kbd"
+processor = "kernel"
+description = '''Use the keyboard controller. cold reset (default)
+'''
+
+[syntax]
+type = ""
+format = ""
+choices = []
+allow_empty = true

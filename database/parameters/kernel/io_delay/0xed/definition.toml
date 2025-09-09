@@ -1,0 +1,12 @@
+# This is a libKCmdline definition document.
+
+title = "0xed - definition.toml"
+name = "0xed"
+processor = "kernel"
+description = '''Alternate port 0xed based delay (needed on some systems)'''
+
+[syntax]
+type = ""
+format = ""
+choices = []
+allow_empty = true

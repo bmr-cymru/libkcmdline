@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "rcuscale.kfree_by_call_rcu - definition.toml"
+name = "rcuscale.kfree_by_call_rcu"
+processor = "kernel"
+description = '''In kernels built with CONFIG_RCU_LAZY=y, test
+call_rcu() instead of kfree_rcu().
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

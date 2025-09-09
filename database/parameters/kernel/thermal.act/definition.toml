@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "thermal.act - definition.toml"
+name = "thermal.act"
+processor = "kernel"
+description = '''-1: disable all active trip points in all thermal zones
+<degrees C>: override all lowest active trip points
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

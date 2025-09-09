@@ -1,0 +1,17 @@
+# This is a libKCmdline definition document.
+
+title = "suspend.pm_test_delay - definition.toml"
+name = "suspend.pm_test_delay"
+processor = "kernel"
+description = '''[SUSPEND]
+Sets the number of seconds to remain in a suspend test
+mode before resuming the system (see
+/sys/power/pm_test). Only available when CONFIG_PM_DEBUG
+is set. Default value is 5.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

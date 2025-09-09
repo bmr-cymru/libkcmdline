@@ -1,0 +1,15 @@
+# This is a libKCmdline definition document.
+
+title = "cpufreq.default_governor - definition.toml"
+name = "cpufreq.default_governor"
+processor = "kernel"
+description = '''[CPU_FREQ] Name of the default cpufreq governor or
+policy to use. This governor must be registered in the
+kernel before the cpufreq driver probes.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

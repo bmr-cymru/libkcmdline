@@ -1,0 +1,16 @@
+# This is a libKCmdline definition document.
+
+title = "ca_keys - definition.toml"
+name = "ca_keys"
+processor = "kernel"
+description = '''This parameter identifies a specific key(s) on
+the system trusted keyring to be used for certificate
+trust validation.
+format: { id:<keyid> | builtin }
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

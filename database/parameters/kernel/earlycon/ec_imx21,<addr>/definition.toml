@@ -1,0 +1,12 @@
+# This is a libKCmdline definition document.
+
+title = "ec_imx21,<addr> - definition.toml"
+name = "ec_imx21,<addr>"
+processor = "kernel"
+description = ''''''
+
+[syntax]
+type = ""
+format = ""
+choices = []
+allow_empty = true

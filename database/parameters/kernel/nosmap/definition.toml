@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "nosmap - definition.toml"
+name = "nosmap"
+processor = "kernel"
+description = '''Disable SMAP (Supervisor Mode Access Prevention)
+even if it is supported by processor.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

@@ -1,0 +1,25 @@
+# This is a libKCmdline definition document.
+
+title = "idle - definition.toml"
+name = "idle"
+processor = "kernel"
+description = '''idle=poll:  Don't do power saving in the idle loop
+to get slightly better performance in multiprocessor
+benchmarks. It also makes some profiling using
+performance counters more accurate.  Please note that
+on systems with MONITOR/MWAIT support (like Intel
+EM64T CPUs) this option has no performance advantage
+over the normal idle loop.  It may also interact badly
+with hyperthreading.
+
+idle=halt: Halt is forced to be used for CPU idle.
+In such case C2/C3 won't be used again.
+
+idle=nomwait: Disable mwait for CPU C-states
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

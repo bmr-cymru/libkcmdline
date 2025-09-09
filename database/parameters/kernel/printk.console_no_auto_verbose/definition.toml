@@ -1,0 +1,18 @@
+# This is a libKCmdline definition document.
+
+title = "printk.console_no_auto_verbose - definition.toml"
+name = "printk.console_no_auto_verbose"
+processor = "kernel"
+description = '''Disable console loglevel raise on oops, panic
+or lockdep-detected issues (only if lock debug is on).
+With an exception to setups with low baudrate on
+serial console, keeping this 0 is a good choice
+in order to provide more debug information.
+default: 0 (auto_verbose is enabled)
+'''
+
+[syntax]
+type = "<bool>"
+format = "<bool>"
+choices = []
+allow_empty = true

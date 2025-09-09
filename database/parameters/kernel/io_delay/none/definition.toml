@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "none - definition.toml"
+name = "none"
+processor = "kernel"
+description = '''No delay
+'''
+
+[syntax]
+type = ""
+format = ""
+choices = []
+allow_empty = true

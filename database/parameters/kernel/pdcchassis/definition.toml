@@ -1,0 +1,15 @@
+# This is a libKCmdline definition document.
+
+title = "pdcchassis - definition.toml"
+name = "pdcchassis"
+processor = "kernel"
+description = '''Disable/Enable PDC Chassis Status codes at
+boot time.
+See arch/parisc/kernel/pdc_chassis.c
+'''
+
+[syntax]
+type = "enum"
+format = "enum"
+choices = ["0", "1"]
+allow_empty = true

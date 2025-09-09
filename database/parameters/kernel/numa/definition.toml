@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "numa - definition.toml"
+name = "numa"
+processor = "kernel"
+description = '''Don't parse the HMAT table for NUMA setup, or
+soft-reserved memory partitioning.
+'''
+
+[syntax]
+type = "nohmat"
+format = "nohmat"
+choices = []
+allow_empty = true

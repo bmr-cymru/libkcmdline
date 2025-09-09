@@ -1,0 +1,17 @@
+# This is a libKCmdline definition document.
+
+title = "rcupdate.rcu_tasks_lazy_ms - definition.toml"
+name = "rcupdate.rcu_tasks_lazy_ms"
+processor = "kernel"
+description = '''Set timeout in milliseconds RCU Tasks asynchronous
+callback batching for call_rcu_tasks().
+A negative value will take the default.  A value
+of zero will disable batching.	Batching is
+always disabled for synchronize_rcu_tasks().
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

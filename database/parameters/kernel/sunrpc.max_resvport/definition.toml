@@ -1,0 +1,20 @@
+# This is a libKCmdline definition document.
+
+title = "sunrpc.max_resvport - definition.toml"
+name = "sunrpc.max_resvport"
+processor = "kernel"
+description = '''SunRPC servers often require that client requests
+originate from a privileged port (i.e. a port in the
+range 0 < portnr < 1024).
+An administrator who wishes to reserve some of these
+ports for other uses may adjust the range that the
+kernel's sunrpc client considers to be privileged
+using these two parameters to set the minimum and
+maximum port values.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

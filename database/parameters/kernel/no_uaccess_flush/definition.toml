@@ -1,0 +1,12 @@
+# This is a libKCmdline definition document.
+
+title = "no_uaccess_flush - definition.toml"
+name = "no_uaccess_flush"
+processor = "kernel"
+description = ''''''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

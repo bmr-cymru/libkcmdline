@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "kvm-arm.vgic_v4_enable - definition.toml"
+name = "kvm-arm.vgic_v4_enable"
+processor = "kernel"
+description = '''[KVM,ARM,EARLY] Allow use of GICv4 for direct
+injection of LPIs.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

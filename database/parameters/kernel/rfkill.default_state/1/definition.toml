@@ -1,0 +1,12 @@
+# This is a libKCmdline definition document.
+
+title = "1 - definition.toml"
+name = "1"
+processor = "kernel"
+description = ''''''
+
+[syntax]
+type = ""
+format = ""
+choices = []
+allow_empty = true

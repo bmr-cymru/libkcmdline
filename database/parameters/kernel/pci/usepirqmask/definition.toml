@@ -1,0 +1,17 @@
+# This is a libKCmdline definition document.
+
+title = "usepirqmask - definition.toml"
+name = "usepirqmask"
+processor = "kernel"
+description = '''[X86] Honor the possible IRQ mask stored
+in the BIOS $PIR table. This is needed on
+some systems with broken BIOSes, notably
+some HP Pavilion N5400 and Omnibook XE3
+notebooks. This will have no effect if ACPI
+IRQ routing is enabled.'''
+
+[syntax]
+type = ""
+format = ""
+choices = []
+allow_empty = true

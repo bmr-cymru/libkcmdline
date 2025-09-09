@@ -1,0 +1,18 @@
+# This is a libKCmdline definition document.
+
+title = "rcutorture.reader_flavor - definition.toml"
+name = "rcutorture.reader_flavor"
+processor = "kernel"
+description = '''A bit mask indicating which readers to use.
+If there is more than one bit set, the readers
+are entered from low-order bit up, and are
+exited in the opposite order.  For SRCU, the
+0x1 bit is normal readers, 0x2 NMI-safe readers,
+and 0x4 light-weight readers.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

@@ -1,0 +1,15 @@
+# This is a libKCmdline definition document.
+
+title = "bulk_remove - definition.toml"
+name = "bulk_remove"
+processor = "kernel"
+description = '''This parameter disables the use of the pSeries
+firmware feature for flushing multiple hpte entries
+at a time.
+'''
+
+[syntax]
+type = "off"
+format = "off"
+choices = []
+allow_empty = true

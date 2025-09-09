@@ -1,0 +1,15 @@
+# This is a libKCmdline definition document.
+
+title = "agp - definition.toml"
+name = "agp"
+processor = "kernel"
+description = '''off: disable AGP support
+try_unsupported: try to drive unsupported chipsets
+(may crash computer or cause data corruption)
+'''
+
+[syntax]
+type = "enum"
+format = "enum"
+choices = ["off", "try_unsupported"]
+allow_empty = true

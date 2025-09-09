@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "usbcore.use_both_schemes - definition.toml"
+name = "usbcore.use_both_schemes"
+processor = "kernel"
+description = '''[USB] Try the other device initialization scheme
+if the first one fails (default 1 = enabled).
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

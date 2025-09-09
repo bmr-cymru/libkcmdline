@@ -1,0 +1,17 @@
+# This is a libKCmdline definition document.
+
+title = "kpti - definition.toml"
+name = "kpti"
+processor = "kernel"
+description = '''Control page table isolation of
+user and kernel address spaces.
+Default: enabled on cores which need mitigation.
+0: force disabled
+1: force enabled
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

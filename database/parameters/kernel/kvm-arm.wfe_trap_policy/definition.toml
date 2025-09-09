@@ -1,0 +1,19 @@
+# This is a libKCmdline definition document.
+
+title = "kvm-arm.wfe_trap_policy - definition.toml"
+name = "kvm-arm.wfe_trap_policy"
+processor = "kernel"
+description = '''[KVM,ARM] Control when to set WFE instruction trap for
+KVM VMs. Traps are allowed but not guaranteed by the
+CPU architecture.
+
+trap: set WFE instruction trap
+
+notrap: clear WFE instruction trap
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

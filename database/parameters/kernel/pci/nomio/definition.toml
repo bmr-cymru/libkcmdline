@@ -1,0 +1,12 @@
+# This is a libKCmdline definition document.
+
+title = "nomio - definition.toml"
+name = "nomio"
+processor = "kernel"
+description = '''[S390] Do not use MIO instructions.'''
+
+[syntax]
+type = ""
+format = ""
+choices = []
+allow_empty = true

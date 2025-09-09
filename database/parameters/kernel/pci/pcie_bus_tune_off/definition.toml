@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "pcie_bus_tune_off - definition.toml"
+name = "pcie_bus_tune_off"
+processor = "kernel"
+description = '''Disable PCIe MPS (Max Payload Size)
+tuning and use the BIOS-configured MPS defaults.'''
+
+[syntax]
+type = ""
+format = ""
+choices = []
+allow_empty = true

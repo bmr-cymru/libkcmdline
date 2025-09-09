@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "ima_canonical_fmt - definition.toml"
+name = "ima_canonical_fmt"
+processor = "kernel"
+description = '''Use the canonical format for the binary runtime
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

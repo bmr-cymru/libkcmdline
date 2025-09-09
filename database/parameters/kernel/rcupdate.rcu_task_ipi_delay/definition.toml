@@ -1,0 +1,17 @@
+# This is a libKCmdline definition document.
+
+title = "rcupdate.rcu_task_ipi_delay - definition.toml"
+name = "rcupdate.rcu_task_ipi_delay"
+processor = "kernel"
+description = '''Set time in jiffies during which RCU tasks will
+avoid sending IPIs, starting with the beginning
+of a given grace period.  Setting a large
+number avoids disturbing real-time workloads,
+but lengthens grace periods.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

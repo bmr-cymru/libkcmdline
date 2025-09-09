@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "rdinit - definition.toml"
+name = "rdinit"
+processor = "kernel"
+description = '''Run specified binary instead of /init from the ramdisk,
+used for early userspace startup. See initrd.
+'''
+
+[syntax]
+type = "<full_path>"
+format = "<full_path>"
+choices = []
+allow_empty = true

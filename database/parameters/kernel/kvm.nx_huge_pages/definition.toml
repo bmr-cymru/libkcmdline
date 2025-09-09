@@ -1,0 +1,23 @@
+# This is a libKCmdline definition document.
+
+title = "kvm.nx_huge_pages - definition.toml"
+name = "kvm.nx_huge_pages"
+processor = "kernel"
+description = '''[KVM] Controls the software workaround for the
+X86_BUG_ITLB_MULTIHIT bug.
+force	: Always deploy workaround.
+off	: Never deploy workaround.
+auto    : Deploy workaround based on the presence of
+X86_BUG_ITLB_MULTIHIT.
+
+Default is 'auto'.
+
+If the software workaround is enabled for the host,
+guests do need not to enable it for nested guests.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

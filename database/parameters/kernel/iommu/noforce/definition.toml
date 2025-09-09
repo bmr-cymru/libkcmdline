@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "noforce - definition.toml"
+name = "noforce"
+processor = "kernel"
+description = '''Don't force hardware IOMMU usage when it is not
+needed. (default).
+'''
+
+[syntax]
+type = ""
+format = ""
+choices = []
+allow_empty = true

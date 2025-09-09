@@ -1,0 +1,16 @@
+# This is a libKCmdline definition document.
+
+title = "scftorture.use_cpus_read_lock - definition.toml"
+name = "scftorture.use_cpus_read_lock"
+processor = "kernel"
+description = '''Use use_cpus_read_lock() instead of the default
+preempt_disable() to disable CPU hotplug
+while invoking one of the smp_call_function*()
+functions.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

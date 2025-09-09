@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "js - definition.toml"
+name = "js"
+processor = "kernel"
+description = '''Analog joystick
+See Documentation/input/joydev/joystick.rst.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

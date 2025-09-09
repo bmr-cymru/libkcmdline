@@ -1,0 +1,16 @@
+# This is a libKCmdline definition document.
+
+title = "vmalloc - definition.toml"
+name = "vmalloc"
+processor = "kernel"
+description = '''Forces the vmalloc area to have an
+exact size of <nn>. This can be used to increase
+It can also be used to decrease the size and leave more room
+for directly mapped kernel RAM. Note that this parameter does
+'''
+
+[syntax]
+type = "nn[KMG]"
+format = "nn[KMG]"
+choices = []
+allow_empty = true

@@ -1,0 +1,16 @@
+# This is a libKCmdline definition document.
+
+title = "iommu.passthrough - definition.toml"
+name = "iommu.passthrough"
+processor = "kernel"
+description = '''[ARM64,X86,EARLY] Configure DMA to bypass the IOMMU by default.
+0 - Use IOMMU translation for DMA.
+1 - Bypass the IOMMU for DMA.
+unset - Use value of CONFIG_IOMMU_DEFAULT_PASSTHROUGH.
+'''
+
+[syntax]
+type = "enum"
+format = "enum"
+choices = ["0", "1"]
+allow_empty = true

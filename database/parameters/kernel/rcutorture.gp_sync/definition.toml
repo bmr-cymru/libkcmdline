@@ -1,0 +1,18 @@
+# This is a libKCmdline definition document.
+
+title = "rcutorture.gp_sync - definition.toml"
+name = "rcutorture.gp_sync"
+processor = "kernel"
+description = '''Use normal (non-expedited) synchronous
+update-side primitives, if available.  If all
+of rcutorture.gp_cond=, rcutorture.gp_exp=,
+rcutorture.gp_normal=, and rcutorture.gp_sync=
+are zero, rcutorture acts as if is interpreted
+they are all non-zero.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

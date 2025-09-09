@@ -1,0 +1,16 @@
+# This is a libKCmdline definition document.
+
+title = "strict - definition.toml"
+name = "strict"
+processor = "kernel"
+description = '''With strict flushing every unmap operation will result
+in an IOTLB flush. Default is lazy flushing before
+reuse, which is faster. Deprecated, equivalent to
+iommu.strict=1.
+'''
+
+[syntax]
+type = ""
+format = ""
+choices = []
+allow_empty = true

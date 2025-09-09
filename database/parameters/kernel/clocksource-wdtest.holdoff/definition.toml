@@ -1,0 +1,16 @@
+# This is a libKCmdline definition document.
+
+title = "clocksource-wdtest.holdoff - definition.toml"
+name = "clocksource-wdtest.holdoff"
+processor = "kernel"
+description = '''Set the time in seconds that the clocksource
+watchdog test waits before commencing its tests.
+Defaults to zero when built as a module and to
+10 seconds when built into the kernel.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

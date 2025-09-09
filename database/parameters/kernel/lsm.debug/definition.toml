@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "lsm.debug - definition.toml"
+name = "lsm.debug"
+processor = "kernel"
+description = '''Enable LSM initialization debugging output.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

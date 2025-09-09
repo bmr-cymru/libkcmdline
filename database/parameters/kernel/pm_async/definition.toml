@@ -1,0 +1,21 @@
+# This is a libKCmdline definition document.
+
+title = "pm_async - definition.toml"
+name = "pm_async"
+processor = "kernel"
+description = '''This parameter sets the initial value of the
+/sys/power/pm_async sysfs knob at boot time.
+If set to "off", disables asynchronous suspend and
+resume of devices during system-wide power transitions.
+This can be useful on platforms where device
+dependencies are not well-defined, or for debugging
+power management issues. Asynchronous operations are
+enabled by default.
+
+'''
+
+[syntax]
+type = "off"
+format = "off"
+choices = []
+allow_empty = true

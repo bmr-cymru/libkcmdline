@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "reset_devices - definition.toml"
+name = "reset_devices"
+processor = "kernel"
+description = '''Force drivers to reset the underlying device
+during initialization.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

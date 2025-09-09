@@ -1,0 +1,23 @@
+# This is a libKCmdline definition document.
+
+title = "rcupdate.rcu_normal_after_boot - definition.toml"
+name = "rcupdate.rcu_normal_after_boot"
+processor = "kernel"
+description = '''Once boot has completed (that is, after
+rcu_end_inkernel_boot() has been invoked), use
+only normal grace-period primitives.  No effect
+on CONFIG_TINY_RCU kernels.
+
+But note that CONFIG_PREEMPT_RT=y kernels enables
+this kernel boot parameter, forcibly setting
+it to the value one, that is, converting any
+post-boot attempt at an expedited RCU grace
+period to instead use normal non-expedited
+grace-period processing.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

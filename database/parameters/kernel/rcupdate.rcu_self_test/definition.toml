@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "rcupdate.rcu_self_test - definition.toml"
+name = "rcupdate.rcu_self_test"
+processor = "kernel"
+description = '''Run the RCU early boot self tests
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

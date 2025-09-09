@@ -1,0 +1,17 @@
+# This is a libKCmdline definition document.
+
+title = "rcutorture.gpwrap_lag_gps - definition.toml"
+name = "rcutorture.gpwrap_lag_gps"
+processor = "kernel"
+description = '''Set the value for grace-period wrap lag during
+active lag testing periods. This controls how many
+grace periods differences we tolerate between
+rdp and rnp's gp_seq before setting overflow flag.
+The default is always set to 8.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

@@ -1,0 +1,19 @@
+# This is a libKCmdline definition document.
+
+title = "rcutree.qovld - definition.toml"
+name = "rcutree.qovld"
+processor = "kernel"
+description = '''Set threshold of queued RCU callbacks beyond which
+RCU's force-quiescent-state scan will aggressively
+enlist help from cond_resched() and sched IPIs to
+help CPUs more quickly reach quiescent states.
+Set to less than zero to make this be set based
+on rcutree.qhimark at boot time and to zero to
+disable more aggressive help enlistment.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

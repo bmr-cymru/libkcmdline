@@ -1,0 +1,16 @@
+# This is a libKCmdline definition document.
+
+title = "noearly - definition.toml"
+name = "noearly"
+processor = "kernel"
+description = '''[X86] Don't do any early type 1 scanning.
+This might help on some broken boards which
+machine check when some devices' config space
+is read. But various workarounds are disabled
+and some IOMMU drivers will not work.'''
+
+[syntax]
+type = ""
+format = ""
+choices = []
+allow_empty = true

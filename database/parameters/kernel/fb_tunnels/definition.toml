@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "fb_tunnels - definition.toml"
+name = "fb_tunnels"
+processor = "kernel"
+description = '''See Documentation/admin-guide/sysctl/net.rst for
+fb_tunnels_only_for_init_ns
+'''
+
+[syntax]
+type = "enum"
+format = "enum"
+choices = ["initns", "none"]
+allow_empty = true

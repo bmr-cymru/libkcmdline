@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "no-kvmapf - definition.toml"
+name = "no-kvmapf"
+processor = "kernel"
+description = '''Disable paravirtualized asynchronous page
+fault handling.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

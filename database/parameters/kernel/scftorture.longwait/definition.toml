@@ -1,0 +1,18 @@
+# This is a libKCmdline definition document.
+
+title = "scftorture.longwait - definition.toml"
+name = "scftorture.longwait"
+processor = "kernel"
+description = '''Request ridiculously long waits randomly selected
+up to the chosen limit in seconds.  Zero (the
+default) disables this feature.  Please note
+that requesting even small non-zero numbers of
+seconds can result in RCU CPU stall warnings,
+softlockup complaints, and so on.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

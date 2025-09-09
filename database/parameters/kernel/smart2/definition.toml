@@ -1,0 +1,12 @@
+# This is a libKCmdline definition document.
+
+title = "smart2 - definition.toml"
+name = "smart2"
+processor = "kernel"
+description = ''''''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

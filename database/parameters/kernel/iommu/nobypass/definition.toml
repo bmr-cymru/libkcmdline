@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "nobypass - definition.toml"
+name = "nobypass"
+processor = "kernel"
+description = '''Disable IOMMU bypass, using IOMMU for PCI devices.
+'''
+
+[syntax]
+type = ""
+format = ""
+choices = []
+allow_empty = true

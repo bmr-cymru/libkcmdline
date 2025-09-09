@@ -1,0 +1,17 @@
+# This is a libKCmdline definition document.
+
+title = "rcutorture.leakpointer - definition.toml"
+name = "rcutorture.leakpointer"
+processor = "kernel"
+description = '''Leak an RCU-protected pointer out of the reader.
+This can of course result in splats, and is
+intended to test the ability of things like
+CONFIG_RCU_STRICT_GRACE_PERIOD=y to detect
+such leaks.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

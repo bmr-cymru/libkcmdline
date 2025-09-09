@@ -1,0 +1,17 @@
+# This is a libKCmdline definition document.
+
+title = "alloc_snapshot - definition.toml"
+name = "alloc_snapshot"
+processor = "kernel"
+description = '''Allocate the ftrace snapshot buffer on boot up when the
+main buffer is allocated. This is handy if debugging
+and you need to use tracing_snapshot() on boot up, and
+do not want to use tracing_snapshot_alloc() as it needs
+to be done where GFP_KERNEL allocations are allowed.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

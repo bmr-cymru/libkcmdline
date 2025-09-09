@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "triple - definition.toml"
+name = "triple"
+processor = "kernel"
+description = '''Force a triple fault (init)
+'''
+
+[syntax]
+type = ""
+format = ""
+choices = []
+allow_empty = true

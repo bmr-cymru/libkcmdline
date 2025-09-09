@@ -1,0 +1,15 @@
+# This is a libKCmdline definition document.
+
+title = "no_file_caps - definition.toml"
+name = "no_file_caps"
+processor = "kernel"
+description = '''the kernel not to honor file capabilities.  The
+only way then for a file to be executed with privilege
+is to be setuid root or executed by root.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

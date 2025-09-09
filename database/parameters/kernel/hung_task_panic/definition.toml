@@ -1,0 +1,19 @@
+# This is a libKCmdline definition document.
+
+title = "hung_task_panic - definition.toml"
+name = "hung_task_panic"
+processor = "kernel"
+description = '''[KNL] Should the hung task detector generate panics.
+
+A value of 1 instructs the kernel to panic when a
+hung task is detected. The default value is controlled
+by the CONFIG_BOOTPARAM_HUNG_TASK_PANIC build-time
+option. The value selected by this boot parameter can
+be changed later by the kernel.hung_task_panic sysctl.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

@@ -1,0 +1,15 @@
+# This is a libKCmdline definition document.
+
+title = "rootwait - definition.toml"
+name = "rootwait"
+processor = "kernel"
+description = '''Maximum time (in seconds) to wait for root device
+to show up before attempting to mount the root
+filesystem.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

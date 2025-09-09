@@ -1,0 +1,15 @@
+# This is a libKCmdline definition document.
+
+title = "rcutorture.irqreader - definition.toml"
+name = "rcutorture.irqreader"
+processor = "kernel"
+description = '''Run RCU readers from irq handlers, or, more
+accurately, from a timer handler.  Not all RCU
+flavors take kindly to this sort of thing.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "vdso - definition.toml"
+name = "vdso"
+processor = "kernel"
+description = '''vdso=1: enable VDSO (the default)
+vdso=0: disable VDSO mapping
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "ima_appraise - definition.toml"
+name = "ima_appraise"
+processor = "kernel"
+description = '''appraise integrity measurements
+default: "enforce"
+'''
+
+[syntax]
+type = "enum"
+format = "enum"
+choices = ["off", "enforce", "fix", "log"]
+allow_empty = true

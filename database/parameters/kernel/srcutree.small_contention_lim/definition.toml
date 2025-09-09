@@ -1,0 +1,18 @@
+# This is a libKCmdline definition document.
+
+title = "srcutree.small_contention_lim - definition.toml"
+name = "srcutree.small_contention_lim"
+processor = "kernel"
+description = '''Specifies the number of update-side contention
+events per jiffy will be tolerated before
+initiating a conversion of an srcu_struct
+structure to big form.	Note that the value of
+srcutree.convert_to_big must have the 0x10 bit
+set for contention-based conversions to occur.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

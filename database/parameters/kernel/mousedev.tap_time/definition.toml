@@ -1,0 +1,15 @@
+# This is a libKCmdline definition document.
+
+title = "mousedev.tap_time - definition.toml"
+name = "mousedev.tap_time"
+processor = "kernel"
+description = '''[MOUSE] Maximum time between finger touching and
+leaving touchpad surface for touch to be considered
+a tap and be reported as a left button click (for
+touchpads working in absolute mode only).'''
+
+[syntax]
+type = "<msecs>"
+format = "<msecs>"
+choices = []
+allow_empty = true

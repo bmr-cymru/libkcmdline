@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "nofpu - definition.toml"
+name = "nofpu"
+processor = "kernel"
+description = '''Disable hardware FPU at boot time.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

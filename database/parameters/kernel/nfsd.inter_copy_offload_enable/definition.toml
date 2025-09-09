@@ -1,0 +1,15 @@
+# This is a libKCmdline definition document.
+
+title = "nfsd.inter_copy_offload_enable - definition.toml"
+name = "nfsd.inter_copy_offload_enable"
+processor = "kernel"
+description = '''[NFSv4.2] When set to 1, the server will support
+server-to-server copies for which this server is
+the destination of the copy.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

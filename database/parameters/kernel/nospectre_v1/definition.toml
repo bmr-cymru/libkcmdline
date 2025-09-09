@@ -1,0 +1,15 @@
+# This is a libKCmdline definition document.
+
+title = "nospectre_v1 - definition.toml"
+name = "nospectre_v1"
+processor = "kernel"
+description = '''Disable mitigations for Spectre Variant 1
+(bounds check bypass). With this option data leaks are
+possible in the system.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

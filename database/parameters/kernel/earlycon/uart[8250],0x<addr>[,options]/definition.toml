@@ -1,0 +1,22 @@
+# This is a libKCmdline definition document.
+
+title = "uart[8250],0x<addr>[,options] - definition.toml"
+name = "uart[8250],0x<addr>[,options]"
+processor = "kernel"
+description = '''Start an early, polled-mode console on the 8250/16550
+UART at the specified I/O port or MMIO address.
+MMIO inter-register address stride is either 8-bit
+(mmio) or 32-bit (mmio32 or mmio32be).
+If none of [io|mmio|mmio32|mmio32be], <addr> is assumed
+to be equivalent to 'mmio'. 'options' are specified
+in the same format described for "console=ttyS<n>"; if
+unspecified, the h/w is not initialized. 'uartclk' is
+the uart clock frequency; if unspecified, it is set
+to 'BASE_BAUD' * 16.
+'''
+
+[syntax]
+type = ""
+format = ""
+choices = []
+allow_empty = true

@@ -1,0 +1,15 @@
+# This is a libKCmdline definition document.
+
+title = "x2apic_phys - definition.toml"
+name = "x2apic_phys"
+processor = "kernel"
+description = '''Use x2apic physical mode instead of
+default x2apic cluster mode on platforms
+supporting x2apic.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

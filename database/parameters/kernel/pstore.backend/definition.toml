@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "pstore.backend - definition.toml"
+name = "pstore.backend"
+processor = "kernel"
+description = '''the name of the pstore backend to use
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

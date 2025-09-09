@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "vmpanic - definition.toml"
+name = "vmpanic"
+processor = "kernel"
+description = '''Perform z/VM CP command after kernel panic.
+<command>
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

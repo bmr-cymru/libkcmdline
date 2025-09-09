@@ -1,0 +1,20 @@
+# This is a libKCmdline definition document.
+
+title = "intremap - definition.toml"
+name = "intremap"
+processor = "kernel"
+description = '''on	enable Interrupt Remapping (default)
+off	disable Interrupt Remapping
+nosid	disable Source ID checking
+no_x2apic_optout
+BIOS x2APIC opt-out request will be ignored
+nopost	disable Interrupt Posting
+posted_msi
+enable MSIs delivered as posted interrupts
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

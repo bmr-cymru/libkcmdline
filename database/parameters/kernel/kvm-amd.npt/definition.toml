@@ -1,0 +1,16 @@
+# This is a libKCmdline definition document.
+
+title = "kvm-amd.npt - definition.toml"
+name = "kvm-amd.npt"
+processor = "kernel"
+description = '''Control KVM's use of Nested Page Tables,
+a.k.a. Two-Dimensional Page Tables. Default is 1
+(enabled). Disable by KVM if hardware lacks support
+for NPT.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

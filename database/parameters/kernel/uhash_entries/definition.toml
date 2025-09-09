@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "uhash_entries - definition.toml"
+name = "uhash_entries"
+processor = "kernel"
+description = '''Set number of hash buckets for UDP/UDP-Lite connections
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

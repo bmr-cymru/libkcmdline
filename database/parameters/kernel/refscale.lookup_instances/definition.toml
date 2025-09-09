@@ -1,0 +1,16 @@
+# This is a libKCmdline definition document.
+
+title = "refscale.lookup_instances - definition.toml"
+name = "refscale.lookup_instances"
+processor = "kernel"
+description = '''Number of data elements to use for the forms of
+SLAB_TYPESAFE_BY_RCU testing.  A negative number
+is negated and multiplied by nr_cpu_ids, while
+zero specifies nr_cpu_ids.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "hpbussize - definition.toml"
+name = "hpbussize"
+processor = "kernel"
+description = '''The minimum amount of additional bus numbers
+reserved for buses below a hotplug bridge.
+Default is 1.'''
+
+[syntax]
+type = "nn"
+format = "nn"
+choices = []
+allow_empty = true

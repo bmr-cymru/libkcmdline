@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "lockd.nlm_tcpport - definition.toml"
+name = "lockd.nlm_tcpport"
+processor = "kernel"
+description = '''Assign TCP port.
+'''
+
+[syntax]
+type = "<integer>"
+format = "<integer>"
+choices = []
+allow_empty = true

@@ -1,0 +1,12 @@
+# This is a libKCmdline definition document.
+
+title = "cs89x0_dma - definition.toml"
+name = "cs89x0_dma"
+processor = "kernel"
+description = ''''''
+
+[syntax]
+type = "<dma>"
+format = "<dma>"
+choices = []
+allow_empty = true

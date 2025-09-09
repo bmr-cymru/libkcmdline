@@ -1,0 +1,12 @@
+# This is a libKCmdline definition document.
+
+title = "off - definition.toml"
+name = "off"
+processor = "kernel"
+description = '''[X86] don't probe for the PCI bus'''
+
+[syntax]
+type = ""
+format = ""
+choices = []
+allow_empty = true

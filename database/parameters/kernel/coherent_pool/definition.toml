@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "coherent_pool - definition.toml"
+name = "coherent_pool"
+processor = "kernel"
+description = '''Sets the size of memory pool for coherent, atomic dma
+allocations, by default set to 256K.
+'''
+
+[syntax]
+type = "nn[KMG]"
+format = "nn[KMG]"
+choices = []
+allow_empty = true

@@ -1,0 +1,17 @@
+# This is a libKCmdline definition document.
+
+title = "page_poison - definition.toml"
+name = "page_poison"
+processor = "kernel"
+description = '''Boot-time parameter changing the state of
+poisoning on the buddy allocator, available with
+CONFIG_PAGE_POISONING=y.
+off: turn off poisoning (default)
+on: turn on poisoning
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

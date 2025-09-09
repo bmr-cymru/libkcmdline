@@ -1,0 +1,19 @@
+# This is a libKCmdline definition document.
+
+title = "skew_tick - definition.toml"
+name = "skew_tick"
+processor = "kernel"
+description = '''Offset the periodic timer tick per cpu to mitigate
+xtime_lock contention on larger systems, and/or RCU lock
+contention on all systems with CONFIG_MAXSMP set.
+0 -- disable. (may be 1 via CONFIG_CMDLINE="skew_tick=1"
+1 -- enable.
+Note: increases power consumption, thus should only be
+enabled if running jitter sensitive (HPC/RT) workloads.
+'''
+
+[syntax]
+type = "enum"
+format = "enum"
+choices = ["0", "1"]
+allow_empty = true

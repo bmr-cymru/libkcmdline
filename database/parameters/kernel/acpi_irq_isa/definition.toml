@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "acpi_irq_isa - definition.toml"
+name = "acpi_irq_isa"
+processor = "kernel"
+description = '''If irq_balance, mark listed IRQs used by ISA
+'''
+
+[syntax]
+type = "<irq>,<irq>..."
+format = "<irq>,<irq>..."
+choices = []
+allow_empty = true

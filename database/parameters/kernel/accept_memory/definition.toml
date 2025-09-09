@@ -1,0 +1,20 @@
+# This is a libKCmdline definition document.
+
+title = "accept_memory - definition.toml"
+name = "accept_memory"
+processor = "kernel"
+description = '''default: lazy
+By default, unaccepted memory is accepted lazily to
+avoid prolonged boot times. The lazy option will add
+some runtime overhead until all memory is eventually
+accepted. In most cases the overhead is negligible.
+For some workloads or for debugging purposes
+accept_memory=eager can be used to accept all memory
+at once during boot.
+'''
+
+[syntax]
+type = "enum"
+format = "enum"
+choices = ["eager", "lazy"]
+allow_empty = true

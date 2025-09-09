@@ -1,0 +1,15 @@
+# This is a libKCmdline definition document.
+
+title = "libata.ignore_hpa - definition.toml"
+name = "libata.ignore_hpa"
+processor = "kernel"
+description = '''Ignore HPA limit
+libata.ignore_hpa=0	  keep BIOS limits (default)
+libata.ignore_hpa=1	  ignore limits, using full disk
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

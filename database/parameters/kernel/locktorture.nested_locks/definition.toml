@@ -1,0 +1,17 @@
+# This is a libKCmdline definition document.
+
+title = "locktorture.nested_locks - definition.toml"
+name = "locktorture.nested_locks"
+processor = "kernel"
+description = '''Specify the maximum lock nesting depth that
+locktorture is to exercise, up to a limit of 8
+(MAX_NESTED_LOCKS).  Specify zero to disable.
+Note that this parameter is ineffective on types
+of locks that do not support nested acquisition.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

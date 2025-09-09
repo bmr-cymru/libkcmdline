@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "usbhid.jspoll - definition.toml"
+name = "usbhid.jspoll"
+processor = "kernel"
+description = '''[USBHID] The interval which joysticks are to be polled at.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

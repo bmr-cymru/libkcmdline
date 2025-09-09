@@ -1,0 +1,17 @@
+# This is a libKCmdline definition document.
+
+title = "nfs.delay_retrans - definition.toml"
+name = "nfs.delay_retrans"
+processor = "kernel"
+description = '''[NFS] specifies the number of times the NFSv4 client
+retries the request before returning an EAGAIN error,
+after a reply of NFS4ERR_DELAY from the server.
+Only applies if the softerr mount option is enabled,
+and the specified value is >= 0.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

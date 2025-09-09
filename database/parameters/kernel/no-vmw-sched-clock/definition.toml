@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "no-vmw-sched-clock - definition.toml"
+name = "no-vmw-sched-clock"
+processor = "kernel"
+description = '''[X86,PV_OPS,EARLY] Disable paravirtualized VMware
+scheduler clock and use the default one.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

@@ -1,0 +1,16 @@
+# This is a libKCmdline definition document.
+
+title = "dont_log_ce - definition.toml"
+name = "dont_log_ce"
+processor = "kernel"
+description = '''don't make logs for corrected errors.  All events
+reported as corrected are silently cleared by OS. This
+option will be useful if you have no interest in any
+of corrected errors.
+'''
+
+[syntax]
+type = ""
+format = ""
+choices = []
+allow_empty = true

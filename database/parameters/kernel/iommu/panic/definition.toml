@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "panic - definition.toml"
+name = "panic"
+processor = "kernel"
+description = '''Always panic when IOMMU overflows.
+'''
+
+[syntax]
+type = ""
+format = ""
+choices = []
+allow_empty = true

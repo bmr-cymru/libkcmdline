@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "rcutree.csd_lock_suppress_rcu_stall - definition.toml"
+name = "rcutree.csd_lock_suppress_rcu_stall"
+processor = "kernel"
+description = '''Do only a one-line RCU CPU stall warning when
+there is an ongoing too-long CSD-lock wait.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

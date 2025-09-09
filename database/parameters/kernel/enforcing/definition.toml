@@ -1,0 +1,19 @@
+# This is a libKCmdline definition document.
+
+title = "enforcing - definition.toml"
+name = "enforcing"
+processor = "kernel"
+description = '''Set initial enforcing status.
+See security/selinux/Kconfig help text.
+0 -- permissive (log only, no denials).
+1 -- enforcing (deny and log).
+Default value is 0.
+Value can be changed at runtime via
+/sys/fs/selinux/enforce.
+'''
+
+[syntax]
+type = "enum"
+format = "enum"
+choices = ["0", "1"]
+allow_empty = true

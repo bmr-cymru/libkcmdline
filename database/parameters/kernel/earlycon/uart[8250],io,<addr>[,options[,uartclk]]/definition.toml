@@ -1,0 +1,12 @@
+# This is a libKCmdline definition document.
+
+title = "uart[8250],io,<addr>[,options[,uartclk]] - definition.toml"
+name = "uart[8250],io,<addr>[,options[,uartclk]]"
+processor = "kernel"
+description = ''''''
+
+[syntax]
+type = ""
+format = ""
+choices = []
+allow_empty = true

@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "noisapnp - definition.toml"
+name = "noisapnp"
+processor = "kernel"
+description = '''Disables ISA PnP code.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

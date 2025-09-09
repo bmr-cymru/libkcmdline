@@ -1,0 +1,67 @@
+# This is a libKCmdline definition document.
+
+title = "usbcore.quirks - definition.toml"
+name = "usbcore.quirks"
+processor = "kernel"
+description = '''[USB] A list of quirk entries to augment the built-in
+usb core quirk list. List entries are separated by
+commas. Each entry has the form
+VendorID:ProductID:Flags. The IDs are 4-digit hex
+numbers and Flags is a set of letters. Each letter
+will change the built-in quirk; setting it if it is
+clear and clearing it if it is set. The letters have
+the following meanings:
+a = USB_QUIRK_STRING_FETCH_255 (string
+descriptors must not be fetched using
+a 255-byte read);
+b = USB_QUIRK_RESET_RESUME (device can't resume
+correctly so reset it instead);
+c = USB_QUIRK_NO_SET_INTF (device can't handle
+Set-Interface requests);
+d = USB_QUIRK_CONFIG_INTF_STRINGS (device can't
+handle its Configuration or Interface
+strings);
+e = USB_QUIRK_RESET (device can't be reset
+f = USB_QUIRK_HONOR_BNUMINTERFACES (device has
+more interface descriptions than the
+talking to these interfaces);
+g = USB_QUIRK_DELAY_INIT (device needs a pause
+the device descriptor);
+h = USB_QUIRK_LINEAR_UFRAME_INTR_BINTERVAL (For
+high speed and super speed interrupt
+require the interval in microframes (1
+microframe = 125 microseconds) to be
+calculated as interval = 2 ^
+(bInterval-1).
+Devices with this quirk report their
+bInterval as the result of this
+calculation instead of the exponent
+variable used in the calculation);
+i = USB_QUIRK_DEVICE_QUALIFIER (device can't
+handle device_qualifier descriptor
+requests);
+j = USB_QUIRK_IGNORE_REMOTE_WAKEUP (device
+remote wakeup capability);
+k = USB_QUIRK_NO_LPM (device can't handle Link
+Power Management);
+l = USB_QUIRK_LINEAR_FRAME_INTR_BINTERVAL
+(Device reports its bInterval as linear
+frames instead of the USB 2.0
+calculation);
+m = USB_QUIRK_DISCONNECT_SUSPEND (Device needs
+to be disconnected before suspend to
+prevent spurious wakeup);
+n = USB_QUIRK_DELAY_CTRL_MSG (Device needs a
+pause after every control message);
+o = USB_QUIRK_HUB_SLOW_RESET (Hub needs extra
+delay after resetting its port);
+p = USB_QUIRK_SHORT_SET_ADDRESS_REQ_TIMEOUT
+(Reduce timeout of the SET_ADDRESS
+request from 5000 ms to 500 ms);
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

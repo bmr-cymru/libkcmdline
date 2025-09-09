@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "rcutorture.nocbs_toggle - definition.toml"
+name = "rcutorture.nocbs_toggle"
+processor = "kernel"
+description = '''Set the delay in milliseconds between successive
+callback-offload toggling attempts.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

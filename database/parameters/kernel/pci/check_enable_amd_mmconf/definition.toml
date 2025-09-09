@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "check_enable_amd_mmconf - definition.toml"
+name = "check_enable_amd_mmconf"
+processor = "kernel"
+description = '''[X86] check for and enable
+properly configured MMIO access to PCI
+config space on AMD family 10h CPU'''
+
+[syntax]
+type = ""
+format = ""
+choices = []
+allow_empty = true

@@ -1,0 +1,18 @@
+# This is a libKCmdline definition document.
+
+title = "nfs.send_implementation_id - definition.toml"
+name = "nfs.send_implementation_id"
+processor = "kernel"
+description = '''[NFSv4.1] Send client implementation identification
+information in exchange_id requests.
+If zero, no implementation identification information
+will be sent.
+The default is to send the implementation identification
+information.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "rcutorture.gp_cond - definition.toml"
+name = "rcutorture.gp_cond"
+processor = "kernel"
+description = '''Use conditional/asynchronous update-side
+normal-grace-period primitives, if available.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

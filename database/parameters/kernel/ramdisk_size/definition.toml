@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "ramdisk_size - definition.toml"
+name = "ramdisk_size"
+processor = "kernel"
+description = '''Sizes of RAM disks in kilobytes
+See Documentation/admin-guide/blockdev/ramdisk.rst.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

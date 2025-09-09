@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "assign-busses - definition.toml"
+name = "assign-busses"
+processor = "kernel"
+description = '''[X86] Always assign all PCI bus
+numbers ourselves, overriding
+whatever the firmware may have done.'''
+
+[syntax]
+type = ""
+format = ""
+choices = []
+allow_empty = true

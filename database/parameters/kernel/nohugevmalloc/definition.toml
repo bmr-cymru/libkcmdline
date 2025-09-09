@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "nohugevmalloc - definition.toml"
+name = "nohugevmalloc"
+processor = "kernel"
+description = '''Disable kernel huge vmalloc mappings.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

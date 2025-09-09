@@ -1,0 +1,15 @@
+# This is a libKCmdline definition document.
+
+title = "rcutree.enable_rcu_lazy - definition.toml"
+name = "rcutree.enable_rcu_lazy"
+processor = "kernel"
+description = '''To save power, batch RCU callbacks and flush after
+delay, memory pressure or callback list growing too
+big.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

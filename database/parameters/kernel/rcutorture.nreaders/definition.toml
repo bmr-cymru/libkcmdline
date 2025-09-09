@@ -1,0 +1,17 @@
+# This is a libKCmdline definition document.
+
+title = "rcutorture.nreaders - definition.toml"
+name = "rcutorture.nreaders"
+processor = "kernel"
+description = '''Set number of RCU readers.  The value -1 selects
+N-1, where N is the number of CPUs.  A value
+"n" less than -1 selects N-n-2, where N is again
+the number of CPUs.  For example, -2 selects N
+(the number of CPUs), -3 selects N+1, and so on.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

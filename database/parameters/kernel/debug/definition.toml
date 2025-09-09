@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "debug - definition.toml"
+name = "debug"
+processor = "kernel"
+description = '''Enable kernel debugging (events log level).
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

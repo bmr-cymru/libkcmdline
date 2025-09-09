@@ -1,0 +1,16 @@
+# This is a libKCmdline definition document.
+
+title = "owl,<addr> - definition.toml"
+name = "owl,<addr>"
+processor = "kernel"
+description = '''Start an early, polled-mode console on a serial port
+of an Actions Semi SoC, such as S500 or S900, at the
+specified address. The serial port must already be
+setup and configured. Options are not yet supported.
+'''
+
+[syntax]
+type = ""
+format = ""
+choices = []
+allow_empty = true

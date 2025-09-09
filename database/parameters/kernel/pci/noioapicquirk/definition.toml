@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "noioapicquirk - definition.toml"
+name = "noioapicquirk"
+processor = "kernel"
+description = '''[APIC] Disable all boot interrupt quirks.
+Safety option to keep boot IRQs enabled. This
+should never be necessary.'''
+
+[syntax]
+type = ""
+format = ""
+choices = []
+allow_empty = true

@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "trace_buf_size - definition.toml"
+name = "trace_buf_size"
+processor = "kernel"
+description = '''[FTRACE] will set tracing buffer size on each cpu.
+'''
+
+[syntax]
+type = "nn[KMG]"
+format = "nn[KMG]"
+choices = []
+allow_empty = true

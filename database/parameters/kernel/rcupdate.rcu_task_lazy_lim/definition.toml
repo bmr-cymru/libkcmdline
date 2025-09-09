@@ -1,0 +1,17 @@
+# This is a libKCmdline definition document.
+
+title = "rcupdate.rcu_task_lazy_lim - definition.toml"
+name = "rcupdate.rcu_task_lazy_lim"
+processor = "kernel"
+description = '''Number of callbacks on a given CPU that will
+cancel laziness on that CPU.  Use -1 to disable
+cancellation of laziness, but be advised that
+doing so increases the danger of OOM due to
+callback flooding.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

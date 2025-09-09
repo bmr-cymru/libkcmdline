@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "baycom_ser_hdx - definition.toml"
+name = "baycom_ser_hdx"
+processor = "kernel"
+description = '''BayCom Serial Port AX.25 Modem (Half Duplex Mode)
+See header of drivers/net/hamradio/baycom_ser_hdx.c.
+'''
+
+[syntax]
+type = "<io>,<irq>,<mode>"
+format = "<io>,<irq>,<mode>"
+choices = []
+allow_empty = true

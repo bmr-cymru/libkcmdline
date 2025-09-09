@@ -1,0 +1,19 @@
+# This is a libKCmdline definition document.
+
+title = "swiotlb - definition.toml"
+name = "swiotlb"
+processor = "kernel"
+description = '''<int> -- Number of I/O TLB slabs
+<int> -- Second integer after comma. Number of swiotlb
+areas with their own lock. Will be rounded up
+to a power of 2.
+force -- force using of bounce buffers even if they
+wouldn't be automatically used by the kernel
+noforce -- Never use bounce buffers (for debugging)
+'''
+
+[syntax]
+type = "enum"
+format = "enum"
+choices = ["<int> [,<int>]", "force", "noforce"]
+allow_empty = true

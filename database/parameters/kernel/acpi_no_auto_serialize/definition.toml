@@ -1,0 +1,18 @@
+# This is a libKCmdline definition document.
+
+title = "acpi_no_auto_serialize - definition.toml"
+name = "acpi_no_auto_serialize"
+processor = "kernel"
+description = '''Disable auto-serialization of AML methods
+AML control methods that contain the opcodes to create
+named objects will be marked as "Serialized" by the
+auto-serialization feature.
+This feature is enabled by default.
+This option allows to turn off the feature.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

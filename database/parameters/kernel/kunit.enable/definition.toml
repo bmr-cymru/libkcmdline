@@ -1,0 +1,17 @@
+# This is a libKCmdline definition document.
+
+title = "kunit.enable - definition.toml"
+name = "kunit.enable"
+processor = "kernel"
+description = '''Enable executing KUnit tests. Requires
+CONFIG_KUNIT to be set to be fully enabled. The
+default value can be overridden via
+KUNIT_DEFAULT_ENABLED.
+Default is 1 (enabled)
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

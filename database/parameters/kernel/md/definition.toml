@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "md - definition.toml"
+name = "md"
+processor = "kernel"
+description = '''RAID subsystems devices and level
+See Documentation/admin-guide/md.rst.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

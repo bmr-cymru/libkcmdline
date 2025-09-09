@@ -1,0 +1,18 @@
+# This is a libKCmdline definition document.
+
+title = "edac_report - definition.toml"
+name = "edac_report"
+processor = "kernel"
+description = '''Control how to report EDAC event
+on: enable EDAC to report H/W event. May be overridden
+by other higher priority error reporting module.
+off: disable H/W event reporting through EDAC.
+force: enforce the use of EDAC to report H/W event.
+default: on.
+'''
+
+[syntax]
+type = "enum"
+format = "enum"
+choices = ["on", "off", "force"]
+allow_empty = true

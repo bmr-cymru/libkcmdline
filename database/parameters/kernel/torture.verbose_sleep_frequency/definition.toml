@@ -1,0 +1,15 @@
+# This is a libKCmdline definition document.
+
+title = "torture.verbose_sleep_frequency - definition.toml"
+name = "torture.verbose_sleep_frequency"
+processor = "kernel"
+description = '''Specifies how many verbose printk()s should be
+emitted between each sleep.  The default of zero
+disables verbose-printk() sleeping.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

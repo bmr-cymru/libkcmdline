@@ -1,0 +1,18 @@
+# This is a libKCmdline definition document.
+
+title = "iommu.forcedac - definition.toml"
+name = "iommu.forcedac"
+processor = "kernel"
+description = '''Control IOVA allocation for PCI devices.
+0 - Try to allocate a 32-bit DMA address first, before
+falling back to the full range if needed.
+1 - Allocate directly from the full usable range,
+forcing Dual Address Cycle for PCI cards supporting
+greater than 32-bit addressing.
+'''
+
+[syntax]
+type = "enum"
+format = "enum"
+choices = ["0", "1"]
+allow_empty = true

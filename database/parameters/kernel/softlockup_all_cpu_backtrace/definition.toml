@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "softlockup_all_cpu_backtrace - definition.toml"
+name = "softlockup_all_cpu_backtrace"
+processor = "kernel"
+description = '''[KNL] Should the soft-lockup detector generate
+backtraces on all cpus.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

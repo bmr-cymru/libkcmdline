@@ -1,0 +1,12 @@
+# This is a libKCmdline definition document.
+
+title = "noari - definition.toml"
+name = "noari"
+processor = "kernel"
+description = '''do not use PCIe ARI.'''
+
+[syntax]
+type = ""
+format = ""
+choices = []
+allow_empty = true

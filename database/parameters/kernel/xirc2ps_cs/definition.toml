@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "xirc2ps_cs - definition.toml"
+name = "xirc2ps_cs"
+processor = "kernel"
+description = '''Format:
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

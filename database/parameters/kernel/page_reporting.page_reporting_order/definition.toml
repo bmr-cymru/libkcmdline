@@ -1,0 +1,15 @@
+# This is a libKCmdline definition document.
+
+title = "page_reporting.page_reporting_order - definition.toml"
+name = "page_reporting.page_reporting_order"
+processor = "kernel"
+description = '''[KNL] Minimal page reporting order
+Adjust the minimal page reporting order. The page
+reporting is disabled when it exceeds MAX_PAGE_ORDER.
+'''
+
+[syntax]
+type = "<integer>"
+format = "<integer>"
+choices = []
+allow_empty = true

@@ -1,0 +1,15 @@
+# This is a libKCmdline definition document.
+
+title = "db9.dev[2|3] - definition.toml"
+name = "db9.dev[2|3]"
+processor = "kernel"
+description = '''Multisystem joystick support via parallel port
+(one device per port)
+See also Documentation/input/devices/joystick-parport.rst
+'''
+
+[syntax]
+type = "<port#>,<type>"
+format = "<port#>,<type>"
+choices = []
+allow_empty = true

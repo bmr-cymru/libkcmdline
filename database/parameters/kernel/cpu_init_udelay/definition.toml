@@ -1,0 +1,16 @@
+# This is a libKCmdline definition document.
+
+title = "cpu_init_udelay - definition.toml"
+name = "cpu_init_udelay"
+processor = "kernel"
+description = '''[X86,EARLY] Delay for N microsec between assert and de-assert
+of APIC INIT to start processors.  This delay occurs
+on every CPU online, such as boot, and resume from suspend.
+Default: 10000
+'''
+
+[syntax]
+type = "N"
+format = "N"
+choices = []
+allow_empty = true

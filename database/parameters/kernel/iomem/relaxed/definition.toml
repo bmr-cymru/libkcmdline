@@ -1,0 +1,12 @@
+# This is a libKCmdline definition document.
+
+title = "relaxed - definition.toml"
+name = "relaxed"
+processor = "kernel"
+description = ''''''
+
+[syntax]
+type = ""
+format = ""
+choices = []
+allow_empty = true

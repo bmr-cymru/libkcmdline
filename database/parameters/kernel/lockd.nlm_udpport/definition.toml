@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "lockd.nlm_udpport - definition.toml"
+name = "lockd.nlm_udpport"
+processor = "kernel"
+description = '''Assign UDP port.
+'''
+
+[syntax]
+type = "<integer>"
+format = "<integer>"
+choices = []
+allow_empty = true

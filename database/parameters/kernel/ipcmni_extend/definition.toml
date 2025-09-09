@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "ipcmni_extend - definition.toml"
+name = "ipcmni_extend"
+processor = "kernel"
+description = '''Extend the maximum number of unique System V
+IPC identifiers from 32,768 to 16,777,216.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

@@ -1,0 +1,16 @@
+# This is a libKCmdline definition document.
+
+title = "hpet - definition.toml"
+name = "hpet"
+processor = "kernel"
+description = '''option to control HPET usage
+verbose }
+disable: disable HPET and use PIT instead
+verbose: show contents of HPET registers during setup
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

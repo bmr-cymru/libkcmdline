@@ -1,0 +1,12 @@
+# This is a libKCmdline definition document.
+
+title = "pt - definition.toml"
+name = "pt"
+processor = "kernel"
+description = '''[X86]'''
+
+[syntax]
+type = ""
+format = ""
+choices = []
+allow_empty = true

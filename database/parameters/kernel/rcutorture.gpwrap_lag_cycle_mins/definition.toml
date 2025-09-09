@@ -1,0 +1,16 @@
+# This is a libKCmdline definition document.
+
+title = "rcutorture.gpwrap_lag_cycle_mins - definition.toml"
+name = "rcutorture.gpwrap_lag_cycle_mins"
+processor = "kernel"
+description = '''Set the total cycle duration for gpwrap lag
+testing in minutes. This is the total time for
+one complete cycle of active and inactive
+testing periods. Default is 30 minutes.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

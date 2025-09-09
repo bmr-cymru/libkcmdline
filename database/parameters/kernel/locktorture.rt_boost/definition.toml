@@ -1,0 +1,20 @@
+# This is a libKCmdline definition document.
+
+title = "locktorture.rt_boost - definition.toml"
+name = "locktorture.rt_boost"
+processor = "kernel"
+description = '''Do periodic testing of real-time lock priority
+boosting.  Select 0 to disable, 1 to boost
+only rt_mutex, and 2 to boost unconditionally.
+Defaults to 2, which might seem to be an
+odd choice, but which should be harmless for
+non-real-time spinlocks, due to their disabling
+of preemption.	Note that non-realtime mutexes
+disable boosting.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

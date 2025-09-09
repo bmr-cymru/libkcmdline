@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "dell_smm_hwmon.power_status - definition.toml"
+name = "dell_smm_hwmon.power_status"
+processor = "kernel"
+description = '''[HW] Report power status in /proc/i8k
+(disabled by default).
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

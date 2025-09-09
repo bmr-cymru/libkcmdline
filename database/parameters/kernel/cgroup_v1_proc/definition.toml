@@ -1,0 +1,18 @@
+# This is a libKCmdline definition document.
+
+title = "cgroup_v1_proc - definition.toml"
+name = "cgroup_v1_proc"
+processor = "kernel"
+description = '''Show also missing controllers in /proc/cgroups
+/proc/cgroups lists only v1 controllers by default.
+This compatibility option enables listing also v2
+controllers (whose v1 code is not compiled!), so that
+semi-legacy software can check this file to decide
+about usage of v2 (sic) controllers.
+'''
+
+[syntax]
+type = "enum"
+format = "enum"
+choices = ["true", "false"]
+allow_empty = true

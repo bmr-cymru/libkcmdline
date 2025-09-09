@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "svm - definition.toml"
+name = "svm"
+processor = "kernel"
+description = '''This parameter controls use of the Protected
+Execution Facility on pSeries.
+'''
+
+[syntax]
+type = "enum"
+format = "enum"
+choices = ["on", "off", "y", "n", "1", "0"]
+allow_empty = true

@@ -1,0 +1,16 @@
+# This is a libKCmdline definition document.
+
+title = "sysrq_always_enabled - definition.toml"
+name = "sysrq_always_enabled"
+processor = "kernel"
+description = '''[KNL]
+Ignore sysrq setting - this boot parameter will
+neutralize any effect of /proc/sys/kernel/sysrq.
+Useful for debugging.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

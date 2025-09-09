@@ -1,0 +1,16 @@
+# This is a libKCmdline definition document.
+
+title = "rcupdate.rcu_cpu_stall_notifiers - definition.toml"
+name = "rcupdate.rcu_cpu_stall_notifiers"
+processor = "kernel"
+description = '''Provide RCU CPU stall notifiers, but see the
+warnings in the RCU_CPU_STALL_NOTIFIER Kconfig
+option's help text.  TL;DR:  You almost certainly
+do not want rcupdate.rcu_cpu_stall_notifiers.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

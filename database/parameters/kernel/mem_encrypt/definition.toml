@@ -1,0 +1,20 @@
+# This is a libKCmdline definition document.
+
+title = "mem_encrypt - definition.toml"
+name = "mem_encrypt"
+processor = "kernel"
+description = '''AMD Secure Memory Encryption (SME) control
+Valid arguments: on, off
+Default: off
+mem_encrypt=on:		Activate SME
+mem_encrypt=off:	Do not activate SME
+
+Refer to Documentation/virt/kvm/x86/amd-memory-encryption.rst
+for details on when memory encryption can be activated.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

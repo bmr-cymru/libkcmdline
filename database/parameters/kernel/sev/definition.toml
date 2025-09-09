@@ -1,0 +1,12 @@
+# This is a libKCmdline definition document.
+
+title = "sev - definition.toml"
+name = "sev"
+processor = "kernel"
+description = ''''''
+
+[syntax]
+type = "option[,option...]"
+format = "option[,option...]"
+choices = []
+allow_empty = true

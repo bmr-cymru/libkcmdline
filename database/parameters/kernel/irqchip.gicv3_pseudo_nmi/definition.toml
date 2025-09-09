@@ -1,0 +1,15 @@
+# This is a libKCmdline definition document.
+
+title = "irqchip.gicv3_pseudo_nmi - definition.toml"
+name = "irqchip.gicv3_pseudo_nmi"
+processor = "kernel"
+description = '''Enables support for pseudo-NMIs in the kernel. This
+requires the kernel to be built with
+CONFIG_ARM64_PSEUDO_NMI.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

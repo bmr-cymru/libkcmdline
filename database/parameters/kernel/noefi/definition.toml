@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "noefi - definition.toml"
+name = "noefi"
+processor = "kernel"
+description = '''Disable EFI runtime services support.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

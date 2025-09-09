@@ -1,0 +1,18 @@
+# This is a libKCmdline definition document.
+
+title = "scftorture.weight_many - definition.toml"
+name = "scftorture.weight_many"
+processor = "kernel"
+description = '''The probability weighting to use for the
+smp_call_function_many() function with a zero
+"wait" parameter.  See weight_single.
+Note well that setting a high probability for
+this weighting can place serious IPI load
+on the system.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

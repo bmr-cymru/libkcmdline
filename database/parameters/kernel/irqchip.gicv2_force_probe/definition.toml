@@ -1,0 +1,16 @@
+# This is a libKCmdline definition document.
+
+title = "irqchip.gicv2_force_probe - definition.toml"
+name = "irqchip.gicv2_force_probe"
+processor = "kernel"
+description = '''[ARM,ARM64,EARLY]
+Force the kernel to look for the second 4kB page
+of a GICv2 controller even if the memory range
+exposed by the device tree is too small.
+'''
+
+[syntax]
+type = "<bool>"
+format = "<bool>"
+choices = []
+allow_empty = true

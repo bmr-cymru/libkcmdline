@@ -1,0 +1,19 @@
+# This is a libKCmdline definition document.
+
+title = "hugepage_alloc_threads - definition.toml"
+name = "hugepage_alloc_threads"
+processor = "kernel"
+description = '''[HW] The number of threads that should be used to
+allocate hugepages during boot. This option can be
+used to improve system bootup time when allocating
+a large amount of huge pages.
+The default value is 25% of the available hardware threads.
+
+Note that this parameter only applies to non-gigantic huge pages.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

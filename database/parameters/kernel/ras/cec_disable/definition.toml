@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "cec_disable - definition.toml"
+name = "cec_disable"
+processor = "kernel"
+description = '''Disable the Correctable Errors Collector,
+see CONFIG_RAS_CEC help text.
+'''
+
+[syntax]
+type = ""
+format = ""
+choices = []
+allow_empty = true

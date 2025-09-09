@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "nodomains - definition.toml"
+name = "nodomains"
+processor = "kernel"
+description = '''[PCI] Disable support for multiple PCI
+root domains (aka PCI segments, in ACPI-speak).'''
+
+[syntax]
+type = ""
+format = ""
+choices = []
+allow_empty = true

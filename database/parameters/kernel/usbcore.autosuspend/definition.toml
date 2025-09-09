@@ -1,0 +1,17 @@
+# This is a libKCmdline definition document.
+
+title = "usbcore.autosuspend - definition.toml"
+name = "usbcore.autosuspend"
+processor = "kernel"
+description = '''[USB] The autosuspend time delay (in seconds) used
+for newly-detected USB devices (default 2).  This
+is the time required before an idle device will be
+autosuspended.  Devices for which the delay is set
+to a negative value won't be autosuspended at all.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

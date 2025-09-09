@@ -1,0 +1,41 @@
+# This is a libKCmdline definition document.
+
+title = "spectre_v2 - definition.toml"
+name = "spectre_v2"
+processor = "kernel"
+description = '''Control mitigation of Spectre variant 2
+(indirect branch speculation) vulnerability.
+The default operation protects the kernel from
+user space attacks.
+
+spectre_v2_user=on
+spectre_v2_user=off
+auto - kernel detects whether your CPU model is
+vulnerable
+
+mitigation method at run time according to the
+and the compiler with which the kernel was built.
+
+Selecting 'on' will also enable the mitigation
+against user space to user space task attacks.
+Selecting specific mitigation does not force enable
+user mitigations.
+
+Selecting 'off' will disable both the kernel and
+the user space protections.
+
+Specific mitigations can also be selected manually:
+
+retpoline	  - replace indirect branches
+eibrs		  - Enhanced/Auto IBRS
+ibrs		  - use IBRS to protect kernel
+
+Not specifying this option is equivalent to
+spectre_v2=auto.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

@@ -1,0 +1,15 @@
+# This is a libKCmdline definition document.
+
+title = "idxd.tc_override - definition.toml"
+name = "idxd.tc_override"
+processor = "kernel"
+description = '''<bool>
+Allow override of default traffic class configuration
+for the device. By default it is set to false (0).
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

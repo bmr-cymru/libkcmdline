@@ -1,0 +1,15 @@
+# This is a libKCmdline definition document.
+
+title = "lastbus - definition.toml"
+name = "lastbus"
+processor = "kernel"
+description = '''[X86] Scan all buses thru bus #N. Can be
+useful if the kernel is unable to find your
+secondary buses and you want to tell it
+explicitly which ones they are.'''
+
+[syntax]
+type = "N"
+format = "N"
+choices = []
+allow_empty = true

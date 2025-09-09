@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "norid - definition.toml"
+name = "norid"
+processor = "kernel"
+description = '''[S390] ignore the RID field and force use of
+one PCI domain per PCI function'''
+
+[syntax]
+type = ""
+format = ""
+choices = []
+allow_empty = true

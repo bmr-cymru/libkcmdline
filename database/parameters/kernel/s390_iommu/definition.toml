@@ -1,0 +1,12 @@
+# This is a libKCmdline definition document.
+
+title = "s390_iommu - definition.toml"
+name = "s390_iommu"
+processor = "kernel"
+description = '''Set s390 IOTLB flushing mode'''
+
+[syntax]
+type = "complex"
+format = "complex"
+choices = []
+allow_empty = true

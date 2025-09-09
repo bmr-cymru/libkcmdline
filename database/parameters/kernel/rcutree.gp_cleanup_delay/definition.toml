@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "rcutree.gp_cleanup_delay - definition.toml"
+name = "rcutree.gp_cleanup_delay"
+processor = "kernel"
+description = '''Set the number of jiffies to delay each step of
+RCU grace-period cleanup.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

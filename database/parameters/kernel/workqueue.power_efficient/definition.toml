@@ -1,0 +1,32 @@
+# This is a libKCmdline definition document.
+
+title = "workqueue.power_efficient - definition.toml"
+name = "workqueue.power_efficient"
+processor = "kernel"
+description = '''Per-cpu workqueues are generally preferred because
+they show better performance thanks to cache
+be more power hungry than unbound workqueues.
+
+Enabling this makes the per-cpu workqueues which
+were observed to contribute significantly to power
+power usage at the cost of small performance
+overhead.
+
+The default value of this parameter is determined by
+the config option CONFIG_WQ_POWER_EFFICIENT_DEFAULT.
+
+Select the default affinity scope to use for unbound
+"numa" and "system". Default is "cache". For more
+Documentation/core-api/workqueue.rst.
+
+This can be changed after boot by writing to the
+matching /sys/module/workqueue/parameters file. All
+workqueues with the "default" affinity scope will be
+updated accordingly.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

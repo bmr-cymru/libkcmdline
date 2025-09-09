@@ -1,0 +1,16 @@
+# This is a libKCmdline definition document.
+
+title = "nospectre_v2 - definition.toml"
+name = "nospectre_v2"
+processor = "kernel"
+description = '''Disable all mitigations
+for the Spectre variant 2 (indirect branch
+prediction) vulnerability. System may allow data
+leaks with this option.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

@@ -1,0 +1,17 @@
+# This is a libKCmdline definition document.
+
+title = "rcutorture.preempt_interval - definition.toml"
+name = "rcutorture.preempt_interval"
+processor = "kernel"
+description = '''Set interval (in milliseconds, defaulting to one
+second) between preemptions by a high-priority
+FIFO real-time task.  This delay is mediated
+by an hrtimer and is further fuzzed to avoid
+inadvertent synchronizations.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

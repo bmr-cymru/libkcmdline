@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "fail_make_request - definition.toml"
+name = "fail_make_request"
+processor = "kernel"
+description = '''General fault injection mechanism.
+See also Documentation/fault-injection/.
+'''
+
+[syntax]
+type = "<interval>,<probability>,<space>,<times>"
+format = "<interval>,<probability>,<space>,<times>"
+choices = []
+allow_empty = true

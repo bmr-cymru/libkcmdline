@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "hardlockup_all_cpu_backtrace - definition.toml"
+name = "hardlockup_all_cpu_backtrace"
+processor = "kernel"
+description = '''[KNL] Should the hard-lockup detector generate
+backtraces on all cpus.
+'''
+
+[syntax]
+type = "0 | 1"
+format = "0 | 1"
+choices = []
+allow_empty = true

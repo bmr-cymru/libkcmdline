@@ -1,0 +1,15 @@
+# This is a libKCmdline definition document.
+
+title = "vt.cur_default - definition.toml"
+name = "vt.cur_default"
+processor = "kernel"
+description = '''Default cursor shape.
+the parameters of the <Esc>[?A;B;Cc escape sequence;
+see vga-softcursor.rst. Default: 2 = underline.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

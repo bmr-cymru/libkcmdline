@@ -1,0 +1,17 @@
+# This is a libKCmdline definition document.
+
+title = "initrdmem - definition.toml"
+name = "initrdmem"
+processor = "kernel"
+description = '''Specify a physical address and size from which to
+load the initrd. If an initrd is compiled in or
+specified in the bootparams, it takes priority over this
+setting.
+Default is 0, 0
+'''
+
+[syntax]
+type = "ss[KMG],nn[KMG]"
+format = "ss[KMG],nn[KMG]"
+choices = []
+allow_empty = true

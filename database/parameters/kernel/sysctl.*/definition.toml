@@ -1,0 +1,17 @@
+# This is a libKCmdline definition document.
+
+title = "sysctl.* - definition.toml"
+name = "sysctl.*"
+processor = "kernel"
+description = '''/proc/sys/... file. Both '.' and '/' are recognized as
+separators. Unrecognized parameters and invalid values
+are reported in the kernel log. Sysctls registered
+later by a loaded module cannot be set this way.
+Example: sysctl.vm.swappiness=40
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

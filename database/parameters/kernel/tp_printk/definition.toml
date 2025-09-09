@@ -1,0 +1,29 @@
+# This is a libKCmdline definition document.
+
+title = "tp_printk - definition.toml"
+name = "tp_printk"
+processor = "kernel"
+description = '''Have the tracepoints sent to printk as well as the
+tracing ring buffer. This is useful for early boot up
+where the system hangs or reboots and does not give the
+option for reading the tracing buffer or performing a
+ftrace_dump_on_oops.
+
+echo 0 > /proc/sys/kernel/tracepoint_printk
+tp_printk kernel cmdline option has no effect.
+
+The tp_printk_stop_on_boot (see below) can also be used
+to stop the printing of events to console at
+late_initcall_sync.
+
+** CAUTION **
+
+Having tracepoints sent to printk() and activating high
+the system to live lock.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

@@ -1,0 +1,16 @@
+# This is a libKCmdline definition document.
+
+title = "lpuart32,<addr> - definition.toml"
+name = "lpuart32,<addr>"
+processor = "kernel"
+description = '''Use early console provided by Freescale LP UART driver
+found on Freescale Vybrid and QorIQ LS1021A processors.
+A valid base address must be provided, and the serial
+port must already be setup and configured.
+'''
+
+[syntax]
+type = ""
+format = ""
+choices = []
+allow_empty = true

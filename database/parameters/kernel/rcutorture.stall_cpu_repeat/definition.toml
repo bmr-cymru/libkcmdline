@@ -1,0 +1,15 @@
+# This is a libKCmdline definition document.
+
+title = "rcutorture.stall_cpu_repeat - definition.toml"
+name = "rcutorture.stall_cpu_repeat"
+processor = "kernel"
+description = '''Number of times to repeat the stall sequence,
+so that rcutorture.stall_cpu_repeat=3 will result
+in four stall sequences.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

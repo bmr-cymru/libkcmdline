@@ -1,0 +1,18 @@
+# This is a libKCmdline definition document.
+
+title = "thp_shmem - definition.toml"
+name = "thp_shmem"
+processor = "kernel"
+description = '''Control the default policy of each hugepage size for the
+internal shmem mount. <policy> is one of policies available
+and "advise").
+It can be used multiple times for multiple shmem THP sizes.
+See Documentation/admin-guide/mm/transhuge.rst for more
+details.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

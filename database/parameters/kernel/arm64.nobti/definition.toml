@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "arm64.nobti - definition.toml"
+name = "arm64.nobti"
+processor = "kernel"
+description = '''Unconditionally disable Branch Target
+Identification support
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

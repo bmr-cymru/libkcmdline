@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "kvm.enable_vmware_backdoor - definition.toml"
+name = "kvm.enable_vmware_backdoor"
+processor = "kernel"
+description = '''VMware backdoor PV interface.
+Default is false (don't support).
+'''
+
+[syntax]
+type = "[KVM]"
+format = "[KVM]"
+choices = []
+allow_empty = true

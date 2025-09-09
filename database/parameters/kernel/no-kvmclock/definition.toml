@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "no-kvmclock - definition.toml"
+name = "no-kvmclock"
+processor = "kernel"
+description = '''Disable paravirtualized KVM clock driver
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

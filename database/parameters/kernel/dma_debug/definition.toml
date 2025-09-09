@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "dma_debug - definition.toml"
+name = "dma_debug"
+processor = "kernel"
+description = '''the kernel is compiled with DMA_API_DEBUG support,
+this option disables the debugging code at boot.
+'''
+
+[syntax]
+type = "off"
+format = "off"
+choices = []
+allow_empty = true

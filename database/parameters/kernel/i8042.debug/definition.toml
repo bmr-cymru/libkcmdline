@@ -1,0 +1,12 @@
+# This is a libKCmdline definition document.
+
+title = "i8042.debug - definition.toml"
+name = "i8042.debug"
+processor = "kernel"
+description = '''Toggle i8042 debug mode'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "dis_ucode_ldr - definition.toml"
+name = "dis_ucode_ldr"
+processor = "kernel"
+description = '''Disable the microcode loader.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

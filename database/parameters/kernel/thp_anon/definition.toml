@@ -1,0 +1,17 @@
+# This is a libKCmdline definition document.
+
+title = "thp_anon - definition.toml"
+name = "thp_anon"
+processor = "kernel"
+description = '''Control the default behavior of the system with respect
+to anonymous transparent hugepages.
+Can be used multiple times for multiple anon THP sizes.
+See Documentation/admin-guide/mm/transhuge.rst for more
+details.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "cold - definition.toml"
+name = "cold"
+processor = "kernel"
+description = '''Set the cold reboot flag
+'''
+
+[syntax]
+type = ""
+format = ""
+choices = []
+allow_empty = true

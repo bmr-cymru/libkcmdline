@@ -1,0 +1,25 @@
+# This is a libKCmdline definition document.
+
+title = "no_console_suspend - definition.toml"
+name = "no_console_suspend"
+processor = "kernel"
+description = '''[HW] Never suspend the console
+Disable suspending of consoles during suspend and
+hibernate operations.  Once disabled, debugging
+messages can reach various consoles while the rest
+of the system is being put to sleep (ie, while
+debugging driver suspend/resume hooks).  This may
+not work reliably with all consoles, but is known
+to work with serial and VGA consoles.
+To facilitate more flexible debugging, we also add
+console_suspend, a printk module parameter to control
+it. Users could use console_suspend (usually
+/sys/module/printk/parameters/console_suspend) to
+turn on/off it dynamically.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

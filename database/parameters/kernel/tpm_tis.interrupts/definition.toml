@@ -1,0 +1,17 @@
+# This is a libKCmdline definition document.
+
+title = "tpm_tis.interrupts - definition.toml"
+name = "tpm_tis.interrupts"
+processor = "kernel"
+description = '''Enable interrupts for the MMIO based physical layer
+for the FIFO interface. By default it is set to false
+(0). For more information about TPM hardware interfaces
+defined by Trusted Computing Group (TCG) see
+https://trustedcomputinggroup.org/resource/pc-client-platform-tpm-profile-ptp-specification/
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "sonypi.* - definition.toml"
+name = "sonypi.*"
+processor = "kernel"
+description = '''Sony Programmable I/O Control Device driver
+See Documentation/admin-guide/laptops/sonypi.rst
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

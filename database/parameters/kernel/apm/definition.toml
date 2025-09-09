@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "apm - definition.toml"
+name = "apm"
+processor = "kernel"
+description = '''Advanced Power Management
+See header of arch/x86/kernel/apm_32.c.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

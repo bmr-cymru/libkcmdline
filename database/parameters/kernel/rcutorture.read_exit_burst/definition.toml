@@ -1,0 +1,15 @@
+# This is a libKCmdline definition document.
+
+title = "rcutorture.read_exit_burst - definition.toml"
+name = "rcutorture.read_exit_burst"
+processor = "kernel"
+description = '''The number of times in a given read-then-exit
+episode that a set of read-then-exit kthreads
+is spawned.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

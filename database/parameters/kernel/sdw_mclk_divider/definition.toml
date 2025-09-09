@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "sdw_mclk_divider - definition.toml"
+name = "sdw_mclk_divider"
+processor = "kernel"
+description = '''Specify the MCLK divider for Intel SoundWire buses in
+case the BIOS does not provide the clock rate properly.
+'''
+
+[syntax]
+type = "<int>"
+format = "<int>"
+choices = []
+allow_empty = true

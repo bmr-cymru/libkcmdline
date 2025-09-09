@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "acpi_irq_nobalance - definition.toml"
+name = "acpi_irq_nobalance"
+processor = "kernel"
+description = '''ACPI will not move active IRQs (default)
+default in PIC mode
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

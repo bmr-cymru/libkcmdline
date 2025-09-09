@@ -1,0 +1,12 @@
+# This is a libKCmdline definition document.
+
+title = "nobfsort - definition.toml"
+name = "nobfsort"
+processor = "kernel"
+description = '''Don't sort PCI devices into breadth-first order.'''
+
+[syntax]
+type = ""
+format = ""
+choices = []
+allow_empty = true

@@ -1,0 +1,18 @@
+# This is a libKCmdline definition document.
+
+title = "scftorture.weight_single - definition.toml"
+name = "scftorture.weight_single"
+processor = "kernel"
+description = '''The probability weighting to use for the
+smp_call_function_single() function with a zero
+"wait" parameter.  A value of -1 selects the
+default if all other weights are -1.  However,
+if at least one weight has some other value, a
+value of -1 will instead select a weight of zero.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

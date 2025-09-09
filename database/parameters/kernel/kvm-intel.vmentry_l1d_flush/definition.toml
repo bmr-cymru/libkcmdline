@@ -1,0 +1,23 @@
+# This is a libKCmdline definition document.
+
+title = "kvm-intel.vmentry_l1d_flush - definition.toml"
+name = "kvm-intel.vmentry_l1d_flush"
+processor = "kernel"
+description = '''for L1 Terminal Fault
+CVE-2018-3620.
+
+Valid arguments: never, cond, always
+
+always: L1D cache flush on every VMENTER.
+cond:	Flush L1D on VMENTER only when the code between
+VMEXIT and VMENTER can leak host memory.
+never:	Disables the mitigation
+
+Default is cond (do L1 cache flush in specific instances)
+'''
+
+[syntax]
+type = "[KVM,Intel]"
+format = "[KVM,Intel]"
+choices = []
+allow_empty = true

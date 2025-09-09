@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "integrity_audit - definition.toml"
+name = "integrity_audit"
+processor = "kernel"
+description = '''0 -- basic integrity auditing messages. (Default)
+1 -- additional integrity auditing messages.
+'''
+
+[syntax]
+type = "enum"
+format = "enum"
+choices = ["0", "1"]
+allow_empty = true

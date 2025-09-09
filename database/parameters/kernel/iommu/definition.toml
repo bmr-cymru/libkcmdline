@@ -1,0 +1,12 @@
+# This is a libKCmdline definition document.
+
+title = "iommu - definition.toml"
+name = "iommu"
+processor = "kernel"
+description = ''''''
+
+[syntax]
+type = "complex"
+format = "complex"
+choices = []
+allow_empty = true

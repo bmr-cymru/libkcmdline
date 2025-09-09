@@ -1,0 +1,15 @@
+# This is a libKCmdline definition document.
+
+title = "turbografx.map[2|3] - definition.toml"
+name = "turbografx.map[2|3]"
+processor = "kernel"
+description = '''TurboGraFX parallel port interface
+Format:
+See also Documentation/input/devices/joystick-parport.rst
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

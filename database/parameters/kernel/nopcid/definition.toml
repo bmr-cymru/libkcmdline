@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "nopcid - definition.toml"
+name = "nopcid"
+processor = "kernel"
+description = '''Disable the PCID cpu feature.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

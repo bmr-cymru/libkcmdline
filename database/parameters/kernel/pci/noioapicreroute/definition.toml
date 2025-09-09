@@ -1,0 +1,15 @@
+# This is a libKCmdline definition document.
+
+title = "noioapicreroute - definition.toml"
+name = "noioapicreroute"
+processor = "kernel"
+description = '''[APIC] Disable workaround that uses the
+boot IRQ equivalent of an IRQ that connects to
+a chipset where boot IRQs cannot be disabled.
+The opposite of ioapicreroute.'''
+
+[syntax]
+type = ""
+format = ""
+choices = []
+allow_empty = true

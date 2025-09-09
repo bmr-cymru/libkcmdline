@@ -1,0 +1,17 @@
+# This is a libKCmdline definition document.
+
+title = "irqchip.riscv_imsic_noipi - definition.toml"
+name = "irqchip.riscv_imsic_noipi"
+processor = "kernel"
+description = '''[RISC-V,EARLY]
+Force the kernel to not use IMSIC software injected MSIs
+as IPIs. Intended for system where IMSIC is trap-n-emulated,
+and thus want to reduce MMIO traps when triggering IPIs
+to multiple harts.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

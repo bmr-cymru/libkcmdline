@@ -1,0 +1,12 @@
+# This is a libKCmdline definition document.
+
+title = "fail_skb_realloc - definition.toml"
+name = "fail_skb_realloc"
+processor = "kernel"
+description = ''''''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

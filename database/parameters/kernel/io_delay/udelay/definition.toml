@@ -1,0 +1,12 @@
+# This is a libKCmdline definition document.
+
+title = "udelay - definition.toml"
+name = "udelay"
+processor = "kernel"
+description = '''Simple two microseconds delay'''
+
+[syntax]
+type = ""
+format = ""
+choices = []
+allow_empty = true

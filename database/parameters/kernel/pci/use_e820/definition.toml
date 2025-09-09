@@ -1,0 +1,16 @@
+# This is a libKCmdline definition document.
+
+title = "use_e820 - definition.toml"
+name = "use_e820"
+processor = "kernel"
+description = '''[X86] Use E820 reservations to exclude parts of
+PCI host bridge windows. This is a workaround
+for BIOS defects in host bridge _CRS methods.
+If you need to use this, please report a bug to
+<linux-pci@vger.kernel.org>.'''
+
+[syntax]
+type = ""
+format = ""
+choices = []
+allow_empty = true

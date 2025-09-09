@@ -1,0 +1,15 @@
+# This is a libKCmdline definition document.
+
+title = "hv_nopvspin - definition.toml"
+name = "hv_nopvspin"
+processor = "kernel"
+description = '''Disables the paravirt spinlock optimizations
+which allow the hypervisor to 'idle' the guest
+on lock contention.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

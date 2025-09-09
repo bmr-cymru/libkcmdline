@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "refscale.readdelay - definition.toml"
+name = "refscale.readdelay"
+processor = "kernel"
+description = '''Set the read-side critical-section duration,
+measured in microseconds.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

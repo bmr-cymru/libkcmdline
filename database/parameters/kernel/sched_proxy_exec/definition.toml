@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "sched_proxy_exec - definition.toml"
+name = "sched_proxy_exec"
+processor = "kernel"
+description = '''Enables or disables "proxy execution" style
+solution to mutex-based priority inversion.
+'''
+
+[syntax]
+type = "<bool>"
+format = "<bool>"
+choices = []
+allow_empty = true

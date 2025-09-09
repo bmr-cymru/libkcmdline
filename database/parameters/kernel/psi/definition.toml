@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "psi - definition.toml"
+name = "psi"
+processor = "kernel"
+description = '''Enable or disable pressure stall information
+tracking.
+'''
+
+[syntax]
+type = "<bool>"
+format = "<bool>"
+choices = []
+allow_empty = true

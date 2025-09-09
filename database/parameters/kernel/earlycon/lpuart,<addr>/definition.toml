@@ -1,0 +1,12 @@
+# This is a libKCmdline definition document.
+
+title = "lpuart,<addr> - definition.toml"
+name = "lpuart,<addr>"
+processor = "kernel"
+description = ''''''
+
+[syntax]
+type = ""
+format = ""
+choices = []
+allow_empty = true

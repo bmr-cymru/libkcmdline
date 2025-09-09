@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "nosmp - definition.toml"
+name = "nosmp"
+processor = "kernel"
+description = '''Tells an SMP kernel to act as a UP kernel,
+and disable the IO APIC.  legacy for "maxcpus=0".
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

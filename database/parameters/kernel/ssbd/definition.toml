@@ -1,0 +1,25 @@
+# This is a libKCmdline definition document.
+
+title = "ssbd - definition.toml"
+name = "ssbd"
+processor = "kernel"
+description = '''Speculative Store Bypass Disable control
+
+On CPUs that are vulnerable to the Speculative
+Store Bypass vulnerability and offer a
+indicates how the mitigation should be used:
+
+force-on:  Unconditionally enable mitigation for
+for both kernel and userspace
+force-off: Unconditionally disable mitigation for
+for both kernel and userspace
+kernel:    Always enable mitigation in the
+to allow userspace to register its
+interest in being mitigated too.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

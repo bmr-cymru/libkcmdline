@@ -1,0 +1,28 @@
+# This is a libKCmdline definition document.
+
+title = "trace_clock - definition.toml"
+name = "trace_clock"
+processor = "kernel"
+description = '''Set the clock used for tracing events
+at boot up.
+local - Use the per CPU time stamp counter
+in sync between CPUs.
+global - Event time stamps are synchronize across
+but better for some race conditions.
+infrastructure grabbing the clock more than
+once per event.
+uptime - Use jiffies as the time stamp.
+perf - Use the same clock that perf uses.
+mono - Use ktime_get_mono_fast_ns() for time stamps.
+mono_raw - Use ktime_get_raw_fast_ns() for time
+stamps.
+boot - Use ktime_get_boot_fast_ns() for time stamps.
+Architectures may add more clocks. See
+Documentation/trace/ftrace.rst for more details.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

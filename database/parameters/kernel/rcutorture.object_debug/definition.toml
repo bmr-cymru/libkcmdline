@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "rcutorture.object_debug - definition.toml"
+name = "rcutorture.object_debug"
+processor = "kernel"
+description = '''Enable debug-object double-call_rcu() testing.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

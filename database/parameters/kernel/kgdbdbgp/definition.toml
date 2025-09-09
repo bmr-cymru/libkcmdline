@@ -1,0 +1,21 @@
+# This is a libKCmdline definition document.
+
+title = "kgdbdbgp - definition.toml"
+name = "kgdbdbgp"
+processor = "kernel"
+description = '''kgdb over EHCI usb debug port.
+The controller # is the number of the ehci usb debug
+port as it is probed via PCI.  The poll interval is
+optional and is the number seconds in between
+each poll cycle to the debug port in case you need
+the functionality for interrupting the kernel with
+gdb or control-c on the dbgp connection.  When
+not using this parameter you use sysrq-g to break into
+the kernel debugger.
+'''
+
+[syntax]
+type = "<Controller#>[,poll interval]"
+format = "<Controller#>[,poll interval]"
+choices = []
+allow_empty = true

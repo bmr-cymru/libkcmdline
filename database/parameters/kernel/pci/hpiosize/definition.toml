@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "hpiosize - definition.toml"
+name = "hpiosize"
+processor = "kernel"
+description = '''The fixed amount of bus space which is
+reserved for hotplug bridge's IO window.
+Default size is 256 bytes.'''
+
+[syntax]
+type = "nn[KMG]"
+format = "nn[KMG]"
+choices = []
+allow_empty = true

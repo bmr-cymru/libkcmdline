@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "usbcore.authorized_default - definition.toml"
+name = "usbcore.authorized_default"
+processor = "kernel"
+description = '''[USB] Default USB device authorization:
+if device connected to internal port)
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

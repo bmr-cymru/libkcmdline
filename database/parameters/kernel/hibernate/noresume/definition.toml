@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "noresume - definition.toml"
+name = "noresume"
+processor = "kernel"
+description = '''Don't check if there's a hibernation image
+present during boot.'''
+
+[syntax]
+type = ""
+format = ""
+choices = []
+allow_empty = true

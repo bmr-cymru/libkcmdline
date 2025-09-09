@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "printk.time - definition.toml"
+name = "printk.time"
+processor = "kernel"
+description = '''timing data prefixed to each printk message line
+'''
+
+[syntax]
+type = "<bool>  (1/Y/y=enable, 0/N/n=disable)"
+format = "<bool>  (1/Y/y=enable, 0/N/n=disable)"
+choices = []
+allow_empty = true

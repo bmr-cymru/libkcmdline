@@ -1,0 +1,15 @@
+# This is a libKCmdline definition document.
+
+title = "amijoy.map - definition.toml"
+name = "amijoy.map"
+processor = "kernel"
+description = '''Amiga joystick support
+Map of devices attached to JOY0DAT and JOY1DAT
+See also Documentation/input/joydev/joystick.rst
+'''
+
+[syntax]
+type = "<a>,<b>"
+format = "<a>,<b>"
+choices = []
+allow_empty = true

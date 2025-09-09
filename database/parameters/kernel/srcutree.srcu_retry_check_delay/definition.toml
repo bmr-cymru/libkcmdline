@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "srcutree.srcu_retry_check_delay - definition.toml"
+name = "srcutree.srcu_retry_check_delay"
+processor = "kernel"
+description = '''Specifies number of microseconds of non-sleeping
+delay between each non-sleeping poll of readers.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

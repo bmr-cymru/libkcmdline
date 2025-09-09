@@ -1,0 +1,16 @@
+# This is a libKCmdline definition document.
+
+title = "soft - definition.toml"
+name = "soft"
+processor = "kernel"
+description = '''Use software bounce buffering (SWIOTLB) (default for
+Intel machines). This can be used to prevent the usage
+of an available hardware IOMMU.
+
+[X86]'''
+
+[syntax]
+type = ""
+format = ""
+choices = []
+allow_empty = true

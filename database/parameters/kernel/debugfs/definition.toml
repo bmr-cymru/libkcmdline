@@ -1,0 +1,25 @@
+# This is a libKCmdline definition document.
+
+title = "debugfs - definition.toml"
+name = "debugfs"
+processor = "kernel"
+description = '''This parameter enables what is exposed to
+userspace and debugfs internal clients.
+on: 	All functions are enabled.
+no-mount:
+Filesystem is not registered but kernel clients can
+access APIs and a crashkernel can be used to read
+its content. There is nothing to mount.
+off: 	Filesystem is not registered and clients
+get a -EPERM as result when trying to register files
+or directories within debugfs.
+This is equivalent of the runtime functionality if
+debugfs was not enabled in the kernel at all.
+Default value is set in build-time with a kernel configuration.
+'''
+
+[syntax]
+type = "enum"
+format = "enum"
+choices = ["on", "no-mount", "off"]
+allow_empty = true

@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "radix_hcall_invalidate - definition.toml"
+name = "radix_hcall_invalidate"
+processor = "kernel"
+description = '''Disable RADIX GTSE feature and use hcall for TLB
+invalidate.
+'''
+
+[syntax]
+type = "on"
+format = "on"
+choices = []
+allow_empty = true

@@ -1,0 +1,17 @@
+# This is a libKCmdline definition document.
+
+title = "nfs.enable_ino64 - definition.toml"
+name = "nfs.enable_ino64"
+processor = "kernel"
+description = '''[NFS] enable 64-bit inode numbers.
+If zero, the NFS client will fake up a 32-bit inode
+number for the readdir() and stat() syscalls instead
+of returning the full 64-bit number.
+The default is to return 64-bit inode numbers.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

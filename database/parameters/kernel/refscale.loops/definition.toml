@@ -1,0 +1,18 @@
+# This is a libKCmdline definition document.
+
+title = "refscale.loops - definition.toml"
+name = "refscale.loops"
+processor = "kernel"
+description = '''Set the number of loops over the synchronization
+primitive under test.  Increasing this number
+reduces noise due to loop start/end overhead,
+but the default has already reduced the per-pass
+noise to a handful of picoseconds on ca. 2020
+x86 laptops.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

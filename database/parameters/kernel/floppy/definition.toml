@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "floppy - definition.toml"
+name = "floppy"
+processor = "kernel"
+description = '''See Documentation/admin-guide/blockdev/floppy.rst.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

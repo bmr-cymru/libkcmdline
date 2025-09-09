@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "inport.irq - definition.toml"
+name = "inport.irq"
+processor = "kernel"
+description = '''Inport (ATI XL and Microsoft) busmouse driver
+'''
+
+[syntax]
+type = "<irq>"
+format = "<irq>"
+choices = []
+allow_empty = true

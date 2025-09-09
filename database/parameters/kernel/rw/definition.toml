@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "rw - definition.toml"
+name = "rw"
+processor = "kernel"
+description = '''Mount root device read-write on boot
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

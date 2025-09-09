@@ -1,0 +1,16 @@
+# This is a libKCmdline definition document.
+
+title = "resume_offset - definition.toml"
+name = "resume_offset"
+processor = "kernel"
+description = '''Specify the offset from the beginning of the partition
+given by "resume=" at which the swap header is located,
+in <PAGE_SIZE> units (needed only for swap files).
+See  Documentation/power/swsusp-and-swap-files.rst
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

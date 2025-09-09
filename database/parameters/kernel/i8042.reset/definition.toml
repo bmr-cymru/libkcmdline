@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "i8042.reset - definition.toml"
+name = "i8042.reset"
+processor = "kernel"
+description = '''Reset the controller during init, cleanup and
+Default: only on s2r transitions on x86; most other
+architectures force reset to be always executed'''
+
+[syntax]
+type = "enum"
+format = "enum"
+choices = ["1", "Y", "y", "0", "N", "n"]
+allow_empty = true

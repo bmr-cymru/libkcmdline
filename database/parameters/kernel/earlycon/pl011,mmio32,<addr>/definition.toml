@@ -1,0 +1,18 @@
+# This is a libKCmdline definition document.
+
+title = "pl011,mmio32,<addr> - definition.toml"
+name = "pl011,mmio32,<addr>"
+processor = "kernel"
+description = '''Start an early, polled-mode console on a pl011 serial
+port at the specified address. The pl011 serial port
+must already be setup and configured. Options are not
+yet supported.  If 'mmio32' is specified, then only
+the driver will use only 32-bit accessors to read/write
+the device registers.
+'''
+
+[syntax]
+type = ""
+format = ""
+choices = []
+allow_empty = true

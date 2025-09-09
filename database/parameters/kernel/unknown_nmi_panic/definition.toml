@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "unknown_nmi_panic - definition.toml"
+name = "unknown_nmi_panic"
+processor = "kernel"
+description = '''[X86] Cause panic on unknown NMI.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

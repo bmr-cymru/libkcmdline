@@ -1,0 +1,16 @@
+# This is a libKCmdline definition document.
+
+title = "apc - definition.toml"
+name = "apc"
+processor = "kernel"
+description = '''Power management functions (SPARCstation-4/5 + deriv.)
+Disable APC CPU standby support. SPARCstation-Fox does
+not play well with APC CPU idle - disable it if you have
+APC and your system crashes randomly.
+'''
+
+[syntax]
+type = "noidle"
+format = "noidle"
+choices = []
+allow_empty = true

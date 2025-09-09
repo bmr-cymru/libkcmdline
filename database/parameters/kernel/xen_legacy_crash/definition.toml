@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "xen_legacy_crash - definition.toml"
+name = "xen_legacy_crash"
+processor = "kernel"
+description = '''panic() code such as dumping handler.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

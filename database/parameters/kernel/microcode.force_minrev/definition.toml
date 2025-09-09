@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "microcode.force_minrev - definition.toml"
+name = "microcode.force_minrev"
+processor = "kernel"
+description = '''Enable or disable the microcode minimal revision
+enforcement for the runtime microcode loader.
+'''
+
+[syntax]
+type = "<bool>"
+format = "<bool>"
+choices = []
+allow_empty = true

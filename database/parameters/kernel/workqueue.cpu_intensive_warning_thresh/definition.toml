@@ -1,0 +1,17 @@
+# This is a libKCmdline definition document.
+
+title = "workqueue.cpu_intensive_warning_thresh - definition.toml"
+name = "workqueue.cpu_intensive_warning_thresh"
+processor = "kernel"
+description = '''will report the work functions which violate the
+intensive_threshold_us repeatedly. In order to prevent
+function has violated this threshold number of times.
+
+The default is 4 times. 0 disables the warning.
+'''
+
+[syntax]
+type = "<uint>"
+format = "<uint>"
+choices = []
+allow_empty = true

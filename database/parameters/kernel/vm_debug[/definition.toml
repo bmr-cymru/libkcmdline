@@ -1,0 +1,21 @@
+# This is a libKCmdline definition document.
+
+title = "vm_debug[ - definition.toml"
+name = "vm_debug["
+processor = "kernel"
+description = '''Available with CONFIG_DEBUG_VM=y.
+enabled on systems with a large amount of memory.
+interface is meant to allow for selectively
+enabling or disabling specific virtual memory
+debugging features.
+
+Available options are:
+P	Enable page structure init time poisoning
+-	Disable all of the above options
+'''
+
+[syntax]
+type = "options]"
+format = "options]"
+choices = []
+allow_empty = true

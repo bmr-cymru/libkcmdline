@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "psmouse.resetafter - definition.toml"
+name = "psmouse.resetafter"
+processor = "kernel"
+description = '''Try to reset the device after so many bad packets
+(0 = never).'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

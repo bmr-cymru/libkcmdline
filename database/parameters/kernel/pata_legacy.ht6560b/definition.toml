@@ -1,0 +1,15 @@
+# This is a libKCmdline definition document.
+
+title = "pata_legacy.ht6560b - definition.toml"
+name = "pata_legacy.ht6560b"
+processor = "kernel"
+description = '''Set to 1, 2, or 3 for HT 6560B on the primary channel,
+the secondary channel, or both channels respectively.
+Disabled by default.
+'''
+
+[syntax]
+type = "<int>"
+format = "<int>"
+choices = []
+allow_empty = true

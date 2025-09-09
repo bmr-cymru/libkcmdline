@@ -1,0 +1,16 @@
+# This is a libKCmdline definition document.
+
+title = "scftorture.holdoff - definition.toml"
+name = "scftorture.holdoff"
+processor = "kernel"
+description = '''Number of seconds to hold off before starting
+test.  Defaults to zero for module insertion and
+to 10 seconds for built-in smp_call_function()
+tests.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

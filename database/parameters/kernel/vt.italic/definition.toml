@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "vt.italic - definition.toml"
+name = "vt.italic"
+processor = "kernel"
+description = '''Default color for italic text; 0-15.
+Default: 2 = green.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

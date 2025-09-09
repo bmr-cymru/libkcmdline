@@ -1,0 +1,15 @@
+# This is a libKCmdline definition document.
+
+title = "dell_smm_hwmon.force - definition.toml"
+name = "dell_smm_hwmon.force"
+processor = "kernel"
+description = '''[HW] Activate driver even if SMM BIOS signature does
+not match list of supported models and enable otherwise
+blacklisted features.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

@@ -1,0 +1,34 @@
+# This is a libKCmdline definition document.
+
+title = "kernelcore - definition.toml"
+name = "kernelcore"
+processor = "kernel"
+description = '''This parameter specifies the amount of memory usable by
+the kernel for non-movable allocations.  The requested
+amount is spread evenly throughout all nodes in the
+system as ZONE_NORMAL.  The remaining memory is used for
+movable memory in its own zone, ZONE_MOVABLE.  In the
+event, a node is too small to have both ZONE_NORMAL and
+ZONE_MOVABLE, kernelcore memory will take priority and
+other nodes will have a larger ZONE_MOVABLE.
+
+ZONE_MOVABLE is used for the allocation of pages that
+may be reclaimed or moved by the page migration
+subsystem.  Note that allocations like PTEs-from-HighMem
+still use the HighMem zone if it exists, and the Normal
+zone if it does not.
+
+It is possible to specify the exact amount of memory in
+the form of "nn[KMGTPE]", a percentage of total system
+memory in the form of "nn%", or "mirror".  If "mirror"
+option is specified, mirrored (reliable) memory is used
+for non-movable allocations and remaining memory is used
+for Movable pages.  "nn[KMGTPE]", "nn%", and "mirror"
+are exclusive, so you cannot specify multiple forms.
+'''
+
+[syntax]
+type = "nn[KMGTPE] | nn% | \"mirror\""
+format = "nn[KMGTPE] | nn% | \"mirror\""
+choices = []
+allow_empty = true

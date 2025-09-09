@@ -1,0 +1,12 @@
+# This is a libKCmdline definition document.
+
+title = "s3c2412,<addr> - definition.toml"
+name = "s3c2412,<addr>"
+processor = "kernel"
+description = ''''''
+
+[syntax]
+type = ""
+format = ""
+choices = []
+allow_empty = true

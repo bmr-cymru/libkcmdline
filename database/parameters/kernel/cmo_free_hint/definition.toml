@@ -1,0 +1,18 @@
+# This is a libKCmdline definition document.
+
+title = "cmo_free_hint - definition.toml"
+name = "cmo_free_hint"
+processor = "kernel"
+description = '''Format: { yes | no }
+Specify whether pages are marked as being inactive
+when they are freed.  This is used in CMO environments
+to determine OS memory pressure for page stealing by
+a hypervisor.
+Default: yes
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

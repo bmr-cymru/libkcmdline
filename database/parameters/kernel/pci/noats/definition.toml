@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "noats - definition.toml"
+name = "noats"
+processor = "kernel"
+description = '''[PCIE, Intel-IOMMU, AMD-IOMMU]
+do not use PCIe ATS (and IOMMU device IOTLB).'''
+
+[syntax]
+type = ""
+format = ""
+choices = []
+allow_empty = true

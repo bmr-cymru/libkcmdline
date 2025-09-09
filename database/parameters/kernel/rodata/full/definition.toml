@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "full - definition.toml"
+name = "full"
+processor = "kernel"
+description = '''Mark read-only kernel memory and aliases as read-only
+'''
+
+[syntax]
+type = ""
+format = ""
+choices = []
+allow_empty = true

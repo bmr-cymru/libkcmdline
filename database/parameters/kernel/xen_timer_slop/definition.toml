@@ -1,0 +1,16 @@
+# This is a libKCmdline definition document.
+
+title = "xen_timer_slop - definition.toml"
+name = "xen_timer_slop"
+processor = "kernel"
+description = '''Set the timer slop (in nanoseconds) for the virtual Xen
+timers (default is 100000). This adjusts the minimum
+improve timer resolution at the expense of processing
+more timer interrupts.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

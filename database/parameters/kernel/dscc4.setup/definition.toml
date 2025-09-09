@@ -1,0 +1,12 @@
+# This is a libKCmdline definition document.
+
+title = "dscc4.setup - definition.toml"
+name = "dscc4.setup"
+processor = "kernel"
+description = ''''''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

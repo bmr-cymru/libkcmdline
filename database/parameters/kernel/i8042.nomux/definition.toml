@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "i8042.nomux - definition.toml"
+name = "i8042.nomux"
+processor = "kernel"
+description = '''Don't check presence of an active multiplexing
+controller'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "nohpet - definition.toml"
+name = "nohpet"
+processor = "kernel"
+description = '''Don't use the HPET timer.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

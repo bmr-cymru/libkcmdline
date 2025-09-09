@@ -1,0 +1,47 @@
+# This is a libKCmdline definition document.
+
+title = "intel_pstate - definition.toml"
+name = "intel_pstate"
+processor = "kernel"
+description = '''disable
+Do not enable intel_pstate as the default
+scaling driver for the supported processors
+passive
+Use intel_pstate as a scaling driver, but configure it
+to work with generic cpufreq governors (instead of
+enabling its internal governor).  This mode cannot be
+used along with the hardware-managed P-states (HWP)
+feature.
+force
+Enable intel_pstate on systems that prohibit it by default
+in favor of acpi-cpufreq. Forcing the intel_pstate driver
+instead of acpi-cpufreq may disable platform features, such
+as thermal controls and power capping, that rely on ACPI
+P-States information being indicated to OSPM and therefore
+should be used with caution. This option does not work with
+processors that aren't supported by the intel_pstate driver
+or on platforms that use pcc-cpufreq instead of acpi-cpufreq.
+no_hwp
+Do not enable hardware P state control (HWP)
+if available.
+hwp_only
+Only load intel_pstate on systems which support
+hardware P state control (HWP) if available.
+support_acpi_ppc
+Enforce ACPI _PPC performance limits. If the Fixed ACPI
+Description Table, specifies preferred power management
+profile as "Enterprise Server" or "Performance Server",
+then this feature is turned on by default.
+per_cpu_perf_limits
+Allow per-logical-CPU P-State performance control limits using
+cpufreq sysfs interface
+no_cas
+Do not enable capacity-aware scheduling (CAS) on
+hybrid systems
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

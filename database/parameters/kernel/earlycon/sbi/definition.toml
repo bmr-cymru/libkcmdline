@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "sbi - definition.toml"
+name = "sbi"
+processor = "kernel"
+description = '''Use RISC-V SBI (Supervisor Binary Interface) for early
+console.
+'''
+
+[syntax]
+type = ""
+format = ""
+choices = []
+allow_empty = true

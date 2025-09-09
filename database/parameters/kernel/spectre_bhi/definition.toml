@@ -1,0 +1,23 @@
+# This is a libKCmdline definition document.
+
+title = "spectre_bhi - definition.toml"
+name = "spectre_bhi"
+processor = "kernel"
+description = '''Control mitigation of Branch History Injection
+(BHI) vulnerability.  This setting affects the
+deployment of the HW BHI control and the SW BHB
+clearing sequence.
+
+on     - (default) Enable the HW or SW mitigation as
+needed.  This protects the kernel from
+both syscalls and VMs.
+vmexit - On systems which don't have the HW mitigation
+may still be vulnerable to syscall attacks.
+off    - Disable the mitigation.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

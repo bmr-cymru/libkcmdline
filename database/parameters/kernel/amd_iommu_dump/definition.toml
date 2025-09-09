@@ -1,0 +1,16 @@
+# This is a libKCmdline definition document.
+
+title = "amd_iommu_dump - definition.toml"
+name = "amd_iommu_dump"
+processor = "kernel"
+description = '''Enable AMD IOMMU driver option to dump the ACPI table
+for AMD IOMMU. With this option enabled, AMD IOMMU
+driver will print ACPI tables for AMD IOMMU during
+IOMMU initialization.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

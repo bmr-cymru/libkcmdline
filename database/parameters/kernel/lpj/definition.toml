@@ -1,0 +1,24 @@
+# This is a libKCmdline definition document.
+
+title = "lpj - definition.toml"
+name = "lpj"
+processor = "kernel"
+description = '''Sets loops_per_jiffy to given constant, thus avoiding
+time-consuming boot-time autodetection (up to 250 ms per
+CPU). 0 enables autodetection (default). To determine
+the correct value for your kernel, boot with normal
+autodetection and see what value is printed. Note that
+on SMP systems the preset will be applied to all CPUs,
+which is likely to cause problems if your CPUs need
+significantly divergent settings. An incorrect value
+will cause delays in the kernel to be wrong, leading to
+unpredictable I/O errors and other breakage. Although
+unlikely, in the extreme case this might damage your
+hardware.
+'''
+
+[syntax]
+type = "n"
+format = "n"
+choices = []
+allow_empty = true

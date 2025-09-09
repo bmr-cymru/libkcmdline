@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "rcutree.qlowmark - definition.toml"
+name = "rcutree.qlowmark"
+processor = "kernel"
+description = '''Set threshold of queued RCU callbacks below which
+batch limiting is re-enabled.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "nopku - definition.toml"
+name = "nopku"
+processor = "kernel"
+description = '''Disable Memory Protection Keys CPU feature found
+in some Intel CPUs.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

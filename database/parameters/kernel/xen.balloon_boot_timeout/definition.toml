@@ -1,0 +1,17 @@
+# This is a libKCmdline definition document.
+
+title = "xen.balloon_boot_timeout - definition.toml"
+name = "xen.balloon_boot_timeout"
+processor = "kernel"
+description = '''The time (in seconds) to wait before giving up to boot
+in case initial ballooning fails to free enough memory.
+Applies only when running as HVM or PVH guest and
+started with less memory configured than allowed at
+max. Default is 180.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

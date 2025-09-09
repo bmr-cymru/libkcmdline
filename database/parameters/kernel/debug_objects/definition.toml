@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "debug_objects - definition.toml"
+name = "debug_objects"
+processor = "kernel"
+description = '''Enable object debugging
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

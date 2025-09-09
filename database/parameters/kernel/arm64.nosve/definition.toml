@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "arm64.nosve - definition.toml"
+name = "arm64.nosve"
+processor = "kernel"
+description = '''Unconditionally disable Scalable Vector
+Extension support
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

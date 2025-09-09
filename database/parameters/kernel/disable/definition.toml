@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "disable - definition.toml"
+name = "disable"
+processor = "kernel"
+description = '''See Documentation/networking/ipv6.rst.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

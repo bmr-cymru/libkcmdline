@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "noaperture - definition.toml"
+name = "noaperture"
+processor = "kernel"
+description = '''Ask the IOMMU not to touch the aperture for AGP.
+'''
+
+[syntax]
+type = ""
+format = ""
+choices = []
+allow_empty = true

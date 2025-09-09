@@ -1,0 +1,12 @@
+# This is a libKCmdline definition document.
+
+title = "bttv.pll - definition.toml"
+name = "bttv.pll"
+processor = "kernel"
+description = '''Documentation/admin-guide/media/bttv.rst'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

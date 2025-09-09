@@ -1,0 +1,15 @@
+# This is a libKCmdline definition document.
+
+title = "refscale.nreaders - definition.toml"
+name = "refscale.nreaders"
+processor = "kernel"
+description = '''Set number of readers.  The default value of -1
+selects N, where N is roughly 75% of the number
+of CPUs.  A value of zero is an interesting choice.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

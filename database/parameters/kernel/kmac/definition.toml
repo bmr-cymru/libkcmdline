@@ -1,0 +1,15 @@
+# This is a libKCmdline definition document.
+
+title = "kmac - definition.toml"
+name = "kmac"
+processor = "kernel"
+description = '''Korina ethernet MAC address.
+Configure the RouterBoard 532 series on-chip
+Ethernet adapter MAC address.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

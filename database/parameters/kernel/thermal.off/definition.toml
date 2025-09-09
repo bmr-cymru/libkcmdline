@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "thermal.off - definition.toml"
+name = "thermal.off"
+processor = "kernel"
+description = '''1: disable ACPI thermal control
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

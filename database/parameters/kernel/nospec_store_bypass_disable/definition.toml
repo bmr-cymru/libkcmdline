@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "nospec_store_bypass_disable - definition.toml"
+name = "nospec_store_bypass_disable"
+processor = "kernel"
+description = '''[HW,EARLY] Disable all mitigations for the Speculative
+Store Bypass vulnerability
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

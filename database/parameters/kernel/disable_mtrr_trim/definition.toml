@@ -1,0 +1,17 @@
+# This is a libKCmdline definition document.
+
+title = "disable_mtrr_trim - definition.toml"
+name = "disable_mtrr_trim"
+processor = "kernel"
+description = '''Intel and AMD only,EARLY]
+By default the kernel will trim any uncacheable
+memory out of your available memory pool based on
+MTRR settings.  This parameter disables that behavior,
+possibly causing your machine to run very slowly.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "nodsp - definition.toml"
+name = "nodsp"
+processor = "kernel"
+description = '''Disable hardware DSP at boot time.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

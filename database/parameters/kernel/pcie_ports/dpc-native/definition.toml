@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "dpc-native - definition.toml"
+name = "dpc-native"
+processor = "kernel"
+description = '''Use native PCIe service for DPC only.  May
+cause conflicts if firmware uses AER or DPC.'''
+
+[syntax]
+type = ""
+format = ""
+choices = []
+allow_empty = true

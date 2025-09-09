@@ -1,0 +1,15 @@
+# This is a libKCmdline definition document.
+
+title = "routeirq - definition.toml"
+name = "routeirq"
+processor = "kernel"
+description = '''Do IRQ routing for all PCI devices.
+This is normally done in pci_enable_device(),
+so this option is a temporary workaround
+for broken drivers that don't call it.'''
+
+[syntax]
+type = ""
+format = ""
+choices = []
+allow_empty = true

@@ -1,0 +1,15 @@
+# This is a libKCmdline definition document.
+
+title = "stress_hpt - definition.toml"
+name = "stress_hpt"
+processor = "kernel"
+description = '''Limits the number of kernel HPT entries in the hash
+page table to increase the rate of hash page table
+faults on kernel addresses.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

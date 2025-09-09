@@ -1,0 +1,17 @@
+# This is a libKCmdline definition document.
+
+title = "kmemleak - definition.toml"
+name = "kmemleak"
+processor = "kernel"
+description = '''Boot-time kmemleak enable/disable
+Valid arguments: on, off
+Default: on
+Built with CONFIG_DEBUG_KMEMLEAK_DEFAULT_OFF=y,
+the default is off.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

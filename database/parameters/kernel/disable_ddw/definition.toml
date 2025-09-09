@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "disable_ddw - definition.toml"
+name = "disable_ddw"
+processor = "kernel"
+description = '''Disable Dynamic DMA Window support. Use this
+to workaround buggy firmware.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "rootdelay - definition.toml"
+name = "rootdelay"
+processor = "kernel"
+description = '''Delay (in seconds) to pause before attempting to
+mount the root filesystem
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

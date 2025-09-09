@@ -1,0 +1,15 @@
+# This is a libKCmdline definition document.
+
+title = "unwind_debug - definition.toml"
+name = "unwind_debug"
+processor = "kernel"
+description = '''Enable unwinder debug output.  This can be
+useful for debugging certain unwinder error
+bad/missing unwinder metadata.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "rcutorture.fwd_progress_div - definition.toml"
+name = "rcutorture.fwd_progress_div"
+processor = "kernel"
+description = '''Specify the fraction of a CPU-stall-warning
+period to do tight-loop forward-progress testing.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

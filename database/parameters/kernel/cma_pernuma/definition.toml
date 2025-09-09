@@ -1,0 +1,21 @@
+# This is a libKCmdline definition document.
+
+title = "cma_pernuma - definition.toml"
+name = "cma_pernuma"
+processor = "kernel"
+description = '''[KNL,CMA,EARLY]
+Sets the size of kernel per-numa memory area for
+contiguous memory allocations. A value of 0 disables
+per-numa CMA altogether. And If this option is not
+specified, the default value is 0.
+With per-numa CMA enabled, DMA users on node nid will
+first try to allocate buffer from the pernuma area
+which is located in node nid, if the allocation fails,
+they will fallback to the global default memory area.
+'''
+
+[syntax]
+type = "nn[MG]"
+format = "nn[MG]"
+choices = []
+allow_empty = true

@@ -1,0 +1,15 @@
+# This is a libKCmdline definition document.
+
+title = "rcutorture.test_boost - definition.toml"
+name = "rcutorture.test_boost"
+processor = "kernel"
+description = '''Test RCU priority boosting?  0=no, 1=maybe, 2=yes.
+"Maybe" means test if the RCU implementation
+under test support RCU priority boosting.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

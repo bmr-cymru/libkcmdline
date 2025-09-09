@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "atkbd.reset - definition.toml"
+name = "atkbd.reset"
+processor = "kernel"
+description = '''Reset keyboard during initialization
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

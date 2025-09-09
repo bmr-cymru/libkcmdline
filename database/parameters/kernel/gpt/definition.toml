@@ -1,0 +1,16 @@
+# This is a libKCmdline definition document.
+
+title = "gpt - definition.toml"
+name = "gpt"
+processor = "kernel"
+description = '''Forces disk with valid GPT signature but
+invalid Protective MBR to be treated as GPT. If the
+primary GPT is corrupted, it enables the backup/alternate
+GPT to be used instead.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

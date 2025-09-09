@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "stacktrace - definition.toml"
+name = "stacktrace"
+processor = "kernel"
+description = '''Enabled the stack tracer on boot up.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

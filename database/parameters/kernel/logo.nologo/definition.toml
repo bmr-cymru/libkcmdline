@@ -1,0 +1,16 @@
+# This is a libKCmdline definition document.
+
+title = "logo.nologo - definition.toml"
+name = "logo.nologo"
+processor = "kernel"
+description = '''Disables display of the built-in Linux logo.
+This may be used to provide more screen space for
+kernel log messages and is useful when debugging
+kernel boot problems.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

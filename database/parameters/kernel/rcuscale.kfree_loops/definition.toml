@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "rcuscale.kfree_loops - definition.toml"
+name = "rcuscale.kfree_loops"
+processor = "kernel"
+description = '''Number of loops doing rcuscale.kfree_alloc_num number
+of allocations and frees.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "grcan.select - definition.toml"
+name = "grcan.select"
+processor = "kernel"
+description = '''Select which physical interface to use.
+Default: 0'''
+
+[syntax]
+type = "0 | 1"
+format = "0 | 1"
+choices = []
+allow_empty = true

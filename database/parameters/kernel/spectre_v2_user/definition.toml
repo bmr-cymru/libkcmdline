@@ -1,0 +1,43 @@
+# This is a libKCmdline definition document.
+
+title = "spectre_v2_user - definition.toml"
+name = "spectre_v2_user"
+processor = "kernel"
+description = '''[X86] Control mitigation of Spectre variant 2
+
+on	- Unconditionally enable mitigations. Is
+enforced by spectre_v2=on
+
+off     - Unconditionally disable mitigations. Is
+enforced by spectre_v2=off
+
+but mitigation can be enabled via prctl
+per thread.  The mitigation control state
+is inherited on fork.
+
+controlled per thread. IBPB is issued
+always when switching between different user
+space processes.
+
+seccomp
+threads will enable the mitigation unless
+they explicitly opt out.
+
+controlled per thread. IBPB is issued
+always when switching between different
+user space processes.
+
+auto    - Kernel selects the mitigation depending on
+the available CPU features and vulnerability.
+
+Default mitigation: "prctl"
+
+Not specifying this option is equivalent to
+spectre_v2_user=auto.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

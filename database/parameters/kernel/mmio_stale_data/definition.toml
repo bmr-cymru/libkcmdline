@@ -1,0 +1,50 @@
+# This is a libKCmdline definition document.
+
+title = "mmio_stale_data - definition.toml"
+name = "mmio_stale_data"
+processor = "kernel"
+description = '''[X86,INTEL,EARLY] Control mitigation for the Processor
+MMIO Stale Data vulnerabilities.
+
+Processor MMIO Stale Data is a class of
+vulnerabilities that may expose data after an MMIO
+operation. Exposed data could originate or end in
+the same CPU buffers as affected by MDS and TAA.
+Therefore, similar to MDS and TAA, the mitigation
+is to clear the affected CPU buffers.
+
+This parameter controls the mitigation. The
+options are:
+
+full       - Enable mitigation on vulnerable CPUs
+
+full,nosmt - Enable mitigation and disable SMT on
+vulnerable CPUs.
+
+off        - Unconditionally disable mitigation
+
+On MDS or TAA affected machines,
+mmio_stale_data=off can be prevented by an active
+MDS or TAA mitigation as these vulnerabilities are
+mitigated with the same mechanism so in order to
+disable this mitigation, you need to specify
+mds=off and tsx_async_abort=off too.
+
+Not specifying this option is equivalent to
+mmio_stale_data=full.
+
+For details see:
+Documentation/admin-guide/hw-vuln/processor_mmio_stale_data.rst
+
+If no <bool> value is specified or if the value
+specified is not a valid <bool>, enable asynchronous
+probe on this module.  Otherwise, enable/disable
+asynchronous probe on this module as indicated by the
+<bool> value. See also: module.async_probe
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

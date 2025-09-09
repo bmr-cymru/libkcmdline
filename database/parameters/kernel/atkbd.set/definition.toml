@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "atkbd.set - definition.toml"
+name = "atkbd.set"
+processor = "kernel"
+description = '''Select keyboard code set
+'''
+
+[syntax]
+type = "<int> (2 = AT (default), 3 = PS/2)"
+format = "<int> (2 = AT (default), 3 = PS/2)"
+choices = []
+allow_empty = true

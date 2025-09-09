@@ -1,0 +1,20 @@
+# This is a libKCmdline definition document.
+
+title = "memtest - definition.toml"
+name = "memtest"
+processor = "kernel"
+description = '''Enable memtest
+default : 0 <disable>
+Specifies the number of memtest passes to be
+performed. Each pass selects another test
+pattern from a given set of patterns. Memtest
+fills the memory with this pattern, validates
+memory contents and reserves bad memory
+regions that are detected.
+'''
+
+[syntax]
+type = "<integer>"
+format = "<integer>"
+choices = []
+allow_empty = true

@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "S - definition.toml"
+name = "S"
+processor = "kernel"
+description = '''Run init in single mode
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

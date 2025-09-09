@@ -1,0 +1,15 @@
+# This is a libKCmdline definition document.
+
+title = "io7 - definition.toml"
+name = "io7"
+processor = "kernel"
+description = '''IO7 for Marvel-based Alpha systems
+See comment before marvel_specify_io7 in
+arch/alpha/kernel/core_marvel.c.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

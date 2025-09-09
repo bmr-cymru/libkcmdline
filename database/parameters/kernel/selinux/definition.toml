@@ -1,0 +1,17 @@
+# This is a libKCmdline definition document.
+
+title = "selinux - definition.toml"
+name = "selinux"
+processor = "kernel"
+description = '''Disable or enable SELinux at boot time.
+See security/selinux/Kconfig help text.
+0 -- disable.
+1 -- enable.
+Default value is 1.
+'''
+
+[syntax]
+type = "enum"
+format = "enum"
+choices = ["0", "1"]
+allow_empty = true

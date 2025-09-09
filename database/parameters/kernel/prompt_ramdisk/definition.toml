@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "prompt_ramdisk - definition.toml"
+name = "prompt_ramdisk"
+processor = "kernel"
+description = '''[Deprecated]
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

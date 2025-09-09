@@ -1,0 +1,15 @@
+# This is a libKCmdline definition document.
+
+title = "initcall_blacklist - definition.toml"
+name = "initcall_blacklist"
+processor = "kernel"
+description = '''Do not execute a comma-separated list of
+initcall functions.  Useful for debugging built-in
+modules and initcalls.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

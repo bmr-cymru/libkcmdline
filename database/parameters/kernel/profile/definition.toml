@@ -1,0 +1,19 @@
+# This is a libKCmdline definition document.
+
+title = "profile - definition.toml"
+name = "profile"
+processor = "kernel"
+description = '''Enable kernel profiling via /proc/profile
+Param: <profiletype>: "schedule" or "kvm"
+[defaults to kernel profiling]
+Param: "schedule" - profile schedule points.
+Param: "kvm" - profile VM exits.
+Param: <number> - step/bucket size as a power of 2 for
+statistical time based profiling.
+'''
+
+[syntax]
+type = "[<profiletype>,]<number>"
+format = "[<profiletype>,]<number>"
+choices = []
+allow_empty = true

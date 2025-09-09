@@ -1,0 +1,15 @@
+# This is a libKCmdline definition document.
+
+title = "random.trust_cpu - definition.toml"
+name = "random.trust_cpu"
+processor = "kernel"
+description = '''[KNL,EARLY] Disable trusting the use of the CPU's
+random number generator (if available) to
+initialize the kernel's RNG.
+'''
+
+[syntax]
+type = "off"
+format = "off"
+choices = []
+allow_empty = true

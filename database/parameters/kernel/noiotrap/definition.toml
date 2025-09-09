@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "noiotrap - definition.toml"
+name = "noiotrap"
+processor = "kernel"
+description = '''Disables trapped I/O port accesses.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "nommconf - definition.toml"
+name = "nommconf"
+processor = "kernel"
+description = '''[X86] Disable use of MMCONFIG for PCI
+Configuration'''
+
+[syntax]
+type = ""
+format = ""
+choices = []
+allow_empty = true

@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "hvc_iucv - definition.toml"
+name = "hvc_iucv"
+processor = "kernel"
+description = '''Number of z/VM IUCV hypervisor console (HVC)
+terminal devices. Valid values: 0..8'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

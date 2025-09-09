@@ -1,0 +1,15 @@
+# This is a libKCmdline definition document.
+
+title = "nospectre_bhb - definition.toml"
+name = "nospectre_bhb"
+processor = "kernel"
+description = '''Disable all mitigations for Spectre-BHB (branch
+history injection) vulnerability. System may allow data leaks
+with this option.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

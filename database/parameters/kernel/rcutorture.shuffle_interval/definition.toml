@@ -1,0 +1,15 @@
+# This is a libKCmdline definition document.
+
+title = "rcutorture.shuffle_interval - definition.toml"
+name = "rcutorture.shuffle_interval"
+processor = "kernel"
+description = '''Set task-shuffle interval (s).  Shuffling tasks
+allows some CPUs to go into dyntick-idle mode
+during the rcutorture test.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

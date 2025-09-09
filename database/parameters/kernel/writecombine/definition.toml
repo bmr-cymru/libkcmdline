@@ -1,0 +1,15 @@
+# This is a libKCmdline definition document.
+
+title = "writecombine - definition.toml"
+name = "writecombine"
+processor = "kernel"
+description = '''Control the MAT (Memory Access
+Type) of ioremap_wc().
+
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

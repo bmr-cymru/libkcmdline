@@ -1,0 +1,16 @@
+# This is a libKCmdline definition document.
+
+title = "rcupdate.rcu_cpu_stall_cputime - definition.toml"
+name = "rcupdate.rcu_cpu_stall_cputime"
+processor = "kernel"
+description = '''Provide statistics on the cputime and count of
+interrupts and tasks during the sampling period. For
+multiple continuous RCU stalls, all sampling periods
+begin at half of the first RCU stall timeout.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

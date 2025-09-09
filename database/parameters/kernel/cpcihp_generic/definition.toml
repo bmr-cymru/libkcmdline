@@ -1,0 +1,15 @@
+# This is a libKCmdline definition document.
+
+title = "cpcihp_generic - definition.toml"
+name = "cpcihp_generic"
+processor = "kernel"
+description = '''Generic port I/O CompactPCI driver
+Format:
+<first_slot>,<last_slot>,<port>,<enum_bit>[,<debug>]
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

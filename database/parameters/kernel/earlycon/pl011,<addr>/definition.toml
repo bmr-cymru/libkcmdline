@@ -1,0 +1,12 @@
+# This is a libKCmdline definition document.
+
+title = "pl011,<addr> - definition.toml"
+name = "pl011,<addr>"
+processor = "kernel"
+description = ''''''
+
+[syntax]
+type = ""
+format = ""
+choices = []
+allow_empty = true

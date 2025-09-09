@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "rcupdate.rcu_cpu_stall_ftrace_dump - definition.toml"
+name = "rcupdate.rcu_cpu_stall_ftrace_dump"
+processor = "kernel"
+description = '''Dump ftrace buffer after reporting RCU CPU
+stall warning.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

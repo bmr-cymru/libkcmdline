@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "usbcore.nousb - definition.toml"
+name = "usbcore.nousb"
+processor = "kernel"
+description = '''Disable the USB subsystem
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

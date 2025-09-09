@@ -1,0 +1,16 @@
+# This is a libKCmdline definition document.
+
+title = "sunrpc.udp_slot_table_entries - definition.toml"
+name = "sunrpc.udp_slot_table_entries"
+processor = "kernel"
+description = '''Sets the upper limit on the number of simultaneous
+RPC calls that can be sent from the client to a
+server. Increasing these values may allow you to
+amount of memory reserved for use by the client.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

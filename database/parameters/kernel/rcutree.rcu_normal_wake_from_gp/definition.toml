@@ -1,0 +1,25 @@
+# This is a libKCmdline definition document.
+
+title = "rcutree.rcu_normal_wake_from_gp - definition.toml"
+name = "rcutree.rcu_normal_wake_from_gp"
+processor = "kernel"
+description = '''Reduces a latency of synchronize_rcu() call. This approach
+maintains its own track of synchronize_rcu() callers, so it
+does not interact with regular callbacks because it does not
+use a call_rcu[_hurry]() path. Please note, this is for a
+normal grace period.
+
+How to enable it:
+
+echo 1 > /sys/module/rcutree/parameters/rcu_normal_wake_from_gp
+or pass a boot parameter "rcutree.rcu_normal_wake_from_gp=1"
+
+Default is 1 if num_possible_cpus() <= 16 and it is not explicitly
+disabled by the boot parameter passing 0.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

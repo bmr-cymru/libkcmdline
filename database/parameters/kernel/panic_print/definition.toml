@@ -1,0 +1,26 @@
+# This is a libKCmdline definition document.
+
+title = "panic_print - definition.toml"
+name = "panic_print"
+processor = "kernel"
+description = '''for printing system info when panic happens.
+User can chose combination of the following bits:
+bit 0: print all tasks info
+bit 1: print system memory info
+bit 2: print timer info
+bit 3: print locks info if CONFIG_LOCKDEP is on
+bit 4: print ftrace buffer
+bit 5: replay all messages on consoles at the end of panic
+bit 6: print all CPUs backtrace (if available in the arch)
+bit 7: print only tasks in uninterruptible (blocked) state
+*Be aware* that this option may print a _lot_ of lines,
+so there are risks of losing older messages in the log.
+Use this option carefully, maybe worth to setup a
+bigger log buffer with "log_buf_len" along with this.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

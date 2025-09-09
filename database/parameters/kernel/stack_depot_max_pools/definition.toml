@@ -1,0 +1,15 @@
+# This is a libKCmdline definition document.
+
+title = "stack_depot_max_pools - definition.toml"
+name = "stack_depot_max_pools"
+processor = "kernel"
+description = '''Specify the maximum number of pools to use for storing
+stack traces. Pools are allocated on-demand up to this
+limit. Default value is 8191 pools.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

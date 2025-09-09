@@ -1,0 +1,12 @@
+# This is a libKCmdline definition document.
+
+title = "realloc - definition.toml"
+name = "realloc"
+processor = "kernel"
+description = '''same as realloc=on'''
+
+[syntax]
+type = ""
+format = ""
+choices = []
+allow_empty = true

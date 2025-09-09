@@ -1,0 +1,19 @@
+# This is a libKCmdline definition document.
+
+title = "rcutree.rcu_unlock_delay - definition.toml"
+name = "rcutree.rcu_unlock_delay"
+processor = "kernel"
+description = '''In CONFIG_RCU_STRICT_GRACE_PERIOD=y kernels,
+this specifies an rcu_read_unlock()-time delay
+in microseconds.  This defaults to zero.
+Larger delays increase the probability of
+catching RCU pointer leaks, that is, buggy use
+of RCU-protected pointers after the relevant
+rcu_read_unlock() has completed.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

@@ -1,0 +1,12 @@
+# This is a libKCmdline definition document.
+
+title = "i8042.nokbd - definition.toml"
+name = "i8042.nokbd"
+processor = "kernel"
+description = '''Don't check/create keyboard port'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

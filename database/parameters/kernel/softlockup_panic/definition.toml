@@ -1,0 +1,18 @@
+# This is a libKCmdline definition document.
+
+title = "softlockup_panic - definition.toml"
+name = "softlockup_panic"
+processor = "kernel"
+description = '''[KNL] Should the soft-lockup detector generate panics.
+
+A value of 1 instructs the soft-lockup detector
+to panic the machine when a soft-lockup occurs. It is
+also controlled by the kernel.softlockup_panic sysctl
+respective build-time switch to that functionality.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

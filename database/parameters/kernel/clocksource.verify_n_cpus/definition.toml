@@ -1,0 +1,20 @@
+# This is a libKCmdline definition document.
+
+title = "clocksource.verify_n_cpus - definition.toml"
+name = "clocksource.verify_n_cpus"
+processor = "kernel"
+description = '''Limit the number of CPUs checked for clocksources
+marked with CLOCK_SOURCE_VERIFY_PERCPU that
+are marked unstable due to excessive skew.
+A negative value says to check all CPUs, while
+zero says not to check any.  Values larger than
+nr_cpu_ids are silently truncated to nr_cpu_ids.
+The actual CPUs are chosen randomly, with
+no replacement if the same CPU is chosen twice.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

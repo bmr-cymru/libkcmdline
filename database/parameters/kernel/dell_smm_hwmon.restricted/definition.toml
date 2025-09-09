@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "dell_smm_hwmon.restricted - definition.toml"
+name = "dell_smm_hwmon.restricted"
+processor = "kernel"
+description = '''[HW] Allow controlling fans only if SYS_ADMIN
+capability is set.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

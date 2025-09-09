@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "memchunk - definition.toml"
+name = "memchunk"
+processor = "kernel"
+description = '''[KNL,SH] Allow user to override the default size for
+per-device physically contiguous DMA buffers.
+'''
+
+[syntax]
+type = "nn[KMG]"
+format = "nn[KMG]"
+choices = []
+allow_empty = true

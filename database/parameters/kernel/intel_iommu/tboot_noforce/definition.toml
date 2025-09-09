@@ -1,0 +1,21 @@
+# This is a libKCmdline definition document.
+
+title = "tboot_noforce - definition.toml"
+name = "tboot_noforce"
+processor = "kernel"
+description = '''[Default Off]
+Do not force the Intel IOMMU enabled under tboot.
+By default, tboot will force Intel IOMMU on, which
+could harm performance of some high-throughput
+devices like 40GBit network cards, even if identity
+mapping is enabled.
+Note that using this option lowers the security
+provided by tboot because it makes the system
+vulnerable to DMA attacks.
+'''
+
+[syntax]
+type = ""
+format = ""
+choices = []
+allow_empty = true

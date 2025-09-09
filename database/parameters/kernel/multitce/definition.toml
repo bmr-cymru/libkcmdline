@@ -1,0 +1,15 @@
+# This is a libKCmdline definition document.
+
+title = "multitce - definition.toml"
+name = "multitce"
+processor = "kernel"
+description = '''This parameter disables the use of the pSeries
+firmware feature for updating multiple TCE entries
+at a time.
+'''
+
+[syntax]
+type = "off"
+format = "off"
+choices = []
+allow_empty = true

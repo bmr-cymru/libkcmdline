@@ -1,0 +1,12 @@
+# This is a libKCmdline definition document.
+
+title = "l3cr - definition.toml"
+name = "l3cr"
+processor = "kernel"
+description = ''''''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

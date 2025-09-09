@@ -1,0 +1,22 @@
+# This is a libKCmdline definition document.
+
+title = "nfs.recover_lost_locks - definition.toml"
+name = "nfs.recover_lost_locks"
+processor = "kernel"
+description = '''[NFSv4] Attempt to recover locks that were lost due
+to a lease timeout on the server. Please note that
+doing this risks data corruption, since there are
+no guarantees that the file will remain unchanged
+after the locks are lost.
+If you want to enable the kernel legacy behaviour of
+attempting to recover these locks, then set this
+parameter to '1'.
+The default parameter value of '0' causes the kernel
+not to attempt recovery of lost locks.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

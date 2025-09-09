@@ -1,0 +1,15 @@
+# This is a libKCmdline definition document.
+
+title = "xen_nopv - definition.toml"
+name = "xen_nopv"
+processor = "kernel"
+description = '''Disables the PV optimizations forcing the HVM guest to
+run as generic HVM guest with no PV drivers.
+has equivalent effect for XEN platform.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

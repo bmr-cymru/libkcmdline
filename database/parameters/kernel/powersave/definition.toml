@@ -1,0 +1,17 @@
+# This is a libKCmdline definition document.
+
+title = "powersave - definition.toml"
+name = "powersave"
+processor = "kernel"
+description = '''This option disables power saving features.
+It specifically disables cpuidle and sets the
+platform machine description specific power_save
+function to NULL. On Idle the CPU just reduces
+execution priority.
+'''
+
+[syntax]
+type = "off"
+format = "off"
+choices = []
+allow_empty = true

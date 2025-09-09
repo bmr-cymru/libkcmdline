@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "retain_initrd - definition.toml"
+name = "retain_initrd"
+processor = "kernel"
+description = '''Keep initrd memory after extraction. After boot, it will
+be accessible via /sys/firmware/initrd.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "hw_protection - definition.toml"
+name = "hw_protection"
+processor = "kernel"
+description = '''Hardware protection action taken on critical events like
+overtemperature or imminent voltage loss.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

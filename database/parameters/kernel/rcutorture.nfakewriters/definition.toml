@@ -1,0 +1,15 @@
+# This is a libKCmdline definition document.
+
+title = "rcutorture.nfakewriters - definition.toml"
+name = "rcutorture.nfakewriters"
+processor = "kernel"
+description = '''Set number of concurrent RCU writers.  These just
+stress RCU, they don't participate in the actual
+test, hence the "fake".
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

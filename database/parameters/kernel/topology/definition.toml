@@ -1,0 +1,17 @@
+# This is a libKCmdline definition document.
+
+title = "topology - definition.toml"
+name = "topology"
+processor = "kernel"
+description = '''Specify if the kernel should make use of the cpu
+topology information if the hardware supports this.
+The scheduler will make use of this information and
+e.g. base its process migration decisions on it.
+Default is on.
+'''
+
+[syntax]
+type = "enum"
+format = "enum"
+choices = ["off", "on"]
+allow_empty = true

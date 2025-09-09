@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "smp.panic_on_ipistall - definition.toml"
+name = "smp.panic_on_ipistall"
+processor = "kernel"
+description = '''If a csd_lock_timeout extends for more than
+for this value provides a 5-minute timeout.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

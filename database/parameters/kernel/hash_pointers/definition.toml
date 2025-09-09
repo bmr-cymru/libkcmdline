@@ -1,0 +1,30 @@
+# This is a libKCmdline definition document.
+
+title = "hash_pointers - definition.toml"
+name = "hash_pointers"
+processor = "kernel"
+description = '''[KNL,EARLY]
+By default, when pointers are printed to the console
+or buffers via the %p format string, that pointer is
+"hashed", i.e. obscured by hashing the pointer value.
+This is a security feature that hides actual kernel
+addresses from unprivileged users, but it also makes
+debugging the kernel more difficult since unequal
+pointers can no longer be compared. The choices are:
+Default: auto
+
+auto   - Hash pointers unless slab_debug is enabled.
+always - Always hash pointers (even if slab_debug is
+enabled).
+never  - Never hash pointers. This option should only
+be specified when debugging the kernel. Do
+not use on production kernels. The boot
+param "no_hash_pointers" is an alias for
+this mode.
+'''
+
+[syntax]
+type = "enum"
+format = "enum"
+choices = ["auto", "always", "never"]
+allow_empty = true

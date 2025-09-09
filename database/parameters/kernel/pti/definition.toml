@@ -1,0 +1,23 @@
+# This is a libKCmdline definition document.
+
+title = "pti - definition.toml"
+name = "pti"
+processor = "kernel"
+description = '''Control Page Table Isolation of user and
+kernel address spaces.  Disabling this feature
+removes hardening, but improves performance of
+system calls and interrupts.
+
+on   - unconditionally enable
+off  - unconditionally disable
+auto - kernel detects whether your CPU model is
+vulnerable to issues that PTI mitigates
+
+Not specifying this option is equivalent to pti=auto.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

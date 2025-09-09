@@ -1,0 +1,26 @@
+# This is a libKCmdline definition document.
+
+title = "cgroup_disable - definition.toml"
+name = "cgroup_disable"
+processor = "kernel"
+description = '''Disable a particular controller or optional feature
+The effects of cgroup_disable=foo are:
+- foo isn't auto-mounted if you mount all cgroups in
+a single hierarchy
+- foo isn't visible as an individually mountable
+subsystem
+- if foo is an optional feature then the feature is
+disabled and corresponding cgroup files are not
+created
+{Currently only "memory" controller deal with this and
+cut the overhead, others just disable the usage. So
+only cgroup_disable=memory is actually worthy}
+Specifying "pressure" disables per-cgroup pressure
+stall information accounting feature
+'''
+
+[syntax]
+type = "name of the controller(s) or feature(s) to disable"
+format = "name of the controller(s) or feature(s) to disable"
+choices = []
+allow_empty = true

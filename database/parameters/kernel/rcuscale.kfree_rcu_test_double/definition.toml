@@ -1,0 +1,16 @@
+# This is a libKCmdline definition document.
+
+title = "rcuscale.kfree_rcu_test_double - definition.toml"
+name = "rcuscale.kfree_rcu_test_double"
+processor = "kernel"
+description = '''Test the double-argument variant of kfree_rcu().
+If this parameter has the same value as
+rcuscale.kfree_rcu_test_single, both the single-
+and double-argument variants are tested.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

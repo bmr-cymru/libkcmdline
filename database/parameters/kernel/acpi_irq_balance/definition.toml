@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "acpi_irq_balance - definition.toml"
+name = "acpi_irq_balance"
+processor = "kernel"
+description = '''ACPI will balance active IRQs
+default in APIC mode
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

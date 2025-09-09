@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "arm64.nosme - definition.toml"
+name = "arm64.nosme"
+processor = "kernel"
+description = '''Unconditionally disable Scalable Matrix
+Extension support
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

@@ -1,0 +1,16 @@
+# This is a libKCmdline definition document.
+
+title = "numa_zonelist_order - definition.toml"
+name = "numa_zonelist_order"
+processor = "kernel"
+description = '''BOOT] Select zonelist order for NUMA.
+'node', 'default' can be specified
+This can be set from sysctl after boot.
+See Documentation/admin-guide/sysctl/vm.rst for details.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

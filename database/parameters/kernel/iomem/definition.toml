@@ -1,0 +1,12 @@
+# This is a libKCmdline definition document.
+
+title = "iomem - definition.toml"
+name = "iomem"
+processor = "kernel"
+description = '''strict checking of access to MMIO memory'''
+
+[syntax]
+type = "complex"
+format = "complex"
+choices = []
+allow_empty = true

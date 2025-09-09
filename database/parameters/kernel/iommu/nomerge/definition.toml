@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "nomerge - definition.toml"
+name = "nomerge"
+processor = "kernel"
+description = '''Don't do scatter-gather (SG) merging.
+'''
+
+[syntax]
+type = ""
+format = ""
+choices = []
+allow_empty = true

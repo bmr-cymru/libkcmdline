@@ -1,0 +1,17 @@
+# This is a libKCmdline definition document.
+
+title = "kvm_cma_resv_ratio - definition.toml"
+name = "kvm_cma_resv_ratio"
+processor = "kernel"
+description = '''Reserves given percentage from system memory area for
+contiguous memory allocation for KVM hash pagetable
+allocation.
+By default it reserves 5% of total system memory.
+Default: 5
+'''
+
+[syntax]
+type = "<integer>"
+format = "<integer>"
+choices = []
+allow_empty = true

@@ -1,0 +1,16 @@
+# This is a libKCmdline definition document.
+
+title = "refscale.holdoff - definition.toml"
+name = "refscale.holdoff"
+processor = "kernel"
+description = '''Set test-start holdoff period.  The purpose of
+this parameter is to delay the start of the
+test until boot completes in order to avoid
+interference.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

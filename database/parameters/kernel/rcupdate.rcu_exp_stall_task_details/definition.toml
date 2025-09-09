@@ -1,0 +1,15 @@
+# This is a libKCmdline definition document.
+
+title = "rcupdate.rcu_exp_stall_task_details - definition.toml"
+name = "rcupdate.rcu_exp_stall_task_details"
+processor = "kernel"
+description = '''Print stack dumps of any tasks blocking the
+current expedited RCU grace period during an
+expedited RCU CPU stall warning.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

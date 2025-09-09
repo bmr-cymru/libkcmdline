@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "force - definition.toml"
+name = "force"
+processor = "kernel"
+description = '''Don't stop other CPUs on reboot. This can make reboot
+more reliable in some cases.
+'''
+
+[syntax]
+type = ""
+format = ""
+choices = []
+allow_empty = true

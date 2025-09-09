@@ -1,0 +1,15 @@
+# This is a libKCmdline definition document.
+
+title = "ima - definition.toml"
+name = "ima"
+processor = "kernel"
+description = '''Enable or disable IMA
+Default: "on"
+Note that disabling IMA is limited to kdump kernel.
+'''
+
+[syntax]
+type = "enum"
+format = "enum"
+choices = ["off", "on"]
+allow_empty = true

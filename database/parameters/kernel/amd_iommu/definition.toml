@@ -1,0 +1,33 @@
+# This is a libKCmdline definition document.
+
+title = "amd_iommu - definition.toml"
+name = "amd_iommu"
+processor = "kernel"
+description = '''Pass parameters to the AMD IOMMU driver in the system.
+Possible values are:
+fullflush - Deprecated, equivalent to iommu.strict=1
+off	  - do not initialize any AMD IOMMU found in
+the system
+force_isolation - Force device isolation for all
+devices. The IOMMU driver is not
+allowed anymore to lift isolation
+requirements as needed. This option
+does not override iommu=pt
+force_enable    - Force enable the IOMMU on platforms known
+to be buggy with IOMMU enabled. Use this
+option with care.
+pgtbl_v1        - Use v1 page table for DMA-API (Default).
+pgtbl_v2        - Use v2 page table for DMA-API.
+irtcachedis     - Disable Interrupt Remapping Table (IRT) caching.
+nohugepages     - Limit page-sizes used for v1 page-tables
+to 4 KiB.
+v2_pgsizes_only - Limit page-sizes used for v1 page-tables
+to 4KiB/2Mib/1GiB.
+
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

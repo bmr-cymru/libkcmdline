@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "rcutorture.onoff_interval - definition.toml"
+name = "rcutorture.onoff_interval"
+processor = "kernel"
+description = '''Set time (jiffies) between CPU-hotplug operations,
+or zero to disable CPU-hotplug testing.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

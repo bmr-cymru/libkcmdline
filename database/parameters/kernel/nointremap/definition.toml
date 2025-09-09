@@ -1,0 +1,15 @@
+# This is a libKCmdline definition document.
+
+title = "nointremap - definition.toml"
+name = "nointremap"
+processor = "kernel"
+description = '''Do not enable interrupt
+remapping.
+[Deprecated - use intremap=off]
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

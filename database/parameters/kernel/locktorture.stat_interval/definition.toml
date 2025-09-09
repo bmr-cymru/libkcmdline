@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "locktorture.stat_interval - definition.toml"
+name = "locktorture.stat_interval"
+processor = "kernel"
+description = '''Time (s) between statistics printk()s.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

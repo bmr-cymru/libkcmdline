@@ -1,0 +1,15 @@
+# This is a libKCmdline definition document.
+
+title = "no-scroll - definition.toml"
+name = "no-scroll"
+processor = "kernel"
+description = '''Disables scrollback.
+This is required for the Braillex ib80-piezo Braille
+reader made by F.H. Papenmeier (Germany).
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

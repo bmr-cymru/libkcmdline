@@ -1,0 +1,16 @@
+# This is a libKCmdline definition document.
+
+title = "kvm.nx_huge_pages_recovery_ratio - definition.toml"
+name = "kvm.nx_huge_pages_recovery_ratio"
+processor = "kernel"
+description = '''[KVM] Controls how many 4KiB pages are periodically zapped
+back to huge pages.  0 disables the recovery, otherwise if
+the value is N KVM will zap 1/Nth of the 4KiB pages every
+period (see below).  The default is 60.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

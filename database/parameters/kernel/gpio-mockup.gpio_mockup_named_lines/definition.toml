@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "gpio-mockup.gpio_mockup_named_lines - definition.toml"
+name = "gpio-mockup.gpio_mockup_named_lines"
+processor = "kernel"
+description = '''[HW] Let the driver know GPIO lines should be named.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

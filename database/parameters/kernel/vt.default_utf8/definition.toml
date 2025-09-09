@@ -1,0 +1,15 @@
+# This is a libKCmdline definition document.
+
+title = "vt.default_utf8 - definition.toml"
+name = "vt.default_utf8"
+processor = "kernel"
+description = '''[VT]
+Set system-wide default UTF-8 mode for all tty's.
+newly opened terminals.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

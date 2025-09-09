@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "parkbd.port - definition.toml"
+name = "parkbd.port"
+processor = "kernel"
+description = '''Parallel port number the keyboard adapter is
+connected to, default is 0.'''
+
+[syntax]
+type = "<parport#>"
+format = "<parport#>"
+choices = []
+allow_empty = true

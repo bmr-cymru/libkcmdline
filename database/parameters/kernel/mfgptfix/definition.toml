@@ -1,0 +1,16 @@
+# This is a libKCmdline definition document.
+
+title = "mfgptfix - definition.toml"
+name = "mfgptfix"
+processor = "kernel"
+description = '''Fix MFGPT timers on AMD Geode platforms when
+the BIOS has incorrectly applied a workaround. TinyBIOS
+version 0.98 is known to be affected, 0.99 fixes the
+problem by letting the user disable the workaround.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

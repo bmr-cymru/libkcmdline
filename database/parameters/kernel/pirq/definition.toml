@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "pirq - definition.toml"
+name = "pirq"
+processor = "kernel"
+description = '''Manual mp-table setup
+See Documentation/arch/x86/i386/IO-APIC.rst.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

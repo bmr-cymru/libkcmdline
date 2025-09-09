@@ -1,0 +1,15 @@
+# This is a libKCmdline definition document.
+
+title = "acpi_rsdp - definition.toml"
+name = "acpi_rsdp"
+processor = "kernel"
+description = '''Pass the RSDP address to the kernel, mostly used
+on machines running EFI runtime service to boot the
+second kernel for kdump.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

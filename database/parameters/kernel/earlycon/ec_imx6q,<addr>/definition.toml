@@ -1,0 +1,15 @@
+# This is a libKCmdline definition document.
+
+title = "ec_imx6q,<addr> - definition.toml"
+name = "ec_imx6q,<addr>"
+processor = "kernel"
+description = '''Start an early, polled-mode, output-only console on the
+Freescale i.MX UART at the specified address. The UART
+must already be setup and configured.
+'''
+
+[syntax]
+type = ""
+format = ""
+choices = []
+allow_empty = true

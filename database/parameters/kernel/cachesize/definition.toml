@@ -1,0 +1,18 @@
+# This is a libKCmdline definition document.
+
+title = "cachesize - definition.toml"
+name = "cachesize"
+processor = "kernel"
+description = '''Override level 2 CPU cache size detection.
+Sometimes CPU hardware bugs make them report the cache
+size incorrectly. The kernel will attempt work arounds
+to fix known problems, but for some CPUs it is not
+possible to determine what the correct size should be.
+This option provides an override for these situations.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

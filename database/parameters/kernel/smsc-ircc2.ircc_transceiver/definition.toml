@@ -1,0 +1,16 @@
+# This is a libKCmdline definition document.
+
+title = "smsc-ircc2.ircc_transceiver - definition.toml"
+name = "smsc-ircc2.ircc_transceiver"
+processor = "kernel"
+description = '''Transceiver type:
+0: Toshiba Satellite 1800 (GP data pin select)
+1: Fast pin select (default)
+2: ATC IRMode
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

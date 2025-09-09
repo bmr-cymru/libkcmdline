@@ -1,0 +1,21 @@
+# This is a libKCmdline definition document.
+
+title = "traceoff_on_warning - definition.toml"
+name = "traceoff_on_warning"
+processor = "kernel"
+description = '''[FTRACE] enable this option to disable tracing when a
+warning is hit. This turns off "tracing_on". Tracing can
+be enabled again by echoing '1' into the "tracing_on"
+file located in /sys/kernel/tracing/
+
+be filled with content caused by the warning output.
+
+This option can also be set at run time via the sysctl
+option:  kernel/traceoff_on_warning
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

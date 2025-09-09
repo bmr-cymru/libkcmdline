@@ -1,0 +1,15 @@
+# This is a libKCmdline definition document.
+
+title = "lapic - definition.toml"
+name = "lapic"
+processor = "kernel"
+description = '''Do not use TSC deadline
+value for LAPIC timer one-shot implementation. Default
+back to the programmable timer unit in the LAPIC.
+'''
+
+[syntax]
+type = "notscdeadline"
+format = "notscdeadline"
+choices = []
+allow_empty = true

@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "xen.event_loop_timeout - definition.toml"
+name = "xen.event_loop_timeout"
+processor = "kernel"
+description = '''After which time (jiffies) the event handling loop
+should start to delay EOI handling. Default is 2.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

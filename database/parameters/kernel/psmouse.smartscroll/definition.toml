@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "psmouse.smartscroll - definition.toml"
+name = "psmouse.smartscroll"
+processor = "kernel"
+description = '''[HW,MOUSE] Controls Logitech smartscroll autorepeat.
+0 = disabled, 1 = enabled (default).
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

@@ -1,0 +1,15 @@
+# This is a libKCmdline definition document.
+
+title = "scftorture.onoff_interval - definition.toml"
+name = "scftorture.onoff_interval"
+processor = "kernel"
+description = '''Number seconds to wait between successive
+CPU-hotplug operations.  Specifying zero (which
+is the default) disables CPU-hotplug operations.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

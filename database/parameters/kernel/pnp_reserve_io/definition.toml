@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "pnp_reserve_io - definition.toml"
+name = "pnp_reserve_io"
+processor = "kernel"
+description = '''Exclude I/O ports for the autoconfiguration
+Ranges are in pairs (I/O port base and size).
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

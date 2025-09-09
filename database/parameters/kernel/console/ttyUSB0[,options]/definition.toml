@@ -1,0 +1,40 @@
+# This is a libKCmdline definition document.
+
+title = "ttyUSB0[,options] - definition.toml"
+name = "ttyUSB0[,options]"
+processor = "kernel"
+description = '''Use the specified serial port.  The options are of
+the form "bbbbpnf", where "bbbb" is the baud rate,
+"p" is parity ("n", "o", or "e"), "n" is number of
+bits, and "f" is flow control ("r" for RTS or
+omit it).  Default is "9600n8".
+
+See Documentation/admin-guide/serial-console.rst for more
+information.  See
+Documentation/networking/netconsole.rst for an
+alternative.
+
+Use the specified serial port on the serial core bus.
+The addressing uses DEVNAME of the physical serial port
+device, followed by the serial core controller instance,
+and the serial port instance. The options are the same
+as documented for the ttyS addressing above.
+
+The mapping of the serial ports to the tty instances
+can be viewed with:
+
+$ ls -d /sys/bus/serial-base/devices/*:*.*/tty/*
+/sys/bus/serial-base/devices/00:04:0.0/tty/ttyS0
+
+In the above example, the console can be addressed with
+console=00:04:0.0. Note that a console addressed this
+way will only get added when the related device driver
+is ready. The use of an earlycon parameter in addition to
+the console may be desired for console output early on.
+'''
+
+[syntax]
+type = ""
+format = ""
+choices = []
+allow_empty = true

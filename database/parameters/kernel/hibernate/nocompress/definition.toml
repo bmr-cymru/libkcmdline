@@ -1,0 +1,12 @@
+# This is a libKCmdline definition document.
+
+title = "nocompress - definition.toml"
+name = "nocompress"
+processor = "kernel"
+description = '''Don't compress/decompress hibernation images.'''
+
+[syntax]
+type = ""
+format = ""
+choices = []
+allow_empty = true

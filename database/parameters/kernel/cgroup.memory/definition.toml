@@ -1,0 +1,16 @@
+# This is a libKCmdline definition document.
+
+title = "cgroup.memory - definition.toml"
+name = "cgroup.memory"
+processor = "kernel"
+description = '''Pass options to the cgroup memory controller.
+nosocket -- Disable socket memory accounting.
+nokmem -- Disable kernel memory accounting.
+nobpf -- Disable BPF memory accounting.
+'''
+
+[syntax]
+type = "<string>"
+format = "<string>"
+choices = []
+allow_empty = true

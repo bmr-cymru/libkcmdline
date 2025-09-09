@@ -1,0 +1,16 @@
+# This is a libKCmdline definition document.
+
+title = "refscale.verbose_batched - definition.toml"
+name = "refscale.verbose_batched"
+processor = "kernel"
+description = '''Batch the additional printk() statements.  If zero
+(the default) or negative, print everything.  Otherwise,
+print every Nth verbose statement, where N is the value
+specified.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

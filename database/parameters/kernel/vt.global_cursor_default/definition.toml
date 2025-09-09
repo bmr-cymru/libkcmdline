@@ -1,0 +1,16 @@
+# This is a libKCmdline definition document.
+
+title = "vt.global_cursor_default - definition.toml"
+name = "vt.global_cursor_default"
+processor = "kernel"
+description = '''[VT]
+Set system-wide default for whether a cursor
+i.e. cursors will be created by default unless
+overridden by individual drivers. 0 will hide
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

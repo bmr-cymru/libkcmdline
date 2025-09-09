@@ -1,0 +1,17 @@
+# This is a libKCmdline definition document.
+
+title = "page_owner - definition.toml"
+name = "page_owner"
+processor = "kernel"
+description = '''Boot-time page_owner enabling option.
+Storage of the information about who allocated
+each page is disabled in default. With this switch,
+we can turn it on.
+on: enable the feature
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

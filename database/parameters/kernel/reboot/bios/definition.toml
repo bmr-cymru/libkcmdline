@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "bios - definition.toml"
+name = "bios"
+processor = "kernel"
+description = '''Use the CPU reboot vector for warm reset
+'''
+
+[syntax]
+type = ""
+format = ""
+choices = []
+allow_empty = true

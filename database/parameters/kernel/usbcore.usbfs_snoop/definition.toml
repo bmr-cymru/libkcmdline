@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "usbcore.usbfs_snoop - definition.toml"
+name = "usbcore.usbfs_snoop"
+processor = "kernel"
+description = '''[USB] Set to log all usbfs traffic (default 0 = off).
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

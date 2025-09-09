@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "i8042.dumbkbd - definition.toml"
+name = "i8042.dumbkbd"
+processor = "kernel"
+description = '''Pretend that controller can only read data from
+keyboard and cannot control its state
+(Don't attempt to blink the leds)'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

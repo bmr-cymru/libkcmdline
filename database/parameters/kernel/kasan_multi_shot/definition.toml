@@ -1,0 +1,16 @@
+# This is a libKCmdline definition document.
+
+title = "kasan_multi_shot - definition.toml"
+name = "kasan_multi_shot"
+processor = "kernel"
+description = '''[KNL] Enforce KASAN (Kernel Address Sanitizer) to print
+report on every invalid memory access. Without this
+parameter KASAN will print report only for the first
+invalid access.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

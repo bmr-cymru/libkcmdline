@@ -1,0 +1,17 @@
+# This is a libKCmdline definition document.
+
+title = "clock - definition.toml"
+name = "clock"
+processor = "kernel"
+description = '''HW] gettimeofday clocksource override.
+[Deprecated]
+Forces specified clocksource (if available) to be used
+when calculating gettimeofday(). If specified
+clocksource is not available, it defaults to PIT.
+'''
+
+[syntax]
+type = "enum"
+format = "enum"
+choices = ["pit", "tsc", "cyclone", "pmtmr"]
+allow_empty = true

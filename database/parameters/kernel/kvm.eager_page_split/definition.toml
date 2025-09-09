@@ -1,0 +1,35 @@
+# This is a libKCmdline definition document.
+
+title = "kvm.eager_page_split - definition.toml"
+name = "kvm.eager_page_split"
+processor = "kernel"
+description = '''[KVM,X86] Controls whether or not KVM will try to
+proactively split all huge pages during dirty logging.
+Eager page splitting reduces interruptions to vCPU
+execution by eliminating the write-protection faults
+and MMU lock contention that would otherwise be
+required to split huge pages lazily.
+
+VM workloads that rarely perform writes or that write
+only to a small region of VM memory may benefit from
+disabling eager page splitting to allow huge pages to
+still be used for reads.
+
+The behavior of eager page splitting depends on whether
+KVM_DIRTY_LOG_INITIALLY_SET is enabled or disabled. If
+disabled, all huge pages in a memslot will be eagerly
+split when dirty logging is enabled on that memslot. If
+enabled, eager page splitting will be performed during
+the KVM_CLEAR_DIRTY ioctl, and only for the pages being
+cleared.
+
+Eager page splitting is only supported when kvm.tdp_mmu=Y.
+
+Default is Y (on).
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

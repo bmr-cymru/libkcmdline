@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "quiet - definition.toml"
+name = "quiet"
+processor = "kernel"
+description = '''Disable most log messages
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

@@ -1,0 +1,17 @@
+# This is a libKCmdline definition document.
+
+title = "rdrand - definition.toml"
+name = "rdrand"
+processor = "kernel"
+description = '''force - Override the decision by the kernel to hide the
+advertisement of RDRAND support (this affects
+certain AMD processors because of buggy BIOS
+support, specifically around the suspend/resume
+path).
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

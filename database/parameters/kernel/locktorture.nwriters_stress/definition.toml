@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "locktorture.nwriters_stress - definition.toml"
+name = "locktorture.nwriters_stress"
+processor = "kernel"
+description = '''Set the number of locking write-acquisition kthreads.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

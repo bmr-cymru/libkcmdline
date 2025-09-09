@@ -1,0 +1,23 @@
+# This is a libKCmdline definition document.
+
+title = "rcutree.kthread_prio - definition.toml"
+name = "rcutree.kthread_prio"
+processor = "kernel"
+description = '''Set the SCHED_FIFO priority of the RCU per-CPU
+kthreads (rcuc/N). This value is also used for
+the priority of the RCU boost threads (rcub/N)
+and for the RCU grace-period kthreads (rcu_bh,
+rcu_preempt, and rcu_sched). If RCU_BOOST is
+set, valid values are 1-99 and the default is 1
+(the least-favored priority).  Otherwise, when
+RCU_BOOST is not set, valid values are 0-99 and
+the default is zero (non-realtime operation).
+When RCU_NOCB_CPU is set, also adjust the
+priority of NOCB callback kthreads.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

@@ -1,0 +1,15 @@
+# This is a libKCmdline definition document.
+
+title = "xen_mc_debug - definition.toml"
+name = "xen_mc_debug"
+processor = "kernel"
+description = '''Enable multicall debugging when running as a Xen PV guest.
+Enabling this feature will reduce performance a little
+debug data in case of multicall errors.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

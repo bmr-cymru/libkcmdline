@@ -1,0 +1,16 @@
+# This is a libKCmdline definition document.
+
+title = "rcutree.gp_preinit_delay - definition.toml"
+name = "rcutree.gp_preinit_delay"
+processor = "kernel"
+description = '''Set the number of jiffies to delay each step of
+RCU grace-period pre-initialization, that is,
+the propagation of recent CPU-hotplug changes up
+the rcu_node combining tree.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

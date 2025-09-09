@@ -1,0 +1,16 @@
+# This is a libKCmdline definition document.
+
+title = "no_timer_check - definition.toml"
+name = "no_timer_check"
+processor = "kernel"
+description = '''Disables the code which tests for broken
+timer IRQ sources, i.e., the IO-APIC timer. This can
+work around problems with incorrect timer
+initialization on some boards.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

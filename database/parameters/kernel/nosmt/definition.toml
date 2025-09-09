@@ -1,0 +1,18 @@
+# This is a libKCmdline definition document.
+
+title = "nosmt - definition.toml"
+name = "nosmt"
+processor = "kernel"
+description = '''Disable symmetric multithreading (SMT).
+Equivalent to smt=1.
+
+[KNL,X86,PPC,S390] Disable symmetric multithreading (SMT).
+nosmt=force: Force disable SMT, cannot be undone
+via the sysfs control file.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

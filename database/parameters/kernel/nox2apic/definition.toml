@@ -1,0 +1,17 @@
+# This is a libKCmdline definition document.
+
+title = "nox2apic - definition.toml"
+name = "nox2apic"
+processor = "kernel"
+description = '''Do not enable x2APIC mode.
+
+NOTE: this parameter will be ignored on systems with the
+LEGACY_XAPIC_DISABLED bit set in the
+IA32_XAPIC_DISABLE_STATUS MSR.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

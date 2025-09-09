@@ -1,0 +1,21 @@
+# This is a libKCmdline definition document.
+
+title = "workqueue.cpu_intensive_thresh_us - definition.toml"
+name = "workqueue.cpu_intensive_thresh_us"
+processor = "kernel"
+description = '''Per-cpu work items which run for longer than this
+threshold are automatically considered CPU intensive
+and excluded from concurrency management to prevent
+them from noticeably delaying other per-cpu work
+items. Default is 10000 (10ms).
+
+will report the work functions which violate this
+threshold repeatedly. They are likely good
+candidates for using WQ_UNBOUND workqueues instead.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

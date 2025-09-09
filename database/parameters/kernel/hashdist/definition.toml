@@ -1,0 +1,15 @@
+# This is a libKCmdline definition document.
+
+title = "hashdist - definition.toml"
+name = "hashdist"
+processor = "kernel"
+description = '''Large hashes allocated during boot
+are distributed across NUMA nodes.  Defaults on
+for 64-bit NUMA, off otherwise.
+'''
+
+[syntax]
+type = "0 | 1 (for off | on)"
+format = "0 | 1 (for off | on)"
+choices = []
+allow_empty = true

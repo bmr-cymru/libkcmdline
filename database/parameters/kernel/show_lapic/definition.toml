@@ -1,0 +1,19 @@
+# This is a libKCmdline definition document.
+
+title = "show_lapic - definition.toml"
+name = "show_lapic"
+processor = "kernel"
+description = '''Advanced Programmable Interrupt Controller
+Limit apic dumping. The parameter defines the maximal
+number of local apics being dumped. Also it is possible
+to set it to "all" by meaning -- no limit here.
+The parameter valid if only apic=debug or
+apic=verbose is specified.
+Example: apic=debug show_lapic=all
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

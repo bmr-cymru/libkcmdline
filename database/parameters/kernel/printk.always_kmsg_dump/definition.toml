@@ -1,0 +1,15 @@
+# This is a libKCmdline definition document.
+
+title = "printk.always_kmsg_dump - definition.toml"
+name = "printk.always_kmsg_dump"
+processor = "kernel"
+description = '''Trigger kmsg_dump for cases other than kernel oops or
+panics
+default: disabled
+'''
+
+[syntax]
+type = "<bool>  (1/Y/y=enable, 0/N/n=disable)"
+format = "<bool>  (1/Y/y=enable, 0/N/n=disable)"
+choices = []
+allow_empty = true

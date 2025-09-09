@@ -1,0 +1,15 @@
+# This is a libKCmdline definition document.
+
+title = "rom - definition.toml"
+name = "rom"
+processor = "kernel"
+description = '''[X86] Assign address space to expansion ROMs.
+Use with caution as certain devices share
+address decoders between ROMs and other
+resources.'''
+
+[syntax]
+type = ""
+format = ""
+choices = []
+allow_empty = true

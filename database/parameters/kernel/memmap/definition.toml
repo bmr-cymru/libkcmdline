@@ -1,0 +1,19 @@
+# This is a libKCmdline definition document.
+
+title = "memmap - definition.toml"
+name = "memmap"
+processor = "kernel"
+description = '''[KNL,ACPI,EARLY] Convert memory within the specified region
+from <oldtype> to <newtype>. If "-<oldtype>" is left
+out, the whole region will be marked as <newtype>,
+even if previously unavailable. If "+<newtype>" is left
+out, matching memory will be removed. Types are
+specified as e820 types, e.g., 1 = RAM, 2 = reserved,
+3 = ACPI, 12 = PRAM.
+'''
+
+[syntax]
+type = "<size>%<offset>-<oldtype>+<newtype>"
+format = "<size>%<offset>-<oldtype>+<newtype>"
+choices = []
+allow_empty = true

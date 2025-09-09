@@ -1,0 +1,19 @@
+# This is a libKCmdline definition document.
+
+title = "acpica_no_return_repair - definition.toml"
+name = "acpica_no_return_repair"
+processor = "kernel"
+description = '''ACPI]
+Disable AML predefined validation mechanism
+This mechanism can repair the evaluation result to make
+the return objects more ACPI specification compliant.
+This option is useful for developers to identify the
+root cause of an AML interpreter issue when the issue
+has something to do with the repair mechanism.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

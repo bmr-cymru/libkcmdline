@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "thermal.crt - definition.toml"
+name = "thermal.crt"
+processor = "kernel"
+description = '''-1: disable all critical trip points in all thermal zones
+<degrees C>: override all critical trip points
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

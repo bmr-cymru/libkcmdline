@@ -1,0 +1,15 @@
+# This is a libKCmdline definition document.
+
+title = "numa_balancing - definition.toml"
+name = "numa_balancing"
+processor = "kernel"
+description = '''Enable or disable automatic
+NUMA balancing.
+Allowed values are enable and disable
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

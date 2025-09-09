@@ -1,0 +1,12 @@
+# This is a libKCmdline definition document.
+
+title = "iucv - definition.toml"
+name = "iucv"
+processor = "kernel"
+description = ''''''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

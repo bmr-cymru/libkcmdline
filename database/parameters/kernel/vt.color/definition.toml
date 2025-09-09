@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "vt.color - definition.toml"
+name = "vt.color"
+processor = "kernel"
+description = '''Default text color.
+Default: 0x07 = light gray on black.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

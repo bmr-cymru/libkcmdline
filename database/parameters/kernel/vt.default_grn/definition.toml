@@ -1,0 +1,15 @@
+# This is a libKCmdline definition document.
+
+title = "vt.default_grn - definition.toml"
+name = "vt.default_grn"
+processor = "kernel"
+description = '''Change the default green palette of the console.
+This is a 16-member array composed of values
+ranging from 0-255.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

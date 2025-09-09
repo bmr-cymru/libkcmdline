@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "locktorture.shutdown_secs - definition.toml"
+name = "locktorture.shutdown_secs"
+processor = "kernel"
+description = '''Set time (s) after boot system shutdown.  This
+is useful for hands-off automated testing.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

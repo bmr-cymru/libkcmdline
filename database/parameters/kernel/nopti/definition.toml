@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "nopti - definition.toml"
+name = "nopti"
+processor = "kernel"
+description = '''Equivalent to pti=off
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

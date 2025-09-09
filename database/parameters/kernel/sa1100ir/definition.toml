@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "sa1100ir - definition.toml"
+name = "sa1100ir"
+processor = "kernel"
+description = '''See drivers/net/irda/sa1100_ir.c.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

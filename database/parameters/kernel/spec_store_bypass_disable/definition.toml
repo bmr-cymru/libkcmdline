@@ -1,0 +1,56 @@
+# This is a libKCmdline definition document.
+
+title = "spec_store_bypass_disable - definition.toml"
+name = "spec_store_bypass_disable"
+processor = "kernel"
+description = '''(Speculative Store Bypass vulnerability)
+
+Certain CPUs are vulnerable to an exploit against a
+a common industry wide performance optimization known
+as "Speculative Store Bypass" in which recent stores
+to the same memory location may not be observed by
+later loads during speculative execution. The idea
+is that such stores are unlikely and that they can
+be detected prior to instruction retirement at the
+end of a particular speculation execution window.
+
+example to read memory to which the attacker does not
+directly have access (e.g. inside sandboxed code).
+
+This parameter controls whether the Speculative Store
+Bypass optimization is used.
+
+On x86 the options are:
+
+on      - Unconditionally disable Speculative Store Bypass
+off     - Unconditionally enable Speculative Store Bypass
+auto    - Kernel detects whether the CPU model contains an
+implementation of Speculative Store Bypass and
+picks the most appropriate mitigation. If the
+CPU is vulnerable the default mitigation is
+architecture and Kconfig dependent. See below.
+prctl   - Control Speculative Store Bypass per thread
+via prctl. Speculative Store Bypass is enabled
+for a process by default. The state of the control
+is inherited on fork.
+will disable SSB unless they explicitly opt out.
+
+Default mitigations:
+X86:	"prctl"
+
+On powerpc the options are:
+
+barrier on kernel entry and exit. On Power7
+perform a software flush on kernel entry and
+exit.
+off	- No action.
+
+Not specifying this option is equivalent to
+spec_store_bypass_disable=auto.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

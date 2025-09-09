@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "panic_on_warn - definition.toml"
+name = "panic_on_warn"
+processor = "kernel"
+description = '''instead of WARN().  Useful to cause kdump
+on a WARN().
+'''
+
+[syntax]
+type = "1"
+format = "1"
+choices = []
+allow_empty = true

@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "ppc_tm - definition.toml"
+name = "ppc_tm"
+processor = "kernel"
+description = '''Disable Hardware Transactional Memory
+'''
+
+[syntax]
+type = "\"off\""
+format = "\"off\""
+choices = []
+allow_empty = true

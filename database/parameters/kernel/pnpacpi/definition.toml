@@ -1,0 +1,12 @@
+# This is a libKCmdline definition document.
+
+title = "pnpacpi - definition.toml"
+name = "pnpacpi"
+processor = "kernel"
+description = ''''''
+
+[syntax]
+type = " off "
+format = " off "
+choices = []
+allow_empty = true

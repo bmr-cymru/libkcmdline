@@ -1,0 +1,29 @@
+# This is a libKCmdline definition document.
+
+title = "clocksource - definition.toml"
+name = "clocksource"
+processor = "kernel"
+description = '''the default clocksource
+Override the default clocksource and use the clocksource
+with the name specified.
+Some clocksource names to choose from, depending on
+the platform:
+[all] jiffies (this is the base, fallback clocksource)
+[ACPI] acpi_pm
+[ARM] imx_timer1,OSTS,netx_timer,mpu_timer2,
+pxa_timer,timer3,32k_counter,timer0_1
+[X86-32] pit,hpet,tsc;
+scx200_hrt on Geode; cyclone on IBM x440
+[MIPS] MIPS
+[PARISC] cr16
+[S390] tod
+[SH] SuperH
+[SPARC64] tick
+[X86-64] hpet,tsc
+'''
+
+[syntax]
+type = "<string>"
+format = "<string>"
+choices = []
+allow_empty = true

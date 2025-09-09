@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "disable_tlbie - definition.toml"
+name = "disable_tlbie"
+processor = "kernel"
+description = '''Disable TLBIE instruction. Currently does not work
+with KVM, with HASH MMU, or with coherent accelerators.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

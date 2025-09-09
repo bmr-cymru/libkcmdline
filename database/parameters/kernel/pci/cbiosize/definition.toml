@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "cbiosize - definition.toml"
+name = "cbiosize"
+processor = "kernel"
+description = '''The fixed amount of bus space which is
+reserved for the CardBus bridge's IO window.
+The default value is 256 bytes.'''
+
+[syntax]
+type = "nn[KMG]"
+format = "nn[KMG]"
+choices = []
+allow_empty = true

@@ -1,0 +1,12 @@
+# This is a libKCmdline definition document.
+
+title = "fail_usercopy - definition.toml"
+name = "fail_usercopy"
+processor = "kernel"
+description = ''''''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

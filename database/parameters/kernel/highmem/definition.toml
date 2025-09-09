@@ -1,0 +1,16 @@
+# This is a libKCmdline definition document.
+
+title = "highmem - definition.toml"
+name = "highmem"
+processor = "kernel"
+description = '''forces the highmem zone to have an exact
+size of <nn>. This works even on boxes that have no
+highmem otherwise. This also works to reduce highmem
+size on bigger boxes.
+'''
+
+[syntax]
+type = "nn[KMG]"
+format = "nn[KMG]"
+choices = []
+allow_empty = true

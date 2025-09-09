@@ -1,0 +1,15 @@
+# This is a libKCmdline definition document.
+
+title = "acpi_pm_good - definition.toml"
+name = "acpi_pm_good"
+processor = "kernel"
+description = '''Override the pmtimer bug detection: force the kernel
+to assume that this machine's pmtimer latches its value
+and always returns good values.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "memblock - definition.toml"
+name = "memblock"
+processor = "kernel"
+description = '''Enable memblock debug messages.
+'''
+
+[syntax]
+type = "debug"
+format = "debug"
+choices = []
+allow_empty = true

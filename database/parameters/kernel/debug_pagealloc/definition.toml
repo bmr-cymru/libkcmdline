@@ -1,0 +1,19 @@
+# This is a libKCmdline definition document.
+
+title = "debug_pagealloc - definition.toml"
+name = "debug_pagealloc"
+processor = "kernel"
+description = '''[KNL,EARLY] When CONFIG_DEBUG_PAGEALLOC is set, this parameter
+enables the feature at boot time. By default, it is
+disabled and the system will work mostly the same as a
+kernel built without CONFIG_DEBUG_PAGEALLOC.
+Note: to get most of debug_pagealloc error reports, it's
+useful to also enable the page_owner functionality.
+on: enable the feature
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

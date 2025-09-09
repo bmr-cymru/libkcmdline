@@ -1,0 +1,15 @@
+# This is a libKCmdline definition document.
+
+title = "ether - definition.toml"
+name = "ether"
+processor = "kernel"
+description = '''Ethernet cards parameters
+This option is obsoleted by the "netdev=" option, which
+has equivalent usage. See its documentation for details.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

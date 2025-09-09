@@ -1,0 +1,15 @@
+# This is a libKCmdline definition document.
+
+title = "nonmi_ipi - definition.toml"
+name = "nonmi_ipi"
+processor = "kernel"
+description = '''Disable using NMI IPIs during panic/reboot to
+shutdown the other cpus.  Instead use the REBOOT_VECTOR
+irq.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

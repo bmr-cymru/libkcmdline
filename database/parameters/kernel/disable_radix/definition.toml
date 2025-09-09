@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "disable_radix - definition.toml"
+name = "disable_radix"
+processor = "kernel"
+description = '''Disable RADIX MMU mode on POWER9
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "no_lmce - definition.toml"
+name = "no_lmce"
+processor = "kernel"
+description = '''do not opt-in to Local MCE delivery. Use legacy method
+to broadcast MCEs.
+'''
+
+[syntax]
+type = ""
+format = ""
+choices = []
+allow_empty = true

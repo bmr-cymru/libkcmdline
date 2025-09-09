@@ -1,0 +1,18 @@
+# This is a libKCmdline definition document.
+
+title = "nfsd.nfsd4_ssc_umount_timeout - definition.toml"
+name = "nfsd.nfsd4_ssc_umount_timeout"
+processor = "kernel"
+description = '''[NFSv4.2] When used as the destination of a
+server-to-server copy, knfsd temporarily mounts
+the source server.  It caches the mount in case
+it will be needed again, and discards it if not
+used for the number of milliseconds specified by
+this parameter.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

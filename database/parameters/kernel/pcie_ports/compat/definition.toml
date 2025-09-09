@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "compat - definition.toml"
+name = "compat"
+processor = "kernel"
+description = '''Disable native PCIe services (PME, AER, DPC, PCIe
+hotplug).
+'''
+
+[syntax]
+type = ""
+format = ""
+choices = []
+allow_empty = true

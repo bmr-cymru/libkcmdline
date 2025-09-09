@@ -1,0 +1,19 @@
+# This is a libKCmdline definition document.
+
+title = "amd_iommu_intr - definition.toml"
+name = "amd_iommu_intr"
+processor = "kernel"
+description = '''Specifies one of the following AMD IOMMU interrupt
+remapping modes:
+legacy     - Use legacy interrupt remapping mode.
+vapic      - Use virtual APIC mode, which allows IOMMU
+to inject interrupts directly into guest.
+This mode requires kvm-amd.avic=1.
+(Default when IOMMU HW support is present.)
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

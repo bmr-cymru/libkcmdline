@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "baycom_par - definition.toml"
+name = "baycom_par"
+processor = "kernel"
+description = '''BayCom Parallel Port AX.25 Modem
+See header of drivers/net/hamradio/baycom_par.c.
+'''
+
+[syntax]
+type = "<io>,<mode>"
+format = "<io>,<mode>"
+choices = []
+allow_empty = true

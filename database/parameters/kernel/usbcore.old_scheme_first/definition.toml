@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "usbcore.old_scheme_first - definition.toml"
+name = "usbcore.old_scheme_first"
+processor = "kernel"
+description = '''[USB] Start with the old device initialization
+scheme (default 0 = off).
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

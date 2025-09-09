@@ -1,0 +1,18 @@
+# This is a libKCmdline definition document.
+
+title = "noxsaveopt - definition.toml"
+name = "noxsaveopt"
+processor = "kernel"
+description = '''Disables xsaveopt used in saving x86 extended
+register states. The kernel will fall back to use
+xsave to save the states. By using this parameter,
+performance of saving the states is degraded because
+xsave doesn't support modified optimization while
+xsaveopt supports it on xsaveopt enabled systems.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

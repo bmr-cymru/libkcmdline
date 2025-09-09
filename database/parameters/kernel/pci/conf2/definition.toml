@@ -1,0 +1,18 @@
+# This is a libKCmdline definition document.
+
+title = "conf2 - definition.toml"
+name = "conf2"
+processor = "kernel"
+description = '''[X86] Force use of PCI Configuration Access
+Mechanism 2 (IO port 0xCF8 is an 8-bit port for
+the function, IO port 0xCFA, also 8-bit, sets
+bus number. The config space is then accessed
+through ports 0xC000-0xCFFF).
+See http://wiki.osdev.org/PCI for more info
+on the configuration access mechanisms.'''
+
+[syntax]
+type = ""
+format = ""
+choices = []
+allow_empty = true

@@ -1,0 +1,15 @@
+# This is a libKCmdline definition document.
+
+title = "default - definition.toml"
+name = "default"
+processor = "kernel"
+description = '''By default we print messages on consoles in
+"[time stamp] text\n" format (time stamp may not be
+printed, depending on CONFIG_PRINTK_TIME or
+`printk_time' param).'''
+
+[syntax]
+type = ""
+format = ""
+choices = []
+allow_empty = true

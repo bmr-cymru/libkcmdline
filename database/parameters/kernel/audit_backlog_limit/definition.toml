@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "audit_backlog_limit - definition.toml"
+name = "audit_backlog_limit"
+processor = "kernel"
+description = '''Set the audit queue size limit.
+Default: 64
+'''
+
+[syntax]
+type = "<int> (must be >=0)"
+format = "<int> (must be >=0)"
+choices = []
+allow_empty = true

@@ -1,0 +1,17 @@
+# This is a libKCmdline definition document.
+
+title = "locktorture.stutter - definition.toml"
+name = "locktorture.stutter"
+processor = "kernel"
+description = '''Time (s) to stutter testing, for example,
+specifying five seconds causes the test to run for
+five seconds, wait for five seconds, and so on.
+This tests the locking primitive's ability to
+transition abruptly to and from idle.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

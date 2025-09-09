@@ -1,0 +1,15 @@
+# This is a libKCmdline definition document.
+
+title = "rproc_mem - definition.toml"
+name = "rproc_mem"
+processor = "kernel"
+description = '''[KNL,ARM,CMA] Remoteproc physical memory block.
+Memory area to be used by remote processor image,
+managed by CMA.
+'''
+
+[syntax]
+type = "nn[KMG][@address]"
+format = "nn[KMG][@address]"
+choices = []
+allow_empty = true

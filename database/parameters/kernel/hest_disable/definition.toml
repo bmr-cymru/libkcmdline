@@ -1,0 +1,15 @@
+# This is a libKCmdline definition document.
+
+title = "hest_disable - definition.toml"
+name = "hest_disable"
+processor = "kernel"
+description = '''Disable Hardware Error Source Table (HEST) support;
+corresponding firmware-first mode error processing
+logic will be disabled.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

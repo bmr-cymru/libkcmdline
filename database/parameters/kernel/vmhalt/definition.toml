@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "vmhalt - definition.toml"
+name = "vmhalt"
+processor = "kernel"
+description = '''Perform z/VM CP command after system halt.
+<command>
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

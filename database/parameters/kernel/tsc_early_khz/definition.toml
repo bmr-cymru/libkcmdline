@@ -1,0 +1,16 @@
+# This is a libKCmdline definition document.
+
+title = "tsc_early_khz - definition.toml"
+name = "tsc_early_khz"
+processor = "kernel"
+description = '''Skip early TSC calibration and use the given
+value instead. Useful when the early TSC frequency discovery
+with CPUID.16h support and partial CPUID.15h support.
+<unsigned int>
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

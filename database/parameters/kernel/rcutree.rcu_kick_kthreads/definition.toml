@@ -1,0 +1,17 @@
+# This is a libKCmdline definition document.
+
+title = "rcutree.rcu_kick_kthreads - definition.toml"
+name = "rcutree.rcu_kick_kthreads"
+processor = "kernel"
+description = '''Cause the grace-period kthread to get an extra
+wake_up() if it sleeps three times longer than
+it should at force-quiescent-state time.
+This wake_up() will be accompanied by a
+WARN_ONCE() splat and an ftrace_dump().
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

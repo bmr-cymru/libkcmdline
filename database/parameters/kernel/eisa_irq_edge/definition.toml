@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "eisa_irq_edge - definition.toml"
+name = "eisa_irq_edge"
+processor = "kernel"
+description = '''See header of drivers/parisc/eisa.c.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

@@ -1,0 +1,68 @@
+# This is a libKCmdline definition document.
+
+title = "trace_instance - definition.toml"
+name = "trace_instance"
+processor = "kernel"
+description = '''[FTRACE] Create a ring buffer instance early in boot up.
+This will be listed in:
+
+/sys/kernel/tracing/instances
+
+Events can be enabled at the time the instance is created
+via:
+
+
+unique.
+
+
+the same thing would happen if it was left off). The irq_handler_entry
+
+Flags can be added to the instance to modify its behavior when it is
+created. The flags are separated by '^'.
+
+The available flags are:
+
+traceoff	- Have the tracing instance tracing disabled after it is created.
+traceprintk	- Have trace_printk() write into this trace instance
+
+
+The flags must come before the defined events.
+
+can use that memory:
+
+memmap=12M$0x284500000 trace_instance=boot_map@0x284500000:12M
+
+The above will create a "boot_map" instance that uses the physical
+memory at 0x284500000 that is 12Megs. The per CPU buffers of that
+instance will be split up accordingly.
+
+
+reserve_mem=12M:4096:trace trace_instance=boot_map@trace
+
+This will reserve 12 megabytes at boot up with a 4096 byte alignment
+the buffer content.
+
+Also note that the layout of the ring buffer data may change between
+kernel versions where the validator will fail and reset the ring buffer
+if the layout is not the same as the previous kernel.
+
+it is recommend to disable tracing so that events from a previous boot do not
+mix with events of the current boot (unless you are debugging a random crash
+at boot up).
+
+
+can force a memory reset on boot which will clear any trace that was stored.
+This is just one of many ways that can clear memory. Make sure your system
+keeps the content of memory across reboots before relying on this option.
+
+NB: Both the mapped address and size must be page aligned for the architecture.
+
+See also Documentation/trace/debugging.rst
+
+'''
+
+[syntax]
+type = "[instance-info]"
+format = "[instance-info]"
+choices = []
+allow_empty = true

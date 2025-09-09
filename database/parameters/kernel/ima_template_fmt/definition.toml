@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "ima_template_fmt - definition.toml"
+name = "ima_template_fmt"
+processor = "kernel"
+description = '''[IMA] Define a custom template format.
+'''
+
+[syntax]
+type = "enum"
+format = "enum"
+choices = ["field1", "...", "fieldN"]
+allow_empty = true

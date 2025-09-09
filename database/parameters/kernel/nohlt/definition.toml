@@ -1,0 +1,20 @@
+# This is a libKCmdline definition document.
+
+title = "nohlt - definition.toml"
+name = "nohlt"
+processor = "kernel"
+description = '''Forces the kernel to
+busy wait in do_idle() and not use the arch_cpu_idle()
+implementation; requires CONFIG_GENERIC_IDLE_POLL_SETUP
+to be effective. This is useful on platforms where the
+sleep(SH) or wfi(ARM,ARM64) instructions do not work
+correctly or when doing power measurements to evaluate
+the impact of the sleep instructions. This is also
+useful when using JTAG debugger.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

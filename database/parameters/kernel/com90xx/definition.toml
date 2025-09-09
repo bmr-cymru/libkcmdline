@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "com90xx - definition.toml"
+name = "com90xx"
+processor = "kernel"
+description = '''ARCnet - COM90xx chipset (memory-mapped buffers)
+'''
+
+[syntax]
+type = "<io>[,<irq>[,<memstart>]]"
+format = "<io>[,<irq>[,<memstart>]]"
+choices = []
+allow_empty = true

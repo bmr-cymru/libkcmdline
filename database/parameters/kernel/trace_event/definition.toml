@@ -1,0 +1,23 @@
+# This is a libKCmdline definition document.
+
+title = "trace_event - definition.toml"
+name = "trace_event"
+processor = "kernel"
+description = '''[FTRACE] Set and start specified trace events in order
+to facilitate early boot debugging. The event-list is a
+comma-separated list of trace events to enable. See
+also Documentation/trace/events.rst
+
+
+trace_event=:mod:<module>
+
+The value before :mod: will only enable specific events
+that are part of the module. See the above mentioned
+document for more information.
+'''
+
+[syntax]
+type = "[event-list]"
+format = "[event-list]"
+choices = []
+allow_empty = true

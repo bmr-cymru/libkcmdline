@@ -1,0 +1,18 @@
+# This is a libKCmdline definition document.
+
+title = "debug_boot_weak_hash - definition.toml"
+name = "debug_boot_weak_hash"
+processor = "kernel"
+description = '''[KNL,EARLY] Enable printing [hashed] pointers early in the
+boot sequence.  If enabled, we use a weak hash instead
+of siphash to hash pointers.  Use this option if you are
+seeing instances of '(___ptrval___)') and need to see a
+value (hashed pointer) instead. Cryptographically
+insecure, please do not use on production kernels.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

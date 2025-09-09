@@ -1,0 +1,18 @@
+# This is a libKCmdline definition document.
+
+title = "xive - definition.toml"
+name = "xive"
+processor = "kernel"
+description = '''natively use the XIVE interrupt controller. This option
+allows the fallback firmware mode to be used:
+
+off       Fallback to firmware control of XIVE interrupt
+controller on both pseries and powernv
+platforms. Only useful on POWER9 and above.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

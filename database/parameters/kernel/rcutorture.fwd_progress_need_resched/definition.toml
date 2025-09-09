@@ -1,0 +1,15 @@
+# This is a libKCmdline definition document.
+
+title = "rcutorture.fwd_progress_need_resched - definition.toml"
+name = "rcutorture.fwd_progress_need_resched"
+processor = "kernel"
+description = '''Enclose cond_resched() calls within checks for
+need_resched() during tight-loop forward-progress
+testing.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

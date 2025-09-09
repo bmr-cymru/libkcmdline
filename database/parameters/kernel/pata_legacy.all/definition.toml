@@ -1,0 +1,15 @@
+# This is a libKCmdline definition document.
+
+title = "pata_legacy.all - definition.toml"
+name = "pata_legacy.all"
+processor = "kernel"
+description = '''Set to non-zero to probe primary and secondary ISA
+port ranges on PCI systems where no PCI PATA device
+has been found at either range.  Disabled by default.
+'''
+
+[syntax]
+type = "<int>"
+format = "<int>"
+choices = []
+allow_empty = true

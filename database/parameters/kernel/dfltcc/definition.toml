@@ -1,0 +1,21 @@
+# This is a libKCmdline definition document.
+
+title = "dfltcc - definition.toml"
+name = "dfltcc"
+processor = "kernel"
+description = '''on:       s390 zlib hardware support for compression on
+level 1 and decompression (default)
+off:      No s390 zlib hardware support
+def_only: s390 zlib hardware support for deflate
+only (compression on level 1)
+inf_only: s390 zlib hardware support for inflate
+only (decompression)
+always:   Same as 'on' but ignores the selected compression
+level always using hardware support (used for debugging)
+'''
+
+[syntax]
+type = "enum"
+format = "enum"
+choices = ["on", "off", "def_only", "inf_only", "always"]
+allow_empty = true

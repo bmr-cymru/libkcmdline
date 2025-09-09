@@ -1,0 +1,17 @@
+# This is a libKCmdline definition document.
+
+title = "rcutree.do_rcu_barrier - definition.toml"
+name = "rcutree.do_rcu_barrier"
+processor = "kernel"
+description = '''Request a call to rcu_barrier().  This is
+throttled so that userspace tests can safely
+hammer on the sysfs variable if they so choose.
+If triggered before the RCU grace-period machinery
+is fully active, this will error out with EAGAIN.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

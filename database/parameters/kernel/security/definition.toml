@@ -1,0 +1,15 @@
+# This is a libKCmdline definition document.
+
+title = "security - definition.toml"
+name = "security"
+processor = "kernel"
+description = '''Choose a legacy "major" security module to
+enable at boot. This has been deprecated by the
+"lsm=" parameter.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

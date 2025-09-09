@@ -1,0 +1,15 @@
+# This is a libKCmdline definition document.
+
+title = "netpoll.carrier_timeout - definition.toml"
+name = "netpoll.carrier_timeout"
+processor = "kernel"
+description = '''[NET] Specifies amount of time (in seconds) that
+netpoll should wait for a carrier. By default netpoll
+waits 4 seconds.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

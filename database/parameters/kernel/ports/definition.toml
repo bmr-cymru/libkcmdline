@@ -1,0 +1,16 @@
+# This is a libKCmdline definition document.
+
+title = "ports - definition.toml"
+name = "ports"
+processor = "kernel"
+description = '''IPVS ftp helper module
+Default is 21.
+Up to 8 (IP_VS_APP_MAX_PORTS) ports
+may be specified.
+'''
+
+[syntax]
+type = "<port>,<port>...."
+format = "<port>,<port>...."
+choices = []
+allow_empty = true

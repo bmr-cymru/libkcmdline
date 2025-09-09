@@ -1,0 +1,17 @@
+# This is a libKCmdline definition document.
+
+title = "ima_tcb - definition.toml"
+name = "ima_tcb"
+processor = "kernel"
+description = '''Deprecated.  Use ima_policy= instead.
+Load a policy which meets the needs of the Trusted
+Computing Base.  This means IMA will measure all
+programs exec'd, files mmap'd for exec, and all files
+opened for read by uid=0.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

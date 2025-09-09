@@ -1,0 +1,17 @@
+# This is a libKCmdline definition document.
+
+title = "big_root_window - definition.toml"
+name = "big_root_window"
+processor = "kernel"
+description = '''Try to add a big 64bit memory window to the PCIe
+root complex on AMD CPUs. Some GFX hardware
+can resize a BAR to allow access to all VRAM.
+Adding the window is slightly risky (it may
+conflict with unreported devices), so this
+taints the kernel.'''
+
+[syntax]
+type = ""
+format = ""
+choices = []
+allow_empty = true

@@ -1,0 +1,15 @@
+# This is a libKCmdline definition document.
+
+title = "analog.map - definition.toml"
+name = "analog.map"
+processor = "kernel"
+description = '''Analog joystick and gamepad support
+Specifies type or capabilities of an analog joystick
+connected to one of 16 gameports
+'''
+
+[syntax]
+type = "<type1>,<type2>,..<type16>"
+format = "<type1>,<type2>,..<type16>"
+choices = []
+allow_empty = true

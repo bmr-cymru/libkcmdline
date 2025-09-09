@@ -1,0 +1,15 @@
+# This is a libKCmdline definition document.
+
+title = "consoleblank - definition.toml"
+name = "consoleblank"
+processor = "kernel"
+description = '''The console blank (screen saver) timeout in
+seconds. A value of 0 disables the blank timer.
+Defaults to 0.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

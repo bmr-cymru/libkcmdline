@@ -1,0 +1,15 @@
+# This is a libKCmdline definition document.
+
+title = "nofxsr - definition.toml"
+name = "nofxsr"
+processor = "kernel"
+description = '''Disables x86 floating point extended
+register save and restore. The kernel will only save
+legacy floating-point registers on task switch.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

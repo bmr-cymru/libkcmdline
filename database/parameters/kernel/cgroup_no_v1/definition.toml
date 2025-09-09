@@ -1,0 +1,19 @@
+# This is a libKCmdline definition document.
+
+title = "cgroup_no_v1 - definition.toml"
+name = "cgroup_no_v1"
+processor = "kernel"
+description = '''Disable cgroup controllers and named hierarchies in v1
+[,{ controller | "all" | "named" }...] }
+Like cgroup_disable, but only applies to cgroup v1;
+the blacklisted controllers remain available in cgroup2.
+"all" blacklists all controllers and "named" disables
+named mounts. Specifying both "all" and "named" disables
+all v1 hierarchies.
+'''
+
+[syntax]
+type = "enum"
+format = "enum"
+choices = ["controller", "all", "named"]
+allow_empty = true

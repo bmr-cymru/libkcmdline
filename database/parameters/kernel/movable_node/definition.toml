@@ -1,0 +1,17 @@
+# This is a libKCmdline definition document.
+
+title = "movable_node - definition.toml"
+name = "movable_node"
+processor = "kernel"
+description = '''Boot-time switch to make hotplugable memory
+NUMA nodes to be movable. This means that the memory
+of such nodes will be usable only for movable
+allocations which rules out almost all kernel
+allocations. Use with caution!
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

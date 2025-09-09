@@ -1,0 +1,20 @@
+# This is a libKCmdline definition document.
+
+title = "acpi_no_static_ssdt - definition.toml"
+name = "acpi_no_static_ssdt"
+processor = "kernel"
+description = '''Disable installation of static SSDTs at early boot time
+By default, SSDTs contained in the RSDT/XSDT will be
+installed automatically and they will appear under
+/sys/firmware/acpi/tables.
+This option turns off this feature.
+Note that specifying this option does not affect
+dynamic table installation which will install SSDT
+tables to /sys/firmware/acpi/tables/dynamic.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

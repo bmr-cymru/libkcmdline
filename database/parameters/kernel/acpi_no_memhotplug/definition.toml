@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "acpi_no_memhotplug - definition.toml"
+name = "acpi_no_memhotplug"
+processor = "kernel"
+description = '''Disable memory hotplug.  Useful for kdump
+kernels.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

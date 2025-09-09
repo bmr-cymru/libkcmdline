@@ -1,0 +1,15 @@
+# This is a libKCmdline definition document.
+
+title = "dyndbg[ - definition.toml"
+name = "dyndbg["
+processor = "kernel"
+description = '''Enable debug messages at boot time.  See
+Documentation/admin-guide/dynamic-debug-howto.rst
+for details.
+'''
+
+[syntax]
+type = "\"val\"]"
+format = "\"val\"]"
+choices = []
+allow_empty = true

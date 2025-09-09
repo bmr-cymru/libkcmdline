@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "rcutorture.test_no_idle_hz - definition.toml"
+name = "rcutorture.test_no_idle_hz"
+processor = "kernel"
+description = '''Test RCU's dyntick-idle handling.  See also the
+rcutorture.shuffle_interval parameter.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

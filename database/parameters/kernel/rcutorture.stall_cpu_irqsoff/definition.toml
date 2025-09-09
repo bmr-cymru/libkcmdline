@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "rcutorture.stall_cpu_irqsoff - definition.toml"
+name = "rcutorture.stall_cpu_irqsoff"
+processor = "kernel"
+description = '''Disable interrupts while stalling if set, but only
+on the first stall in the set.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

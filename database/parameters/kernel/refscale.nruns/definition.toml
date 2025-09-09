@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "refscale.nruns - definition.toml"
+name = "refscale.nruns"
+processor = "kernel"
+description = '''Set number of runs, each of which is dumped onto
+the console log.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

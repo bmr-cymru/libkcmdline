@@ -1,0 +1,17 @@
+# This is a libKCmdline definition document.
+
+title = "apparmor - definition.toml"
+name = "apparmor"
+processor = "kernel"
+description = '''Disable or enable AppArmor at boot time
+See security/apparmor/Kconfig help text
+0 -- disable.
+1 -- enable.
+Default value is set via kernel config option.
+'''
+
+[syntax]
+type = "enum"
+format = "enum"
+choices = ["0", "1"]
+allow_empty = true

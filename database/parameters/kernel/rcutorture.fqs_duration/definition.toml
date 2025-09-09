@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "rcutorture.fqs_duration - definition.toml"
+name = "rcutorture.fqs_duration"
+processor = "kernel"
+description = '''Set duration of force_quiescent_state bursts
+in microseconds.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

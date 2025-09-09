@@ -1,0 +1,20 @@
+# This is a libKCmdline definition document.
+
+title = "smp.csd_lock_timeout - definition.toml"
+name = "smp.csd_lock_timeout"
+processor = "kernel"
+description = '''Specify the period of time in milliseconds
+that smp_call_function() and friends will wait
+for a CPU to release the CSD lock.  This is
+useful when diagnosing bugs involving CPUs
+disabling interrupts for extended periods
+setting a value of zero disables this feature.
+This feature may be more efficiently disabled
+using the csdlock_debug- kernel parameter.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

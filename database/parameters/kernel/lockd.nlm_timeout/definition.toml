@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "lockd.nlm_timeout - definition.toml"
+name = "lockd.nlm_timeout"
+processor = "kernel"
+description = '''Assign timeout value.
+'''
+
+[syntax]
+type = "<integer>"
+format = "<integer>"
+choices = []
+allow_empty = true

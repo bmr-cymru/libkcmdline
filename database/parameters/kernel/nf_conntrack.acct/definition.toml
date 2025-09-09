@@ -1,0 +1,16 @@
+# This is a libKCmdline definition document.
+
+title = "nf_conntrack.acct - definition.toml"
+name = "nf_conntrack.acct"
+processor = "kernel"
+description = '''[NETFILTER] Enable connection tracking flow accounting
+0 to disable accounting
+1 to enable accounting
+Default value is 0.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

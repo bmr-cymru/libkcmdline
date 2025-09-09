@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "mtouchusb.raw_coordinates - definition.toml"
+name = "mtouchusb.raw_coordinates"
+processor = "kernel"
+description = '''[HW] Make the MicroTouch USB driver use raw coordinates
+('y', default) or cooked coordinates ('n')
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

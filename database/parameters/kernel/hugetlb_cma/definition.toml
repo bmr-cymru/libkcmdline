@@ -1,0 +1,18 @@
+# This is a libKCmdline definition document.
+
+title = "hugetlb_cma - definition.toml"
+name = "hugetlb_cma"
+processor = "kernel"
+description = '''The size of a CMA area used for allocation
+of a CMA area per node can be specified.
+nn[KMGTPE] or (node format)
+
+Reserve a CMA area of given size and allocate gigantic
+boot-time allocation of gigantic hugepages is skipped.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

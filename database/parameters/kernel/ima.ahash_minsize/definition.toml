@@ -1,0 +1,19 @@
+# This is a libKCmdline definition document.
+
+title = "ima.ahash_minsize - definition.toml"
+name = "ima.ahash_minsize"
+processor = "kernel"
+description = '''Minimum file size for asynchronous hash usage
+Set the minimal file size for using asynchronous hash.
+If left unspecified, ahash usage is disabled.
+
+ahash performance varies for different data sizes on
+different crypto accelerators. This option can be used
+to achieve the best performance for a particular HW.
+'''
+
+[syntax]
+type = "<min_file_size>"
+format = "<min_file_size>"
+choices = []
+allow_empty = true

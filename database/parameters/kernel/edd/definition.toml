@@ -1,0 +1,12 @@
+# This is a libKCmdline definition document.
+
+title = "edd - definition.toml"
+name = "edd"
+processor = "kernel"
+description = ''''''
+
+[syntax]
+type = "enum"
+format = "enum"
+choices = ["off", "on", "skip[mbr]"]
+allow_empty = true

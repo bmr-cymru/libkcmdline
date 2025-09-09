@@ -1,0 +1,17 @@
+# This is a libKCmdline definition document.
+
+title = "srcutree.big_cpu_lim - definition.toml"
+name = "srcutree.big_cpu_lim"
+processor = "kernel"
+description = '''Specifies the number of CPUs constituting a
+should immediately allocate an srcu_node array.
+but takes effect only when the low-order four
+bits of srcutree.convert_to_big is equal to 3
+(decide at boot).
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

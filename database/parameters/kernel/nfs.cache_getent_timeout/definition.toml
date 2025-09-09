@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "nfs.cache_getent_timeout - definition.toml"
+name = "nfs.cache_getent_timeout"
+processor = "kernel"
+description = '''[NFS] sets the timeout after which an attempt to
+update a cache entry is deemed to have failed.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

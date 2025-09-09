@@ -1,0 +1,16 @@
+# This is a libKCmdline definition document.
+
+title = "srcutree.srcu_max_nodelay - definition.toml"
+name = "srcutree.srcu_max_nodelay"
+processor = "kernel"
+description = '''Specifies the number of no-delay instances
+per jiffy for which the SRCU grace period
+worker thread will be rescheduled with zero
+be rescheduled with a sleep delay of one jiffy.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

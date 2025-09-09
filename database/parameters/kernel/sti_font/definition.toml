@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "sti_font - definition.toml"
+name = "sti_font"
+processor = "kernel"
+description = '''See comment in drivers/video/console/sticore.c.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "debug - definition.toml"
+name = "debug"
+processor = "kernel"
+description = '''Enable debug messages.
+'''
+
+[syntax]
+type = ""
+format = ""
+choices = []
+allow_empty = true

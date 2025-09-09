@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "nobootlog - definition.toml"
+name = "nobootlog"
+processor = "kernel"
+description = '''disable boot machine check logging.
+'''
+
+[syntax]
+type = ""
+format = ""
+choices = []
+allow_empty = true

@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "tty<n> - definition.toml"
+name = "tty<n>"
+processor = "kernel"
+description = '''Use the virtual console device <n>.
+'''
+
+[syntax]
+type = ""
+format = ""
+choices = []
+allow_empty = true

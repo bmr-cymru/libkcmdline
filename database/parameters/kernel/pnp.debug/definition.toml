@@ -1,0 +1,17 @@
+# This is a libKCmdline definition document.
+
+title = "pnp.debug - definition.toml"
+name = "pnp.debug"
+processor = "kernel"
+description = '''Enable PNP debug messages (depends on the
+CONFIG_PNP_DEBUG_MESSAGES option).  Change at run-time
+via /sys/module/pnp/parameters/debug.  We always show
+current resource usage; turning this on also shows
+possible settings and some assignment information.
+'''
+
+[syntax]
+type = "1"
+format = "1"
+choices = []
+allow_empty = true

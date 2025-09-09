@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "merge - definition.toml"
+name = "merge"
+processor = "kernel"
+description = '''Do scatter-gather (SG) merging. Implies "force"
+(experimental).
+'''
+
+[syntax]
+type = ""
+format = ""
+choices = []
+allow_empty = true

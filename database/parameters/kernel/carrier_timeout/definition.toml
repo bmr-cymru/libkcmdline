@@ -1,0 +1,15 @@
+# This is a libKCmdline definition document.
+
+title = "carrier_timeout - definition.toml"
+name = "carrier_timeout"
+processor = "kernel"
+description = '''[NET] Specifies amount of time (in seconds) that
+the kernel should wait for a network carrier. By default
+it waits 120 seconds.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

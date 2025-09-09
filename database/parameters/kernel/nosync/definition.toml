@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "nosync - definition.toml"
+name = "nosync"
+processor = "kernel"
+description = '''Disables sync negotiation for all devices.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

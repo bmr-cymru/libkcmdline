@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "rcutorture.stall_cpu_holdoff - definition.toml"
+name = "rcutorture.stall_cpu_holdoff"
+processor = "kernel"
+description = '''Time to wait (s) after boot before inducing stall.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

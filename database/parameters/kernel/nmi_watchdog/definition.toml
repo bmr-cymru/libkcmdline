@@ -1,0 +1,28 @@
+# This is a libKCmdline definition document.
+
+title = "nmi_watchdog - definition.toml"
+name = "nmi_watchdog"
+processor = "kernel"
+description = '''Debugging features for SMP kernels
+Valid num: 0 or 1
+0 - turn hardlockup detector in nmi_watchdog off
+1 - turn hardlockup detector in nmi_watchdog on
+rNNN - configure the watchdog with raw perf event 0xNNN
+
+When panic is specified, panic when an NMI watchdog
+timeout occurs (or 'nopanic' to not panic on an NMI
+watchdog, if CONFIG_BOOTPARAM_HARDLOCKUP_PANIC is set)
+To disable both hard and soft lockup detectors,
+please see 'nowatchdog'.
+This is useful when you use a panic=... timeout and
+need the box quickly up again.
+
+These settings can be accessed at runtime via
+the nmi_watchdog and hardlockup_panic sysctls.
+'''
+
+[syntax]
+type = "[panic,][nopanic,][rNNN,][num]"
+format = "[panic,][nopanic,][rNNN,][num]"
+choices = []
+allow_empty = true

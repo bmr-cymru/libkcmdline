@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "strict - definition.toml"
+name = "strict"
+processor = "kernel"
+description = '''[Default Off]
+Deprecated, equivalent to iommu.strict=1.'''
+
+[syntax]
+type = ""
+format = ""
+choices = []
+allow_empty = true

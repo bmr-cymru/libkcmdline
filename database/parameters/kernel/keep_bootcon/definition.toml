@@ -1,0 +1,16 @@
+# This is a libKCmdline definition document.
+
+title = "keep_bootcon - definition.toml"
+name = "keep_bootcon"
+processor = "kernel"
+description = '''Do not unregister boot console at start. This is only
+useful for debugging when something happens in the window
+between unregistering the boot console and initializing
+the real console.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

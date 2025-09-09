@@ -1,0 +1,15 @@
+# This is a libKCmdline definition document.
+
+title = "sp_off - definition.toml"
+name = "sp_off"
+processor = "kernel"
+description = '''[Default Off]
+By default, super page will be supported if Intel IOMMU
+has the capability. With this option, super page will
+not be supported.'''
+
+[syntax]
+type = ""
+format = ""
+choices = []
+allow_empty = true

@@ -1,0 +1,15 @@
+# This is a libKCmdline definition document.
+
+title = "irqmask - definition.toml"
+name = "irqmask"
+processor = "kernel"
+description = '''[X86] Set a bit mask of IRQs allowed to be
+assigned automatically to PCI devices. You can
+make the kernel exclude IRQs of your ISA cards
+this way.'''
+
+[syntax]
+type = "0xMMMM"
+format = "0xMMMM"
+choices = []
+allow_empty = true

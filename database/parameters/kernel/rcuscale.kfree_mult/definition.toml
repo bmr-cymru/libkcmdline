@@ -1,0 +1,15 @@
+# This is a libKCmdline definition document.
+
+title = "rcuscale.kfree_mult - definition.toml"
+name = "rcuscale.kfree_mult"
+processor = "kernel"
+description = '''Instead of allocating an object of size kfree_obj,
+allocate one of kfree_mult * sizeof(kfree_obj).
+Defaults to 1.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

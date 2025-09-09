@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "norandmaps - definition.toml"
+name = "norandmaps"
+processor = "kernel"
+description = '''use address space randomization.  Equivalent to
+echo 0 > /proc/sys/kernel/randomize_va_space
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

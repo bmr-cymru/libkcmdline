@@ -1,0 +1,15 @@
+# This is a libKCmdline definition document.
+
+title = "rcutree.dump_tree - definition.toml"
+name = "rcutree.dump_tree"
+processor = "kernel"
+description = '''Dump the structure of the rcu_node combining tree
+out at early boot.  This is used for diagnostic
+purposes, to verify correct tree setup.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

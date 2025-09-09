@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "nofullflush - definition.toml"
+name = "nofullflush"
+processor = "kernel"
+description = '''Don't use IOMMU fullflush.
+'''
+
+[syntax]
+type = ""
+format = ""
+choices = []
+allow_empty = true

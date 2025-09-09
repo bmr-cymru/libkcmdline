@@ -1,0 +1,16 @@
+# This is a libKCmdline definition document.
+
+title = "pata_platform.pio_mask - definition.toml"
+name = "pata_platform.pio_mask"
+processor = "kernel"
+description = '''Supported PIO mode mask.  Set individual bits to allow
+the use of the respective PIO modes.  Bit 0 is for
+mode 0, bit 1 is for mode 1, and so on.  Mode 0 only
+allowed by default.
+'''
+
+[syntax]
+type = "<int>"
+format = "<int>"
+choices = []
+allow_empty = true

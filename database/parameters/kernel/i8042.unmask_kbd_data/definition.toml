@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "i8042.unmask_kbd_data - definition.toml"
+name = "i8042.unmask_kbd_data"
+processor = "kernel"
+description = '''[HW] Enable printing of interrupt data from the KBD port
+requires that i8042.debug=1 be enabled)'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

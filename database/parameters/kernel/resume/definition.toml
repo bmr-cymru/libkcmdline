@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "resume - definition.toml"
+name = "resume"
+processor = "kernel"
+description = '''Specify the partition device for software suspend
+Format:
+'''
+
+[syntax]
+type = "enum"
+format = "enum"
+choices = ["/dev/<dev>", "PARTUUID=<uuid>", "<int>:<int>", "<hex>"]
+allow_empty = true

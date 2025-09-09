@@ -1,0 +1,23 @@
+# This is a libKCmdline definition document.
+
+title = "slab_debug[ - definition.toml"
+name = "slab_debug["
+processor = "kernel"
+description = '''Enabling slab_debug allows one to determine the
+culprit if slab objects become corrupted. Enabling
+slab_debug can create guard zones around objects and
+may poison objects when not in use. Also tracks the
+last alloc / free. For more information see
+Documentation/admin-guide/mm/slab.rst.
+(slub_debug legacy name also accepted for now)
+
+Using this option implies the "no_hash_pointers"
+option which can be undone by adding the
+"hash_pointers=always" option.
+'''
+
+[syntax]
+type = "options[,slabs][;[options[,slabs]]...]"
+format = "options[,slabs][;[options[,slabs]]...]"
+choices = []
+allow_empty = true

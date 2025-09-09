@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "plip - definition.toml"
+name = "plip"
+processor = "kernel"
+description = '''Parallel port network link
+See also Documentation/admin-guide/parport.rst.
+'''
+
+[syntax]
+type = "enum"
+format = "enum"
+choices = ["parport<nr>", "timid", "0"]
+allow_empty = true

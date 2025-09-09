@@ -1,0 +1,15 @@
+# This is a libKCmdline definition document.
+
+title = "noxsave - definition.toml"
+name = "noxsave"
+processor = "kernel"
+description = '''Disables x86 extended register state save
+and restore using xsave. The kernel will fallback to
+enabling legacy floating-point and sse state.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

@@ -1,0 +1,12 @@
+# This is a libKCmdline definition document.
+
+title = "r128 - definition.toml"
+name = "r128"
+processor = "kernel"
+description = ''''''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

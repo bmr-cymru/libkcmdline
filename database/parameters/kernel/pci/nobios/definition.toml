@@ -1,0 +1,15 @@
+# This is a libKCmdline definition document.
+
+title = "nobios - definition.toml"
+name = "nobios"
+processor = "kernel"
+description = '''[X86-32] disallow use of PCI BIOS, only direct
+hardware access methods are allowed. Use this
+if you experience crashes upon bootup and you
+suspect they are caused by the BIOS.'''
+
+[syntax]
+type = ""
+format = ""
+choices = []
+allow_empty = true

@@ -1,0 +1,25 @@
+# This is a libKCmdline definition document.
+
+title = "lp - definition.toml"
+name = "lp"
+processor = "kernel"
+description = '''driver. 'lp=reset' (which can be
+specified in addition to the ports) causes
+attached printers to be reset. Using
+lp=port1,port2,... specifies the parallel ports
+to associate lp devices with, starting with
+lp0. A port specification may be 'none' to skip
+that lp device, or a parport name such as
+'parport0'. Specifying 'lp=auto' instead of a
+port specification list means that device IDs
+from each port should be examined, to see if
+an IEEE 1284-compliant printer is attached; if
+so, the driver will manage that printer.
+See also header of drivers/char/lp.c.
+'''
+
+[syntax]
+type = "auto"
+format = "auto"
+choices = []
+allow_empty = true

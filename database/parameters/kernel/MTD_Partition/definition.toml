@@ -1,0 +1,12 @@
+# This is a libKCmdline definition document.
+
+title = "MTD_Partition - definition.toml"
+name = "MTD_Partition"
+processor = "kernel"
+description = ''''''
+
+[syntax]
+type = "<name>,<region-number>,<size>,<offset>"
+format = "<name>,<region-number>,<size>,<offset>"
+choices = []
+allow_empty = true

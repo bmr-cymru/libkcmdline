@@ -1,0 +1,19 @@
+# This is a libKCmdline definition document.
+
+title = "cma - definition.toml"
+name = "cma"
+processor = "kernel"
+description = '''[KNL,CMA,EARLY]
+Sets the size of kernel global memory area for
+contiguous memory allocations and optionally the
+placement constraint by the physical address range of
+memory allocations. A value of 0 disables CMA
+altogether. For more information, see
+kernel/dma/contiguous.c
+'''
+
+[syntax]
+type = "nn[MG]@[start[MG][-end[MG]]]"
+format = "nn[MG]@[start[MG][-end[MG]]]"
+choices = []
+allow_empty = true

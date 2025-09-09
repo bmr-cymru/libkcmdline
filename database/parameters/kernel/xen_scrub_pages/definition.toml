@@ -1,0 +1,15 @@
+# This is a libKCmdline definition document.
+
+title = "xen_scrub_pages - definition.toml"
+name = "xen_scrub_pages"
+processor = "kernel"
+description = '''Boolean option to control scrubbing pages before giving them back
+with /sys/devices/system/xen_memory/xen_memory0/scrub_pages.
+Default value controlled with CONFIG_XEN_SCRUB_PAGES_DEFAULT.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

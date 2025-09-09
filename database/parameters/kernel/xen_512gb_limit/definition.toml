@@ -1,0 +1,17 @@
+# This is a libKCmdline definition document.
+
+title = "xen_512gb_limit - definition.toml"
+name = "xen_512gb_limit"
+processor = "kernel"
+description = '''Restricts the kernel running paravirtualized under Xen
+to use only up to 512 GB of RAM. The reason to do so is
+crash analysis tools and Xen tools for doing domain
+save/restore/migration must be enabled to handle larger
+domains.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

@@ -1,0 +1,15 @@
+# This is a libKCmdline definition document.
+
+title = "pata_legacy.opti82c611a - definition.toml"
+name = "pata_legacy.opti82c611a"
+processor = "kernel"
+description = '''Set to 1, 2, or 3 for Opti 82c465MV on the primary
+channel, the secondary channel, or both channels
+respectively.  Disabled by default.
+'''
+
+[syntax]
+type = "<int>"
+format = "<int>"
+choices = []
+allow_empty = true

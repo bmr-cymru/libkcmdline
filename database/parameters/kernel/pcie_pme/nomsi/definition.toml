@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "nomsi - definition.toml"
+name = "nomsi"
+processor = "kernel"
+description = '''Do not use MSI for native PCIe PME signaling (this makes
+all PCIe root ports use INTx for all services).
+'''
+
+[syntax]
+type = ""
+format = ""
+choices = []
+allow_empty = true

@@ -1,0 +1,18 @@
+# This is a libKCmdline definition document.
+
+title = "memhp_default_state - definition.toml"
+name = "memhp_default_state"
+processor = "kernel"
+description = '''[KNL] Set the initial state for the memory hotplug
+onlining policy. If not specified, the default value is
+set according to the
+CONFIG_MHP_DEFAULT_ONLINE_TYPE kernel config
+options.
+See Documentation/admin-guide/mm/memory-hotplug.rst.
+'''
+
+[syntax]
+type = "online/offline/online_kernel/online_movable"
+format = "online/offline/online_kernel/online_movable"
+choices = []
+allow_empty = true

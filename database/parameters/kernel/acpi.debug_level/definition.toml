@@ -1,0 +1,34 @@
+# This is a libKCmdline definition document.
+
+title = "acpi.debug_level - definition.toml"
+name = "acpi.debug_level"
+processor = "kernel"
+description = '''CONFIG_ACPI_DEBUG must be enabled to produce any ACPI
+debug output.  Bits in debug_layer correspond to a
+_COMPONENT in an ACPI source file, e.g.,
+#define _COMPONENT ACPI_EVENTS
+Bits in debug_level correspond to a level in
+ACPI_DEBUG_PRINT statements, e.g.,
+ACPI_DEBUG_PRINT((ACPI_DB_INFO, ...
+The debug_level mask defaults to "info".  See
+Documentation/firmware-guide/acpi/debug.rst for more information about
+debug layers and levels.
+
+Enable processor driver info messages:
+acpi.debug_layer=0x20000000
+Enable AML "Debug" output, i.e., stores to the Debug
+object while interpreting AML:
+acpi.debug_layer=0xffffffff acpi.debug_level=0x2
+Enable all messages related to ACPI hardware:
+acpi.debug_layer=0x2 acpi.debug_level=0xffffffff
+
+Some values produce so much output that the system is
+unusable.  The "log_buf_len" parameter may be useful
+if you need to capture more output.
+'''
+
+[syntax]
+type = "<int>"
+format = "<int>"
+choices = []
+allow_empty = true

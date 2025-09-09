@@ -1,0 +1,16 @@
+# This is a libKCmdline definition document.
+
+title = "mtrr_gran_size - definition.toml"
+name = "mtrr_gran_size"
+processor = "kernel"
+description = '''Used for mtrr cleanup. It is granularity of mtrr block.
+Default is 1.
+Large value could prevent small alignment from
+using up MTRRs.
+'''
+
+[syntax]
+type = "nn[KMG,X86,EARLY]"
+format = "nn[KMG,X86,EARLY]"
+choices = []
+allow_empty = true

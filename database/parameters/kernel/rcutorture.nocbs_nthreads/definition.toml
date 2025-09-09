@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "rcutorture.nocbs_nthreads - definition.toml"
+name = "rcutorture.nocbs_nthreads"
+processor = "kernel"
+description = '''Set number of RCU callback-offload togglers.
+Zero (the default) disables toggling.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

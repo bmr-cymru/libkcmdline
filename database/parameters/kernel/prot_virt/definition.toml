@@ -1,0 +1,17 @@
+# This is a libKCmdline definition document.
+
+title = "prot_virt - definition.toml"
+name = "prot_virt"
+processor = "kernel"
+description = '''enable hosting protected virtual machines
+isolated from the hypervisor (if hardware supports
+that). If enabled, the default kernel base address
+might be overridden even when Kernel Address Space
+Layout Randomization is disabled.
+'''
+
+[syntax]
+type = "<bool>"
+format = "<bool>"
+choices = []
+allow_empty = true

@@ -1,0 +1,17 @@
+# This is a libKCmdline definition document.
+
+title = "mem_sleep_default - definition.toml"
+name = "mem_sleep_default"
+processor = "kernel"
+description = '''Default system suspend mode:
+s2idle  - Suspend-To-Idle
+shallow - Power-On Suspend or equivalent (if supported)
+deep    - Suspend-To-RAM or equivalent (if supported)
+See Documentation/admin-guide/pm/sleep-states.rst.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

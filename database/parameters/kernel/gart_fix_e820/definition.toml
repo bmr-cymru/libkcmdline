@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "gart_fix_e820 - definition.toml"
+name = "gart_fix_e820"
+processor = "kernel"
+description = '''disable the fix e820 for K8 GART
+default: on
+'''
+
+[syntax]
+type = "off | on"
+format = "off | on"
+choices = []
+allow_empty = true

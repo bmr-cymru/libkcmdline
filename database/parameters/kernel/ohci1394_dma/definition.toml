@@ -1,0 +1,15 @@
+# This is a libKCmdline definition document.
+
+title = "ohci1394_dma - definition.toml"
+name = "ohci1394_dma"
+processor = "kernel"
+description = '''enable debugging via the ohci1394 driver.
+See Documentation/core-api/debugging-via-ohci1394.rst for more
+info.
+'''
+
+[syntax]
+type = "early"
+format = "early"
+choices = []
+allow_empty = true

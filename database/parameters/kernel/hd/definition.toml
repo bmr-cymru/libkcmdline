@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "hd - definition.toml"
+name = "hd"
+processor = "kernel"
+description = '''(E)IDE hard drive subsystem geometry
+'''
+
+[syntax]
+type = "<cyl>,<head>,<sect>"
+format = "<cyl>,<head>,<sect>"
+choices = []
+allow_empty = true

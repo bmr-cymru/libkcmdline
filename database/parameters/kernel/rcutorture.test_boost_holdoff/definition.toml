@@ -1,0 +1,15 @@
+# This is a libKCmdline definition document.
+
+title = "rcutorture.test_boost_holdoff - definition.toml"
+name = "rcutorture.test_boost_holdoff"
+processor = "kernel"
+description = '''Holdoff time (s) from start of test to the start
+of RCU priority-boost testing.	Defaults to zero,
+that is, no holdoff.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

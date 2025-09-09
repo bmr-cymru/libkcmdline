@@ -1,0 +1,18 @@
+# This is a libKCmdline definition document.
+
+title = "acpi_mask_gpe - definition.toml"
+name = "acpi_mask_gpe"
+processor = "kernel"
+description = '''Due to the existence of _Lxx/_Exx, some GPEs triggered
+by unsupported hardware/firmware features can result in
+GPE floodings that cannot be automatically disabled by
+the GPE dispatcher.
+This facility can be used to prevent such uncontrolled
+GPE floodings.
+'''
+
+[syntax]
+type = "<byte> or <bitmap-list>"
+format = "<byte> or <bitmap-list>"
+choices = []
+allow_empty = true

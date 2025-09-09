@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "rcutree.qhimark - definition.toml"
+name = "rcutree.qhimark"
+processor = "kernel"
+description = '''Set threshold of queued RCU callbacks beyond which
+batch limiting is disabled.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "fw_devlink.strict - definition.toml"
+name = "fw_devlink.strict"
+processor = "kernel"
+description = '''[KNL,EARLY] Treat all inferred dependencies as mandatory
+dependencies. This only applies for fw_devlink=on|rpm.
+'''
+
+[syntax]
+type = "<bool>"
+format = "<bool>"
+choices = []
+allow_empty = true

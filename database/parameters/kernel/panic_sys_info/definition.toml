@@ -1,0 +1,16 @@
+# This is a libKCmdline definition document.
+
+title = "panic_sys_info - definition.toml"
+name = "panic_sys_info"
+processor = "kernel"
+description = '''comma separated list of extra information to be dumped
+
+timers:         print timers info
+
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

@@ -1,0 +1,19 @@
+# This is a libKCmdline definition document.
+
+title = "early_page_ext - definition.toml"
+name = "early_page_ext"
+processor = "kernel"
+description = '''Enforces page_ext initialization to earlier
+stages so cover more early boot allocations.
+Please note that as side effect some optimizations
+might be disabled to achieve that (e.g. parallelized
+memory initialization is disabled) so the boot process
+might take longer, especially on systems with a lot of
+memory. Available with CONFIG_PAGE_EXTENSION=y.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

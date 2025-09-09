@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "usbcore.usbfs_memory_mb - definition.toml"
+name = "usbcore.usbfs_memory_mb"
+processor = "kernel"
+description = '''[USB] Memory limit (in MB) for buffers allocated by
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

@@ -1,0 +1,16 @@
+# This is a libKCmdline definition document.
+
+title = "ftrace_graph_max_depth - definition.toml"
+name = "ftrace_graph_max_depth"
+processor = "kernel"
+description = '''[FTRACE] Used with the function graph tracer. This is
+the max depth it will trace into a function. This value
+can be changed at run time by the max_graph_depth file
+in the tracefs tracing directory. default: 0 (no limit)
+'''
+
+[syntax]
+type = "<uint>"
+format = "<uint>"
+choices = []
+allow_empty = true

@@ -1,0 +1,16 @@
+# This is a libKCmdline definition document.
+
+title = "elfcorehdr - definition.toml"
+name = "elfcorehdr"
+processor = "kernel"
+description = '''Specifies physical address of start of kernel core
+image elf header and optionally the size. Generally
+kexec loader will pass this option to capture kernel.
+See Documentation/admin-guide/kdump/kdump.rst for details.
+'''
+
+[syntax]
+type = "[size[KMG]@]offset[KMG]"
+format = "[size[KMG]@]offset[KMG]"
+choices = []
+allow_empty = true

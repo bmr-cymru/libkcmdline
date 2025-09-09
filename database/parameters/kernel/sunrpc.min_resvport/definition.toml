@@ -1,0 +1,12 @@
+# This is a libKCmdline definition document.
+
+title = "sunrpc.min_resvport - definition.toml"
+name = "sunrpc.min_resvport"
+processor = "kernel"
+description = ''''''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

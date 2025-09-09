@@ -1,0 +1,30 @@
+# This is a libKCmdline definition document.
+
+title = "gather_data_sampling - definition.toml"
+name = "gather_data_sampling"
+processor = "kernel"
+description = '''[X86,INTEL,EARLY] Control the Gather Data Sampling (GDS)
+mitigation.
+
+Gather Data Sampling is a hardware vulnerability which
+allows unprivileged speculative access to data which was
+previously stored in vector registers.
+
+This issue is mitigated by default in updated microcode.
+The mitigation may have a performance impact but can be
+disabled. On systems without the microcode mitigation
+disabling AVX serves as a mitigation.
+
+force:	Disable AVX to mitigate systems without
+microcode mitigation. No effect if the microcode
+mitigation is present. Known to cause crashes in
+userspace with buggy AVX enumeration.
+
+off:	Disable GDS mitigation.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

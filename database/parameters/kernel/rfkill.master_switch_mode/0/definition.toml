@@ -1,0 +1,12 @@
+# This is a libKCmdline definition document.
+
+title = "0 - definition.toml"
+name = "0"
+processor = "kernel"
+description = '''The "airplane mode" button does nothing.'''
+
+[syntax]
+type = ""
+format = ""
+choices = []
+allow_empty = true

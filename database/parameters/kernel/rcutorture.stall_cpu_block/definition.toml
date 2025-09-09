@@ -1,0 +1,24 @@
+# This is a libKCmdline definition document.
+
+title = "rcutorture.stall_cpu_block - definition.toml"
+name = "rcutorture.stall_cpu_block"
+processor = "kernel"
+description = '''Sleep while stalling if set.  This will result
+in warnings from preemptible RCU in addition to
+any other stall-related activity.  Note that
+in kernels built with CONFIG_PREEMPTION=n and
+CONFIG_PREEMPT_COUNT=y, this parameter will
+cause the CPU to pass through a quiescent state.
+Given CONFIG_PREEMPTION=n, this will suppress
+RCU CPU stall warnings, but will instead result
+in scheduling-while-atomic splats.
+
+Use of this module parameter results in splats.
+
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

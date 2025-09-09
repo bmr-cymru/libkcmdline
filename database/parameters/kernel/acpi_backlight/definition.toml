@@ -1,0 +1,18 @@
+# This is a libKCmdline definition document.
+
+title = "acpi_backlight - definition.toml"
+name = "acpi_backlight"
+processor = "kernel"
+description = '''If set to vendor, prefer vendor-specific driver
+(e.g. thinkpad_acpi, sony_acpi, etc.) instead
+of the ACPI video.ko driver.
+If set to video, use the ACPI video.ko driver.
+If set to native, use the device's native backlight mode.
+If set to none, disable the ACPI backlight interface.
+'''
+
+[syntax]
+type = "enum"
+format = "enum"
+choices = ["vendor", "video", "native", "none"]
+allow_empty = true

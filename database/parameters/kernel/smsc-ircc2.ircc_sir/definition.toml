@@ -1,0 +1,12 @@
+# This is a libKCmdline definition document.
+
+title = "smsc-ircc2.ircc_sir - definition.toml"
+name = "smsc-ircc2.ircc_sir"
+processor = "kernel"
+description = '''SIR base I/O port'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

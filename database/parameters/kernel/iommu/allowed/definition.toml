@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "allowed - definition.toml"
+name = "allowed"
+processor = "kernel"
+description = '''Overwrite iommu off workarounds for specific chipsets
+'''
+
+[syntax]
+type = ""
+format = ""
+choices = []
+allow_empty = true

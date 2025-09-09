@@ -1,0 +1,17 @@
+# This is a libKCmdline definition document.
+
+title = "rcutree.rcu_resched_ns - definition.toml"
+name = "rcutree.rcu_resched_ns"
+processor = "kernel"
+description = '''Limit the time spend invoking a batch of RCU
+callbacks to the specified number of nanoseconds.
+By default, this limit is checked only once
+every 32 callbacks in order to limit the pain
+inflicted by local_clock() overhead.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

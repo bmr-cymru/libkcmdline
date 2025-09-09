@@ -1,0 +1,49 @@
+# This is a libKCmdline definition document.
+
+title = "split_lock_detect - definition.toml"
+name = "split_lock_detect"
+processor = "kernel"
+description = '''[X86] Enable split lock detection or bus lock detection
+
+instructions that access data across cache line
+boundaries will result in an alignment check exception
+for split lock detection or a debug exception for
+bus lock detection.
+
+off	- not enabled
+
+warn	- the kernel will emit rate-limited warnings
+about applications triggering the #AC
+exception or the #DB exception. This mode is
+the default on CPUs that support split lock
+detection or bus lock detection. Default
+behavior is by #AC if both features are
+enabled in hardware.
+
+fatal	- the kernel will send SIGBUS to applications
+that trigger the #AC exception or the #DB
+exception. Default behavior is by #AC if
+both features are enabled in hardware.
+
+ratelimit:N -
+Set system wide rate limit to N bus locks
+per second for bus lock detection.
+0 < N <= 1000.
+
+N/A for split lock detection.
+
+
+If an #AC exception is hit in the kernel or in
+firmware (i.e. not while executing in user mode)
+the kernel will oops in either "warn" or "fatal"
+mode.
+
+#DB exception for bus lock is triggered only when
+CPL > 0.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

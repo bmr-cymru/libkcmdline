@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "atkbd.softrepeat - definition.toml"
+name = "atkbd.softrepeat"
+processor = "kernel"
+description = '''Use software keyboard repeat
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

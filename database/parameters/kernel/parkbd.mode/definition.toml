@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "parkbd.mode - definition.toml"
+name = "parkbd.mode"
+processor = "kernel"
+description = '''Parallel port keyboard adapter mode of operation,
+0 for XT, 1 for AT (default is AT).
+'''
+
+[syntax]
+type = "<mode>"
+format = "<mode>"
+choices = []
+allow_empty = true

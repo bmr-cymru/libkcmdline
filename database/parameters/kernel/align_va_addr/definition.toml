@@ -1,0 +1,23 @@
+# This is a libKCmdline definition document.
+
+title = "align_va_addr - definition.toml"
+name = "align_va_addr"
+processor = "kernel"
+description = '''Align virtual addresses by clearing slice [14:12] when
+allocating a VMA at process creation time. This option
+gives you up to 3% performance improvement on AMD F15h
+machines (where it is enabled by default) for a
+CPU-intensive style benchmark, and it can vary highly in
+a microbenchmark depending on workload and compiler.
+
+32: only for 32-bit processes
+64: only for 64-bit processes
+on: enable for both 32- and 64-bit processes
+off: disable for both 32- and 64-bit processes
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

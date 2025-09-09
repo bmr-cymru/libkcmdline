@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "c101 - definition.toml"
+name = "c101"
+processor = "kernel"
+description = '''Moxa C101 synchronous serial card
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

@@ -1,0 +1,16 @@
+# This is a libKCmdline definition document.
+
+title = "memory_corruption_check_size - definition.toml"
+name = "memory_corruption_check_size"
+processor = "kernel"
+description = '''By default it checks for corruption in the low
+64k, making this memory unavailable for normal
+use.  Use this parameter to scan for
+corruption in more or less memory.
+'''
+
+[syntax]
+type = "size"
+format = "size"
+choices = []
+allow_empty = true

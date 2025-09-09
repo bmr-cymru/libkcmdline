@@ -1,0 +1,15 @@
+# This is a libKCmdline definition document.
+
+title = "rcuscale.writer_holdoff_jiffies - definition.toml"
+name = "rcuscale.writer_holdoff_jiffies"
+processor = "kernel"
+description = '''Additional write-side holdoff between grace
+periods, but in jiffies.  The default of zero
+says no holdoff.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

@@ -1,0 +1,15 @@
+# This is a libKCmdline definition document.
+
+title = "force - definition.toml"
+name = "force"
+processor = "kernel"
+description = '''Force the use of the hardware IOMMU even when
+it is not actually needed (e.g. because < 3 GB
+memory).
+'''
+
+[syntax]
+type = ""
+format = ""
+choices = []
+allow_empty = true

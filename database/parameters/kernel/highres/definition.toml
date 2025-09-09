@@ -1,0 +1,15 @@
+# This is a libKCmdline definition document.
+
+title = "highres - definition.toml"
+name = "highres"
+processor = "kernel"
+description = '''Enable/disable high resolution timer mode.
+Valid parameters: "on", "off"
+Default: "on"
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

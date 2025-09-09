@@ -1,0 +1,15 @@
+# This is a libKCmdline definition document.
+
+title = "goldfish - definition.toml"
+name = "goldfish"
+processor = "kernel"
+description = '''Enable the goldfish android emulator platform.
+Don't use this when you are not running on the
+android emulator
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

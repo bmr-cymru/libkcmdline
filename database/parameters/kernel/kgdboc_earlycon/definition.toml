@@ -1,0 +1,25 @@
+# This is a libKCmdline definition document.
+
+title = "kgdboc_earlycon - definition.toml"
+name = "kgdboc_earlycon"
+processor = "kernel"
+description = '''If the boot console provides the ability to read
+characters and can work in polling mode, you can use
+this parameter to tell kgdb to use it as a backend
+until the normal console is registered. Intended to
+be used together with the kgdboc parameter which
+specifies the normal console to transition to.
+
+The name of the early console should be specified
+as the value of this parameter. Note that the name of
+the early console might be different than the tty
+name passed to kgdboc. It's OK to leave the value
+blank and the first boot console that implements
+read() will be picked.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

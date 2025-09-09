@@ -1,0 +1,21 @@
+# This is a libKCmdline definition document.
+
+title = "stifb - definition.toml"
+name = "stifb"
+processor = "kernel"
+description = '''bpp:<bpp1>[:<bpp2>[:<bpp3>...]]
+
+[X86]
+<bool>
+Enable or disable strict sigaltstack size checks
+against the required signal frame size which
+depends on the supported FPU features. This can
+be used to filter out binaries which have
+not yet been made aware of AT_MINSIGSTKSZ.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

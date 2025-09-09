@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "pcie_scan_all - definition.toml"
+name = "pcie_scan_all"
+processor = "kernel"
+description = '''Scan all possible PCIe devices.  Otherwise we
+only look for one device below a PCIe downstream
+port.'''
+
+[syntax]
+type = ""
+format = ""
+choices = []
+allow_empty = true

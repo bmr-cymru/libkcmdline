@@ -1,0 +1,12 @@
+# This is a libKCmdline definition document.
+
+title = "on - definition.toml"
+name = "on"
+processor = "kernel"
+description = '''Mark read-only kernel memory as read-only (default).'''
+
+[syntax]
+type = ""
+format = ""
+choices = []
+allow_empty = true

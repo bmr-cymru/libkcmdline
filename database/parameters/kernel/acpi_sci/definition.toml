@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "acpi_sci - definition.toml"
+name = "acpi_sci"
+processor = "kernel"
+description = '''ACPI System Control Interrupt trigger mode
+'''
+
+[syntax]
+type = "enum"
+format = "enum"
+choices = ["level", "edge", "high", "low"]
+allow_empty = true

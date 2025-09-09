@@ -1,0 +1,18 @@
+# This is a libKCmdline definition document.
+
+title = "kvm-intel.emulate_invalid_guest_state - definition.toml"
+name = "kvm-intel.emulate_invalid_guest_state"
+processor = "kernel"
+description = '''[KVM,Intel] Control whether to emulate invalid guest
+state. Ignored if kvm-intel.enable_unrestricted_guest=1,
+as guest state is never invalid for unrestricted
+guests. This param doesn't apply to nested guests (L2),
+as KVM never emulates invalid L2 guest state.
+Default is 1 (enabled).
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

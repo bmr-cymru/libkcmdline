@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "noapictimer - definition.toml"
+name = "noapictimer"
+processor = "kernel"
+description = '''Don't set up the APIC timer
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

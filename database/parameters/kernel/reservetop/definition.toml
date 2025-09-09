@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "reservetop - definition.toml"
+name = "reservetop"
+processor = "kernel"
+description = '''Reserves a hole at the top of the kernel virtual
+address space.
+'''
+
+[syntax]
+type = "nn[KMG]"
+format = "nn[KMG]"
+choices = []
+allow_empty = true

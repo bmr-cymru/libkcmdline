@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "rcuscale.kfree_nthreads - definition.toml"
+name = "rcuscale.kfree_nthreads"
+processor = "kernel"
+description = '''The number of threads running loops of kfree_rcu().
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

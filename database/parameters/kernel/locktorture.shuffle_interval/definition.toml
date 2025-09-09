@@ -1,0 +1,15 @@
+# This is a libKCmdline definition document.
+
+title = "locktorture.shuffle_interval - definition.toml"
+name = "locktorture.shuffle_interval"
+processor = "kernel"
+description = '''Set task-shuffle interval (jiffies).  Shuffling
+tasks allows some CPUs to go into dyntick-idle
+mode during the locktorture test.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

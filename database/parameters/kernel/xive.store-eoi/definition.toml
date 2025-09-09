@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "xive.store-eoi - definition.toml"
+name = "xive.store-eoi"
+processor = "kernel"
+description = '''stores for EOI handling when the XIVE interrupt mode
+is active. This option allows the XIVE driver to use
+'''
+
+[syntax]
+type = "off"
+format = "off"
+choices = []
+allow_empty = true

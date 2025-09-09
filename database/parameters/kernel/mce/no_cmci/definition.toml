@@ -1,0 +1,20 @@
+# This is a libKCmdline definition document.
+
+title = "no_cmci - definition.toml"
+name = "no_cmci"
+processor = "kernel"
+description = '''disable CMCI(Corrected Machine Check Interrupt) that
+Intel processor supports.  Usually this disablement is
+not recommended, but it might be handy if your
+hardware is misbehaving.
+
+Note that you'll get more problems without CMCI than
+with due to the shared banks, i.e. you might get
+duplicated error logs.
+'''
+
+[syntax]
+type = ""
+format = ""
+choices = []
+allow_empty = true

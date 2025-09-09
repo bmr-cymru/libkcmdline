@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "processor.nocst - definition.toml"
+name = "processor.nocst"
+processor = "kernel"
+description = '''Ignore the _CST method to determine C-states,
+instead using the legacy FADT method
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

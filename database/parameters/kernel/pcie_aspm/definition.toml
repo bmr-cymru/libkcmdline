@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "pcie_aspm - definition.toml"
+name = "pcie_aspm"
+processor = "kernel"
+description = '''Forcibly enable or ignore PCIe Active State Power
+Management.'''
+
+[syntax]
+type = "complex"
+format = "complex"
+choices = []
+allow_empty = true

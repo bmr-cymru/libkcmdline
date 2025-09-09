@@ -1,0 +1,16 @@
+# This is a libKCmdline definition document.
+
+title = "apic - definition.toml"
+name = "apic"
+processor = "kernel"
+description = '''Advanced Programmable Interrupt Controller
+Change the output verbosity while booting
+Change the amount of debugging information output
+when initialising the APIC and IO-APIC components.
+'''
+
+[syntax]
+type = "enum"
+format = "enum"
+choices = ["quiet (default)", "verbose", "debug"]
+allow_empty = true

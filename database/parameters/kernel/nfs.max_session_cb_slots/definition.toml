@@ -1,0 +1,17 @@
+# This is a libKCmdline definition document.
+
+title = "nfs.max_session_cb_slots - definition.toml"
+name = "nfs.max_session_cb_slots"
+processor = "kernel"
+description = '''[NFSv4.1] Sets the maximum number of session
+slots the client will assign to the callback
+channel. This determines the maximum number of
+callbacks the client will process in parallel for
+a particular server.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

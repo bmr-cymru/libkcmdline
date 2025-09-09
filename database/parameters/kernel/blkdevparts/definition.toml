@@ -1,0 +1,15 @@
+# This is a libKCmdline definition document.
+
+title = "blkdevparts - definition.toml"
+name = "blkdevparts"
+processor = "kernel"
+description = '''partition parsing of block device(s) for
+embedded devices based on command line input.
+See Documentation/block/cmdline-partition.rst
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

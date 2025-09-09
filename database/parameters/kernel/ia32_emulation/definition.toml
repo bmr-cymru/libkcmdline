@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "ia32_emulation - definition.toml"
+name = "ia32_emulation"
+processor = "kernel"
+description = '''<bool>
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

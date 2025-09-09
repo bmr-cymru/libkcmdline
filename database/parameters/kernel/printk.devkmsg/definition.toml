@@ -1,0 +1,17 @@
+# This is a libKCmdline definition document.
+
+title = "printk.devkmsg - definition.toml"
+name = "printk.devkmsg"
+processor = "kernel"
+description = '''Control writing to /dev/kmsg.
+on - unlimited logging to /dev/kmsg from userspace
+off - logging to /dev/kmsg disabled
+ratelimit - ratelimit the logging
+Default: ratelimit
+'''
+
+[syntax]
+type = "{on,off,ratelimit}"
+format = "{on,off,ratelimit}"
+choices = []
+allow_empty = true

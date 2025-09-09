@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "nolapic_timer - definition.toml"
+name = "nolapic_timer"
+processor = "kernel"
+description = '''Do not use the local APIC timer.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

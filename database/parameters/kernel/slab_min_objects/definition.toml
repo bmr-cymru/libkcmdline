@@ -1,0 +1,21 @@
+# This is a libKCmdline definition document.
+
+title = "slab_min_objects - definition.toml"
+name = "slab_min_objects"
+processor = "kernel"
+description = '''The minimum number of objects per slab. SLUB will
+increase the slab order up to slab_max_order to
+generate a sufficiently large slab able to contain
+the number of objects indicated. The higher the number
+of objects the smaller the overhead of tracking slabs
+and the less frequently locks need to be acquired.
+For more information see
+Documentation/admin-guide/mm/slab.rst.
+(slub_min_objects legacy name also accepted for now)
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

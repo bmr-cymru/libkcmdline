@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "rootflags - definition.toml"
+name = "rootflags"
+processor = "kernel"
+description = '''Set root filesystem mount option string
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

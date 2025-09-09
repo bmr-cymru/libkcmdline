@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "kvm-intel.nested - definition.toml"
+name = "kvm-intel.nested"
+processor = "kernel"
+description = '''[KVM,Intel] Control nested virtualization feature in
+KVM/VMX. Default is 1 (enabled).
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

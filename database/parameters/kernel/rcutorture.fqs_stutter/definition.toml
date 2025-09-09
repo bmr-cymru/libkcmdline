@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "rcutorture.fqs_stutter - definition.toml"
+name = "rcutorture.fqs_stutter"
+processor = "kernel"
+description = '''Set wait time between force_quiescent_state bursts
+in seconds.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

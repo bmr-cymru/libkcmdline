@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "arm64.no32bit_el0 - definition.toml"
+name = "arm64.no32bit_el0"
+processor = "kernel"
+description = '''Unconditionally disable the execution of
+32 bit applications.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

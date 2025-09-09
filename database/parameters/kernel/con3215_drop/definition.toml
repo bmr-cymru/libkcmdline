@@ -1,0 +1,21 @@
+# This is a libKCmdline definition document.
+
+title = "con3215_drop - definition.toml"
+name = "con3215_drop"
+processor = "kernel"
+description = '''3215 console drop mode.
+When set to true, drop data on the 3215 console when
+the console buffer is full. In this case the
+operator using a 3270 terminal emulator (for example
+x3270) does not have to enter the clear key for the
+console output to advance and the kernel to continue.
+This leads to a much faster boot time when a 3270
+terminal emulator is active. If no 3270 terminal
+emulator is used, this parameter has no effect.
+'''
+
+[syntax]
+type = "y|n|Y|N|1|0"
+format = "y|n|Y|N|1|0"
+choices = []
+allow_empty = true

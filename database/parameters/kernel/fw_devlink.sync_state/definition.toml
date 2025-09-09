@@ -1,0 +1,23 @@
+# This is a libKCmdline definition document.
+
+title = "fw_devlink.sync_state - definition.toml"
+name = "fw_devlink.sync_state"
+processor = "kernel"
+description = '''[KNL,EARLY] When all devices that could probe have finished
+probing, this parameter controls what to do with
+devices that haven't yet received their sync_state()
+calls.
+strict -- Default. Continue waiting on consumers to
+probe successfully.
+timeout -- Give up waiting on consumers and call
+sync_state() on any devices that haven't yet
+received their sync_state() calls after
+deferred_probe_timeout has expired or by
+late_initcall() if !CONFIG_MODULES.
+'''
+
+[syntax]
+type = "enum"
+format = "enum"
+choices = ["strict", "timeout"]
+allow_empty = true

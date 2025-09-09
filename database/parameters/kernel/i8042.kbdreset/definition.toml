@@ -1,0 +1,12 @@
+# This is a libKCmdline definition document.
+
+title = "i8042.kbdreset - definition.toml"
+name = "i8042.kbdreset"
+processor = "kernel"
+description = '''Reset device connected to KBD port'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

@@ -1,0 +1,15 @@
+# This is a libKCmdline definition document.
+
+title = "resumewait - definition.toml"
+name = "resumewait"
+processor = "kernel"
+description = '''Wait (indefinitely) for resume device to show up.
+Useful for devices that are detected asynchronously
+(e.g. USB and MMC devices).
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

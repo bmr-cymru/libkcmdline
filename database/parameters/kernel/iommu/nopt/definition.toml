@@ -1,0 +1,12 @@
+# This is a libKCmdline definition document.
+
+title = "nopt - definition.toml"
+name = "nopt"
+processor = "kernel"
+description = '''[PPC/POWERNV]'''
+
+[syntax]
+type = ""
+format = ""
+choices = []
+allow_empty = true

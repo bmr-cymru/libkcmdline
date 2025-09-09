@@ -1,0 +1,17 @@
+# This is a libKCmdline definition document.
+
+title = "transparent_hugepage - definition.toml"
+name = "transparent_hugepage"
+processor = "kernel"
+description = '''[KNL]
+Can be used to control the default behavior of the system
+with respect to transparent hugepages.
+See Documentation/admin-guide/mm/transhuge.rst
+for more details.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

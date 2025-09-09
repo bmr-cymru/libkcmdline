@@ -1,0 +1,24 @@
+# This is a libKCmdline definition document.
+
+title = "trusted.source - definition.toml"
+name = "trusted.source"
+processor = "kernel"
+description = '''<string>
+This parameter identifies the trust source as a backend
+for trusted keys implementation. Supported trust
+sources:
+- "tpm"
+- "tee"
+- "caam"
+- "dcp"
+If not specified then it defaults to iterating through
+the trust source list starting with TPM and assigns the
+first trust source as a backend which is initialized
+successfully during iteration.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

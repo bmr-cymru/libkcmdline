@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "nfs.idmap_cache_timeout - definition.toml"
+name = "nfs.idmap_cache_timeout"
+processor = "kernel"
+description = '''[NFS] set the maximum lifetime for idmapper cache
+entries.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

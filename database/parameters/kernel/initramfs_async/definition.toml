@@ -1,0 +1,21 @@
+# This is a libKCmdline definition document.
+
+title = "initramfs_async - definition.toml"
+name = "initramfs_async"
+processor = "kernel"
+description = '''Default: 1
+This parameter controls whether the initramfs
+image is unpacked asynchronously, concurrently
+with devices being probed and
+initialized. This should normally just work,
+but as a debugging aid, one can get the
+historical behaviour of the initramfs
+unpacking being completed before device_ and
+late_ initcalls.
+'''
+
+[syntax]
+type = "<bool>"
+format = "<bool>"
+choices = []
+allow_empty = true

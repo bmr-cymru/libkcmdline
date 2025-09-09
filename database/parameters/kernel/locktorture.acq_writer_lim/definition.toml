@@ -1,0 +1,15 @@
+# This is a libKCmdline definition document.
+
+title = "locktorture.acq_writer_lim - definition.toml"
+name = "locktorture.acq_writer_lim"
+processor = "kernel"
+description = '''Set the time limit in jiffies for a lock
+acquisition.  Acquisitions exceeding this limit
+will result in a splat once they do complete.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

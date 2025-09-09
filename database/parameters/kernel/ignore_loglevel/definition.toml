@@ -1,0 +1,15 @@
+# This is a libKCmdline definition document.
+
+title = "ignore_loglevel - definition.toml"
+name = "ignore_loglevel"
+processor = "kernel"
+description = '''Ignore loglevel setting - this will print /all/
+kernel messages to the console. Useful for debugging.
+/sys/module/printk/parameters/ignore_loglevel.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

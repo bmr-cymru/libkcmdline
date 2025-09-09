@@ -1,0 +1,18 @@
+# This is a libKCmdline definition document.
+
+title = "tpm_crb_ffa.busy_timeout_ms - definition.toml"
+name = "tpm_crb_ffa.busy_timeout_ms"
+processor = "kernel"
+description = '''Maximum time in milliseconds to retry sending a message
+to the TPM service before giving up. This parameter controls
+how long the system will continue retrying when the TPM
+service is busy.
+<unsigned int>
+Default: 2000 (2 seconds)
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

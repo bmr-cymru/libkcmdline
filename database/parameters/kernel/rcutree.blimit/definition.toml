@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "rcutree.blimit - definition.toml"
+name = "rcutree.blimit"
+processor = "kernel"
+description = '''Set maximum number of finished RCU callbacks to
+process in one batch.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

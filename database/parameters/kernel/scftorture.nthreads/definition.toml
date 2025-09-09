@@ -1,0 +1,16 @@
+# This is a libKCmdline definition document.
+
+title = "scftorture.nthreads - definition.toml"
+name = "scftorture.nthreads"
+processor = "kernel"
+description = '''Number of kthreads to spawn to invoke the
+smp_call_function() family of functions.
+The default of -1 specifies a number of kthreads
+equal to the number of CPUs.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

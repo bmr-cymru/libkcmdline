@@ -1,0 +1,17 @@
+# This is a libKCmdline definition document.
+
+title = "dma_debug_entries - definition.toml"
+name = "dma_debug_entries"
+processor = "kernel"
+description = '''This option allows to tune the number of preallocated
+entries for DMA-API debugging code. One entry is
+required per DMA-API allocation. Use this if the
+DMA-API debugging code disables itself because the
+architectural default is too low.
+'''
+
+[syntax]
+type = "<number>"
+format = "<number>"
+choices = []
+allow_empty = true

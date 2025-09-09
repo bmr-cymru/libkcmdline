@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "monarchtimeout - definition.toml"
+name = "monarchtimeout"
+processor = "kernel"
+description = '''sets the time in us to wait for other CPUs on machine
+checks. 0 to disable.
+'''
+
+[syntax]
+type = ""
+format = ""
+choices = []
+allow_empty = true

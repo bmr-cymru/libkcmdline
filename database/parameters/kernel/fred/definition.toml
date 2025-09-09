@@ -1,0 +1,15 @@
+# This is a libKCmdline definition document.
+
+title = "fred - definition.toml"
+name = "fred"
+processor = "kernel"
+description = '''Enable/disable Flexible Return and Event Delivery.
+on: enable FRED when it's present.
+off: disable FRED, the default setting.
+'''
+
+[syntax]
+type = "enum"
+format = "enum"
+choices = ["on", "off"]
+allow_empty = true

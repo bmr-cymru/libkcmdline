@@ -1,0 +1,12 @@
+# This is a libKCmdline definition document.
+
+title = "rodata - definition.toml"
+name = "rodata"
+processor = "kernel"
+description = ''''''
+
+[syntax]
+type = "complex"
+format = "complex"
+choices = []
+allow_empty = true

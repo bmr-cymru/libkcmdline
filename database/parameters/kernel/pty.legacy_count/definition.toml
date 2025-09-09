@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "pty.legacy_count - definition.toml"
+name = "pty.legacy_count"
+processor = "kernel"
+description = '''[KNL] Number of legacy pty's. Overwrites compiled-in
+default number.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

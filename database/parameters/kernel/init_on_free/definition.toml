@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "init_on_free - definition.toml"
+name = "init_on_free"
+processor = "kernel"
+description = '''Fill freed pages and heap objects with zeroes.
+Default set by CONFIG_INIT_ON_FREE_DEFAULT_ON.
+'''
+
+[syntax]
+type = "0 | 1"
+format = "0 | 1"
+choices = []
+allow_empty = true

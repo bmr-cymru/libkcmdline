@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "psmouse.rate - definition.toml"
+name = "psmouse.rate"
+processor = "kernel"
+description = '''Set desired mouse report rate, in reports
+per second.'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

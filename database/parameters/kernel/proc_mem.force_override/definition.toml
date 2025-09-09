@@ -1,0 +1,19 @@
+# This is a libKCmdline definition document.
+
+title = "proc_mem.force_override - definition.toml"
+name = "proc_mem.force_override"
+processor = "kernel"
+description = '''Traditionally /proc/pid/mem allows memory permissions to be
+overridden without restrictions. This option may be set to
+restrict that. Can be one of:
+- 'always': traditional behavior always allows mem overrides.
+- 'ptrace': only allow mem overrides for active ptracers.
+- 'never':  never allow mem overrides.
+If not specified, default is the CONFIG_PROC_MEM_* choice.
+'''
+
+[syntax]
+type = "enum"
+format = "enum"
+choices = ["always", "ptrace", "never"]
+allow_empty = true

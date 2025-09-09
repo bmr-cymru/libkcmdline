@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "nolapic - definition.toml"
+name = "nolapic"
+processor = "kernel"
+description = '''Do not enable or use the local APIC.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

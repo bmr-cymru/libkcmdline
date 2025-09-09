@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "nopat - definition.toml"
+name = "nopat"
+processor = "kernel"
+description = '''Disable PAT (page attribute table extension of
+pagetables) support.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

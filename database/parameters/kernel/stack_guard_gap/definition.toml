@@ -1,0 +1,17 @@
+# This is a libKCmdline definition document.
+
+title = "stack_guard_gap - definition.toml"
+name = "stack_guard_gap"
+processor = "kernel"
+description = '''override the default stack gap protection. The value
+is in page units and it defines how many pages prior
+to (for stacks growing down) resp. after (for stacks
+growing up) the main stack are reserved for no other
+mapping. Default value is 256 pages.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

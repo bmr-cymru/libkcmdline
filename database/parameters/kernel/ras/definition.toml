@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "ras - definition.toml"
+name = "ras"
+processor = "kernel"
+description = '''RAS-specific options
+'''
+
+[syntax]
+type = "option[,option,...]"
+format = "option[,option,...]"
+choices = []
+allow_empty = true

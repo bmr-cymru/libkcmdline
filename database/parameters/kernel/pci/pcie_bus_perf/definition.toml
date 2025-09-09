@@ -1,0 +1,16 @@
+# This is a libKCmdline definition document.
+
+title = "pcie_bus_perf - definition.toml"
+name = "pcie_bus_perf"
+processor = "kernel"
+description = '''Set device MPS to the largest allowable MPS
+based on its parent bus. Also set MRRS (Max
+Read Request Size) to the largest supported
+value (no larger than the MPS that the device
+or bus can support) for best performance.'''
+
+[syntax]
+type = ""
+format = ""
+choices = []
+allow_empty = true

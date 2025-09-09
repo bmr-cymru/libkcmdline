@@ -1,0 +1,16 @@
+# This is a libKCmdline definition document.
+
+title = "kvm-intel.unrestricted_guest - definition.toml"
+name = "kvm-intel.unrestricted_guest"
+processor = "kernel"
+description = '''[KVM,Intel] Control KVM's use of unrestricted guest
+feature (virtualized real and unpaged mode). Default
+is 1 (enabled). Disable by KVM if EPT is disabled or
+hardware lacks support for it.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

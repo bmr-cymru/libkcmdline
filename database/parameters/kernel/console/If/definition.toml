@@ -1,0 +1,12 @@
+# This is a libKCmdline definition document.
+
+title = "If - definition.toml"
+name = "If"
+processor = "kernel"
+description = '''the device connected to the port is not a TTY but a braille'''
+
+[syntax]
+type = ""
+format = ""
+choices = []
+allow_empty = true

@@ -1,0 +1,16 @@
+# This is a libKCmdline definition document.
+
+title = "ima_template - definition.toml"
+name = "ima_template"
+processor = "kernel"
+description = '''Select one of defined IMA measurements template formats.
+Formats: { "ima" | "ima-ng" | "ima-ngv2" | "ima-sig" |
+"ima-sigv2" }
+Default: "ima-ng"
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

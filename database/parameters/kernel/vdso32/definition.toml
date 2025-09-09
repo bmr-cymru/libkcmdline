@@ -1,0 +1,22 @@
+# This is a libKCmdline definition document.
+
+title = "vdso32 - definition.toml"
+name = "vdso32"
+processor = "kernel"
+description = '''Control the 32-bit vDSO
+vdso32=1: enable 32-bit VDSO
+vdso32=0 or vdso32=2: disable 32-bit VDSO
+
+See the help text for CONFIG_COMPAT_VDSO for more
+
+alias for vdso32=0.
+
+Try vdso32=0 if you encounter an error that says:
+dl_main: Assertion `(void *) ph->p_vaddr == _rtld_local._dl_sysinfo_dso' failed!
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

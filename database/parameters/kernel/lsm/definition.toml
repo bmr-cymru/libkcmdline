@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "lsm - definition.toml"
+name = "lsm"
+processor = "kernel"
+description = '''[SECURITY] Choose order of LSM initialization. This
+overrides CONFIG_LSM, and the "security=" parameter.
+'''
+
+[syntax]
+type = "lsm1,...,lsmN"
+format = "lsm1,...,lsmN"
+choices = []
+allow_empty = true

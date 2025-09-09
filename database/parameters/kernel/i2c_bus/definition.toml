@@ -1,0 +1,16 @@
+# This is a libKCmdline definition document.
+
+title = "i2c_bus - definition.toml"
+name = "i2c_bus"
+processor = "kernel"
+description = '''Override the default board specific I2C bus speed
+or register an additional I2C bus that is not
+registered from board initialization code.
+Format:
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

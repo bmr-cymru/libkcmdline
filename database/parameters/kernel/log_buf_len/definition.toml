@@ -1,0 +1,20 @@
+# This is a libKCmdline definition document.
+
+title = "log_buf_len - definition.toml"
+name = "log_buf_len"
+processor = "kernel"
+description = '''Sets the size of the printk ring buffer, in bytes.
+n must be a power of two and greater than the
+minimal size. The minimal size is defined by
+LOG_BUF_SHIFT kernel config parameter. There
+is also CONFIG_LOG_CPU_MAX_BUF_SHIFT config
+parameter that allows to increase the default size
+depending on the number of CPUs. See init/Kconfig
+for more details.
+'''
+
+[syntax]
+type = "n[KMG]"
+format = "n[KMG]"
+choices = []
+allow_empty = true

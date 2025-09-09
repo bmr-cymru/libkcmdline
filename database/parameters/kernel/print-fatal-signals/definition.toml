@@ -1,0 +1,23 @@
+# This is a libKCmdline definition document.
+
+title = "print-fatal-signals - definition.toml"
+name = "print-fatal-signals"
+processor = "kernel"
+description = '''[KNL] debug: print fatal signals
+
+If enabled, warn about various signal handling
+related application anomalies: too many signals,
+too many POSIX.1 timers, fatal signals causing a
+coredump - etc.
+
+If you hit the warning due to signal overflow,
+you might want to try "ulimit -i unlimited".
+
+default: off.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

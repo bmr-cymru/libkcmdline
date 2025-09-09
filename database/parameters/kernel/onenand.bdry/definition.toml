@@ -1,0 +1,20 @@
+# This is a libKCmdline definition document.
+
+title = "onenand.bdry - definition.toml"
+name = "onenand.bdry"
+processor = "kernel"
+description = '''Flex-OneNAND Boundary Configuration
+
+
+boundary - index of last SLC block on Flex-OneNAND.
+The remaining blocks are configured as MLC blocks.
+lock	 - Configure if Flex-OneNAND boundary should be locked.
+Once locked, the boundary cannot be changed.
+1 indicates lock status, 0 indicates unlock status.
+'''
+
+[syntax]
+type = "[die0_boundary][,die0_lock][,die1_boundary][,die1_lock]"
+format = "[die0_boundary][,die0_lock][,die1_boundary][,die1_lock]"
+choices = []
+allow_empty = true

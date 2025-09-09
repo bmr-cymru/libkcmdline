@@ -1,0 +1,12 @@
+# This is a libKCmdline definition document.
+
+title = "smsc-ircc2.ircc_irq - definition.toml"
+name = "smsc-ircc2.ircc_irq"
+processor = "kernel"
+description = '''IRQ line'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

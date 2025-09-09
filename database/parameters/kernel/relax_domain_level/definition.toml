@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "relax_domain_level - definition.toml"
+name = "relax_domain_level"
+processor = "kernel"
+description = '''[KNL, SMP] Set scheduler's default relax_domain_level.
+See Documentation/admin-guide/cgroup-v1/cpusets.rst.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

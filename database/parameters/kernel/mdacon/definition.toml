@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "mdacon - definition.toml"
+name = "mdacon"
+processor = "kernel"
+description = '''Specifies range of consoles to be captured by the MDA.
+'''
+
+[syntax]
+type = "<first>,<last>"
+format = "<first>,<last>"
+choices = []
+allow_empty = true

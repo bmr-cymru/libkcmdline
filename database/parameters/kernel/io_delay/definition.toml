@@ -1,0 +1,12 @@
+# This is a libKCmdline definition document.
+
+title = "io_delay - definition.toml"
+name = "io_delay"
+processor = "kernel"
+description = '''I/O delay method'''
+
+[syntax]
+type = "complex"
+format = "complex"
+choices = []
+allow_empty = true

@@ -1,0 +1,17 @@
+# This is a libKCmdline definition document.
+
+title = "tp_printk_stop_on_boot - definition.toml"
+name = "tp_printk_stop_on_boot"
+processor = "kernel"
+description = '''on the console. It may be useful to only include the
+make the system inoperable.
+
+This command line option will stop the printing of events
+to console at the late_initcall_sync() time frame.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

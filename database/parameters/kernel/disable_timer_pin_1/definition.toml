@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "disable_timer_pin_1 - definition.toml"
+name = "disable_timer_pin_1"
+processor = "kernel"
+description = '''Disable PIN 1 of APIC timer
+Can be useful to work around chipset bugs.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

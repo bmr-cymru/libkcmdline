@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "ring3mwait - definition.toml"
+name = "ring3mwait"
+processor = "kernel"
+description = '''[KNL] Disable ring 3 MONITOR/MWAIT feature on supported
+CPUs.
+'''
+
+[syntax]
+type = "disable"
+format = "disable"
+choices = []
+allow_empty = true

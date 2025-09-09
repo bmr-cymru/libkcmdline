@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "keepinitrd - definition.toml"
+name = "keepinitrd"
+processor = "kernel"
+description = '''See retain_initrd.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

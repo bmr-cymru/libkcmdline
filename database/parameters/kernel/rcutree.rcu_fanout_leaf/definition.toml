@@ -1,0 +1,18 @@
+# This is a libKCmdline definition document.
+
+title = "rcutree.rcu_fanout_leaf - definition.toml"
+name = "rcutree.rcu_fanout_leaf"
+processor = "kernel"
+description = '''Change the number of CPUs assigned to each
+leaf rcu_node structure.  Useful for very
+large systems, which will choose the value 64,
+and for NUMA systems with large remote-access
+latencies, which will choose a value aligned
+with the appropriate hardware boundaries.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

@@ -1,0 +1,17 @@
+# This is a libKCmdline definition document.
+
+title = "cca - definition.toml"
+name = "cca"
+processor = "kernel"
+description = '''Override the kernel pages' cache coherency
+algorithm.  Accepted values range from 0 to 7
+inclusive. See arch/mips/include/asm/pgtable-bits.h
+for platform specific values (SB1, Loongson3 and
+others).
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

@@ -1,0 +1,20 @@
+# This is a libKCmdline definition document.
+
+title = "rcutree.use_softirq - definition.toml"
+name = "rcutree.use_softirq"
+processor = "kernel"
+description = '''If set to zero, move all RCU_SOFTIRQ processing to
+per-CPU rcuc kthreads.  Defaults to a non-zero
+value, meaning that RCU_SOFTIRQ is used by default.
+Specify rcutree.use_softirq=0 to use rcuc kthreads.
+
+But note that CONFIG_PREEMPT_RT=y kernels disable
+this kernel boot parameter, forcibly setting it
+to zero.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "nmi_debug - definition.toml"
+name = "nmi_debug"
+processor = "kernel"
+description = '''Specify one or more actions to take
+when a NMI is triggered.
+'''
+
+[syntax]
+type = "[state][,regs][,debounce][,die]"
+format = "[state][,regs][,debounce][,die]"
+choices = []
+allow_empty = true

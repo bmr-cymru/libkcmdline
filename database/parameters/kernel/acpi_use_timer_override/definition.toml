@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "acpi_use_timer_override - definition.toml"
+name = "acpi_use_timer_override"
+processor = "kernel"
+description = '''Use timer override. For some broken Nvidia NF5 boards
+that require a timer override, but don't have HPET
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

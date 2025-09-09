@@ -1,0 +1,19 @@
+# This is a libKCmdline definition document.
+
+title = "locktorture.rt_boost_factor - definition.toml"
+name = "locktorture.rt_boost_factor"
+processor = "kernel"
+description = '''Number that determines how often and for how
+long priority boosting is exercised.  This is
+scaled down by the number of writers, so that the
+number of boosts per unit time remains roughly
+constant as the number of writers increases.
+On the other hand, the duration of each boost
+increases with the number of writers.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

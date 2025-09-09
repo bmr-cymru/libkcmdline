@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "init - definition.toml"
+name = "init"
+processor = "kernel"
+description = '''Run specified binary instead of /sbin/init as init
+process.
+'''
+
+[syntax]
+type = "<full_path>"
+format = "<full_path>"
+choices = []
+allow_empty = true

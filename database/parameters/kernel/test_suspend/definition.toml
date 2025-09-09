@@ -1,0 +1,18 @@
+# This is a libKCmdline definition document.
+
+title = "test_suspend - definition.toml"
+name = "test_suspend"
+processor = "kernel"
+description = '''Specify "mem" (for Suspend-to-RAM) or "standby" (for
+standby suspend) or "freeze" (for suspend type freeze)
+as the system sleep state during system startup with
+the optional capability to repeat N number of times.
+The system is woken from this state using a
+wakeup-capable RTC alarm.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

@@ -1,0 +1,15 @@
+# This is a libKCmdline definition document.
+
+title = "acpi_force_table_verification - definition.toml"
+name = "acpi_force_table_verification"
+processor = "kernel"
+description = '''Enable table checksum verification during early stage.
+By default, this is disabled due to x86 early mapping
+size limitation.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

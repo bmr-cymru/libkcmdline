@@ -1,0 +1,12 @@
+# This is a libKCmdline definition document.
+
+title = "no - definition.toml"
+name = "no"
+processor = "kernel"
+description = '''Disable hibernation and resume.'''
+
+[syntax]
+type = ""
+format = ""
+choices = []
+allow_empty = true

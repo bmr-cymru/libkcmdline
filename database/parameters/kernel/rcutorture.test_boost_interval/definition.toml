@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "rcutorture.test_boost_interval - definition.toml"
+name = "rcutorture.test_boost_interval"
+processor = "kernel"
+description = '''Interval (s) between each boost test.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "off - definition.toml"
+name = "off"
+processor = "kernel"
+description = '''Don't touch ASPM configuration at all.  Leave any
+configuration done by firmware unchanged.'''
+
+[syntax]
+type = ""
+format = ""
+choices = []
+allow_empty = true

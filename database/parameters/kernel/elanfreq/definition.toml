@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "elanfreq - definition.toml"
+name = "elanfreq"
+processor = "kernel"
+description = '''See comment before function elanfreq_setup() in
+arch/x86/kernel/cpu/cpufreq/elanfreq.c.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

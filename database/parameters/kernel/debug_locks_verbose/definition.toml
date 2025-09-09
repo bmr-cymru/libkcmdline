@@ -1,0 +1,19 @@
+# This is a libKCmdline definition document.
+
+title = "debug_locks_verbose - definition.toml"
+name = "debug_locks_verbose"
+processor = "kernel"
+description = '''[KNL] verbose locking self-tests
+Print debugging info while doing the locking API
+self-tests.
+Bitmask for the various LOCKTYPE_ tests. Defaults to 0
+(no extra messages), setting it to -1 (all bits set)
+will print _a_lot_ more information - normally only
+useful to lockdep developers.
+'''
+
+[syntax]
+type = "<int>"
+format = "<int>"
+choices = []
+allow_empty = true

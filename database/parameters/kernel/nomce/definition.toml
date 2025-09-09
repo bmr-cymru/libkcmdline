@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "nomce - definition.toml"
+name = "nomce"
+processor = "kernel"
+description = '''Disable Machine Check Exception
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

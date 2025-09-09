@@ -1,0 +1,12 @@
+# This is a libKCmdline definition document.
+
+title = "i810 - definition.toml"
+name = "i810"
+processor = "kernel"
+description = ''''''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

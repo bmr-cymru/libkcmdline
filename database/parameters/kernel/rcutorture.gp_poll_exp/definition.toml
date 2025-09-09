@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "rcutorture.gp_poll_exp - definition.toml"
+name = "rcutorture.gp_poll_exp"
+processor = "kernel"
+description = '''Use polled update-side expedited-grace-period
+primitives, if available.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

@@ -1,0 +1,15 @@
+# This is a libKCmdline definition document.
+
+title = "workqueue.unbound_cpus - definition.toml"
+name = "workqueue.unbound_cpus"
+processor = "kernel"
+description = '''to use in unbound workqueues.
+<cpu-list>
+unbound workqueues.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

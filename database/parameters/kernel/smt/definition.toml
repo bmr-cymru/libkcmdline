@@ -1,0 +1,18 @@
+# This is a libKCmdline definition document.
+
+title = "smt - definition.toml"
+name = "smt"
+processor = "kernel"
+description = '''Set the maximum number of threads
+(logical CPUs) to use per physical CPU on systems
+capable of symmetric multithreading (SMT). Will
+be capped to the actual hardware limit.
+<integer>
+Default: -1 (no limit)
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

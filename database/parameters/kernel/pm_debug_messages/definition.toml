@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "pm_debug_messages - definition.toml"
+name = "pm_debug_messages"
+processor = "kernel"
+description = '''Enable suspend/resume debug messages during boot up.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

@@ -1,0 +1,21 @@
+# This is a libKCmdline definition document.
+
+title = "nomodeset - definition.toml"
+name = "nomodeset"
+processor = "kernel"
+description = '''kernel modesetting. Most systems' firmware
+sets up a display mode and provides framebuffer memory
+for output. With nomodeset, DRM and fbdev drivers will
+not load if they could possibly displace the pre-
+initialized output. Only the system framebuffer will
+be available for use. The respective drivers will not
+perform display-mode changes or accelerated rendering.
+
+Useful as error fallback, or for testing and debugging.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

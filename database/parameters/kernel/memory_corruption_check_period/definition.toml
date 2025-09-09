@@ -1,0 +1,15 @@
+# This is a libKCmdline definition document.
+
+title = "memory_corruption_check_period - definition.toml"
+name = "memory_corruption_check_period"
+processor = "kernel"
+description = '''By default it checks for corruption every 60
+seconds.  Use this parameter to check at some
+other rate.  0 disables periodic checking.
+'''
+
+[syntax]
+type = "seconds"
+format = "seconds"
+choices = []
+allow_empty = true

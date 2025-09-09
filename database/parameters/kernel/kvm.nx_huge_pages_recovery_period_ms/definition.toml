@@ -1,0 +1,17 @@
+# This is a libKCmdline definition document.
+
+title = "kvm.nx_huge_pages_recovery_period_ms - definition.toml"
+name = "kvm.nx_huge_pages_recovery_period_ms"
+processor = "kernel"
+description = '''[KVM] Controls the time period at which KVM zaps 4KiB pages
+back to huge pages. If the value is a non-zero N, KVM will
+zap a portion (see ratio above) of the pages every N msecs.
+If the value is 0 (the default), KVM will pick a period based
+on the ratio, such that a page is zapped after 1 hour on average.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

@@ -1,0 +1,16 @@
+# This is a libKCmdline definition document.
+
+title = "workqueue.panic_on_stall - definition.toml"
+name = "workqueue.panic_on_stall"
+processor = "kernel"
+description = '''Panic when workqueue stall is detected by
+CONFIG_WQ_WATCHDOG. It sets the number times of the
+stall to trigger panic.
+
+'''
+
+[syntax]
+type = "<uint>"
+format = "<uint>"
+choices = []
+allow_empty = true

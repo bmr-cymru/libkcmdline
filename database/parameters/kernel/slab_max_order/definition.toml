@@ -1,0 +1,17 @@
+# This is a libKCmdline definition document.
+
+title = "slab_max_order - definition.toml"
+name = "slab_max_order"
+processor = "kernel"
+description = '''Determines the maximum allowed order for slabs.
+A high setting may cause OOMs due to memory
+fragmentation. For more information see
+Documentation/admin-guide/mm/slab.rst.
+(slub_max_order legacy name also accepted for now)
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

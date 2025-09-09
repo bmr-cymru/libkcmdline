@@ -1,0 +1,20 @@
+# This is a libKCmdline definition document.
+
+title = "warm - definition.toml"
+name = "warm"
+processor = "kernel"
+description = '''Don't set the cold reboot flag
+
+Using warm reset will be much faster especially on big
+memory systems because the BIOS will not go through
+the memory check.  Disadvantage is that not all
+hardware will be completely reinitialized on reboot so
+there may be boot problems on some systems.
+
+'''
+
+[syntax]
+type = ""
+format = ""
+choices = []
+allow_empty = true

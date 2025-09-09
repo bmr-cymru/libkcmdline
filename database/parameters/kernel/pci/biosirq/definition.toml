@@ -1,0 +1,19 @@
+# This is a libKCmdline definition document.
+
+title = "biosirq - definition.toml"
+name = "biosirq"
+processor = "kernel"
+description = '''[X86-32] Use PCI BIOS calls to get the interrupt
+routing table. These calls are known to be buggy
+on several machines and they hang the machine
+when used, but on other computers it's the only
+way to get the interrupt routing table. Try
+this option if the kernel is unable to allocate
+IRQs or discover secondary PCI buses on your
+motherboard.'''
+
+[syntax]
+type = ""
+format = ""
+choices = []
+allow_empty = true

@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "earlydump - definition.toml"
+name = "earlydump"
+processor = "kernel"
+description = '''dump PCI config space before the kernel
+changes anything'''
+
+[syntax]
+type = ""
+format = ""
+choices = []
+allow_empty = true

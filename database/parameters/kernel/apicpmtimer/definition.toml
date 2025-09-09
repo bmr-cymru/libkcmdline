@@ -1,0 +1,15 @@
+# This is a libKCmdline definition document.
+
+title = "apicpmtimer - definition.toml"
+name = "apicpmtimer"
+processor = "kernel"
+description = '''APIC timer calibration using the pmtimer. Implies
+apicmaintimer. Useful when your PIT timer is totally
+broken.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

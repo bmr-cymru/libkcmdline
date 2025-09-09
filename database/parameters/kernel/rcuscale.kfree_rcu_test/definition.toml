@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "rcuscale.kfree_rcu_test - definition.toml"
+name = "rcuscale.kfree_rcu_test"
+processor = "kernel"
+description = '''Set to measure performance of kfree_rcu() flooding.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

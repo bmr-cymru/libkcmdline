@@ -1,0 +1,12 @@
+# This is a libKCmdline definition document.
+
+title = "pcie_port_pm - definition.toml"
+name = "pcie_port_pm"
+processor = "kernel"
+description = '''PCIe port power management handling:'''
+
+[syntax]
+type = "complex"
+format = "complex"
+choices = []
+allow_empty = true

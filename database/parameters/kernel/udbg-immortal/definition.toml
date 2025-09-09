@@ -1,0 +1,15 @@
+# This is a libKCmdline definition document.
+
+title = "udbg-immortal - definition.toml"
+name = "udbg-immortal"
+processor = "kernel"
+description = '''When debugging early kernel crashes that
+happen after console_init() and before a proper
+help "seeing" what's going on.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

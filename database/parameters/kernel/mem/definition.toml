@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "mem - definition.toml"
+name = "mem"
+processor = "kernel"
+description = '''Disable usage of 4MB pages for kernel
+memory.
+'''
+
+[syntax]
+type = "nopentium"
+format = "nopentium"
+choices = []
+allow_empty = true

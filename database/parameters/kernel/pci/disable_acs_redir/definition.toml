@@ -1,0 +1,19 @@
+# This is a libKCmdline definition document.
+
+title = "disable_acs_redir - definition.toml"
+name = "disable_acs_redir"
+processor = "kernel"
+description = '''Specify one or more PCI devices (in the format
+specified above) separated by semicolons.
+Each device specified will have the PCI ACS
+redirect capabilities forced off which will
+allow P2P traffic between devices through
+bridges without forcing it upstream. Note:
+this removes isolation between devices and
+may put more devices in an IOMMU group.'''
+
+[syntax]
+type = "<pci_dev>[;"
+format = "<pci_dev>[;"
+choices = []
+allow_empty = true

@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "nowatchdog - definition.toml"
+name = "nowatchdog"
+processor = "kernel"
+description = '''Disable both lockup detectors, i.e.
+soft-lockup and NMI watchdog (hard-lockup).
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

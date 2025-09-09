@@ -1,0 +1,19 @@
+# This is a libKCmdline definition document.
+
+title = "rcutorture.gp_cond_wi_exp - definition.toml"
+name = "rcutorture.gp_cond_wi_exp"
+processor = "kernel"
+description = '''Nominal wait interval for expedited conditional
+grace periods (specified by rcutorture's
+gp_cond_exp and gp_cond_exp_full module
+parameters), in microseconds.  The actual wait
+interval will be randomly selected to nanosecond
+granularity up to this wait interval.  Defaults to
+128 microseconds.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

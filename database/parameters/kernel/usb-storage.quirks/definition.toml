@@ -1,0 +1,48 @@
+# This is a libKCmdline definition document.
+
+title = "usb-storage.quirks - definition.toml"
+name = "usb-storage.quirks"
+processor = "kernel"
+description = '''[UMS] A list of quirks entries to supplement or
+override the built-in unusual_devs list.  List
+entries are separated by commas.  Each entry has
+the form VID:PID:Flags where VID and PID are Vendor
+and Product ID values (4-digit hex numbers) and
+to a common usb-storage quirk flag as follows:
+a = SANE_SENSE (collect more than 18 bytes
+b = BAD_SENSE (don't collect more than 18
+c = FIX_CAPACITY (decrease the reported
+device capacity by one sector);
+d = NO_READ_DISC_INFO (don't use
+e = NO_READ_CAPACITY_16 (don't use
+READ_CAPACITY_16 command);
+f = NO_REPORT_OPCODES (don't use report opcodes
+g = MAX_SECTORS_240 (don't transfer more than
+h = CAPACITY_HEURISTICS (decrease the
+reported device capacity by one
+sector if the number is odd);
+i = IGNORE_DEVICE (don't bind to this
+device);
+j = NO_REPORT_LUNS (don't use report luns
+l = NOT_LOCKABLE (don't try to lock and
+m = MAX_SECTORS_64 (don't transfer more
+not on uas);
+n = INITIAL_READ10 (force a retry of the
+o = CAPACITY_OK (accept the capacity
+p = WRITE_CACHE (the device cache is ON
+r = IGNORE_RESIDUE (the device reports
+s = SINGLE_LUN (the device has only one
+Logical Unit);
+t = NO_ATA_1X (don't allow ATA(12) and ATA(16)
+u = IGNORE_UAS (don't bind to the uas driver);
+w = NO_WP_DETECT (don't test whether the
+medium is write-protected).
+y = ALWAYS_SYNC (issue a SYNCHRONIZE_CACHE
+not on uas)
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

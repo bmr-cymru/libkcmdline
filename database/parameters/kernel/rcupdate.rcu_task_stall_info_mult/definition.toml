@@ -1,0 +1,21 @@
+# This is a libKCmdline definition document.
+
+title = "rcupdate.rcu_task_stall_info_mult - definition.toml"
+name = "rcupdate.rcu_task_stall_info_mult"
+processor = "kernel"
+description = '''Multiplier for time interval between successive
+RCU task stall informational messages for a given
+RCU tasks grace period.  This value is clamped
+to one through ten, inclusive.	It defaults to
+the value three, so that the first informational
+message is printed 10 seconds into the grace
+period, the second at 40 seconds, the third at
+160 seconds, and then the stall warning at 600
+seconds would prevent a fourth at 640 seconds.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

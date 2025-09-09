@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "nofsgsbase - definition.toml"
+name = "nofsgsbase"
+processor = "kernel"
+description = '''Disables FSGSBASE instructions.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "pata_legacy.probe_all - definition.toml"
+name = "pata_legacy.probe_all"
+processor = "kernel"
+description = '''Set to non-zero to probe tertiary and further ISA
+port ranges on PCI systems.  Disabled by default.
+'''
+
+[syntax]
+type = "<int>"
+format = "<int>"
+choices = []
+allow_empty = true

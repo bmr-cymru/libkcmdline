@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "locktorture.verbose - definition.toml"
+name = "locktorture.verbose"
+processor = "kernel"
+description = '''Enable additional printk() statements.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

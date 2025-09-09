@@ -1,0 +1,20 @@
+# This is a libKCmdline definition document.
+
+title = "rcupdate.rcu_exp_cpu_stall_timeout - definition.toml"
+name = "rcupdate.rcu_exp_cpu_stall_timeout"
+processor = "kernel"
+description = '''Set timeout for expedited RCU CPU stall warning
+messages.  The value is in milliseconds
+and the maximum allowed value is 21000
+milliseconds. Please note that this value is
+adjusted to an arch timer tick resolution.
+Setting this to zero causes the value from
+rcupdate.rcu_cpu_stall_timeout to be used (after
+conversion from seconds to milliseconds).
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

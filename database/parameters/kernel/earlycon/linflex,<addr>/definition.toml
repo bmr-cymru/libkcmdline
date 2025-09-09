@@ -1,0 +1,16 @@
+# This is a libKCmdline definition document.
+
+title = "linflex,<addr> - definition.toml"
+name = "linflex,<addr>"
+processor = "kernel"
+description = '''Use early console provided by Freescale LINFlexD UART
+serial driver for NXP S32V234 SoCs. A valid base
+address must be provided, and the serial port must
+already be setup and configured.
+'''
+
+[syntax]
+type = ""
+format = ""
+choices = []
+allow_empty = true

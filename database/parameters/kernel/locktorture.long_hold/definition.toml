@@ -1,0 +1,15 @@
+# This is a libKCmdline definition document.
+
+title = "locktorture.long_hold - definition.toml"
+name = "locktorture.long_hold"
+processor = "kernel"
+description = '''Specify the duration in milliseconds for the
+occasional long-duration lock hold time.  Defaults
+to 100 milliseconds.  Select 0 to disable.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

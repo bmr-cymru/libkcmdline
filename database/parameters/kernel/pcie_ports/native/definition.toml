@@ -1,0 +1,15 @@
+# This is a libKCmdline definition document.
+
+title = "native - definition.toml"
+name = "native"
+processor = "kernel"
+description = '''Use native PCIe services (PME, AER, DPC, PCIe hotplug)
+even if the platform doesn't give the OS permission to
+use them.  This may cause conflicts if the platform
+also tries to use these services.'''
+
+[syntax]
+type = ""
+format = ""
+choices = []
+allow_empty = true

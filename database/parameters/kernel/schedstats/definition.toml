@@ -1,0 +1,16 @@
+# This is a libKCmdline definition document.
+
+title = "schedstats - definition.toml"
+name = "schedstats"
+processor = "kernel"
+description = '''Enable or disable scheduled statistics.
+Allowed values are enable and disable. This feature
+incurs a small amount of overhead in the scheduler
+but is useful for debugging and performance tuning.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

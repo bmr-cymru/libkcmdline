@@ -1,0 +1,15 @@
+# This is a libKCmdline definition document.
+
+title = "initcall_debug - definition.toml"
+name = "initcall_debug"
+processor = "kernel"
+description = '''Trace initcalls as they are executed.  Useful
+for working out where the kernel is dying during
+startup.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

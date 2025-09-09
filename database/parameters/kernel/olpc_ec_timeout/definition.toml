@@ -1,0 +1,18 @@
+# This is a libKCmdline definition document.
+
+title = "olpc_ec_timeout - definition.toml"
+name = "olpc_ec_timeout"
+processor = "kernel"
+description = '''ms delay when issuing EC commands
+Rather than timing out after 20 ms if an EC
+command is not properly ACKed, override the length
+of the timeout.  We have interrupts disabled while
+waiting for the ACK, so if this is set too high
+interrupts *may* be lost!
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "raid - definition.toml"
+name = "raid"
+processor = "kernel"
+description = '''See Documentation/admin-guide/md.rst.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

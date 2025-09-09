@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "nfsroot - definition.toml"
+name = "nfsroot"
+processor = "kernel"
+description = '''nfs root filesystem for disk-less boxes.
+See Documentation/admin-guide/nfs/nfsroot.rst.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

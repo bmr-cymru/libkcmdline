@@ -1,0 +1,18 @@
+# This is a libKCmdline definition document.
+
+title = "rcutree.nohz_full_patience_delay - definition.toml"
+name = "rcutree.nohz_full_patience_delay"
+processor = "kernel"
+description = '''On callback-offloaded (rcu_nocbs) CPUs, avoid
+disturbing RCU unless the grace period has
+reached the specified age in milliseconds.
+Defaults to zero.  Large values will be capped
+at five seconds.  All values will be rounded down
+to the nearest value representable by jiffies.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

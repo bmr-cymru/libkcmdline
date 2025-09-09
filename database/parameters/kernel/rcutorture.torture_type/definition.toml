@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "rcutorture.torture_type - definition.toml"
+name = "rcutorture.torture_type"
+processor = "kernel"
+description = '''Specify the RCU implementation to test.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

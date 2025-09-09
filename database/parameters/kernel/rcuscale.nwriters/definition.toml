@@ -1,0 +1,15 @@
+# This is a libKCmdline definition document.
+
+title = "rcuscale.nwriters - definition.toml"
+name = "rcuscale.nwriters"
+processor = "kernel"
+description = '''Set number of RCU writers.  The values operate
+the same as for rcuscale.nreaders.
+N, where N is the number of CPUs
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

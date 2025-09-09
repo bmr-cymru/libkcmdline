@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "noinitrd - definition.toml"
+name = "noinitrd"
+processor = "kernel"
+description = '''Tells the kernel not to load any configured
+initial RAM disk.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

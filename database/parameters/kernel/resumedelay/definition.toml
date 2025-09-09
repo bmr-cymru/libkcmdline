@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "resumedelay - definition.toml"
+name = "resumedelay"
+processor = "kernel"
+description = '''Delay (in seconds) to pause before attempting to
+read the resume files
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

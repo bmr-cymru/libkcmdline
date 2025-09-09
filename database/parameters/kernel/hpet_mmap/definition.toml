@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "hpet_mmap - definition.toml"
+name = "hpet_mmap"
+processor = "kernel"
+description = '''HPET_MMAP] Allow userspace to mmap HPET
+registers.  Default set by CONFIG_HPET_MMAP_DEFAULT.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

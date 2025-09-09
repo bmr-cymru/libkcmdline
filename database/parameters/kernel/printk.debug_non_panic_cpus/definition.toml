@@ -1,0 +1,17 @@
+# This is a libKCmdline definition document.
+
+title = "printk.debug_non_panic_cpus - definition.toml"
+name = "printk.debug_non_panic_cpus"
+processor = "kernel"
+description = '''Allows storing messages from non-panic CPUs into
+the printk log buffer during panic(). They are
+flushed to consoles by the panic-CPU on
+a best-effort basis.
+Default: disabled
+'''
+
+[syntax]
+type = "<bool> (1/Y/y=enable, 0/N/n=disable)"
+format = "<bool> (1/Y/y=enable, 0/N/n=disable)"
+choices = []
+allow_empty = true

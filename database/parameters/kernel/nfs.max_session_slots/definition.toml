@@ -1,0 +1,18 @@
+# This is a libKCmdline definition document.
+
+title = "nfs.max_session_slots - definition.toml"
+name = "nfs.max_session_slots"
+processor = "kernel"
+description = '''[NFSv4.1] Sets the maximum number of session slots
+the client will attempt to negotiate with the server.
+This limits the number of simultaneous RPC requests
+that the client can send to the NFSv4.1 server.
+Note that there is little point in setting this
+value higher than the max_tcp_slot_table_limit.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

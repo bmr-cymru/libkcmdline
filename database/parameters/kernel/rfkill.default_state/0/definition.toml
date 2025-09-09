@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "0 - definition.toml"
+name = "0"
+processor = "kernel"
+description = '''"airplane mode".  All wifi, bluetooth, wimax, gps, fm,
+etc. communication is blocked by default.'''
+
+[syntax]
+type = ""
+format = ""
+choices = []
+allow_empty = true

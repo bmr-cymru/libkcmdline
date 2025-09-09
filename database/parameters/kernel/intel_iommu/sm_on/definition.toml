@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "sm_on - definition.toml"
+name = "sm_on"
+processor = "kernel"
+description = '''Enable the Intel IOMMU scalable mode if the hardware
+advertises that it has support for the scalable mode
+translation.'''
+
+[syntax]
+type = ""
+format = ""
+choices = []
+allow_empty = true

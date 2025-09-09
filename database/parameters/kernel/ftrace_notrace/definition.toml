@@ -1,0 +1,16 @@
+# This is a libKCmdline definition document.
+
+title = "ftrace_notrace - definition.toml"
+name = "ftrace_notrace"
+processor = "kernel"
+description = '''[FTRACE] Do not trace the functions specified in
+function-list. This list can be changed at run time
+by the set_ftrace_notrace file in the debugfs
+tracing directory.
+'''
+
+[syntax]
+type = "[function-list]"
+format = "[function-list]"
+choices = []
+allow_empty = true

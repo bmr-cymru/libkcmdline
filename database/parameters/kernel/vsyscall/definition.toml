@@ -1,0 +1,29 @@
+# This is a libKCmdline definition document.
+
+title = "vsyscall - definition.toml"
+name = "vsyscall"
+processor = "kernel"
+description = '''Controls the behavior of vsyscalls (i.e. calls to
+fixed addresses of 0xffffffffff600x00 from legacy
+code).  Most statically-linked binaries and older
+versions of glibc use these calls.  Because these
+targets for exploits that can control RIP.
+
+emulate     Vsyscalls turn into traps and are emulated
+reasonably safely.  The vsyscall page is
+readable.
+
+xonly       [default] Vsyscalls turn into traps and are
+emulated reasonably safely.  The vsyscall
+page is not readable.
+
+none        Vsyscalls don't work at all.  This makes
+them quite hard to use for exploits but
+might break your system.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

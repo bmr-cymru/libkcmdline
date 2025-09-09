@@ -1,0 +1,12 @@
+# This is a libKCmdline definition document.
+
+title = "i8042.unlock - definition.toml"
+name = "i8042.unlock"
+processor = "kernel"
+description = '''Unlock (ignore) the keylock'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

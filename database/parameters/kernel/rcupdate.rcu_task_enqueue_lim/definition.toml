@@ -1,0 +1,17 @@
+# This is a libKCmdline definition document.
+
+title = "rcupdate.rcu_task_enqueue_lim - definition.toml"
+name = "rcupdate.rcu_task_enqueue_lim"
+processor = "kernel"
+description = '''Set the number of callback queues to use for the
+RCU Tasks family of RCU flavors.  The default
+of -1 allows this to be automatically (and
+dynamically) adjusted.	This parameter is intended
+for use in testing.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

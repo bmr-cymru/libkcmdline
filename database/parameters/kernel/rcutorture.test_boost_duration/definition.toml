@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "rcutorture.test_boost_duration - definition.toml"
+name = "rcutorture.test_boost_duration"
+processor = "kernel"
+description = '''Duration (s) of each individual boost test.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

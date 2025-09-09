@@ -1,0 +1,15 @@
+# This is a libKCmdline definition document.
+
+title = "sunrpc.svc_rpc_per_connection_limit - definition.toml"
+name = "sunrpc.svc_rpc_per_connection_limit"
+processor = "kernel"
+description = '''Limit the number of requests that the server will
+process in parallel from a single connection.
+The default value is 0 (no limit).
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

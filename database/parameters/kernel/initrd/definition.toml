@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "initrd - definition.toml"
+name = "initrd"
+processor = "kernel"
+description = '''Specify the location of the initial ramdisk
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

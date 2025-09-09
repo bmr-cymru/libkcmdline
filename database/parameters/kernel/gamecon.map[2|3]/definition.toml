@@ -1,0 +1,15 @@
+# This is a libKCmdline definition document.
+
+title = "gamecon.map[2|3] - definition.toml"
+name = "gamecon.map[2|3]"
+processor = "kernel"
+description = '''[HW,JOY] Multisystem joystick and NES/SNES/PSX pad
+support via parallel port (up to 5 devices per port)
+See also Documentation/input/devices/joystick-parport.rst
+'''
+
+[syntax]
+type = "<port#>,<pad1>,<pad2>,<pad3>,<pad4>,<pad5>"
+format = "<port#>,<pad1>,<pad2>,<pad3>,<pad4>,<pad5>"
+choices = []
+allow_empty = true

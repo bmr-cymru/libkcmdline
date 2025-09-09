@@ -1,0 +1,19 @@
+# This is a libKCmdline definition document.
+
+title = "spec_rstack_overflow - definition.toml"
+name = "spec_rstack_overflow"
+processor = "kernel"
+description = '''off		- Disable mitigation
+microcode	- Enable microcode mitigation only
+safe-ret	- Enable sw-only safe RET mitigation (default)
+ibpb		- Enable mitigation by issuing IBPB on
+kernel entry
+ibpb-vmexit	- Issue IBPB only on VMEXIT
+(cloud-specific mitigation)
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

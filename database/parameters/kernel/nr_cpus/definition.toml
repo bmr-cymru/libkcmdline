@@ -1,0 +1,20 @@
+# This is a libKCmdline definition document.
+
+title = "nr_cpus - definition.toml"
+name = "nr_cpus"
+processor = "kernel"
+description = '''Maximum number of processors that an SMP kernel
+could support.  nr_cpus=n : n >= 1 limits the kernel to
+support 'n' processors. It could be larger than the
+number of already plugged CPU during bootup, later in
+runtime you can physically add extra cpu until it reaches
+n. So during boot up some boot time memory for per-cpu
+variables need be pre-allocated for later physical cpu
+hot plugging.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

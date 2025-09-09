@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "atkbd.softraw - definition.toml"
+name = "atkbd.softraw"
+processor = "kernel"
+description = '''Choose between synthetic and real raw mode
+'''
+
+[syntax]
+type = "<bool> (0 = real, 1 = synthetic (default))"
+format = "<bool> (0 = real, 1 = synthetic (default))"
+choices = []
+allow_empty = true

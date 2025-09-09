@@ -1,0 +1,19 @@
+# This is a libKCmdline definition document.
+
+title = "apic_extnmi - definition.toml"
+name = "apic_extnmi"
+processor = "kernel"
+description = '''External NMI delivery setting
+bsp:  External NMI is delivered only to CPU 0
+all:  External NMIs are broadcast to all CPUs as a
+backup of CPU 0
+none: External NMI is masked for all CPUs. This is
+useful so that a dump capture kernel won't be
+shot down by NMI
+'''
+
+[syntax]
+type = "enum"
+format = "enum"
+choices = ["bsp (default)", "all", "none"]
+allow_empty = true

@@ -1,0 +1,15 @@
+# This is a libKCmdline definition document.
+
+title = "pirqaddr - definition.toml"
+name = "pirqaddr"
+processor = "kernel"
+description = '''[X86] Specify the physical address
+of the PIRQ table (normally generated
+by the BIOS) if it is outside the
+F0000h-100000h range.'''
+
+[syntax]
+type = "0xAAAAA"
+format = "0xAAAAA"
+choices = []
+allow_empty = true

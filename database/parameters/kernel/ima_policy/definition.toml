@@ -1,0 +1,34 @@
+# This is a libKCmdline definition document.
+
+title = "ima_policy - definition.toml"
+name = "ima_policy"
+processor = "kernel"
+description = '''The builtin policies to load during IMA setup.
+fail_securely | critical_data"
+
+The "tcb" policy measures all programs exec'd, files
+mmap'd for exec, and all files opened with the read
+mode bit set by either the effective uid (euid=0) or
+uid=0.
+
+The "appraise_tcb" policy appraises the integrity of
+all files owned by root.
+
+The "secure_boot" policy appraises the integrity
+of files (eg. kexec kernel image, kernel modules,
+firmware, policy, etc) based on file signatures.
+
+The "fail_securely" policy forces file signature
+verification failure also on privileged mounted
+filesystems with the SB_I_UNVERIFIABLE_SIGNATURE
+flag.
+
+The "critical_data" policy measures kernel integrity
+critical data.
+'''
+
+[syntax]
+type = "\"tcb | appraise_tcb | secure_boot |"
+format = "\"tcb | appraise_tcb | secure_boot |"
+choices = []
+allow_empty = true

@@ -1,0 +1,21 @@
+# This is a libKCmdline definition document.
+
+title = "kgdboc - definition.toml"
+name = "kgdboc"
+processor = "kernel"
+description = '''kgdb over consoles.
+Requires a tty driver that supports console polling,
+or a supported polling keyboard driver (non-usb).
+Serial only format: <serial_device>[,baud]
+keyboard only format: kbd
+keyboard and serial format: kbd,<serial_device>[,baud]
+Optional Kernel mode setting:
+kms, kbd format: kms,kbd
+kms, kbd and serial format: kms,kbd,<ser_dev>[,baud]
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

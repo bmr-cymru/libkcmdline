@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "ip - definition.toml"
+name = "ip"
+processor = "kernel"
+description = '''See Documentation/admin-guide/nfs/nfsroot.rst.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

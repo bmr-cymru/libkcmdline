@@ -1,0 +1,24 @@
+# This is a libKCmdline definition document.
+
+title = "rcutree.jiffies_till_sched_qs - definition.toml"
+name = "rcutree.jiffies_till_sched_qs"
+processor = "kernel"
+description = '''Set required age in jiffies for a
+given grace period before RCU starts
+soliciting quiescent-state help from
+rcu_note_context_switch() and cond_resched().
+If not specified, the kernel will calculate
+a value based on the most recent settings
+of rcutree.jiffies_till_first_fqs
+and rcutree.jiffies_till_next_fqs.
+This calculated value may be viewed in
+rcutree.jiffies_to_sched_qs.  Any attempt to set
+rcutree.jiffies_to_sched_qs will be cheerfully
+overwritten.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

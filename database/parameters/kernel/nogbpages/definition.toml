@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "nogbpages - definition.toml"
+name = "nogbpages"
+processor = "kernel"
+description = '''Do not use GB pages for kernel direct mappings.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

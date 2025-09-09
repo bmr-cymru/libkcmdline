@@ -1,0 +1,18 @@
+# This is a libKCmdline definition document.
+
+title = "rcutree.rcu_min_cached_objs - definition.toml"
+name = "rcutree.rcu_min_cached_objs"
+processor = "kernel"
+description = '''Minimum number of objects which are cached and
+maintained per one CPU. Object size is equal
+to PAGE_SIZE. The cache allows to reduce the
+pressure to page allocator, also it makes the
+whole algorithm to behave better in low memory
+condition.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

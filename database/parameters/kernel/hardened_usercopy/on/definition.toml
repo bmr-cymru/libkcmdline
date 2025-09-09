@@ -1,0 +1,12 @@
+# This is a libKCmdline definition document.
+
+title = "on - definition.toml"
+name = "on"
+processor = "kernel"
+description = '''Perform hardened usercopy checks.'''
+
+[syntax]
+type = ""
+format = ""
+choices = []
+allow_empty = true

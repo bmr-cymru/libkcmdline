@@ -1,0 +1,16 @@
+# This is a libKCmdline definition document.
+
+title = "transparent_hugepage_tmpfs - definition.toml"
+name = "transparent_hugepage_tmpfs"
+processor = "kernel"
+description = '''Can be used to control the default hugepage allocation policy
+for the tmpfs mount.
+See Documentation/admin-guide/mm/transhuge.rst
+for more details.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

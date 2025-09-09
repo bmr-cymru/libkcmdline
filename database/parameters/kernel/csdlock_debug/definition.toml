@@ -1,0 +1,20 @@
+# This is a libKCmdline definition document.
+
+title = "csdlock_debug - definition.toml"
+name = "csdlock_debug"
+processor = "kernel"
+description = '''Enable or disable debug add-ons of cross-CPU
+function call handling. When switched on,
+additional debug data is printed to the console
+in case a hanging CPU is detected, and that
+CPU is pinged again in order to try to resolve
+the hang situation.  The default value of this
+option depends on the CSD_LOCK_WAIT_DEBUG_DEFAULT
+Kconfig option.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

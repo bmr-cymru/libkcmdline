@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "logibm.irq - definition.toml"
+name = "logibm.irq"
+processor = "kernel"
+description = '''Logitech Bus Mouse Driver
+'''
+
+[syntax]
+type = "<irq>"
+format = "<irq>"
+choices = []
+allow_empty = true

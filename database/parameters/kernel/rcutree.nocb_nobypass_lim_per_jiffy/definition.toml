@@ -1,0 +1,23 @@
+# This is a libKCmdline definition document.
+
+title = "rcutree.nocb_nobypass_lim_per_jiffy - definition.toml"
+name = "rcutree.nocb_nobypass_lim_per_jiffy"
+processor = "kernel"
+description = '''On callback-offloaded (rcu_nocbs) CPUs,
+RCU reduces the lock contention that would
+otherwise be caused by callback floods through
+use of the ->nocb_bypass list.	However, in the
+common non-flooded case, RCU queues directly to
+the main ->cblist in order to avoid the extra
+overhead of the ->nocb_bypass list and its lock.
+But if there are too many callbacks queued during
+a single jiffy, RCU pre-queues the callbacks into
+the ->nocb_bypass queue.  The definition of "too
+many" is supplied by this kernel boot parameter.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

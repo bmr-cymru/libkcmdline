@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "mtrr_chunk_size - definition.toml"
+name = "mtrr_chunk_size"
+processor = "kernel"
+description = '''used for mtrr cleanup. It is largest continuous chunk
+that could hold holes aka. UC entries.
+'''
+
+[syntax]
+type = "nn[KMG,X86,EARLY]"
+format = "nn[KMG,X86,EARLY]"
+choices = []
+allow_empty = true

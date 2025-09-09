@@ -1,0 +1,17 @@
+# This is a libKCmdline definition document.
+
+title = "exynos4210,<addr> - definition.toml"
+name = "exynos4210,<addr>"
+processor = "kernel"
+description = '''Use early console provided by serial driver available
+on Samsung SoCs, requires selecting proper type and
+a correct base address of the selected UART port. The
+serial port must already be setup and configured.
+Options are not yet supported.
+'''
+
+[syntax]
+type = ""
+format = ""
+choices = []
+allow_empty = true

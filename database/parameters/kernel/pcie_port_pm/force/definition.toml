@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "force - definition.toml"
+name = "force"
+processor = "kernel"
+description = '''Forcibly enable power management of all PCIe ports
+'''
+
+[syntax]
+type = ""
+format = ""
+choices = []
+allow_empty = true

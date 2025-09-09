@@ -1,0 +1,16 @@
+# This is a libKCmdline definition document.
+
+title = "rcuscale.minruntime - definition.toml"
+name = "rcuscale.minruntime"
+processor = "kernel"
+description = '''Set the minimum test run time in seconds.  This
+does not affect the data-collection interval,
+but instead allows better measurement of things
+like CPU consumption.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

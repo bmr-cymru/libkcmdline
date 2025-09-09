@@ -1,0 +1,17 @@
+# This is a libKCmdline definition document.
+
+title = "ftrace_filter - definition.toml"
+name = "ftrace_filter"
+processor = "kernel"
+description = '''[FTRACE] Limit the functions traced by the function
+tracer at boot up. function-list is a comma-separated
+list of functions. This list can be changed at run
+time by the set_ftrace_filter file in the debugfs
+tracing directory.
+'''
+
+[syntax]
+type = "[function-list]"
+format = "[function-list]"
+choices = []
+allow_empty = true

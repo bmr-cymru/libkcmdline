@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "n2 - definition.toml"
+name = "n2"
+processor = "kernel"
+description = '''SDL Inc. RISCom/N2 synchronous serial card
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

@@ -1,0 +1,15 @@
+# This is a libKCmdline definition document.
+
+title = "amd_prefcore - definition.toml"
+name = "amd_prefcore"
+processor = "kernel"
+description = '''[X86]
+disable
+Disable amd-pstate preferred core.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

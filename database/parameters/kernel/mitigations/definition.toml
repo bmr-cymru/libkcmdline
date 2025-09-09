@@ -1,0 +1,74 @@
+# This is a libKCmdline definition document.
+
+title = "mitigations - definition.toml"
+name = "mitigations"
+processor = "kernel"
+description = '''[X86,PPC,S390,ARM64,EARLY] Control optional mitigations for
+CPU vulnerabilities.  This is a set of curated,
+arch-independent options, each of which is an
+aggregation of existing arch-specific options.
+
+Note, "mitigations" is supported if and only if the
+kernel was built with CPU_MITIGATIONS=y.
+
+off
+Disable all optional CPU mitigations.  This
+improves system performance, but it may also
+expose users to several CPU vulnerabilities.
+Equivalent to: if nokaslr then kpti=0 [ARM64]
+gather_data_sampling=off [X86]
+indirect_target_selection=off [X86]
+kvm.nx_huge_pages=off [X86]
+l1tf=off [X86]
+mds=off [X86]
+mmio_stale_data=off [X86]
+no_entry_flush [PPC]
+no_uaccess_flush [PPC]
+nobp=0 [S390]
+nopti [X86,PPC]
+nospectre_bhb [ARM64]
+nospectre_v1 [X86,PPC]
+nospectre_v2 [X86,PPC,S390,ARM64]
+reg_file_data_sampling=off [X86]
+retbleed=off [X86]
+spec_rstack_overflow=off [X86]
+spec_store_bypass_disable=off [X86,PPC]
+spectre_bhi=off [X86]
+spectre_v2_user=off [X86]
+srbds=off [X86,INTEL]
+ssbd=force-off [ARM64]
+tsx_async_abort=off [X86]
+
+Exceptions:
+This does not have any effect on
+kvm.nx_huge_pages when
+kvm.nx_huge_pages=force.
+
+auto (default)
+Mitigate all CPU vulnerabilities, but leave SMT
+enabled, even if it's vulnerable.  This is for
+users who don't want to be surprised by SMT
+getting disabled across kernel upgrades, or who
+have other ways of avoiding SMT-based attacks.
+Equivalent to: (default behavior)
+
+auto,nosmt
+Mitigate all CPU vulnerabilities, disabling SMT
+if needed.  This is for users who always want to
+be fully mitigated, even if it means losing SMT.
+Equivalent to: l1tf=flush,nosmt [X86]
+mds=full,nosmt [X86]
+tsx_async_abort=full,nosmt [X86]
+mmio_stale_data=full,nosmt [X86]
+retbleed=auto,nosmt [X86]
+
+[X86] After one of the above options, additionally
+supports attack-vector based controls as documented in
+Documentation/admin-guide/hw-vuln/attack_vector_controls.rst
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

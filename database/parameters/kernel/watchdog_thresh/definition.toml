@@ -1,0 +1,18 @@
+# This is a libKCmdline definition document.
+
+title = "watchdog_thresh - definition.toml"
+name = "watchdog_thresh"
+processor = "kernel"
+description = '''[KNL]
+Set the hard lockup detector stall duration
+threshold in seconds. The soft lockup detector
+threshold is set to twice the value. A value of 0
+disables both lockup detectors. Default is 10
+seconds.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

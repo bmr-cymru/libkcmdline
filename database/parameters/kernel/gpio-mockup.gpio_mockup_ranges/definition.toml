@@ -1,0 +1,12 @@
+# This is a libKCmdline definition document.
+
+title = "gpio-mockup.gpio_mockup_ranges - definition.toml"
+name = "gpio-mockup.gpio_mockup_ranges"
+processor = "kernel"
+description = '''[HW] Sets the ranges of gpiochip of for this device.'''
+
+[syntax]
+type = "<start1>,<end1>,<start2>,<end2>..."
+format = "<start1>,<end1>,<start2>,<end2>..."
+choices = []
+allow_empty = true

@@ -1,0 +1,17 @@
+# This is a libKCmdline definition document.
+
+title = "rcutorture.gpwrap_lag_active_mins - definition.toml"
+name = "rcutorture.gpwrap_lag_active_mins"
+processor = "kernel"
+description = '''Set the duration for which gpwrap lag is active
+within each cycle, in minutes. During this time,
+the grace-period wrap lag will be set to the
+value specified by gpwrap_lag_gps. Default is
+5 minutes.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

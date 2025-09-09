@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "usbcore.usbfs_snoop_max - definition.toml"
+name = "usbcore.usbfs_snoop_max"
+processor = "kernel"
+description = '''[USB] Maximum number of bytes to snoop in each URB
+(default = 65536).
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

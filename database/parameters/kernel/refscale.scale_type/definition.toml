@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "refscale.scale_type - definition.toml"
+name = "refscale.scale_type"
+processor = "kernel"
+description = '''Specify the read-protection implementation to test.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

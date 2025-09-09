@@ -1,0 +1,17 @@
+# This is a libKCmdline definition document.
+
+title = "max_loop - definition.toml"
+name = "max_loop"
+processor = "kernel"
+description = '''The number of loop block devices that get
+number is configured by BLK_DEV_LOOP_MIN_COUNT. Instead
+of statically allocating a predefined number, loop
+devices can be requested on-demand with the
+/dev/loop-control interface.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

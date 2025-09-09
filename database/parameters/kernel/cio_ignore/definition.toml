@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "cio_ignore - definition.toml"
+name = "cio_ignore"
+processor = "kernel"
+description = '''See Documentation/arch/s390/common_io.rst for details.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

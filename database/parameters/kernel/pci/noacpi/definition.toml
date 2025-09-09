@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "noacpi - definition.toml"
+name = "noacpi"
+processor = "kernel"
+description = '''[X86] Do not use ACPI for IRQ routing
+or for PCI scanning.'''
+
+[syntax]
+type = ""
+format = ""
+choices = []
+allow_empty = true

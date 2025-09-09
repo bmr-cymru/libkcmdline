@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "rcutorture.read_exit_delay - definition.toml"
+name = "rcutorture.read_exit_delay"
+processor = "kernel"
+description = '''The delay, in seconds, between successive
+read-then-exit testing episodes.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

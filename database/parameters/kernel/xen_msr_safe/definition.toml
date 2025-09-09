@@ -1,0 +1,16 @@
+# This is a libKCmdline definition document.
+
+title = "xen_msr_safe - definition.toml"
+name = "xen_msr_safe"
+processor = "kernel"
+description = '''<bool>
+Select whether to always use non-faulting (safe) MSR
+access functions when running as Xen PV guest. The
+default value is controlled by CONFIG_XEN_PV_MSR_SAFE.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

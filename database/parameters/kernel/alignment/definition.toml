@@ -1,0 +1,15 @@
+# This is a libKCmdline definition document.
+
+title = "alignment - definition.toml"
+name = "alignment"
+processor = "kernel"
+description = '''Allow the default userspace alignment fault handler
+behaviour to be specified.  Bit 0 enables warnings,
+bit 1 enables fixups, and bit 2 sends a segfault.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

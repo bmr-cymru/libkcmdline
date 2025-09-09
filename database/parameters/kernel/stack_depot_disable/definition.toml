@@ -1,0 +1,16 @@
+# This is a libKCmdline definition document.
+
+title = "stack_depot_disable - definition.toml"
+name = "stack_depot_disable"
+processor = "kernel"
+description = '''Setting this to true through kernel command line will
+disable the stack depot thereby saving the static memory
+consumed by the stack hash table. By default this is set
+to false.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

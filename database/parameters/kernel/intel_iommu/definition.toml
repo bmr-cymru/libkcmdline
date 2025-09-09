@@ -1,0 +1,12 @@
+# This is a libKCmdline definition document.
+
+title = "intel_iommu - definition.toml"
+name = "intel_iommu"
+processor = "kernel"
+description = '''Intel IOMMU driver (DMAR) option'''
+
+[syntax]
+type = "complex"
+format = "complex"
+choices = []
+allow_empty = true

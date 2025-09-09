@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "mousedev.yres - definition.toml"
+name = "mousedev.yres"
+processor = "kernel"
+description = '''Vertical screen resolution, used for devices
+reporting absolute coordinates, such as tablets
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

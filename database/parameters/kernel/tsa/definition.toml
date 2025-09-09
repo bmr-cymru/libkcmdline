@@ -1,0 +1,24 @@
+# This is a libKCmdline definition document.
+
+title = "tsa - definition.toml"
+name = "tsa"
+processor = "kernel"
+description = '''Control mitigation for Transient Scheduler
+Attacks on AMD CPUs. Search the following in your
+favourite search engine for more details:
+
+"Technical guidance for mitigating transient scheduler
+attacks".
+
+off		- disable the mitigation
+on		- enable the mitigation (default)
+user		- mitigate only user/kernel transitions
+vm		- mitigate only guest/host transitions
+
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

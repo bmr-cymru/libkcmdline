@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "bert_disable - definition.toml"
+name = "bert_disable"
+processor = "kernel"
+description = '''Disable BERT OS support on buggy BIOSes.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

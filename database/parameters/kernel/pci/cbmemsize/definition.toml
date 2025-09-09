@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "cbmemsize - definition.toml"
+name = "cbmemsize"
+processor = "kernel"
+description = '''The fixed amount of bus space which is
+reserved for the CardBus bridge's memory
+window. The default value is 64 megabytes.'''
+
+[syntax]
+type = "nn[KMG]"
+format = "nn[KMG]"
+choices = []
+allow_empty = true

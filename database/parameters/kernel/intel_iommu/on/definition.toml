@@ -1,0 +1,12 @@
+# This is a libKCmdline definition document.
+
+title = "on - definition.toml"
+name = "on"
+processor = "kernel"
+description = '''Enable intel iommu driver.'''
+
+[syntax]
+type = ""
+format = ""
+choices = []
+allow_empty = true

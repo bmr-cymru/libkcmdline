@@ -1,0 +1,17 @@
+# This is a libKCmdline definition document.
+
+title = "rockchip.usb_uart - definition.toml"
+name = "rockchip.usb_uart"
+processor = "kernel"
+description = '''[EARLY]
+Enable the uart passthrough on the designated usb port
+on Rockchip SoCs. When active, the signals of the
+debug-uart get routed to the D+ and D- pins of the usb
+port and the regular usb controller gets disabled.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

@@ -1,0 +1,18 @@
+# This is a libKCmdline definition document.
+
+title = "rcutree.rcu_nocb_gp_stride - definition.toml"
+name = "rcutree.rcu_nocb_gp_stride"
+processor = "kernel"
+description = '''Set the number of NOCB callback kthreads in
+each group, which defaults to the square root
+of the number of CPUs.	Larger numbers reduce
+the wakeup overhead on the global grace-period
+kthread, but increases that same overhead on
+each group's NOCB grace-period kthread.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

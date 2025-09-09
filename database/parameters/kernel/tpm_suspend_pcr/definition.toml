@@ -1,0 +1,17 @@
+# This is a libKCmdline definition document.
+
+title = "tpm_suspend_pcr - definition.toml"
+name = "tpm_suspend_pcr"
+processor = "kernel"
+description = '''integer pcr id
+as a workaround for some chips which fail to
+flush the last written pcr on TPM_SaveState.
+This will guarantee that all the other pcrs
+are saved.
+'''
+
+[syntax]
+type = "[HW,TPM]"
+format = "[HW,TPM]"
+choices = []
+allow_empty = true

@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "atarimouse - definition.toml"
+name = "atarimouse"
+processor = "kernel"
+description = '''Atari Mouse
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

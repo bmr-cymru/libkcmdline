@@ -1,0 +1,15 @@
+# This is a libKCmdline definition document.
+
+title = "cpuhp.parallel - definition.toml"
+name = "cpuhp.parallel"
+processor = "kernel"
+description = '''[SMP] Enable/disable parallel bringup of secondary CPUs
+Default is enabled if CONFIG_HOTPLUG_PARALLEL=y. Otherwise
+the parameter has no effect.
+'''
+
+[syntax]
+type = "<bool>"
+format = "<bool>"
+choices = []
+allow_empty = true

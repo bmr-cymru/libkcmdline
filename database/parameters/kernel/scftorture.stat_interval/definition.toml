@@ -1,0 +1,15 @@
+# This is a libKCmdline definition document.
+
+title = "scftorture.stat_interval - definition.toml"
+name = "scftorture.stat_interval"
+processor = "kernel"
+description = '''The number of seconds between outputting the
+current test statistics to the console.  A value
+of zero disables statistics output.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

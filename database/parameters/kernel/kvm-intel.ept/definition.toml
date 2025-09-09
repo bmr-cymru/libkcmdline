@@ -1,0 +1,16 @@
+# This is a libKCmdline definition document.
+
+title = "kvm-intel.ept - definition.toml"
+name = "kvm-intel.ept"
+processor = "kernel"
+description = '''Control KVM's use of Extended Page Tables,
+a.k.a. Two-Dimensional Page Tables.  Default is 1
+(enabled). Disable by KVM if hardware lacks support
+for EPT.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

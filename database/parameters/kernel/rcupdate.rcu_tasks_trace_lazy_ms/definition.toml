@@ -1,0 +1,18 @@
+# This is a libKCmdline definition document.
+
+title = "rcupdate.rcu_tasks_trace_lazy_ms - definition.toml"
+name = "rcupdate.rcu_tasks_trace_lazy_ms"
+processor = "kernel"
+description = '''Set timeout in milliseconds RCU Tasks
+Trace asynchronous callback batching for
+call_rcu_tasks_trace().  A negative value
+will take the default.	A value of zero will
+disable batching.  Batching is always disabled
+for synchronize_rcu_tasks_trace().
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

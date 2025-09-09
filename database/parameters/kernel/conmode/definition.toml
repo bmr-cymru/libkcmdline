@@ -1,0 +1,12 @@
+# This is a libKCmdline definition document.
+
+title = "conmode - definition.toml"
+name = "conmode"
+processor = "kernel"
+description = ''''''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

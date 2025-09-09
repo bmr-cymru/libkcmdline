@@ -1,0 +1,17 @@
+# This is a libKCmdline definition document.
+
+title = "stacktrace_filter - definition.toml"
+name = "stacktrace_filter"
+processor = "kernel"
+description = '''[FTRACE] Limit the functions that the stack tracer
+will trace at boot up. function-list is a comma-separated
+list of functions. This list can be changed at run
+time by the stack_trace_filter file in the debugfs
+and the stacktrace above is not needed.
+'''
+
+[syntax]
+type = "[function-list]"
+format = "[function-list]"
+choices = []
+allow_empty = true

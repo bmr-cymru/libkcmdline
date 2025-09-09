@@ -1,0 +1,20 @@
+# This is a libKCmdline definition document.
+
+title = "maxcpus - definition.toml"
+name = "maxcpus"
+processor = "kernel"
+description = '''Maximum number of processors that an SMP kernel
+will bring up during bootup.  maxcpus=n : n >= 0 limits
+the kernel to bring up 'n' processors. Surely after
+bootup you can bring up the other plugged cpu by executing
+"echo 1 > /sys/devices/system/cpu/cpuX/online". So maxcpus
+only takes effect during system bootup.
+While n=0 is a special case, it is equivalent to "nosmp",
+which also disables the IO APIC.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

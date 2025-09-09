@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "norom - definition.toml"
+name = "norom"
+processor = "kernel"
+description = '''[X86] Do not assign address space to
+expansion ROMs that do not already have
+BIOS assigned address ranges.'''
+
+[syntax]
+type = ""
+format = ""
+choices = []
+allow_empty = true

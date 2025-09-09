@@ -1,0 +1,15 @@
+# This is a libKCmdline definition document.
+
+title = "nopv - definition.toml"
+name = "nopv"
+processor = "kernel"
+description = '''Disables the PV optimizations forcing the guest to run
+as generic guest with no PV drivers. Currently support
+XEN HVM, KVM, HYPER_V and VMWARE guest.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

@@ -1,0 +1,12 @@
+# This is a libKCmdline definition document.
+
+title = "0x80 - definition.toml"
+name = "0x80"
+processor = "kernel"
+description = '''Standard port 0x80 based delay'''
+
+[syntax]
+type = ""
+format = ""
+choices = []
+allow_empty = true

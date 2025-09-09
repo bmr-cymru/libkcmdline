@@ -1,0 +1,24 @@
+# This is a libKCmdline definition document.
+
+title = "parport - definition.toml"
+name = "parport"
+processor = "kernel"
+description = '''Specify parallel ports. 0 disables.
+Use 'auto' to force the driver to use any
+IRQ/DMA settings detected (the default is to
+ignore detected IRQ/DMA settings because of
+possible conflicts). You can specify the base
+address, IRQ, and DMA settings; IRQ and DMA
+should be numbers, or 'auto' (for using detected
+settings on that particular port), or 'nofifo'
+(to avoid using a FIFO even if it is detected).
+Parallel ports are assigned in the order they
+are specified on the command line, starting
+with parport0.
+'''
+
+[syntax]
+type = "enum"
+format = "enum"
+choices = ["0", "auto", "0xBBB[,IRQ[,DMA]]"]
+allow_empty = true

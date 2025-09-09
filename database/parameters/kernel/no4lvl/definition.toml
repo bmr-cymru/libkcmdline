@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "no4lvl - definition.toml"
+name = "no4lvl"
+processor = "kernel"
+description = '''Disable 4-level and 5-level paging modes.
+Forces kernel to use 3-level paging instead.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

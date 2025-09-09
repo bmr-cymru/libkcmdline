@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "no_hash_pointers - definition.toml"
+name = "no_hash_pointers"
+processor = "kernel"
+description = '''[KNL,EARLY]
+Alias for "hash_pointers=never".
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

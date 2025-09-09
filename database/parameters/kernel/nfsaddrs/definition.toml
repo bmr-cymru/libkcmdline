@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "nfsaddrs - definition.toml"
+name = "nfsaddrs"
+processor = "kernel"
+description = '''Deprecated.  Use ip= instead.
+See Documentation/admin-guide/nfs/nfsroot.rst.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

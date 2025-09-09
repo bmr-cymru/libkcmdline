@@ -1,0 +1,17 @@
+# This is a libKCmdline definition document.
+
+title = "acpi_rev_override - definition.toml"
+name = "acpi_rev_override"
+processor = "kernel"
+description = '''Override the _REV object to return 5 (instead
+of 2 which is mandated by ACPI 6) as the supported ACPI
+specification revision (when using this switch, it may
+be necessary to carry out a cold reboot _twice_ in a
+row to make it take effect on the platform firmware).
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

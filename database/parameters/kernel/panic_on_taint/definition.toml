@@ -1,0 +1,23 @@
+# This is a libKCmdline definition document.
+
+title = "panic_on_taint - definition.toml"
+name = "panic_on_taint"
+processor = "kernel"
+description = '''Bitmask for conditionally calling panic() in add_taint()
+Hexadecimal bitmask representing the set of TAINT flags
+that will cause the kernel to panic when add_taint() is
+called with any of the flags in this set.
+The optional switch "nousertaint" can be utilized to
+prevent userspace forced crashes by writing to sysctl
+/proc/sys/kernel/tainted any flagset matching with the
+bitmask set on panic_on_taint.
+See Documentation/admin-guide/tainted-kernels.rst for
+extra details on the taint flags that users can pick
+to compose the bitmask to assign to panic_on_taint.
+'''
+
+[syntax]
+type = "<hex>[,nousertaint]"
+format = "<hex>[,nousertaint]"
+choices = []
+allow_empty = true

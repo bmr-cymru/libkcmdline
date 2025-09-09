@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "pci - definition.toml"
+name = "pci"
+processor = "kernel"
+description = '''Use a write to the PCI config space register 0xcf9 to
+trigger reboot.
+'''
+
+[syntax]
+type = ""
+format = ""
+choices = []
+allow_empty = true

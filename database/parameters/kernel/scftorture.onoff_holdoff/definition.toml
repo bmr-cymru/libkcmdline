@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "scftorture.onoff_holdoff - definition.toml"
+name = "scftorture.onoff_holdoff"
+processor = "kernel"
+description = '''Number seconds to wait after the start of the
+test before initiating CPU-hotplug operations.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

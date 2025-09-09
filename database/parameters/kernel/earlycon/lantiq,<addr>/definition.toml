@@ -1,0 +1,16 @@
+# This is a libKCmdline definition document.
+
+title = "lantiq,<addr> - definition.toml"
+name = "lantiq,<addr>"
+processor = "kernel"
+description = '''Start an early, polled-mode console on a lantiq serial
+(lqasc) port at the specified address. The serial port
+must already be setup and configured. Options are not
+yet supported.
+'''
+
+[syntax]
+type = ""
+format = ""
+choices = []
+allow_empty = true

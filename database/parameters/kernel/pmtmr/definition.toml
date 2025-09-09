@@ -1,0 +1,15 @@
+# This is a libKCmdline definition document.
+
+title = "pmtmr - definition.toml"
+name = "pmtmr"
+processor = "kernel"
+description = '''Manual setup of pmtmr I/O Port.
+Override pmtimer IOPort with a hex value.
+e.g. pmtmr=0x508
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

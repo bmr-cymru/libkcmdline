@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "noapic - definition.toml"
+name = "noapic"
+processor = "kernel"
+description = '''Tells the kernel to not make use of any
+IOAPICs that may be present in the system.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

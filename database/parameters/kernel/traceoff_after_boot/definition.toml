@@ -1,0 +1,16 @@
+# This is a libKCmdline definition document.
+
+title = "traceoff_after_boot - definition.toml"
+name = "traceoff_after_boot"
+processor = "kernel"
+description = '''[FTRACE] Sometimes tracing is used to debug issues
+during the boot process. Since the trace buffer has a
+the critical information may be overwritten.  With this
+the end of the boot process.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

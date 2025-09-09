@@ -1,0 +1,15 @@
+# This is a libKCmdline definition document.
+
+title = "use_crs - definition.toml"
+name = "use_crs"
+processor = "kernel"
+description = '''[X86] Use PCI host bridge window information
+from ACPI.  On BIOSes from 2008 or later, this
+is enabled by default.  If you need to use this,
+please report a bug.'''
+
+[syntax]
+type = ""
+format = ""
+choices = []
+allow_empty = true

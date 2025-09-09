@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "nocrs - definition.toml"
+name = "nocrs"
+processor = "kernel"
+description = '''[X86] Ignore PCI host bridge windows from ACPI.
+If you need to use this, please report a bug.'''
+
+[syntax]
+type = ""
+format = ""
+choices = []
+allow_empty = true

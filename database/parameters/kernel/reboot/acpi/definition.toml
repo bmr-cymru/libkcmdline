@@ -1,0 +1,15 @@
+# This is a libKCmdline definition document.
+
+title = "acpi - definition.toml"
+name = "acpi"
+processor = "kernel"
+description = '''Use the ACPI RESET_REG in the FADT. If ACPI is not
+configured or the ACPI reset does not work, the reboot
+path attempts the reset using the keyboard controller.
+'''
+
+[syntax]
+type = ""
+format = ""
+choices = []
+allow_empty = true

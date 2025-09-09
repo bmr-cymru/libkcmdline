@@ -1,0 +1,21 @@
+# This is a libKCmdline definition document.
+
+title = "allow_mismatched_32bit_el0 - definition.toml"
+name = "allow_mismatched_32bit_el0"
+processor = "kernel"
+description = '''Allow execve() of 32-bit applications and setting of the
+PER_LINUX32 personality on systems where only a strict
+subset of the CPUs support 32-bit EL0. When this
+parameter is present, the set of CPUs supporting 32-bit
+EL0 is indicated by /sys/devices/system/cpu/aarch32_el0
+and hot-unplug operations may be restricted.
+
+See Documentation/arch/arm64/asymmetric-32bit.rst for more
+information.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

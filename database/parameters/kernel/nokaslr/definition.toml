@@ -1,0 +1,15 @@
+# This is a libKCmdline definition document.
+
+title = "nokaslr - definition.toml"
+name = "nokaslr"
+processor = "kernel"
+description = '''When CONFIG_RANDOMIZE_BASE is set, this disables
+kernel and module base offset ASLR (Address Space
+Layout Randomization).
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

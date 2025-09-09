@@ -1,0 +1,15 @@
+# This is a libKCmdline definition document.
+
+title = "pause_on_oops - definition.toml"
+name = "pause_on_oops"
+processor = "kernel"
+description = '''Halt all CPUs after the first oops has been printed for
+the specified number of seconds.  This is to be used if
+your oopses keep scrolling off the screen.
+'''
+
+[syntax]
+type = "<int>"
+format = "<int>"
+choices = []
+allow_empty = true

@@ -1,0 +1,20 @@
+# This is a libKCmdline definition document.
+
+title = "i915.invert_brightness - definition.toml"
+name = "i915.invert_brightness"
+processor = "kernel"
+description = '''[DRM] Invert the sense of the variable that is used to
+set the brightness of the panel backlight. Normally a
+and the maximum of the brightness value sets the backlight
+to maximum brightness. If this parameter is set to 0
+value switches the backlight off.
+-1 -- never invert brightness
+0 -- machine default
+1 -- force brightness inversion
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

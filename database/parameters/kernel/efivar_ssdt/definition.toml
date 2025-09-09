@@ -1,0 +1,18 @@
+# This is a libKCmdline definition document.
+
+title = "efivar_ssdt - definition.toml"
+name = "efivar_ssdt"
+processor = "kernel"
+description = '''X86] Name of an EFI variable that contains an SSDT
+that is to be dynamically loaded by Linux. If there are
+multiple variables with the same name but with different
+vendor GUIDs, all of them will be loaded. See
+Documentation/admin-guide/acpi/ssdt-overlays.rst for details.
+
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

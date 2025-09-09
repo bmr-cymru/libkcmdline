@@ -1,0 +1,16 @@
+# This is a libKCmdline definition document.
+
+title = "nfs.nfs4_unique_id - definition.toml"
+name = "nfs.nfs4_unique_id"
+processor = "kernel"
+description = '''[NFS4] Specify an additional fixed unique ident-
+ification string that NFSv4 clients can insert into
+their nfs_client_id4 string.  This is typically a
+UUID that is generated at system install time.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

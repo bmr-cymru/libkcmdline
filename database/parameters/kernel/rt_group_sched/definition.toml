@@ -1,0 +1,15 @@
+# This is a libKCmdline definition document.
+
+title = "rt_group_sched - definition.toml"
+name = "rt_group_sched"
+processor = "kernel"
+description = '''Enable or disable SCHED_RR/FIFO group scheduling
+when CONFIG_RT_GROUP_SCHED=y. Defaults to
+!CONFIG_RT_GROUP_SCHED_DEFAULT_DISABLED.
+'''
+
+[syntax]
+type = "<bool>"
+format = "<bool>"
+choices = []
+allow_empty = true

@@ -1,0 +1,18 @@
+# This is a libKCmdline definition document.
+
+title = "rcupdate.rcu_expedited - definition.toml"
+name = "rcupdate.rcu_expedited"
+processor = "kernel"
+description = '''Use expedited grace-period primitives, for
+example, synchronize_rcu_expedited() instead
+of synchronize_rcu().  This reduces latency,
+but can increase CPU utilization, degrade
+real-time latency, and degrade energy efficiency.
+No effect on CONFIG_TINY_RCU kernels.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

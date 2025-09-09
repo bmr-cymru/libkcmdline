@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "kvm-arm.vgic_v3_group0_trap - definition.toml"
+name = "kvm-arm.vgic_v3_group0_trap"
+processor = "kernel"
+description = '''[KVM,ARM,EARLY] Trap guest accesses to GICv3 group-0
+system registers
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

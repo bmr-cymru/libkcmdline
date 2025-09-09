@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "ignore_rlimit_data - definition.toml"
+name = "ignore_rlimit_data"
+processor = "kernel"
+description = '''print warning at first misuse.  Can be changed via
+/sys/module/kernel/parameters/ignore_rlimit_data.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

@@ -1,0 +1,16 @@
+# This is a libKCmdline definition document.
+
+title = "coresight_cpu_debug.enable - definition.toml"
+name = "coresight_cpu_debug.enable"
+processor = "kernel"
+description = '''[ARM,ARM64]
+Enable/disable the CPU sampling based debugging.
+0: default value, disable debugging
+1: enable debugging at boot time
+'''
+
+[syntax]
+type = "<bool>"
+format = "<bool>"
+choices = []
+allow_empty = true

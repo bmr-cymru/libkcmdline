@@ -1,0 +1,17 @@
+# This is a libKCmdline definition document.
+
+title = "usb-storage.delay_use - definition.toml"
+name = "usb-storage.delay_use"
+processor = "kernel"
+description = '''[UMS] The delay in seconds before a new device is
+scanned for Logical Units (default 1).
+Optionally the delay in milliseconds if the value has
+suffix with "ms".
+Example: delay_use=2567ms
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

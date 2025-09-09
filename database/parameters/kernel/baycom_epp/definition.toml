@@ -1,0 +1,12 @@
+# This is a libKCmdline definition document.
+
+title = "baycom_epp - definition.toml"
+name = "baycom_epp"
+processor = "kernel"
+description = ''''''
+
+[syntax]
+type = "<io>,<mode>"
+format = "<io>,<mode>"
+choices = []
+allow_empty = true

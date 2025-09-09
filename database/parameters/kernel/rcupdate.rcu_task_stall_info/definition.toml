@@ -1,0 +1,21 @@
+# This is a libKCmdline definition document.
+
+title = "rcupdate.rcu_task_stall_info - definition.toml"
+name = "rcupdate.rcu_task_stall_info"
+processor = "kernel"
+description = '''Set initial timeout in jiffies for RCU task stall
+informational messages, which give some indication
+of the problem for those not patient enough to
+wait for ten minutes.  Informational messages are
+only printed prior to the stall-warning message
+for a given grace period. Disable with a value
+less than or equal to zero.  Defaults to ten
+seconds.  A change in value does not take effect
+until the beginning of the next grace period.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

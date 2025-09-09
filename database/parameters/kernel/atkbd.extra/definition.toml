@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "atkbd.extra - definition.toml"
+name = "atkbd.extra"
+processor = "kernel"
+description = '''Enable extra LEDs and keys on IBM RapidAccess,
+EzKey and similar keyboards
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

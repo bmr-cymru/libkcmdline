@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "dasd - definition.toml"
+name = "dasd"
+processor = "kernel"
+description = '''See header of drivers/s390/block/dasd_devmap.c.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

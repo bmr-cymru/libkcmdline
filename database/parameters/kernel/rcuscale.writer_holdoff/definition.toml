@@ -1,0 +1,15 @@
+# This is a libKCmdline definition document.
+
+title = "rcuscale.writer_holdoff - definition.toml"
+name = "rcuscale.writer_holdoff"
+processor = "kernel"
+description = '''Write-side holdoff between grace periods,
+in microseconds.  The default of zero says
+no holdoff.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

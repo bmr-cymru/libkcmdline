@@ -1,0 +1,22 @@
+# This is a libKCmdline definition document.
+
+title = "crash_kexec_post_notifiers - definition.toml"
+name = "crash_kexec_post_notifiers"
+processor = "kernel"
+description = '''Only jump to kdump kernel after running the panic
+notifiers and dumping kmsg. This option increases
+the risks of a kdump failure, since some panic
+notifiers can make the crashed kernel more unstable.
+In configurations where kdump may not be reliable,
+running the panic notifiers could allow collecting
+more data on dmesg, like stack traces from other CPUS
+or extra data dumped by panic_print. Note that some
+configurations enable this option unconditionally,
+like Hyper-V, PowerPC (fadump) and AMD SEV-SNP.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

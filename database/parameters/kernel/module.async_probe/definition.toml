@@ -1,0 +1,19 @@
+# This is a libKCmdline definition document.
+
+title = "module.async_probe - definition.toml"
+name = "module.async_probe"
+processor = "kernel"
+description = '''[KNL] When set to true, modules will use async probing
+by default. To enable/disable async probing for a
+specific module, use the module specific control that
+is documented under <module>.async_probe. When both
+module.async_probe and <module>.async_probe are
+specified, <module>.async_probe takes precedence for
+the specific module.
+'''
+
+[syntax]
+type = "<bool>"
+format = "<bool>"
+choices = []
+allow_empty = true

@@ -1,0 +1,21 @@
+# This is a libKCmdline definition document.
+
+title = "ekgdboc - definition.toml"
+name = "ekgdboc"
+processor = "kernel"
+description = '''Allow early kernel console debugging
+
+This is designed to be used in conjunction with
+the boot argument: earlyprintk=vga
+
+This parameter works in place of the kgdboc parameter
+but can only be used if the backing tty is available
+very early in the boot process. For early debugging
+via a serial port see kgdboc_earlycon instead.
+'''
+
+[syntax]
+type = "ekgdboc=kbd"
+format = "ekgdboc=kbd"
+choices = []
+allow_empty = true

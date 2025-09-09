@@ -1,0 +1,33 @@
+# This is a libKCmdline definition document.
+
+title = "acpi - definition.toml"
+name = "acpi"
+processor = "kernel"
+description = '''Advanced Configuration and Power Interface
+force -- enable ACPI if default was off
+on -- enable ACPI but allow fallback to DT [arm64,riscv64]
+off -- disable ACPI if default was on
+noirq -- do not use ACPI for IRQ routing
+strict -- Be less tolerant of platforms that are not
+strictly ACPI specification compliant.
+rsdt -- prefer RSDT over (default) XSDT
+copy_dsdt -- copy DSDT to memory
+nocmcff -- Disable firmware first mode for corrected
+errors. This disables parsing the HEST CMC error
+source to check if firmware has set the FF flag. This
+may result in duplicate corrected error reports.
+nospcr -- disable console in ACPI SPCR table as
+default _serial_ console on ARM64
+For ARM64, ONLY "acpi=off", "acpi=on", "acpi=force" or
+"acpi=nospcr" are available
+For RISCV64, ONLY "acpi=off", "acpi=on" or "acpi=force"
+are available
+
+See also Documentation/power/runtime_pm.rst, pci=noacpi
+'''
+
+[syntax]
+type = "enum"
+format = "enum"
+choices = ["force", "on", "off", "strict", "noirq", "rsdt", "copy_dsdt", "nospcr"]
+allow_empty = true

@@ -1,0 +1,16 @@
+# This is a libKCmdline definition document.
+
+title = "scftorture.shutdown_secs - definition.toml"
+name = "scftorture.shutdown_secs"
+processor = "kernel"
+description = '''The number of seconds following the start of the
+test after which to shut down the system.  The
+default of zero avoids shutting down the system.
+Non-zero values are useful for automated tests.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

@@ -1,0 +1,16 @@
+# This is a libKCmdline definition document.
+
+title = "ima_hash - definition.toml"
+name = "ima_hash"
+processor = "kernel"
+description = '''default: "sha1"
+
+The list of supported hash algorithms is defined
+in crypto/hash_info.h.
+'''
+
+[syntax]
+type = "enum"
+format = "enum"
+choices = ["md5", "sha1", "rmd160", "sha256", "sha384", "sha512", "..."]
+allow_empty = true

@@ -1,0 +1,17 @@
+# This is a libKCmdline definition document.
+
+title = "pd_ignore_unused - definition.toml"
+name = "pd_ignore_unused"
+processor = "kernel"
+description = '''[PM]
+Keep all power-domains already enabled by bootloader on,
+even if no driver has claimed them. This is useful
+for debug and development, but should not be
+needed on a platform with proper driver support.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

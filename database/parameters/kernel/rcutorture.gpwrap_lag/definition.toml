@@ -1,0 +1,15 @@
+# This is a libKCmdline definition document.
+
+title = "rcutorture.gpwrap_lag - definition.toml"
+name = "rcutorture.gpwrap_lag"
+processor = "kernel"
+description = '''Enable grace-period wrap lag testing. Setting
+to false prevents the gpwrap lag test from
+running. Default is true.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

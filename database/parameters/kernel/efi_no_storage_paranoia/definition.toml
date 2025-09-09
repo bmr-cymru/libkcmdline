@@ -1,0 +1,16 @@
+# This is a libKCmdline definition document.
+
+title = "efi_no_storage_paranoia - definition.toml"
+name = "efi_no_storage_paranoia"
+processor = "kernel"
+description = '''Using this parameter you can use more than 50% of
+your efi variable storage. Use this parameter only if
+you are really sure that your UEFI does sane gc and
+fulfills the spec otherwise your board may brick.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

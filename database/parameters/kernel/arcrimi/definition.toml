@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "arcrimi - definition.toml"
+name = "arcrimi"
+processor = "kernel"
+description = '''ARCnet - "RIM I" (entirely mem-mapped) cards
+'''
+
+[syntax]
+type = "<io>,<irq>,<nodeID>"
+format = "<io>,<irq>,<nodeID>"
+choices = []
+allow_empty = true

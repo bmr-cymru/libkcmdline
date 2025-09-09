@@ -1,0 +1,20 @@
+# This is a libKCmdline definition document.
+
+title = "workqueue.debug_force_rr_cpu - definition.toml"
+name = "workqueue.debug_force_rr_cpu"
+processor = "kernel"
+description = '''Workqueue used to implicitly guarantee that work
+items queued without explicit CPU specified are put
+on the local CPU.  This guarantee is no longer true
+and while local CPU is still preferred work items
+may be put on foreign CPUs.  This debug option
+forces round-robin CPU selection to flush out
+usages which depend on the now broken guarantee.
+impacted.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

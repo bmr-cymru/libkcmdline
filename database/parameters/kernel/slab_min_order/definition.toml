@@ -1,0 +1,16 @@
+# This is a libKCmdline definition document.
+
+title = "slab_min_order - definition.toml"
+name = "slab_min_order"
+processor = "kernel"
+description = '''Determines the minimum page order for slabs. Must be
+lower or equal to slab_max_order. For more information see
+Documentation/admin-guide/mm/slab.rst.
+(slub_min_order legacy name also accepted for now)
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

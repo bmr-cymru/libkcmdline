@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "For - definition.toml"
+name = "For"
+processor = "kernel"
+description = '''now, only VisioBraille is supported.
+'''
+
+[syntax]
+type = ""
+format = ""
+choices = []
+allow_empty = true

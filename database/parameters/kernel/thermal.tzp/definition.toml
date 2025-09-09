@@ -1,0 +1,15 @@
+# This is a libKCmdline definition document.
+
+title = "thermal.tzp - definition.toml"
+name = "thermal.tzp"
+processor = "kernel"
+description = '''Specify global default ACPI thermal zone polling rate
+<deci-seconds>: poll all this frequency
+0: no polling (default)
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

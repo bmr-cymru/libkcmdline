@@ -1,0 +1,18 @@
+# This is a libKCmdline definition document.
+
+title = "hugepages - definition.toml"
+name = "hugepages"
+processor = "kernel"
+description = '''Number of HugeTLB pages to allocate at boot.
+the number of pages of hugepagesz to be allocated.
+If this is the first HugeTLB parameter on the command
+number of pages to allocate per-node can be specified.
+See also Documentation/admin-guide/mm/hugetlbpage.rst.
+<integer> or (node format)
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

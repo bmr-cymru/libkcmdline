@@ -1,0 +1,16 @@
+# This is a libKCmdline definition document.
+
+title = "recovery - definition.toml"
+name = "recovery"
+processor = "kernel"
+description = '''force-enable recoverable machine check code paths
+
+Everything else is in sysfs now.
+
+'''
+
+[syntax]
+type = ""
+format = ""
+choices = []
+allow_empty = true

@@ -1,0 +1,19 @@
+# This is a libKCmdline definition document.
+
+title = "kvm-arm.wfi_trap_policy - definition.toml"
+name = "kvm-arm.wfi_trap_policy"
+processor = "kernel"
+description = '''[KVM,ARM] Control when to set WFI instruction trap for
+KVM VMs. Traps are allowed but not guaranteed by the
+CPU architecture.
+
+trap: set WFI instruction trap
+
+notrap: clear WFI instruction trap
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

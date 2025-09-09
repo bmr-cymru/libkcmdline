@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "pnp_reserve_dma - definition.toml"
+name = "pnp_reserve_dma"
+processor = "kernel"
+description = '''[ISAPNP] Exclude DMAs for the autoconfiguration
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

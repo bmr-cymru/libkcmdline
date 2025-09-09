@@ -1,0 +1,23 @@
+# This is a libKCmdline definition document.
+
+title = "kprobe_event - definition.toml"
+name = "kprobe_event"
+processor = "kernel"
+description = '''[FTRACE] Add kprobe events and enable at boot time.
+The probe-list is a semicolon delimited list of probe
+definitions. Each definition is same as kprobe_events
+interface, but the parameters are comma delimited.
+For example, to add a kprobe event on vfs_read with
+arg1 and arg2, add to the command line;
+
+kprobe_event=p,vfs_read,$arg1,$arg2
+
+See also Documentation/trace/kprobetrace.rst "Kernel
+Boot Parameter" section.
+'''
+
+[syntax]
+type = "[probe-list]"
+format = "[probe-list]"
+choices = []
+allow_empty = true

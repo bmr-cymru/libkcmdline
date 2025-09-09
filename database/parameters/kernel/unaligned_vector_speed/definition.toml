@@ -1,0 +1,17 @@
+# This is a libKCmdline definition document.
+
+title = "unaligned_vector_speed - definition.toml"
+name = "unaligned_vector_speed"
+processor = "kernel"
+description = '''[RISCV]
+Allow skipping vector unaligned access speed tests. This
+is useful for testing alternative code paths and to skip
+the tests in environments where they run too slowly. All
+CPUs must have the same vector unaligned access speed.
+'''
+
+[syntax]
+type = "enum"
+format = "enum"
+choices = ["slow", "fast", "unsupported"]
+allow_empty = true

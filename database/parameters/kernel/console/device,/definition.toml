@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "device, - definition.toml"
+name = "device,"
+processor = "kernel"
+description = '''prepend "brl," before the device type, for instance
+console=brl,ttyS0'''
+
+[syntax]
+type = ""
+format = ""
+choices = []
+allow_empty = true

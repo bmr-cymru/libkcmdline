@@ -1,0 +1,15 @@
+# This is a libKCmdline definition document.
+
+title = "rcuscale.shutdown - definition.toml"
+name = "rcuscale.shutdown"
+processor = "kernel"
+description = '''Shut the system down after performance tests
+complete.  This is useful for hands-off automated
+testing.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

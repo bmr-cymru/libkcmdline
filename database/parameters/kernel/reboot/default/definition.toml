@@ -1,0 +1,19 @@
+# This is a libKCmdline definition document.
+
+title = "default - definition.toml"
+name = "default"
+processor = "kernel"
+description = '''There are some built-in platform specific "quirks"
+- you may see: "reboot: <name> series board detected.
+Selecting <type> for reboots." In the case where you
+think the quirk is in error (e.g. you have newer BIOS,
+or newer board) using this option will ignore the
+built-in quirk table, and use the generic default
+reboot actions.
+'''
+
+[syntax]
+type = ""
+format = ""
+choices = []
+allow_empty = true

@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "acpi_irq_pci - definition.toml"
+name = "acpi_irq_pci"
+processor = "kernel"
+description = '''If irq_balance, clear listed IRQs for
+use by PCI
+'''
+
+[syntax]
+type = "<irq>,<irq>..."
+format = "<irq>,<irq>..."
+choices = []
+allow_empty = true

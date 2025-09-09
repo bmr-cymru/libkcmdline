@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "nosgx - definition.toml"
+name = "nosgx"
+processor = "kernel"
+description = '''Disables Intel SGX kernel support.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

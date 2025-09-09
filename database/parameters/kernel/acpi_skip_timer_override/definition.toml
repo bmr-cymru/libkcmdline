@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "acpi_skip_timer_override - definition.toml"
+name = "acpi_skip_timer_override"
+processor = "kernel"
+description = '''Recognize and ignore IRQ0/pin2 Interrupt Override.
+For broken nForce2 BIOS resulting in XT-PIC timer.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

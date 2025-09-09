@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "lockd.nlm_grace_period - definition.toml"
+name = "lockd.nlm_grace_period"
+processor = "kernel"
+description = '''Assign grace period.
+'''
+
+[syntax]
+type = "<integer>"
+format = "<integer>"
+choices = []
+allow_empty = true

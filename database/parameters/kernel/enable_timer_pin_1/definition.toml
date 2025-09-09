@@ -1,0 +1,16 @@
+# This is a libKCmdline definition document.
+
+title = "enable_timer_pin_1 - definition.toml"
+name = "enable_timer_pin_1"
+processor = "kernel"
+description = '''Enable PIN 1 of APIC timer
+Can be useful to work around chipset bugs
+(in particular on some ATI chipsets).
+The kernel tries to set a reasonable default.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "psmouse.proto - definition.toml"
+name = "psmouse.proto"
+processor = "kernel"
+description = '''Highest PS2 mouse protocol extension to
+probe for; one of (bare|imps|exps|lifebook|any).'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

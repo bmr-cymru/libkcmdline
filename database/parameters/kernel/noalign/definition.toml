@@ -1,0 +1,12 @@
+# This is a libKCmdline definition document.
+
+title = "noalign - definition.toml"
+name = "noalign"
+processor = "kernel"
+description = ''''''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

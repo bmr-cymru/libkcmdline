@@ -1,0 +1,17 @@
+# This is a libKCmdline definition document.
+
+title = "locktorture.call_rcu_chains - definition.toml"
+name = "locktorture.call_rcu_chains"
+processor = "kernel"
+description = '''Specify the number of self-propagating call_rcu()
+chains to set up.  These are used to ensure that
+there is a high probability of an RCU grace period
+in progress at any given time.	Defaults to 0,
+which disables these call_rcu() chains.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

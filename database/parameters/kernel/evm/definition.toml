@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "evm - definition.toml"
+name = "evm"
+processor = "kernel"
+description = '''Permit 'security.evm' to be updated regardless of
+current integrity status.
+'''
+
+[syntax]
+type = " \"fix\" "
+format = " \"fix\" "
+choices = []
+allow_empty = true

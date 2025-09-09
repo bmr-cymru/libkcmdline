@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "rcutorture.stall_cpu - definition.toml"
+name = "rcutorture.stall_cpu"
+processor = "kernel"
+description = '''Duration of CPU stall (s) to test RCU CPU stall
+warnings, zero to disable.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

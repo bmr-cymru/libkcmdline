@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "delayacct - definition.toml"
+name = "delayacct"
+processor = "kernel"
+description = '''Enable per-task delay accounting
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

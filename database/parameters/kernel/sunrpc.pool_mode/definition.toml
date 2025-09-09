@@ -1,0 +1,25 @@
+# This is a libKCmdline definition document.
+
+title = "sunrpc.pool_mode - definition.toml"
+name = "sunrpc.pool_mode"
+processor = "kernel"
+description = '''[NFS]
+Control how the NFS server code allocates CPUs to
+service thread pools.  Depending on how many NICs
+option will affect which CPUs will do NFS serving.
+Note: this parameter cannot be changed while the
+NFS server is running.
+
+auto	    the server chooses an appropriate mode
+automatically using heuristics
+global	    a single global pool contains all CPUs
+percpu	    one pool for each CPU
+pernode	    one pool for each NUMA node (equivalent
+to global on non-NUMA machines)
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

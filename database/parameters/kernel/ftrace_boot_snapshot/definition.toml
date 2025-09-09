@@ -1,0 +1,27 @@
+# This is a libKCmdline definition document.
+
+title = "ftrace_boot_snapshot - definition.toml"
+name = "ftrace_boot_snapshot"
+processor = "kernel"
+description = '''[FTRACE] On boot up, a snapshot will be taken of the
+ftrace ring buffer that can be read at:
+/sys/kernel/tracing/snapshot.
+This is useful if you need tracing information from kernel
+boot up that is likely to be overridden by user space
+start up functionality.
+
+Optionally, the snapshot can also be defined for a tracing
+instance that was created by the trace_instance= command
+line parameter.
+
+trace_instance=foo,sched_switch ftrace_boot_snapshot=foo
+
+The above will cause the "foo" tracing instance to trigger
+a snapshot at the end of boot up.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

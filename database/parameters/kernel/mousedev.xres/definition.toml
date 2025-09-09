@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "mousedev.xres - definition.toml"
+name = "mousedev.xres"
+processor = "kernel"
+description = '''Horizontal screen resolution, used for devices
+reporting absolute coordinates, such as tablets'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

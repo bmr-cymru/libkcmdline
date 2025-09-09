@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "panic_console_replay - definition.toml"
+name = "panic_console_replay"
+processor = "kernel"
+description = '''When panic happens, replay all kernel messages on
+consoles at the end of panic.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

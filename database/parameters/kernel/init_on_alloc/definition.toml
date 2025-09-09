@@ -1,0 +1,15 @@
+# This is a libKCmdline definition document.
+
+title = "init_on_alloc - definition.toml"
+name = "init_on_alloc"
+processor = "kernel"
+description = '''Fill newly allocated pages and heap objects with
+zeroes.
+Default set by CONFIG_INIT_ON_ALLOC_DEFAULT_ON.
+'''
+
+[syntax]
+type = "0 | 1"
+format = "0 | 1"
+choices = []
+allow_empty = true

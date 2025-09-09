@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "nohibernate - definition.toml"
+name = "nohibernate"
+processor = "kernel"
+description = '''Disable hibernation and resume.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

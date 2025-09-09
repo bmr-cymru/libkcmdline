@@ -1,0 +1,12 @@
+# This is a libKCmdline definition document.
+
+title = "s5pv210,<addr> - definition.toml"
+name = "s5pv210,<addr>"
+processor = "kernel"
+description = ''''''
+
+[syntax]
+type = ""
+format = ""
+choices = []
+allow_empty = true

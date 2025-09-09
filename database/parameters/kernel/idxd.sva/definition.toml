@@ -1,0 +1,16 @@
+# This is a libKCmdline definition document.
+
+title = "idxd.sva - definition.toml"
+name = "idxd.sva"
+processor = "kernel"
+description = '''<bool>
+Allow force disabling of Shared Virtual Memory (SVA)
+support for the idxd driver. By default it is set to
+true (1).
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

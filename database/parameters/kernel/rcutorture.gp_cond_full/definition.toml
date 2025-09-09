@@ -1,0 +1,16 @@
+# This is a libKCmdline definition document.
+
+title = "rcutorture.gp_cond_full - definition.toml"
+name = "rcutorture.gp_cond_full"
+processor = "kernel"
+description = '''Use conditional/asynchronous update-side
+normal-grace-period primitives that also take
+concurrent expedited grace periods into account,
+if available.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

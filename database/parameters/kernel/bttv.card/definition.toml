@@ -1,0 +1,12 @@
+# This is a libKCmdline definition document.
+
+title = "bttv.card - definition.toml"
+name = "bttv.card"
+processor = "kernel"
+description = '''bttv (bt848 + bt878 based grabber cards)'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

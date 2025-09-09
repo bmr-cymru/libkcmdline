@@ -1,0 +1,15 @@
+# This is a libKCmdline definition document.
+
+title = "ioapicreroute - definition.toml"
+name = "ioapicreroute"
+processor = "kernel"
+description = '''[APIC] Enable rerouting of boot IRQs to the
+primary IO-APIC for bridges that cannot disable
+boot IRQs. This fixes a source of spurious IRQs
+when the system masks IRQs.'''
+
+[syntax]
+type = ""
+format = ""
+choices = []
+allow_empty = true

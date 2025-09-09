@@ -1,0 +1,15 @@
+# This is a libKCmdline definition document.
+
+title = "nohz - definition.toml"
+name = "nohz"
+processor = "kernel"
+description = '''Boottime enable/disable dynamic ticks
+Valid arguments: on, off
+Default: on
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "ramdisk_start - definition.toml"
+name = "ramdisk_start"
+processor = "kernel"
+description = '''RAM disk image start address
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

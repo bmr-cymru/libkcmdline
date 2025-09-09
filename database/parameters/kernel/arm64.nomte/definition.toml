@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "arm64.nomte - definition.toml"
+name = "arm64.nomte"
+processor = "kernel"
+description = '''Unconditionally disable Memory Tagging Extension
+support
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

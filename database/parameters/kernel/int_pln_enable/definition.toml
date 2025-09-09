@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "int_pln_enable - definition.toml"
+name = "int_pln_enable"
+processor = "kernel"
+description = '''Enable power limit notification interrupt
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

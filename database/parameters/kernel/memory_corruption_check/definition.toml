@@ -1,0 +1,22 @@
+# This is a libKCmdline definition document.
+
+title = "memory_corruption_check - definition.toml"
+name = "memory_corruption_check"
+processor = "kernel"
+description = '''Some BIOSes seem to corrupt the first 64k of
+memory when doing things like suspend/resume.
+Setting this option will scan the memory
+looking for corruption.  Enabling this will
+both detect corruption and prevent the kernel
+from using the memory being corrupted.
+However, its intended as a diagnostic tool; if
+repeatable BIOS-originated corruption always
+affects the same memory, you can use memmap=
+to prevent the kernel from using that memory.
+'''
+
+[syntax]
+type = "0/1"
+format = "0/1"
+choices = []
+allow_empty = true

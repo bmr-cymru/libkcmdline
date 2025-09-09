@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "irqaffinity - definition.toml"
+name = "irqaffinity"
+processor = "kernel"
+description = '''Set the default irq affinity mask
+The argument is a cpu list, as described above.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

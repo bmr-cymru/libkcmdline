@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "noinvpcid - definition.toml"
+name = "noinvpcid"
+processor = "kernel"
+description = '''Disable the INVPCID cpu feature.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

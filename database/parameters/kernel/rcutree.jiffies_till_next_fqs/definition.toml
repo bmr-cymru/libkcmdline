@@ -1,0 +1,15 @@
+# This is a libKCmdline definition document.
+
+title = "rcutree.jiffies_till_next_fqs - definition.toml"
+name = "rcutree.jiffies_till_next_fqs"
+processor = "kernel"
+description = '''Set delay between subsequent attempts to force
+quiescent states.  Units are jiffies, minimum
+value is one, and maximum value is HZ.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "xen.event_eoi_delay - definition.toml"
+name = "xen.event_eoi_delay"
+processor = "kernel"
+description = '''How long to delay EOI handling in case of event
+storms (jiffies). Default is 10.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

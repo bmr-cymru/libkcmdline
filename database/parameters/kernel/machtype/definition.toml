@@ -1,0 +1,15 @@
+# This is a libKCmdline definition document.
+
+title = "machtype - definition.toml"
+name = "machtype"
+processor = "kernel"
+description = '''Share the same kernel image file between
+different yeeloong laptops.
+Example: machtype=lemote-yeeloong-2f-7inch
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

@@ -1,0 +1,17 @@
+# This is a libKCmdline definition document.
+
+title = "uhci-hcd.ignore_oc - definition.toml"
+name = "uhci-hcd.ignore_oc"
+processor = "kernel"
+description = '''[USB] Ignore overcurrent events (default N).
+Some badly-designed motherboards generate lots of
+anything.  Set this parameter to avoid log spamming.
+Note that genuine overcurrent events won't be
+reported either.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "smh - definition.toml"
+name = "smh"
+processor = "kernel"
+description = '''Use ARM semihosting calls for early console.
+'''
+
+[syntax]
+type = ""
+format = ""
+choices = []
+allow_empty = true

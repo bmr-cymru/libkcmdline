@@ -1,0 +1,15 @@
+# This is a libKCmdline definition document.
+
+title = "early_ioremap_debug - definition.toml"
+name = "early_ioremap_debug"
+processor = "kernel"
+description = '''Enable debug messages in early_ioremap support. This
+is useful for tracking down temporary early mappings
+which are not unmapped.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

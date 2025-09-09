@@ -1,0 +1,19 @@
+# This is a libKCmdline definition document.
+
+title = "nfs4.layoutstats_timer - definition.toml"
+name = "nfs4.layoutstats_timer"
+processor = "kernel"
+description = '''[NFSv4.2] Change the rate at which the kernel sends
+layoutstats to the pNFS metadata server.
+
+Setting this to value to 0 causes the kernel to use
+whatever value is the default set by the layout
+driver. A non-zero value sets the minimum interval
+in seconds between layoutstats transmissions.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

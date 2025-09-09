@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "scftorture.stutter_cpus - definition.toml"
+name = "scftorture.stutter_cpus"
+processor = "kernel"
+description = '''The number of jiffies to wait between each change
+to the set of CPUs under test.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

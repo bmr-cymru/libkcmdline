@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "possible_cpus - definition.toml"
+name = "possible_cpus"
+processor = "kernel"
+description = '''Set the number of possible CPUs, overriding the
+regular discovery mechanisms (such as ACPI/FW, etc).
+'''
+
+[syntax]
+type = "<unsigned int>"
+format = "<unsigned int>"
+choices = []
+allow_empty = true

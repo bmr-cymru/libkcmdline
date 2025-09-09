@@ -1,0 +1,15 @@
+# This is a libKCmdline definition document.
+
+title = "dell_smm_hwmon.ignore_dmi - definition.toml"
+name = "dell_smm_hwmon.ignore_dmi"
+processor = "kernel"
+description = '''[HW] Continue probing hardware even if DMI data
+indicates that the driver is running on unsupported
+hardware.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

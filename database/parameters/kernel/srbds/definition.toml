@@ -1,0 +1,27 @@
+# This is a libKCmdline definition document.
+
+title = "srbds - definition.toml"
+name = "srbds"
+processor = "kernel"
+description = '''Control the Special Register Buffer Data Sampling
+(SRBDS) mitigation.
+
+Certain CPUs are vulnerable to an MDS-like
+exploit which can leak bits from the random
+number generator.
+
+the RDRAND and RDSEED instructions to become
+result in reduced throughput from /dev/urandom.
+
+The microcode mitigation can be disabled with
+the following option:
+
+off:    Disable mitigation and remove
+performance impact to RDRAND and RDSEED
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

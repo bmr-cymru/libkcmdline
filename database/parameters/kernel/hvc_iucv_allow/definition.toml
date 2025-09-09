@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "hvc_iucv_allow - definition.toml"
+name = "hvc_iucv_allow"
+processor = "kernel"
+description = '''Comma-separated list of z/VM user IDs.
+from listed z/VM user IDs only.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

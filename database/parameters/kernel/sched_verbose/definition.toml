@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "sched_verbose - definition.toml"
+name = "sched_verbose"
+processor = "kernel"
+description = '''Enables verbose scheduler debug messages.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

@@ -1,0 +1,17 @@
+# This is a libKCmdline definition document.
+
+title = "sti - definition.toml"
+name = "sti"
+processor = "kernel"
+description = '''<num>
+Set the STI (builtin display/keyboard on the HP-PARISC
+machines) console (graphic card) which should be used
+as the initial boot-console.
+See also comment in drivers/video/console/sticore.c.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

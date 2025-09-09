@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "threadirqs - definition.toml"
+name = "threadirqs"
+processor = "kernel"
+description = '''Force threading of all interrupt handlers except those
+marked explicitly IRQF_NO_THREAD.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

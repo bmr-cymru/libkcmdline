@@ -1,0 +1,24 @@
+# This is a libKCmdline definition document.
+
+title = "slab_nomerge - definition.toml"
+name = "slab_nomerge"
+processor = "kernel"
+description = '''Disable merging of slabs with similar size. May be
+necessary if there is some reason to distinguish
+environments where the risk of heap overflows and
+layout control by attackers can usually be
+frustrated by disabling merging. This will reduce
+most of the exposure of a heap attack to a single
+cache (risks via metadata attacks are mostly
+unchanged). Debug options disable merging on their
+own.
+For more information see
+Documentation/admin-guide/mm/slab.rst.
+(slub_nomerge legacy name also accepted for now)
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

@@ -1,0 +1,17 @@
+# This is a libKCmdline definition document.
+
+title = "noexec32 - definition.toml"
+name = "noexec32"
+processor = "kernel"
+description = '''This affects only 32-bit executables.
+noexec32=on: enable non-executable mappings (default)
+read doesn't imply executable mappings
+noexec32=off: disable non-executable mappings
+read implies executable mappings
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

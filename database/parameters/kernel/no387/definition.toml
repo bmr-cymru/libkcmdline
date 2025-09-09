@@ -1,0 +1,15 @@
+# This is a libKCmdline definition document.
+
+title = "no387 - definition.toml"
+name = "no387"
+processor = "kernel"
+description = '''Tells the kernel to use the 387 maths
+emulation library even if a 387 maths coprocessor
+is present.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

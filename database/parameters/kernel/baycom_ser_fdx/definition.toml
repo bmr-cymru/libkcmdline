@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "baycom_ser_fdx - definition.toml"
+name = "baycom_ser_fdx"
+processor = "kernel"
+description = '''BayCom Serial Port AX.25 Modem (Full Duplex Mode)
+See header of drivers/net/hamradio/baycom_ser_fdx.c.
+'''
+
+[syntax]
+type = "<io>,<irq>,<mode>[,<baud>]"
+format = "<io>,<irq>,<mode>[,<baud>]"
+choices = []
+allow_empty = true

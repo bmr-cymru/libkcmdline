@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "locktorture.writer_fifo - definition.toml"
+name = "locktorture.writer_fifo"
+processor = "kernel"
+description = '''Run the write-side locktorture kthreads at
+sched_set_fifo() real-time priority.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

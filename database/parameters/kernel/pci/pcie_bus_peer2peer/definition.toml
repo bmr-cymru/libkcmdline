@@ -1,0 +1,17 @@
+# This is a libKCmdline definition document.
+
+title = "pcie_bus_peer2peer - definition.toml"
+name = "pcie_bus_peer2peer"
+processor = "kernel"
+description = '''Set every device's MPS to 128B, which
+every device is guaranteed to support. This
+configuration allows peer-to-peer DMA between
+any pair of devices, possibly at the cost of
+reduced performance.  This also guarantees
+that hot-added devices will work.'''
+
+[syntax]
+type = ""
+format = ""
+choices = []
+allow_empty = true

@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "acpi_no_watchdog - definition.toml"
+name = "acpi_no_watchdog"
+processor = "kernel"
+description = '''Ignore the ACPI-based watchdog interface (WDAT) and let
+a native driver control the watchdog device instead.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

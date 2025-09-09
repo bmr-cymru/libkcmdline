@@ -1,0 +1,28 @@
+# This is a libKCmdline definition document.
+
+title = "indirect_target_selection - definition.toml"
+name = "indirect_target_selection"
+processor = "kernel"
+description = '''Mitigation control for Indirect
+Target Selection(ITS) bug in Intel CPUs. Updated
+microcode is also required for a fix in IBPB.
+
+on:     Enable mitigation (default).
+off:    Disable mitigation.
+force:	Force the ITS bug and deploy default
+mitigation.
+vmexit: Only deploy mitigation if CPU is affected by
+guest/host isolation part of ITS.
+stuff:	Deploy RSB-fill mitigation when retpoline is
+also deployed. Otherwise, deploy the default
+mitigation.
+
+For details see:
+Documentation/admin-guide/hw-vuln/indirect-target-selection.rst
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

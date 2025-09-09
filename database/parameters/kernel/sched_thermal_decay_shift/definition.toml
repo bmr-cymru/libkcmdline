@@ -1,0 +1,26 @@
+# This is a libKCmdline definition document.
+
+title = "sched_thermal_decay_shift - definition.toml"
+name = "sched_thermal_decay_shift"
+processor = "kernel"
+description = '''[Deprecated]
+[KNL, SMP] Set a decay shift for scheduler thermal
+pressure signal. Thermal pressure signal follows the
+default decay period of other scheduler pelt
+signals(usually 32 ms but configurable). Setting
+sched_thermal_decay_shift will left shift the decay
+period for the thermal pressure signal by the shift
+value.
+i.e. with the default pelt decay period of 32 ms
+sched_thermal_decay_shift   thermal pressure decay pr
+1			64 ms
+2			128 ms
+and so on.
+Default is 0.
+'''
+
+[syntax]
+type = "integer between 0 and 10"
+format = "integer between 0 and 10"
+choices = []
+allow_empty = true

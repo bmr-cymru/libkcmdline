@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "module_blacklist - definition.toml"
+name = "module_blacklist"
+processor = "kernel"
+description = '''Do not load a comma-separated list of
+modules.  Useful for debugging problem modules.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

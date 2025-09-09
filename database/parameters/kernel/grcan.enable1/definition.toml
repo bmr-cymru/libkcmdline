@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "grcan.enable1 - definition.toml"
+name = "grcan.enable1"
+processor = "kernel"
+description = '''Configuration of physical interface 1. Determines
+the "Enable 0" bit of the configuration register.
+Default: 0'''
+
+[syntax]
+type = "0 | 1"
+format = "0 | 1"
+choices = []
+allow_empty = true

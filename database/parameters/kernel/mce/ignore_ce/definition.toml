@@ -1,0 +1,23 @@
+# This is a libKCmdline definition document.
+
+title = "ignore_ce - definition.toml"
+name = "ignore_ce"
+processor = "kernel"
+description = '''disable features for corrected errors, e.g.
+polling timer and CMCI.  All events reported as
+corrected are not cleared by OS and remained in its
+error banks.
+
+Usually this disablement is not recommended, however
+if there is an agent checking/clearing corrected
+errors (e.g. BIOS or hardware monitoring
+applications), conflicting with OS's error handling,
+and you cannot deactivate the agent, then this option
+will be a help.
+'''
+
+[syntax]
+type = ""
+format = ""
+choices = []
+allow_empty = true

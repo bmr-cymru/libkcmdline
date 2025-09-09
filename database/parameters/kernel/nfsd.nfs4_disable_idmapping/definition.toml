@@ -1,0 +1,17 @@
+# This is a libKCmdline definition document.
+
+title = "nfsd.nfs4_disable_idmapping - definition.toml"
+name = "nfsd.nfs4_disable_idmapping"
+processor = "kernel"
+description = '''[NFSv4] When set to the default of '1', the NFSv4
+server will return only numeric uids and gids to
+clients using auth_sys, and will accept numeric uids
+and gids from such clients.  This is intended to ease
+migration from NFSv2/v3.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

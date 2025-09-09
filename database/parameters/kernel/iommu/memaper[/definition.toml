@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "memaper[ - definition.toml"
+name = "memaper["
+processor = "kernel"
+description = '''Allocate an own aperture over RAM with size
+32MB<<order.  (default: order=1, i.e. 64MB)
+'''
+
+[syntax]
+type = "<order>]"
+format = "<order>]"
+choices = []
+allow_empty = true

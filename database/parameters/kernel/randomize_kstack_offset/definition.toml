@@ -1,0 +1,20 @@
+# This is a libKCmdline definition document.
+
+title = "randomize_kstack_offset - definition.toml"
+name = "randomize_kstack_offset"
+processor = "kernel"
+description = '''[KNL,EARLY] Enable or disable kernel stack offset
+randomization, which provides roughly 5 bits of
+entropy, frustrating memory corruption attacks
+that depend on stack address determinism or
+cross-syscall address exposures. This is only
+available on architectures that have defined
+CONFIG_HAVE_ARCH_RANDOMIZE_KSTACK_OFFSET.
+Default is CONFIG_RANDOMIZE_KSTACK_OFFSET_DEFAULT.
+'''
+
+[syntax]
+type = "<bool>  (1/Y/y=enable, 0/N/n=disable)"
+format = "<bool>  (1/Y/y=enable, 0/N/n=disable)"
+choices = []
+allow_empty = true

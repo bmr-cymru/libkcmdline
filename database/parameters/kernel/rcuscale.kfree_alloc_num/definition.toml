@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "rcuscale.kfree_alloc_num - definition.toml"
+name = "rcuscale.kfree_alloc_num"
+processor = "kernel"
+description = '''Number of allocations and frees done in an iteration.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

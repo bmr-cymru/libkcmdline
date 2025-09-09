@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "usbcore.blinkenlights - definition.toml"
+name = "usbcore.blinkenlights"
+processor = "kernel"
+description = '''[USB] Set to cycle leds on hubs (default 0 = off).
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

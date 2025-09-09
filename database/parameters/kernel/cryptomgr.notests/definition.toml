@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "cryptomgr.notests - definition.toml"
+name = "cryptomgr.notests"
+processor = "kernel"
+description = '''[KNL] Disable crypto self-tests
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

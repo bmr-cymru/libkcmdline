@@ -1,0 +1,12 @@
+# This is a libKCmdline definition document.
+
+title = "console_msg_format - definition.toml"
+name = "console_msg_format"
+processor = "kernel"
+description = '''[KNL] Change console messages format'''
+
+[syntax]
+type = "complex"
+format = "complex"
+choices = []
+allow_empty = true

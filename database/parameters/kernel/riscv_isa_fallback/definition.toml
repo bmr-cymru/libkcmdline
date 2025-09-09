@@ -1,0 +1,17 @@
+# This is a libKCmdline definition document.
+
+title = "riscv_isa_fallback - definition.toml"
+name = "riscv_isa_fallback"
+processor = "kernel"
+description = '''When CONFIG_RISCV_ISA_FALLBACK is not enabled, permit
+falling back to detecting extension support by parsing
+"riscv,isa" property on devicetree systems when the
+replacement properties are not found. See the Kconfig
+entry for RISCV_ISA_FALLBACK.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

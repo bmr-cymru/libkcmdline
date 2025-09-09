@@ -1,0 +1,17 @@
+# This is a libKCmdline definition document.
+
+title = "parport_init_mode - definition.toml"
+name = "parport_init_mode"
+processor = "kernel"
+description = '''Configure VIA parallel port to operate in
+a specific mode. This is necessary on Pegasos
+computer where firmware has no options for setting
+up parallel port mode and sets it to spp.
+Currently this function knows 686a and 8231 chips.
+'''
+
+[syntax]
+type = "[spp|ps2|epp|ecp|ecpepp]"
+format = "[spp|ps2|epp|ecp|ecpepp]"
+choices = []
+allow_empty = true

@@ -1,0 +1,23 @@
+# This is a libKCmdline definition document.
+
+title = "srcutree.convert_to_big - definition.toml"
+name = "srcutree.convert_to_big"
+processor = "kernel"
+description = '''Specifies under what conditions an SRCU tree
+srcu_struct structure will be converted to big
+
+0:  Never.
+1:  At init_srcu_struct() time.
+2:  When rcutorture decides to.
+3:  Decide at boot time (default).
+0x1X:  Above plus if high contention.
+
+on the actual runtime number of CPUs (nr_cpu_ids)
+instead of the compile-time CONFIG_NR_CPUS.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

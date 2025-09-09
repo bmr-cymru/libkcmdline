@@ -1,0 +1,12 @@
+# This is a libKCmdline definition document.
+
+title = "force_floating - definition.toml"
+name = "force_floating"
+processor = "kernel"
+description = '''[S390] Force usage of floating interrupts.'''
+
+[syntax]
+type = ""
+format = ""
+choices = []
+allow_empty = true

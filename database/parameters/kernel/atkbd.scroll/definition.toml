@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "atkbd.scroll - definition.toml"
+name = "atkbd.scroll"
+processor = "kernel"
+description = '''Enable scroll wheel on MS Office and similar
+keyboards
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

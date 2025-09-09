@@ -1,0 +1,38 @@
+# This is a libKCmdline definition document.
+
+title = "rcu_nocbs[ - definition.toml"
+name = "rcu_nocbs["
+processor = "kernel"
+description = '''[KNL] The optional argument is a cpu list,
+as described above.
+
+In kernels built with CONFIG_RCU_NOCB_CPU=y,
+enable the no-callback CPU mode, which prevents
+such CPUs' callbacks from being invoked in
+softirq context.  Invocation of such CPUs' RCU
+callbacks will instead be offloaded to "rcuox/N"
+kthreads created for that purpose, where "x" is
+"p" for RCU-preempt, "s" for RCU-sched, and "g"
+for the kthreads that mediate grace periods; and
+"N" is the CPU number. This reduces OS jitter on
+the offloaded CPUs, which can be useful for HPC
+and real-time workloads.  It can also improve
+energy efficiency for asymmetric multiprocessors.
+
+If a cpulist is passed as an argument, the specified
+list of	CPUs is set to no-callback mode from boot.
+
+Otherwise, if the '=' sign and the cpulist
+arguments are omitted, no CPU will be set to
+no-callback mode from boot but the mode may be
+toggled at runtime via cpusets.
+
+Note that this argument takes precedence over
+the CONFIG_RCU_NOCB_CPU_DEFAULT_ALL option.
+'''
+
+[syntax]
+type = "cpu-list]"
+format = "cpu-list]"
+choices = []
+allow_empty = true

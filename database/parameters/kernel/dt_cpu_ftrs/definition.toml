@@ -1,0 +1,18 @@
+# This is a libKCmdline definition document.
+
+title = "dt_cpu_ftrs - definition.toml"
+name = "dt_cpu_ftrs"
+processor = "kernel"
+description = '''Control how the dt_cpu_ftrs device-tree binding is
+used for CPU feature discovery and setup (if it
+exists).
+off: Do not use it, fall back to legacy cpu table.
+known: Do not pass through unknown features to guests
+or userspace, only those that the kernel is aware of.
+'''
+
+[syntax]
+type = "enum"
+format = "enum"
+choices = ["off", "known"]
+allow_empty = true

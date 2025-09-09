@@ -1,0 +1,19 @@
+# This is a libKCmdline definition document.
+
+title = "noxsaves - definition.toml"
+name = "noxsaves"
+processor = "kernel"
+description = '''Disables xsaves and xrstors used in saving and
+restoring x86 extended register state in compacted
+form of xsave area. The kernel will fall back to use
+xsaveopt and xrstor to save and restore the states
+in standard form of xsave area. By using this
+parameter, xsave area per process might occupy more
+memory on xsaves enabled systems.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

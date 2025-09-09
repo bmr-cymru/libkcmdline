@@ -1,0 +1,18 @@
+# This is a libKCmdline definition document.
+
+title = "irqchip.gicv3_nolpi - definition.toml"
+name = "irqchip.gicv3_nolpi"
+processor = "kernel"
+description = '''[ARM,ARM64,EARLY]
+Force the kernel to ignore the availability of
+LPIs (and by consequence ITSs). Intended for system
+that use the kernel as a bootloader, and thus want
+to let secondary kernels in charge of setting up
+LPIs.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

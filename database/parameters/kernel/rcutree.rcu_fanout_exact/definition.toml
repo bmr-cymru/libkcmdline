@@ -1,0 +1,16 @@
+# This is a libKCmdline definition document.
+
+title = "rcutree.rcu_fanout_exact - definition.toml"
+name = "rcutree.rcu_fanout_exact"
+processor = "kernel"
+description = '''Disable autobalancing of the rcu_node combining
+tree.  This is used by rcutorture, and might
+possibly be useful for architectures having high
+cache-to-cache transfer latencies.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

@@ -1,0 +1,20 @@
+# This is a libKCmdline definition document.
+
+title = "default_hugepagesz - definition.toml"
+name = "default_hugepagesz"
+processor = "kernel"
+description = '''[HW] The size of the default HugeTLB page. This is
+the size represented by the legacy /proc/ hugepages
+APIs.  In addition, this is the default hugetlb size
+used for shmget(), mmap() and mounting hugetlbfs
+filesystems.  If not specified, defaults to the
+architecture's default huge page size.  Huge page
+sizes are architecture dependent.  See also
+Documentation/admin-guide/mm/hugetlbpage.rst.
+'''
+
+[syntax]
+type = "size[KMG]"
+format = "size[KMG]"
+choices = []
+allow_empty = true

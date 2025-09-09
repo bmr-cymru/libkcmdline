@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "no-steal-acc - definition.toml"
+name = "no-steal-acc"
+processor = "kernel"
+description = '''Disable paravirtualized steal time accounting. steal time
+is computed, but won't influence scheduler behaviour
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

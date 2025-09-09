@@ -1,0 +1,12 @@
+# This is a libKCmdline definition document.
+
+title = "smsc-ircc2.nopnp - definition.toml"
+name = "smsc-ircc2.nopnp"
+processor = "kernel"
+description = '''Don't use PNP to discover SMC devices'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

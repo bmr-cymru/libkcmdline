@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "noreplace-smp - definition.toml"
+name = "noreplace-smp"
+processor = "kernel"
+description = '''Don't replace SMP instructions
+with UP alternatives
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

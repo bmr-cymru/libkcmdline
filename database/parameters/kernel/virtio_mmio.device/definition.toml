@@ -1,0 +1,25 @@
+# This is a libKCmdline definition document.
+
+title = "virtio_mmio.device - definition.toml"
+name = "virtio_mmio.device"
+processor = "kernel"
+description = '''[VMMIO] Memory mapped virtio (platform) device.
+
+<size>@<baseaddr>:<irq>[:<id>]
+where:
+<size>     := size (can use standard suffixes
+<baseaddr> := physical base address
+<irq>      := interrupt number (as passed to
+request_irq())
+<id>       := (optional) platform device id
+example:
+virtio_mmio.device=1K@0x100b0000:48:7
+
+Can be used multiple times for multiple devices.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

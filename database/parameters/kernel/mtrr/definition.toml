@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "mtrr - definition.toml"
+name = "mtrr"
+processor = "kernel"
+description = '''Enable printing debug information related to MTRR
+registers at boot time.
+'''
+
+[syntax]
+type = "debug"
+format = "debug"
+choices = []
+allow_empty = true

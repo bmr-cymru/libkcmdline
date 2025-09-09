@@ -1,0 +1,16 @@
+# This is a libKCmdline definition document.
+
+title = "tpm.disable_pcr_integrity - definition.toml"
+name = "tpm.disable_pcr_integrity"
+processor = "kernel"
+description = '''Do not protect PCR registers from unintended physical
+having an integrity protected session wrapped around
+TPM2_PCR_Extend command. Consider this in a situation
+machines are deployed is by other means guarded.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

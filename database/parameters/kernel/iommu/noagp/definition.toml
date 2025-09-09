@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "noagp - definition.toml"
+name = "noagp"
+processor = "kernel"
+description = '''Don't initialize the AGP driver and use full aperture.
+'''
+
+[syntax]
+type = ""
+format = ""
+choices = []
+allow_empty = true

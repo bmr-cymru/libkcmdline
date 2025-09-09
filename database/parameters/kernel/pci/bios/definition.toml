@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "bios - definition.toml"
+name = "bios"
+processor = "kernel"
+description = '''[X86-32] force use of PCI BIOS, don't access
+the hardware directly. Use this if your machine
+has a non-standard PCI host bridge.'''
+
+[syntax]
+type = ""
+format = ""
+choices = []
+allow_empty = true

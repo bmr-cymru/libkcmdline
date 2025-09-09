@@ -1,0 +1,17 @@
+# This is a libKCmdline definition document.
+
+title = "trusted.dcp_skip_zk_test - definition.toml"
+name = "trusted.dcp_skip_zk_test"
+processor = "kernel"
+description = '''This is intended to be used in combination with
+trusted.source=dcp and will disable the check if the
+blob key is all zeros. This is helpful for situations where
+having this key zero'ed is acceptable. E.g. in testing
+scenarios.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

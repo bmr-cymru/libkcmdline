@@ -1,0 +1,25 @@
+# This is a libKCmdline definition document.
+
+title = "iommu.strict - definition.toml"
+name = "iommu.strict"
+processor = "kernel"
+description = '''Configure TLB invalidation behaviour
+0 - Lazy mode.
+Request that DMA unmap operations use deferred
+invalidation of hardware TLBs, for increased
+throughput at the cost of reduced device isolation.
+Will fall back to strict mode if not supported by
+the relevant IOMMU driver.
+1 - Strict mode.
+DMA unmap operations invalidate IOMMU hardware TLBs
+synchronously.
+unset - Use value of CONFIG_IOMMU_DEFAULT_DMA_{LAZY,STRICT}.
+Note: on x86, strict mode specified via one of the
+legacy driver-specific options takes precedence.
+'''
+
+[syntax]
+type = "enum"
+format = "enum"
+choices = ["0", "1"]
+allow_empty = true

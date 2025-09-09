@@ -1,0 +1,15 @@
+# This is a libKCmdline definition document.
+
+title = "locktorture.nreaders_stress - definition.toml"
+name = "locktorture.nreaders_stress"
+processor = "kernel"
+description = '''Set the number of locking read-acquisition kthreads.
+Defaults to being automatically set based on the
+number of online CPUs.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

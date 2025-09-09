@@ -1,0 +1,15 @@
+# This is a libKCmdline definition document.
+
+title = "coredump_filter - definition.toml"
+name = "coredump_filter"
+processor = "kernel"
+description = '''[KNL] Change the default value for
+/proc/<pid>/coredump_filter.
+See also Documentation/filesystems/proc.rst.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

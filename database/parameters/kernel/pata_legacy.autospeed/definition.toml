@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "pata_legacy.autospeed - definition.toml"
+name = "pata_legacy.autospeed"
+processor = "kernel"
+description = '''Set to non-zero if a chip is present that snoops speed
+changes.  Disabled by default.
+'''
+
+[syntax]
+type = "<int>"
+format = "<int>"
+choices = []
+allow_empty = true

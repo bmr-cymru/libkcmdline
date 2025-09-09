@@ -1,0 +1,12 @@
+# This is a libKCmdline definition document.
+
+title = "strict - definition.toml"
+name = "strict"
+processor = "kernel"
+description = '''regions from userspace.'''
+
+[syntax]
+type = ""
+format = ""
+choices = []
+allow_empty = true

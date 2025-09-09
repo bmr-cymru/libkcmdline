@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "no_entry_flush - definition.toml"
+name = "no_entry_flush"
+processor = "kernel"
+description = '''Don't flush the L1-D cache when entering the kernel.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

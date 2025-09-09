@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "nr_uarts - definition.toml"
+name = "nr_uarts"
+processor = "kernel"
+description = '''maximum number of UARTs to be registered.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

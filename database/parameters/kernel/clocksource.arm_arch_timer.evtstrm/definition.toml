@@ -1,0 +1,17 @@
+# This is a libKCmdline definition document.
+
+title = "clocksource.arm_arch_timer.evtstrm - definition.toml"
+name = "clocksource.arm_arch_timer.evtstrm"
+processor = "kernel"
+description = '''[ARM,ARM64,EARLY]
+Enable/disable the eventstream feature of the ARM
+architected timer so that code using WFE-based polling
+loops can be debugged more effectively on production
+systems.
+'''
+
+[syntax]
+type = "<bool>"
+format = "<bool>"
+choices = []
+allow_empty = true

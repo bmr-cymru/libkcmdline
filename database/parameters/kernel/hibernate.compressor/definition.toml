@@ -1,0 +1,22 @@
+# This is a libKCmdline definition document.
+
+title = "hibernate.compressor - definition.toml"
+name = "hibernate.compressor"
+processor = "kernel"
+description = '''Compression algorithm to be
+used with hibernation.
+Format: { lzo | lz4 }
+Default: lzo
+
+lzo: Select LZO compression algorithm to
+compress/decompress hibernation image.
+
+lz4: Select LZ4 compression algorithm to
+compress/decompress hibernation image.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

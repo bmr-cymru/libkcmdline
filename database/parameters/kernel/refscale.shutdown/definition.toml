@@ -1,0 +1,16 @@
+# This is a libKCmdline definition document.
+
+title = "refscale.shutdown - definition.toml"
+name = "refscale.shutdown"
+processor = "kernel"
+description = '''Shut down the system at the end of the performance
+test.  This defaults to 1 (shut it down) when
+refscale is built into the kernel and to 0 (leave
+it running) when refscale is built as a module.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

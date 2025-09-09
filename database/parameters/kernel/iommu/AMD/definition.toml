@@ -1,0 +1,15 @@
+# This is a libKCmdline definition document.
+
+title = "AMD - definition.toml"
+name = "AMD"
+processor = "kernel"
+description = '''Gart HW IOMMU-specific options:
+
+Set the size of the remapping area in bytes.
+'''
+
+[syntax]
+type = ""
+format = ""
+choices = []
+allow_empty = true

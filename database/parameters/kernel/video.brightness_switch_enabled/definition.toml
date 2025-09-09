@@ -1,0 +1,16 @@
+# This is a libKCmdline definition document.
+
+title = "video.brightness_switch_enabled - definition.toml"
+name = "video.brightness_switch_enabled"
+processor = "kernel"
+description = '''level and then send out the event to user space through
+will only send out the event without touching backlight
+brightness level.
+default: 1
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

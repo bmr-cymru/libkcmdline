@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "noresume - definition.toml"
+name = "noresume"
+processor = "kernel"
+description = '''Disables resume and restores original swap
+space.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

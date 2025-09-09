@@ -1,0 +1,16 @@
+# This is a libKCmdline definition document.
+
+title = "reserve - definition.toml"
+name = "reserve"
+processor = "kernel"
+description = '''Force kernel to ignore I/O ports or memory
+Reserve I/O ports or memory so the kernel won't use
+them.  If <base> is less than 0x10000, the region
+is assumed to be I/O ports; otherwise it is memory.
+'''
+
+[syntax]
+type = "<base1>,<size1>[,<base2>,<size2>,...]"
+format = "<base1>,<size1>[,<base2>,<size2>,...]"
+choices = []
+allow_empty = true

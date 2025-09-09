@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "locktorture.bind_readers - definition.toml"
+name = "locktorture.bind_readers"
+processor = "kernel"
+description = '''Specify the list of CPUs to which the readers are
+to be bound.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

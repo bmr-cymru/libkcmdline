@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "grcan.rxsize - definition.toml"
+name = "grcan.rxsize"
+processor = "kernel"
+description = '''Sets the size of the rx buffer.
+Default: 1024
+'''
+
+[syntax]
+type = "<unsigned int> such that (rxsize & ~0x1fffc0) == 0."
+format = "<unsigned int> such that (rxsize & ~0x1fffc0) == 0."
+choices = []
+allow_empty = true

@@ -1,0 +1,16 @@
+# This is a libKCmdline definition document.
+
+title = "ipe.success_audit - definition.toml"
+name = "ipe.success_audit"
+processor = "kernel"
+description = '''[IPE]
+Start IPE with success auditing enabled, emitting
+an audit event when a binary is allowed. The default
+is 0.
+'''
+
+[syntax]
+type = "<bool>"
+format = "<bool>"
+choices = []
+allow_empty = true

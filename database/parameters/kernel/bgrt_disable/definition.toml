@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "bgrt_disable - definition.toml"
+name = "bgrt_disable"
+processor = "kernel"
+description = '''Disable BGRT to avoid flickering OEM logo.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

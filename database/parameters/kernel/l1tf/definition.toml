@@ -1,0 +1,76 @@
+# This is a libKCmdline definition document.
+
+title = "l1tf - definition.toml"
+name = "l1tf"
+processor = "kernel"
+description = '''Control mitigation of the L1TF vulnerability on
+affected CPUs
+
+The kernel PTE inversion protection is unconditionally
+enabled and cannot be disabled.
+
+full
+Provides all available mitigations for the
+L1TF vulnerability. Disables SMT and
+enables all mitigations in the
+hypervisors, i.e. unconditional L1D flush.
+
+SMT control and L1D flush control via the
+sysfs interface is still possible after
+boot.  Hypervisors will issue a warning
+when the first VM is started in a
+potentially insecure configuration,
+i.e. SMT enabled or L1D flush disabled.
+
+full,force
+Same as 'full', but disables SMT and L1D
+flush runtime control. Implies the
+'nosmt=force' command line option.
+(i.e. sysfs control of SMT is disabled.)
+
+flush
+Leaves SMT enabled and enables the default
+hypervisor mitigation, i.e. conditional
+L1D flush.
+
+SMT control and L1D flush control via the
+sysfs interface is still possible after
+boot.  Hypervisors will issue a warning
+when the first VM is started in a
+potentially insecure configuration,
+i.e. SMT enabled or L1D flush disabled.
+
+flush,nosmt
+
+Disables SMT and enables the default
+hypervisor mitigation.
+
+SMT control and L1D flush control via the
+sysfs interface is still possible after
+boot.  Hypervisors will issue a warning
+when the first VM is started in a
+potentially insecure configuration,
+i.e. SMT enabled or L1D flush disabled.
+
+flush,nowarn
+Same as 'flush', but hypervisors will not
+warn when a VM is started in a potentially
+insecure configuration.
+
+off
+Disables hypervisor mitigations and doesn't
+emit any warnings.
+It also drops the swap size and available
+RAM limit restriction on both hypervisor and
+bare metal.
+
+Default is 'flush'.
+
+For details see: Documentation/admin-guide/hw-vuln/l1tf.rst
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

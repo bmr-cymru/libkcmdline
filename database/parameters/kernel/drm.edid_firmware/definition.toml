@@ -1,0 +1,22 @@
+# This is a libKCmdline definition document.
+
+title = "drm.edid_firmware - definition.toml"
+name = "drm.edid_firmware"
+processor = "kernel"
+description = '''Broken monitors, graphic adapters, KVMs and EDIDless
+panels may send no or incorrect EDID data sets.
+This parameter allows to specify an EDID data sets
+in the /lib/firmware directory that are used instead.
+An EDID data set will only be used for a particular
+connector, if its name and a colon are prepended to
+the EDID name. Each connector may use a unique EDID
+data set by separating the files with a comma. An EDID
+data set with no connector name will be used for
+any connectors not explicitly specified.
+'''
+
+[syntax]
+type = "[<connector>:]<file>[,[<connector>:]<file>]"
+format = "[<connector>:]<file>[,[<connector>:]<file>]"
+choices = []
+allow_empty = true

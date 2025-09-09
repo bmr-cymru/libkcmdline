@@ -1,0 +1,20 @@
+# This is a libKCmdline definition document.
+
+title = "movablecore - definition.toml"
+name = "movablecore"
+processor = "kernel"
+description = '''This parameter is the complement to kernelcore=, it
+specifies the amount of memory used for migratable
+allocations.  If both kernelcore and movablecore is
+specified, then kernelcore will be at *least* the
+specified value but may be more.  If movablecore on its
+own is specified, the administrator must be careful
+that the amount of memory usable for all allocations
+is not too small.
+'''
+
+[syntax]
+type = "nn[KMGTPE] | nn%"
+format = "nn[KMGTPE] | nn%"
+choices = []
+allow_empty = true

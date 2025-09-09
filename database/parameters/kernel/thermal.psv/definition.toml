@@ -1,0 +1,15 @@
+# This is a libKCmdline definition document.
+
+title = "thermal.psv - definition.toml"
+name = "thermal.psv"
+processor = "kernel"
+description = '''-1: disable all passive trip points
+<degrees C>: override all passive trip points to this
+value
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

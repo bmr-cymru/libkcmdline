@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "pcmv - definition.toml"
+name = "pcmv"
+processor = "kernel"
+description = '''BadgePAD 4
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

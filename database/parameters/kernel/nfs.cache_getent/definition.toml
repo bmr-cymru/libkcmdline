@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "nfs.cache_getent - definition.toml"
+name = "nfs.cache_getent"
+processor = "kernel"
+description = '''[NFS] sets the pathname to the program which is used
+to update the NFS client cache entries.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

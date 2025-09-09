@@ -1,0 +1,12 @@
+# This is a libKCmdline definition document.
+
+title = "rfkill.default_state - definition.toml"
+name = "rfkill.default_state"
+processor = "kernel"
+description = ''''''
+
+[syntax]
+type = "complex"
+format = "complex"
+choices = []
+allow_empty = true

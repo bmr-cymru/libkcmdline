@@ -1,0 +1,12 @@
+# This is a libKCmdline definition document.
+
+title = "isapnp - definition.toml"
+name = "isapnp"
+processor = "kernel"
+description = ''''''
+
+[syntax]
+type = "<RDP>,<reset>,<pci_scan>,<verbosity>"
+format = "<RDP>,<reset>,<pci_scan>,<verbosity>"
+choices = []
+allow_empty = true

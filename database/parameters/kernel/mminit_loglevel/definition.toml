@@ -1,0 +1,18 @@
+# This is a libKCmdline definition document.
+
+title = "mminit_loglevel - definition.toml"
+name = "mminit_loglevel"
+processor = "kernel"
+description = '''[KNL,EARLY] When CONFIG_DEBUG_MEMORY_INIT is set, this
+parameter allows control of the logging verbosity for
+the additional memory initialisation checks. A value
+of 0 disables mminit logging and a level of 4 will
+log everything. Information is printed at KERN_DEBUG
+so loglevel=8 may also need to be specified.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

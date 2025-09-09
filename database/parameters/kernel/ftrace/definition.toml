@@ -1,0 +1,15 @@
+# This is a libKCmdline definition document.
+
+title = "ftrace - definition.toml"
+name = "ftrace"
+processor = "kernel"
+description = '''[FTRACE] will set and start the specified tracer
+as early as possible in order to facilitate early
+boot debugging.
+'''
+
+[syntax]
+type = "[tracer]"
+format = "[tracer]"
+choices = []
+allow_empty = true

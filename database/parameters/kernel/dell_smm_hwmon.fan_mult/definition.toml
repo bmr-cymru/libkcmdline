@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "dell_smm_hwmon.fan_mult - definition.toml"
+name = "dell_smm_hwmon.fan_mult"
+processor = "kernel"
+description = '''[HW] Factor to multiply fan speed with.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

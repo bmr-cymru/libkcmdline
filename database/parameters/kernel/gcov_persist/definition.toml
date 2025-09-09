@@ -1,0 +1,17 @@
+# This is a libKCmdline definition document.
+
+title = "gcov_persist - definition.toml"
+name = "gcov_persist"
+processor = "kernel"
+description = '''When non-zero (default), profiling data for
+kernel modules is saved and remains accessible via
+debugfs, even when the module is unloaded/reloaded.
+When zero, profiling data is discarded and associated
+debugfs files are removed at module unload time.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "skip_isa_align - definition.toml"
+name = "skip_isa_align"
+processor = "kernel"
+description = '''[X86] do not align io start addr, so can
+handle more pci cards'''
+
+[syntax]
+type = ""
+format = ""
+choices = []
+allow_empty = true

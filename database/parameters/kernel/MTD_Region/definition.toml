@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "MTD_Region - definition.toml"
+name = "MTD_Region"
+processor = "kernel"
+description = '''Format:
+<name>,<region-number>[,<base>,<size>,<buswidth>,<altbuswidth>]
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

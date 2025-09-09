@@ -1,0 +1,15 @@
+# This is a libKCmdline definition document.
+
+title = "com20020 - definition.toml"
+name = "com20020"
+processor = "kernel"
+description = '''ARCnet - COM20020 chipset
+Format:
+<io>[,<irq>[,<nodeID>[,<backplane>[,<ckp>[,<timeout>]]]]]
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

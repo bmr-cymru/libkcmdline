@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "rcutorture.n_barrier_cbs - definition.toml"
+name = "rcutorture.n_barrier_cbs"
+processor = "kernel"
+description = '''Set callbacks/threads for rcu_barrier() testing.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

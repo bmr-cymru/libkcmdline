@@ -1,0 +1,15 @@
+# This is a libKCmdline definition document.
+
+title = "nfs.callback_nr_threads - definition.toml"
+name = "nfs.callback_nr_threads"
+processor = "kernel"
+description = '''[NFSv4] set the total number of threads that the
+NFS client will assign to service NFSv4 callback
+requests.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

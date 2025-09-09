@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "ro - definition.toml"
+name = "ro"
+processor = "kernel"
+description = '''Mount root device read-only on boot
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

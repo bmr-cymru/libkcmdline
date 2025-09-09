@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "srcutree.srcu_max_nodelay_phase - definition.toml"
+name = "srcutree.srcu_max_nodelay_phase"
+processor = "kernel"
+description = '''grace period worker thread will be rescheduled
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

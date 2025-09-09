@@ -1,0 +1,16 @@
+# This is a libKCmdline definition document.
+
+title = "disable_1tb_segments - definition.toml"
+name = "disable_1tb_segments"
+processor = "kernel"
+description = '''Disables the use of 1TB hash page table segments. This
+causes the kernel to fall back to 256MB segments which
+can be useful when debugging issues that require an SLB
+miss to occur.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

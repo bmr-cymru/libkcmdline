@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "no_debug_objects - definition.toml"
+name = "no_debug_objects"
+processor = "kernel"
+description = '''[KNL,EARLY] Disable object debugging
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

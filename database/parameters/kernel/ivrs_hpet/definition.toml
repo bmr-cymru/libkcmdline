@@ -1,0 +1,28 @@
+# This is a libKCmdline definition document.
+
+title = "ivrs_hpet - definition.toml"
+name = "ivrs_hpet"
+processor = "kernel"
+description = '''Provide an override to the HPET-ID<->DEVICE-ID
+mapping provided in the IVRS ACPI table.
+By default, PCI segment is 0, and can be omitted.
+
+For example, to map HPET-ID decimal 10 to
+PCI segment 0x1 and PCI device 00:14.0,
+write the parameter as:
+ivrs_hpet=10@0001:00:14.0
+
+Deprecated formats:
+* To map HPET-ID decimal 0 to PCI device 00:14.0
+write the parameter as:
+ivrs_hpet[0]=00:14.0
+* To map HPET-ID decimal 10 to PCI segment 0x1 and
+PCI device 00:14.0 write the parameter as:
+ivrs_ioapic[10]=0001:00:14.0
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

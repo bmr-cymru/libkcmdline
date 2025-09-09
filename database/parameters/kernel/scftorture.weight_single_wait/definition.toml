@@ -1,0 +1,15 @@
+# This is a libKCmdline definition document.
+
+title = "scftorture.weight_single_wait - definition.toml"
+name = "scftorture.weight_single_wait"
+processor = "kernel"
+description = '''The probability weighting to use for the
+smp_call_function_single() function with a
+non-zero "wait" parameter.  See weight_single.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

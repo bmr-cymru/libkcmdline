@@ -1,0 +1,19 @@
+# This is a libKCmdline definition document.
+
+title = "hvc<n> - definition.toml"
+name = "hvc<n>"
+processor = "kernel"
+description = '''Use the hypervisor console device <n>. This is for
+both Xen and PowerPC hypervisors.
+
+Use to disable console output, i.e., to have kernel
+console messages discarded.
+This must be the only console= parameter used on the
+kernel command line.
+'''
+
+[syntax]
+type = ""
+format = ""
+choices = []
+allow_empty = true

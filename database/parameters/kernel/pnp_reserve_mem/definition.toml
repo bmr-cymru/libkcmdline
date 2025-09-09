@@ -1,0 +1,15 @@
+# This is a libKCmdline definition document.
+
+title = "pnp_reserve_mem - definition.toml"
+name = "pnp_reserve_mem"
+processor = "kernel"
+description = '''[ISAPNP] Exclude memory regions for the
+autoconfiguration.
+Ranges are in pairs (memory base and size).
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

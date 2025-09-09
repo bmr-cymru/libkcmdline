@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "kvm.ignore_msrs - definition.toml"
+name = "kvm.ignore_msrs"
+processor = "kernel"
+description = '''guest accesses to unhandled MSRs.
+Default is 0 (don't ignore, but inject #GP)
+'''
+
+[syntax]
+type = "[KVM]"
+format = "[KVM]"
+choices = []
+allow_empty = true

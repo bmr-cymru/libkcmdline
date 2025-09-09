@@ -1,0 +1,15 @@
+# This is a libKCmdline definition document.
+
+title = "slab_merge - definition.toml"
+name = "slab_merge"
+processor = "kernel"
+description = '''Enable merging of slabs with similar size when the
+kernel is built without CONFIG_SLAB_MERGE_DEFAULT.
+(slub_merge legacy name also accepted for now)
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

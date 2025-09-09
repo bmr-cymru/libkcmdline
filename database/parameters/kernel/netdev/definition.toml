@@ -1,0 +1,17 @@
+# This is a libKCmdline definition document.
+
+title = "netdev - definition.toml"
+name = "netdev"
+processor = "kernel"
+description = '''Network devices parameters
+Note that mem_start is often overloaded to mean
+something different and driver-specific.
+This usage is only documented in each driver source
+file if at all.
+'''
+
+[syntax]
+type = "<irq>,<io>,<mem_start>,<mem_end>,<name>"
+format = "<irq>,<io>,<mem_start>,<mem_end>,<name>"
+choices = []
+allow_empty = true

@@ -1,0 +1,17 @@
+# This is a libKCmdline definition document.
+
+title = "syslog - definition.toml"
+name = "syslog"
+processor = "kernel"
+description = '''Switch to syslog format: "<%u>[time stamp] text\n"
+IOW, each message will have a facility and loglevel
+prefix. The format is similar to one used by syslog()
+syscall, or to executing "dmesg -S --raw" or to reading
+from /proc/kmsg.
+'''
+
+[syntax]
+type = ""
+format = ""
+choices = []
+allow_empty = true

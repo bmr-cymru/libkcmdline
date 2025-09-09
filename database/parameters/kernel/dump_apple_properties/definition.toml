@@ -1,0 +1,15 @@
+# This is a libKCmdline definition document.
+
+title = "dump_apple_properties - definition.toml"
+name = "dump_apple_properties"
+processor = "kernel"
+description = '''Dump name and content of EFI device properties on
+x86 Macs.  Useful for driver authors to determine
+what data is available or for reverse-engineering.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

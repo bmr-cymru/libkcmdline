@@ -1,0 +1,12 @@
+# This is a libKCmdline definition document.
+
+title = "biomerge - definition.toml"
+name = "biomerge"
+processor = "kernel"
+description = ''''''
+
+[syntax]
+type = ""
+format = ""
+choices = []
+allow_empty = true

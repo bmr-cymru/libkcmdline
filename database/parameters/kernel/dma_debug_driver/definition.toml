@@ -1,0 +1,17 @@
+# This is a libKCmdline definition document.
+
+title = "dma_debug_driver - definition.toml"
+name = "dma_debug_driver"
+processor = "kernel"
+description = '''With this option the DMA-API debugging driver
+filter feature can be enabled at boot time. Just
+pass the driver to filter for as the parameter.
+The filter can be disabled or changed to another
+driver later using sysfs.
+'''
+
+[syntax]
+type = "<driver_name>"
+format = "<driver_name>"
+choices = []
+allow_empty = true

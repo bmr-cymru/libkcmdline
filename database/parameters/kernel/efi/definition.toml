@@ -1,0 +1,28 @@
+# This is a libKCmdline definition document.
+
+title = "efi - definition.toml"
+name = "efi"
+processor = "kernel"
+description = '''debug: enable misc debug output.
+disable_early_pci_dma: disable the busmaster bit on all
+PCI bridges while in the EFI boot stub.
+nochunk: disable reading files in "chunks" in the EFI
+boot stub, as chunking can cause problems with some
+firmware implementations.
+noruntime : disable EFI runtime services support
+nosoftreserve: The EFI_MEMORY_SP (Specific Purpose)
+attribute may cause the kernel to reserve the
+memory range for a memory mapping driver to
+claim. Specify efi=nosoftreserve to disable this
+reservation and treat the memory by its base type
+(i.e. EFI_CONVENTIONAL_MEMORY / "System RAM").
+novamap: do not call SetVirtualAddressMap().
+no_disable_early_pci_dma: Leave the busmaster bit set
+on all PCI bridges while in the EFI boot stub
+'''
+
+[syntax]
+type = "enum"
+format = "enum"
+choices = ["debug", "disable_early_pci_dma", "nochunk", "noruntime", "nosoftreserve", "novamap", "no_disable_early_pci_dma"]
+allow_empty = true

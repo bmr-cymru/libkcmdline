@@ -1,0 +1,17 @@
+# This is a libKCmdline definition document.
+
+title = "igfx_off - definition.toml"
+name = "igfx_off"
+processor = "kernel"
+description = '''[Default Off]
+By default, gfx is mapped as normal device. If a gfx
+device has a dedicated DMAR unit, the DMAR unit is
+bypassed by not enabling DMAR with this option. In
+this case, gfx device will use physical address for
+DMA.'''
+
+[syntax]
+type = ""
+format = ""
+choices = []
+allow_empty = true

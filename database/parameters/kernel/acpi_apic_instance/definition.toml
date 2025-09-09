@@ -1,0 +1,15 @@
+# This is a libKCmdline definition document.
+
+title = "acpi_apic_instance - definition.toml"
+name = "acpi_apic_instance"
+processor = "kernel"
+description = '''2: use 2nd APIC table, if available
+1,0: use 1st APIC table
+default: 0
+'''
+
+[syntax]
+type = "<int>"
+format = "<int>"
+choices = []
+allow_empty = true

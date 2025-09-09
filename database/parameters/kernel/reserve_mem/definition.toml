@@ -1,0 +1,31 @@
+# This is a libKCmdline definition document.
+
+title = "reserve_mem - definition.toml"
+name = "reserve_mem"
+processor = "kernel"
+description = '''Reserve physical memory and label it with a name that
+other subsystems can use to access it. This is typically
+used for systems that do not wipe the RAM, and this command
+line will try to reserve the same physical memory on
+soft reboots. Note, it is not guaranteed to be the same
+location. For example, if anything about the system changes
+or if booting a different kernel. It can also fail if KASLR
+places the kernel at the location of where the RAM reservation
+was from a previous boot, the new reservation will be at a
+different location.
+Any subsystem using this feature must add a way to verify
+that the contents of the physical memory is from a previous
+boot, as there may be cases where the memory will not be
+located at the same location.
+
+The format is size:align:label for example, to request
+12 megabytes of 4096 alignment for ramoops:
+
+reserve_mem=12M:4096:oops ramoops.mem_name=oops
+'''
+
+[syntax]
+type = "nn[KMG]:<align>:<label>"
+format = "nn[KMG]:<align>:<label>"
+choices = []
+allow_empty = true

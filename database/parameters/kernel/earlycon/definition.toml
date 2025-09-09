@@ -1,0 +1,18 @@
+# This is a libKCmdline definition document.
+
+title = "earlycon - definition.toml"
+name = "earlycon"
+processor = "kernel"
+description = '''Output early console device and options.
+
+When used with no options, the early console is
+determined by stdout-path property in device tree's
+chosen node or the ACPI SPCR table if supported by
+the platform.
+'''
+
+[syntax]
+type = "complex"
+format = "complex"
+choices = []
+allow_empty = true

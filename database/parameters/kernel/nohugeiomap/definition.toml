@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "nohugeiomap - definition.toml"
+name = "nohugeiomap"
+processor = "kernel"
+description = '''Disable kernel huge I/O mappings.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

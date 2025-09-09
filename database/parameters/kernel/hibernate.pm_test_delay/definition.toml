@@ -1,0 +1,17 @@
+# This is a libKCmdline definition document.
+
+title = "hibernate.pm_test_delay - definition.toml"
+name = "hibernate.pm_test_delay"
+processor = "kernel"
+description = '''[HIBERNATION]
+Sets the number of seconds to remain in a hibernation test
+mode before resuming the system (see
+/sys/power/pm_test). Only available when CONFIG_PM_DEBUG
+is set. Default value is 5.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

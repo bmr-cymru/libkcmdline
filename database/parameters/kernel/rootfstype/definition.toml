@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "rootfstype - definition.toml"
+name = "rootfstype"
+processor = "kernel"
+description = '''Set root filesystem type
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

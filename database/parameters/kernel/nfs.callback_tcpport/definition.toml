@@ -1,0 +1,14 @@
+# This is a libKCmdline definition document.
+
+title = "nfs.callback_tcpport - definition.toml"
+name = "nfs.callback_tcpport"
+processor = "kernel"
+description = '''[NFS] set the TCP port on which the NFSv4 callback
+channel should listen.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

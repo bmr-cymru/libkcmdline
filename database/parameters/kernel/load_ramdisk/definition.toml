@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "load_ramdisk - definition.toml"
+name = "load_ramdisk"
+processor = "kernel"
+description = '''[Deprecated]
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

@@ -1,0 +1,13 @@
+# This is a libKCmdline definition document.
+
+title = "dell_smm_hwmon.fan_max - definition.toml"
+name = "dell_smm_hwmon.fan_max"
+processor = "kernel"
+description = '''[HW] Maximum configurable fan speed.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

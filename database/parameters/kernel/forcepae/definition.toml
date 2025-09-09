@@ -1,0 +1,17 @@
+# This is a libKCmdline definition document.
+
+title = "forcepae - definition.toml"
+name = "forcepae"
+processor = "kernel"
+description = '''Forcefully enable Physical Address Extension (PAE).
+Many Pentium M systems disable PAE but may have a
+functionally usable PAE implementation.
+Warning: use of this parameter will taint the kernel
+and may cause unknown problems.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true

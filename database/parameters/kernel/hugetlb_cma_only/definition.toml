@@ -1,0 +1,16 @@
+# This is a libKCmdline definition document.
+
+title = "hugetlb_cma_only - definition.toml"
+name = "hugetlb_cma_only"
+processor = "kernel"
+description = '''try to allocate from the CMA areas.
+
+This option does nothing if hugetlb_cma= is not also
+specified.
+'''
+
+[syntax]
+type = "flag"
+format = "flag"
+choices = []
+allow_empty = true
