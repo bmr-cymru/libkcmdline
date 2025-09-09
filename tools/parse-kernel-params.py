@@ -17,6 +17,7 @@ class Param:
     desc: str = ""
     fmt: str = ""
     values: List[str] = field(default_factory=list)
+    subparams: Dict[str, "Param"] = field(default_factory=dict)
 
 
 def parse_flags(flags: str) -> List[str]:
@@ -34,20 +35,35 @@ def parse_values(values: str) -> List[str]:
     sep = "|" if "|" in values else ","
     return list(map(lambda x: x.strip("\t \"'"), values.strip("{}").split(sep)))
 
+
 def process_kernel_parameters(kernel_params: Path, outdir: Path):
     param_chars = string.ascii_letters + string.digits
     params = {}
+    line_count = 0
     with open(kernel_params, "r", encoding="utf8") as fp:
         param = None
+        subparam = None
         format_line = None
         while line := fp.readline():
-            if line == "\n" and param:
-                param.desc += "\n"
+            line_count += 1
+
+
+            if line == "\n" and (param or subparam):
+                if subparam:
+                    subparam.desc += "\n"
+                else:
+                    param.desc += "\n"
+
             if line.startswith("\t") and line[1] in param_chars:
+                # Complete any open sub-param before completing parma
+                    param.subparams[subparam.name] = subparam
+                    subparam = None
                 # Complete last Param object.
                 if param:
-                    if not param.fmt:
+                    if not param.fmt and not param.subparams:
                         param.fmt = "flag"
+                    elif not param.fmt and param.subparams:
+                        param.fmt = "complex"
                     params[param.name] = param
                     param = None
                 # New parameter: get name, maybe fmt, flags and desc
@@ -61,27 +77,67 @@ def process_kernel_parameters(kernel_params: Path, outdir: Path):
                     fmt = "<int>"
                 else:
                     flags = parse_flags(parts[1]) if len(parts) > 1 else None
-                    fmt = name_parts[1] if len(name_parts) == 2 and name_parts[1] else ""
+                    fmt = (
+                        name_parts[1] if len(name_parts) == 2 and name_parts[1] else ""
+                    )
                 desc = parts[2].strip() if len(parts) > 2 else ""
                 param = Param(name=name, flags=flags, desc=desc, fmt=fmt)
+
+            if param and line.startswith("\t\t") and line[2] in param_chars:
+                line = line.removeprefix("\t\t\t").rstrip()
+                if subparam:
+                    param.subparams[subparam.name] = subparam
+                    subparam = None
+                # New parameter: get name, maybe fmt, flags and desc
+                parts = line.split(maxsplit=2)
+                name = parts[0]
+                name_parts = name.split("=", maxsplit=2)
+                name = name_parts[0]
+                flags = (
+                    parse_flags(parts[1])
+                    if (len(parts) > 1 and parts[1].startswith("["))
+                    else None
+                )
+                fmt = (
+                    name_parts[1]
+                    if (len(name_parts) == 2 and name_parts[1] and "=" in line)
+                    else ""
+                )
+                desc = " ".join(parts[1:]).strip() if len(parts) > 2 else ""
+                subparam = Param(name=name, flags=flags, desc=desc, fmt=fmt)
+
+            if param and subparam and line.startswith("\t\t\t\t"):
+                line = line.removeprefix("\t\t\t\t").rstrip()
+                subparam.desc += "\n" + line
+
+            if param and subparam and line.startswith("\t\t\t"):
+                line = line.removeprefix("\t\t\t").rstrip()
+                subparam.desc += "\n" + line
+
             if param and line.startswith("\t\t\t"):
-                line = line.removeprefix("\t\t\t").rstrip()\
+                line = line.removeprefix("\t\t\t").rstrip()
 
                 # Handle Format: lines with or without {...} enum values.
                 if line.startswith("Format: ") or line.startswith("{"):
                     if line.startswith("Format: "):
                         line = line.removeprefix("Format: ")
-                        if "{"  not in line and "}" not in line and format_line is None:
+                        if "{" not in line and "}" not in line and format_line is None:
                             param.fmt = line
                             continue
 
                 # Glue format lines between {..[|,]..} together
-                if line.startswith("{") and( "|" in line or "," in line) and line.endswith("}"):
+                if (
+                    line.startswith("{")
+                    and ("|" in line or "," in line)
+                    and line.endswith("}")
+                ):
                     param.values = parse_values(line)
                     param.fmt = "enum"
                 elif line.startswith("{") and ("|" in line or "," in line):
                     format_line = line
-                elif format_line and ("|" in line or "," in line) and line.endswith("}"):
+                elif (
+                    format_line and ("|" in line or "," in line) and line.endswith("}")
+                ):
                     format_line += line
                     param.values = parse_values(format_line)
                     param.fmt = "enum"
@@ -91,16 +147,26 @@ def process_kernel_parameters(kernel_params: Path, outdir: Path):
                 elif line.startswith("{") and line.endswith("}"):
                     param.fmt = line.strip("{}")
                 else:
-                    param.desc += "\n" + line
+                    param.desc += "\n" + line.lstrip()
     return params
 
 
 def dump_kernel_parameter(param: Param):
-    print(f"Name: {param.name}")
+    print(f"  Name: {param.name}")
     print(f"Format: {param.fmt}")
-    print(f"Flags: {", ".join(param.flags) if param.flags else ""}")
+    print(f" Flags: {", ".join(param.flags) if param.flags else ""}")
     print(f"Values: {", ".join(param.values) if param.values else ""}")
-    print(f"Desc: {param.desc}\n")
+    print(f"  Desc: {param.desc}\n")
+    if param.subparams:
+        print(f" Subparams:")
+        for subparam in param.subparams.values():
+            print(f"     Name: {param.name}")
+            print(f"  SubName: {subparam.name}")
+            print(f"   Format: {subparam.fmt}")
+            print(f"    Flags: {", ".join(subparam.flags) if subparam.flags else ""}")
+            print(f"   Values: {", ".join(subparam.values) if subparam.values else ""}")
+            print(f"     Desc: {subparam.desc}\n")
+
 
 def dump_kernel_parameters(params: Dict[str, Param]):
     for param in params.values():
