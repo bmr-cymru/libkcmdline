@@ -290,8 +290,7 @@ def dump_kernel_parameters(params: Dict[str, Param]):
 
 def main() -> int:
     parser = ArgumentParser(
-        basename(sys.argv[0]),
-        description="Bootstrap kernel/ database"
+        basename(sys.argv[0]), description="Bootstrap kernel/ database"
     )
     parser.add_argument(
         "parameters",
@@ -304,7 +303,7 @@ def main() -> int:
         metavar="OUTDIR",
         type=Path,
         help="Output directory",
-        default="database/"
+        default="database/",
     )
     parser.add_argument(
         "--dump-parameters",
